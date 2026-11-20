@@ -22,6 +22,8 @@ import { Route as RoomRouteImport } from './routes/room'
 import { Route as RoundRouteImport } from './routes/round'
 import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as StartupsRouteImport } from './routes/startups'
+import { Route as InvestorsIndexRouteImport } from './routes/investors.index'
+import { Route as InvestorsIdRouteImport } from './routes/investors.$id'
 import { Route as StartupsIndexRouteImport } from './routes/startups.index'
 import { Route as StartupsIdRouteImport } from './routes/startups.$id'
 
@@ -90,6 +92,16 @@ const StartupsRoute = StartupsRouteImport.update({
   path: '/startups',
   getParentRoute: () => rootRouteImport,
 } as any)
+const InvestorsIndexRoute = InvestorsIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => InvestorsRoute,
+} as any)
+const InvestorsIdRoute = InvestorsIdRouteImport.update({
+  id: '/$id',
+  path: '/$id',
+  getParentRoute: () => InvestorsRoute,
+} as any)
 const StartupsIndexRoute = StartupsIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -107,7 +119,7 @@ export interface FileRoutesByFullPath {
   '/company': typeof CompanyRoute
   '/diligence': typeof DiligenceRoute
   '/evidence': typeof EvidenceRoute
-  '/investors': typeof InvestorsRoute
+  '/investors': typeof InvestorsRouteWithChildren
   '/materials': typeof MaterialsRoute
   '/pipeline': typeof PipelineRoute
   '/plan': typeof PlanRoute
@@ -115,7 +127,9 @@ export interface FileRoutesByFullPath {
   '/round': typeof RoundRoute
   '/settings': typeof SettingsRoute
   '/startups': typeof StartupsRouteWithChildren
+  '/investors/$id': typeof InvestorsIdRoute
   '/startups/$id': typeof StartupsIdRoute
+  '/investors/': typeof InvestorsIndexRoute
   '/startups/': typeof StartupsIndexRoute
 }
 export interface FileRoutesByTo {
@@ -124,14 +138,15 @@ export interface FileRoutesByTo {
   '/company': typeof CompanyRoute
   '/diligence': typeof DiligenceRoute
   '/evidence': typeof EvidenceRoute
-  '/investors': typeof InvestorsRoute
   '/materials': typeof MaterialsRoute
   '/pipeline': typeof PipelineRoute
   '/plan': typeof PlanRoute
   '/room': typeof RoomRoute
   '/round': typeof RoundRoute
   '/settings': typeof SettingsRoute
+  '/investors/$id': typeof InvestorsIdRoute
   '/startups/$id': typeof StartupsIdRoute
+  '/investors': typeof InvestorsIndexRoute
   '/startups': typeof StartupsIndexRoute
 }
 export interface FileRoutesById {
@@ -141,7 +156,7 @@ export interface FileRoutesById {
   '/company': typeof CompanyRoute
   '/diligence': typeof DiligenceRoute
   '/evidence': typeof EvidenceRoute
-  '/investors': typeof InvestorsRoute
+  '/investors': typeof InvestorsRouteWithChildren
   '/materials': typeof MaterialsRoute
   '/pipeline': typeof PipelineRoute
   '/plan': typeof PlanRoute
@@ -149,7 +164,9 @@ export interface FileRoutesById {
   '/round': typeof RoundRoute
   '/settings': typeof SettingsRoute
   '/startups': typeof StartupsRouteWithChildren
+  '/investors/$id': typeof InvestorsIdRoute
   '/startups/$id': typeof StartupsIdRoute
+  '/investors/': typeof InvestorsIndexRoute
   '/startups/': typeof StartupsIndexRoute
 }
 export interface FileRouteTypes {
@@ -168,7 +185,9 @@ export interface FileRouteTypes {
     | '/round'
     | '/settings'
     | '/startups'
+    | '/investors/$id'
     | '/startups/$id'
+    | '/investors/'
     | '/startups/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -177,14 +196,15 @@ export interface FileRouteTypes {
     | '/company'
     | '/diligence'
     | '/evidence'
-    | '/investors'
     | '/materials'
     | '/pipeline'
     | '/plan'
     | '/room'
     | '/round'
     | '/settings'
+    | '/investors/$id'
     | '/startups/$id'
+    | '/investors'
     | '/startups'
   id:
     | '__root__'
@@ -201,7 +221,9 @@ export interface FileRouteTypes {
     | '/round'
     | '/settings'
     | '/startups'
+    | '/investors/$id'
     | '/startups/$id'
+    | '/investors/'
     | '/startups/'
   fileRoutesById: FileRoutesById
 }
@@ -211,7 +233,7 @@ export interface RootRouteChildren {
   CompanyRoute: typeof CompanyRoute
   DiligenceRoute: typeof DiligenceRoute
   EvidenceRoute: typeof EvidenceRoute
-  InvestorsRoute: typeof InvestorsRoute
+  InvestorsRoute: typeof InvestorsRouteWithChildren
   MaterialsRoute: typeof MaterialsRoute
   PipelineRoute: typeof PipelineRoute
   PlanRoute: typeof PlanRoute
@@ -314,6 +336,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof StartupsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/investors/': {
+      id: '/investors/'
+      path: '/'
+      fullPath: '/investors/'
+      preLoaderRoute: typeof InvestorsIndexRouteImport
+      parentRoute: typeof InvestorsRoute
+    }
+    '/investors/$id': {
+      id: '/investors/$id'
+      path: '/$id'
+      fullPath: '/investors/$id'
+      preLoaderRoute: typeof InvestorsIdRouteImport
+      parentRoute: typeof InvestorsRoute
+    }
     '/startups/': {
       id: '/startups/'
       path: '/'
@@ -330,6 +366,20 @@ declare module '@tanstack/react-router' {
     }
   }
 }
+
+interface InvestorsRouteChildren {
+  InvestorsIdRoute: typeof InvestorsIdRoute
+  InvestorsIndexRoute: typeof InvestorsIndexRoute
+}
+
+const InvestorsRouteChildren: InvestorsRouteChildren = {
+  InvestorsIdRoute: InvestorsIdRoute,
+  InvestorsIndexRoute: InvestorsIndexRoute,
+}
+
+const InvestorsRouteWithChildren = InvestorsRoute._addFileChildren(
+  InvestorsRouteChildren,
+)
 
 interface StartupsRouteChildren {
   StartupsIdRoute: typeof StartupsIdRoute
@@ -351,7 +401,7 @@ const rootRouteChildren: RootRouteChildren = {
   CompanyRoute: CompanyRoute,
   DiligenceRoute: DiligenceRoute,
   EvidenceRoute: EvidenceRoute,
-  InvestorsRoute: InvestorsRoute,
+  InvestorsRoute: InvestorsRouteWithChildren,
   MaterialsRoute: MaterialsRoute,
   PipelineRoute: PipelineRoute,
   PlanRoute: PlanRoute,

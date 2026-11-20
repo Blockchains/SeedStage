@@ -91,8 +91,8 @@ function HomePage() {
           </div>
 
           <div className="flex flex-col gap-8">
-            <LogoBlock title="Companies" href="/startups" count={publicStartups.length} rows={publicStartups.slice(0, 16).map((company) => ({ id: company.id, name: company.name, logo: company.logo, href: `/startups/${company.id}`, meta: company.stage, room: true }))} />
-            <LogoBlock title="Firms" href="/investors" count={investors.length} rows={investors.slice(0, 16).map((investor) => ({ id: investor.id, name: investor.firm, logo: investor.logo, href: investor.sourceUrl, meta: investor.geos[0] ?? "" }))} />
+            <LogoBlock title="Companies" href="/startups" count={publicStartups.length} rows={publicStartups.slice(0, 16).map((company) => ({ id: company.id, name: company.name, logo: company.logo, href: `/startups/${company.id}`, meta: company.stage, room: "startup" as const }))} />
+            <LogoBlock title="Firms" href="/investors" count={investors.length} rows={investors.slice(0, 16).map((investor) => ({ id: investor.id, name: investor.firm, logo: investor.logo, href: `/investors/${investor.id}`, meta: investor.geos[0] ?? "", room: "investor" as const }))} />
           </div>
         </section>
       </main>
@@ -108,7 +108,7 @@ function HomePage() {
   );
 }
 
-function LogoBlock({ title, href, count, rows }: { title: string; href: "/startups" | "/investors"; count: number; rows: { id: string; name: string; logo: string; href: string; meta: string; room?: boolean }[] }) {
+function LogoBlock({ title, href, count, rows }: { title: string; href: "/startups" | "/investors"; count: number; rows: { id: string; name: string; logo: string; href: string; meta: string; room?: "startup" | "investor" }[] }) {
   return (
     <section>
       <div className="flex items-baseline justify-between gap-3">
@@ -119,7 +119,7 @@ function LogoBlock({ title, href, count, rows }: { title: string; href: "/startu
         {rows.map((row) => (
           <li key={row.id}>
             {row.room ? (
-              <Link to="/startups/$id" params={{ id: row.id }} className="hit flex min-h-14 items-center gap-2 rounded-md border border-border bg-surface px-2">
+              <Link to={row.room === "startup" ? "/startups/$id" : "/investors/$id"} params={{ id: row.id }} className="hit flex min-h-14 items-center gap-2 rounded-md border border-border bg-surface px-2">
                 <FirmLogo src={row.logo} name={row.name} />
                 <span className="min-w-0">
                   <span className="block truncate text-sm font-medium">{row.name}</span>
