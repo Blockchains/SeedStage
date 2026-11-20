@@ -91,7 +91,7 @@ function HomePage() {
           </div>
 
           <div className="flex flex-col gap-8">
-            <LogoBlock title="Companies" href="/startups" count={publicStartups.length} rows={publicStartups.slice(0, 16).map((company) => ({ id: company.id, name: company.name, logo: company.logo, href: company.website, meta: company.stage, room: true }))} />
+            <LogoBlock title="Companies" href="/startups" count={publicStartups.length} rows={publicStartups.slice(0, 16).map((company) => ({ id: company.id, name: company.name, logo: company.logo, href: `/startups/${company.id}`, meta: company.stage, room: true }))} />
             <LogoBlock title="Firms" href="/investors" count={investors.length} rows={investors.slice(0, 16).map((investor) => ({ id: investor.id, name: investor.firm, logo: investor.logo, href: investor.sourceUrl, meta: investor.geos[0] ?? "" }))} />
           </div>
         </section>
@@ -117,17 +117,24 @@ function LogoBlock({ title, href, count, rows }: { title: string; href: "/startu
       </div>
       <ul className="mt-3 grid grid-cols-2 gap-2">
         {rows.map((row) => (
-          <li key={row.id} className="flex min-h-14 items-center gap-1 rounded-md border border-border bg-surface pr-1">
-            <a className="hit flex min-w-0 flex-1 items-center gap-2 px-2" href={row.href} target="_blank" rel="noreferrer">
-              <FirmLogo src={row.logo} name={row.name} />
-              <span className="min-w-0">
-                <span className="block truncate text-sm font-medium">{row.name}</span>
-                {row.meta ? <span className="block truncate text-xs text-muted">{row.meta}</span> : null}
-              </span>
-            </a>
+          <li key={row.id}>
             {row.room ? (
-              <Link to="/startups/$id" params={{ id: row.id }} className="hit inline-flex min-h-11 shrink-0 items-center px-2 text-xs font-medium text-primary">Room</Link>
-            ) : null}
+              <Link to="/startups/$id" params={{ id: row.id }} className="hit flex min-h-14 items-center gap-2 rounded-md border border-border bg-surface px-2">
+                <FirmLogo src={row.logo} name={row.name} />
+                <span className="min-w-0">
+                  <span className="block truncate text-sm font-medium">{row.name}</span>
+                  {row.meta ? <span className="block truncate text-xs text-muted">{row.meta}</span> : null}
+                </span>
+              </Link>
+            ) : (
+              <a className="hit flex min-h-14 items-center gap-2 rounded-md border border-border bg-surface px-2" href={row.href} target="_blank" rel="noreferrer">
+                <FirmLogo src={row.logo} name={row.name} />
+                <span className="min-w-0">
+                  <span className="block truncate text-sm font-medium">{row.name}</span>
+                  {row.meta ? <span className="block truncate text-xs text-muted">{row.meta}</span> : null}
+                </span>
+              </a>
+            )}
           </li>
         ))}
       </ul>
