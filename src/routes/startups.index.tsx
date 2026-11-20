@@ -31,7 +31,7 @@ function StartupsPage() {
                   <span className="text-base font-medium">{company.name}</span>
                   <span className="shrink-0 text-xs text-muted">{company.stage || "Room"}</span>
                 </span>
-                <span className="mt-2 block text-sm leading-relaxed text-muted">{company.summary}</span>
+                <span className="mt-2 block text-sm leading-relaxed text-muted">{company.summary.split(/(?<=[.!?])\s+/).slice(0, 2).join(" ")}</span>
               </span>
             </Link>
           </li>

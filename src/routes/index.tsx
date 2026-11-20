@@ -91,8 +91,8 @@ function HomePage() {
           </div>
 
           <div className="flex flex-col gap-8">
-            <LogoBlock title="Companies" href="/startups" count={publicStartups.length} rows={publicStartups.slice(0, 16).map((company) => ({ id: company.id, name: company.name, logo: company.logo, href: `/startups/${company.id}`, meta: company.stage, room: "startup" as const }))} />
-            <LogoBlock title="Firms" href="/investors" count={investors.length} rows={investors.slice(0, 16).map((investor) => ({ id: investor.id, name: investor.firm, logo: investor.logo, href: `/investors/${investor.id}`, meta: investor.geos[0] ?? "", room: "investor" as const }))} />
+            <LogoBlock title="Companies" href="/startups" count={publicStartups.length} rows={publicStartups.slice(0, 24).map((company) => ({ id: company.id, name: company.name, logo: company.logo, href: `/startups/${company.id}`, meta: company.stage, room: "startup" as const }))} />
+            <LogoBlock title="Firms" href="/investors" count={investors.length} rows={investors.slice(0, 24).map((investor) => ({ id: investor.id, name: investor.firm, logo: investor.logo, href: `/investors/${investor.id}`, meta: investor.stages[0] ?? investor.geos[0] ?? "", room: "investor" as const }))} />
           </div>
         </section>
       </main>

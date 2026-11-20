@@ -56,16 +56,16 @@ function InvestorsPage() {
             aside={<Pill tone={match.category === "disqualified" ? "bad" : match.category === "priority" ? "ok" : "warn"}>{match.category}</Pill>}
           >
             {meta(investor) ? <p className="text-sm text-muted">{meta(investor)}</p> : null}
-            <p className="mt-2 text-sm">{investor.excerpt}</p>
+            <p className="mt-2 text-sm leading-relaxed">{investor.excerpt.split(/(?<=[.!?])\s+/).slice(0, 2).join(" ")}</p>
             {investor.chequeMaxMinor > 0 ? (
               <p className="num mt-2 text-sm">
                 {formatMoney(investor.chequeMinMinor, investor.currency)}–{formatMoney(investor.chequeMaxMinor, investor.currency)}
               </p>
             ) : null}
-            {investor.geos.length > 0 || investor.themes.length > 0 ? (
-              <p className="mt-2 text-xs text-muted">{[investor.geos.join(", "), investor.themes.join(" · ")].filter(Boolean).join(" · ")}</p>
+            {investor.stages.length > 0 || investor.geos.length > 0 || investor.themes.length > 0 ? (
+              <p className="mt-2 text-xs text-muted">{[investor.stages.join(", "), investor.geos.slice(0, 3).join(", "), investor.themes.join(" · ")].filter(Boolean).join(" · ")}</p>
             ) : null}
-            {investor.portfolio.length > 0 ? <p className="mt-2 text-sm text-muted">{investor.portfolio.join(", ")}</p> : null}
+            {investor.portfolio.length > 0 ? <p className="mt-2 text-sm">{investor.portfolio.join(", ")}</p> : null}
             <a className="hit mt-2 inline-flex min-h-11 items-center text-sm font-medium text-primary" href={investor.sourceUrl} target="_blank" rel="noreferrer">Website</a>
             <div className="mt-3 grid gap-3 md:grid-cols-2">
               <Reasons title="For" items={shown(match.reasonsFor)} />

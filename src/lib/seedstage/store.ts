@@ -479,7 +479,7 @@ export const useSeedstage = create<Store>()(
       },
     }),
     {
-      name: "seedstage.workspace.v10",
+      name: "seedstage.workspace.v11",
       skipHydration: true,
       storage: createJSONStorage(() => (typeof window === "undefined" ? memory : window.localStorage)),
       partialize: (state) => ({ workspace: state.workspace }) as Store,
