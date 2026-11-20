@@ -1,0 +1,12 @@
+<svg width="176" height="176" viewBox="0 0 176 176" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="176" height="176" rx="88" fill="#FFF0B5"/>
+  <mask id="mask0_1_187" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="176" height="176">
+    <rect width="176" height="176" rx="88" fill="white"/>
+  </mask>
+  <g mask="url(#mask0_1_187)">
+    <rect x="176" y="176" width="176" height="44" transform="rotate(180 176 176)" fill="#FFA360"/>
+    <rect x="176" y="132" width="176" height="44" transform="rotate(180 176 132)" fill="#FFB660"/>
+    <rect x="176" y="88" width="176" height="44" transform="rotate(180 176 88)" fill="#FFCB7A"/>
+    <rect x="176" y="44" width="176" height="44" transform="rotate(180 176 44)" fill="#FFDA7A"/>
+  </g>
+</svg>

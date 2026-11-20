@@ -1,3 +1,5 @@
+import type { RoomFile, RoomGrant } from "./room.ts";
+
 export type Role = "founder" | "finance" | "adviser" | "board" | "admin";
 
 export type Provenance = {
@@ -127,13 +129,17 @@ export type Investor = {
   sectorExclusive: boolean;
   chequeMinMinor: number;
   chequeMaxMinor: number;
-  participation: "lead" | "follow" | "either";
+  participation: "lead" | "follow" | "either" | "unstated";
   themes: string[];
   portfolio: string[];
   activityDate: string | null;
   source: string;
+  sourceUrl: string;
   sourceDate: string;
-  synthetic: true;
+  excerpt: string;
+  note: string;
+  logo: string;
+  synthetic: boolean;
   confirmed: false;
   currency: string;
 };
@@ -245,6 +251,8 @@ export type Workspace = {
   approvals: Approval[];
   actions: ExternalAction[];
   diligence: DiligenceItem[];
+  roomFiles: RoomFile[];
+  roomGrants: RoomGrant[];
   audit: AuditEvent[];
   lastReviewedAt: string | null;
   asOf: string;

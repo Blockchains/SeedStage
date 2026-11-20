@@ -18,8 +18,11 @@ import { Route as InvestorsRouteImport } from './routes/investors'
 import { Route as MaterialsRouteImport } from './routes/materials'
 import { Route as PipelineRouteImport } from './routes/pipeline'
 import { Route as PlanRouteImport } from './routes/plan'
+import { Route as RoomRouteImport } from './routes/room'
 import { Route as RoundRouteImport } from './routes/round'
 import { Route as SettingsRouteImport } from './routes/settings'
+import { Route as StartupsRouteImport } from './routes/startups'
+import { Route as StartupsIdRouteImport } from './routes/startups.$id'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -66,6 +69,11 @@ const PlanRoute = PlanRouteImport.update({
   path: '/plan',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RoomRoute = RoomRouteImport.update({
+  id: '/room',
+  path: '/room',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RoundRoute = RoundRouteImport.update({
   id: '/round',
   path: '/round',
@@ -75,6 +83,16 @@ const SettingsRoute = SettingsRouteImport.update({
   id: '/settings',
   path: '/settings',
   getParentRoute: () => rootRouteImport,
+} as any)
+const StartupsRoute = StartupsRouteImport.update({
+  id: '/startups',
+  path: '/startups',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StartupsIdRoute = StartupsIdRouteImport.update({
+  id: '/$id',
+  path: '/$id',
+  getParentRoute: () => StartupsRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
@@ -87,8 +105,11 @@ export interface FileRoutesByFullPath {
   '/materials': typeof MaterialsRoute
   '/pipeline': typeof PipelineRoute
   '/plan': typeof PlanRoute
+  '/room': typeof RoomRoute
   '/round': typeof RoundRoute
   '/settings': typeof SettingsRoute
+  '/startups': typeof StartupsRouteWithChildren
+  '/startups/$id': typeof StartupsIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -100,8 +121,11 @@ export interface FileRoutesByTo {
   '/materials': typeof MaterialsRoute
   '/pipeline': typeof PipelineRoute
   '/plan': typeof PlanRoute
+  '/room': typeof RoomRoute
   '/round': typeof RoundRoute
   '/settings': typeof SettingsRoute
+  '/startups': typeof StartupsRouteWithChildren
+  '/startups/$id': typeof StartupsIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -114,8 +138,11 @@ export interface FileRoutesById {
   '/materials': typeof MaterialsRoute
   '/pipeline': typeof PipelineRoute
   '/plan': typeof PlanRoute
+  '/room': typeof RoomRoute
   '/round': typeof RoundRoute
   '/settings': typeof SettingsRoute
+  '/startups': typeof StartupsRouteWithChildren
+  '/startups/$id': typeof StartupsIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -129,8 +156,11 @@ export interface FileRouteTypes {
     | '/materials'
     | '/pipeline'
     | '/plan'
+    | '/room'
     | '/round'
     | '/settings'
+    | '/startups'
+    | '/startups/$id'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -142,8 +172,11 @@ export interface FileRouteTypes {
     | '/materials'
     | '/pipeline'
     | '/plan'
+    | '/room'
     | '/round'
     | '/settings'
+    | '/startups'
+    | '/startups/$id'
   id:
     | '__root__'
     | '/'
@@ -155,8 +188,11 @@ export interface FileRouteTypes {
     | '/materials'
     | '/pipeline'
     | '/plan'
+    | '/room'
     | '/round'
     | '/settings'
+    | '/startups'
+    | '/startups/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -169,8 +205,10 @@ export interface RootRouteChildren {
   MaterialsRoute: typeof MaterialsRoute
   PipelineRoute: typeof PipelineRoute
   PlanRoute: typeof PlanRoute
+  RoomRoute: typeof RoomRoute
   RoundRoute: typeof RoundRoute
   SettingsRoute: typeof SettingsRoute
+  StartupsRoute: typeof StartupsRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -238,6 +276,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PlanRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/room': {
+      id: '/room'
+      path: '/room'
+      fullPath: '/room'
+      preLoaderRoute: typeof RoomRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/round': {
       id: '/round'
       path: '/round'
@@ -252,8 +297,34 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SettingsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/startups': {
+      id: '/startups'
+      path: '/startups'
+      fullPath: '/startups'
+      preLoaderRoute: typeof StartupsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/startups/$id': {
+      id: '/startups/$id'
+      path: '/$id'
+      fullPath: '/startups/$id'
+      preLoaderRoute: typeof StartupsIdRouteImport
+      parentRoute: typeof StartupsRoute
+    }
   }
 }
+
+interface StartupsRouteChildren {
+  StartupsIdRoute: typeof StartupsIdRoute
+}
+
+const StartupsRouteChildren: StartupsRouteChildren = {
+  StartupsIdRoute: StartupsIdRoute,
+}
+
+const StartupsRouteWithChildren = StartupsRoute._addFileChildren(
+  StartupsRouteChildren,
+)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
@@ -265,8 +336,10 @@ const rootRouteChildren: RootRouteChildren = {
   MaterialsRoute: MaterialsRoute,
   PipelineRoute: PipelineRoute,
   PlanRoute: PlanRoute,
+  RoomRoute: RoomRoute,
   RoundRoute: RoundRoute,
   SettingsRoute: SettingsRoute,
+  StartupsRoute: StartupsRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

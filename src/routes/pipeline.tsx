@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Frame } from "@/components/seedstage/shell";
-import { GhostButton, Notice, Panel, Pill } from "@/components/seedstage/bits";
+import { FirmLogo, GhostButton, Notice, Panel, Pill } from "@/components/seedstage/bits";
 import { can } from "@/lib/seedstage/permissions";
 import { useSeedstage } from "@/lib/seedstage/store";
 import type { PipelineStage } from "@/lib/seedstage/types";
@@ -34,8 +34,18 @@ function PipelinePage() {
           const investor = workspace.investors.find((item) => item.id === opportunity.investorId);
           const activity = workspace.activities.filter((item) => item.opportunityId === opportunity.id).slice(0, 4);
           return (
-            <Panel key={opportunity.id} title={investor?.firm ?? "Removed firm"} aside={<Pill>{STAGES.find((stage) => stage.id === opportunity.stage)?.label}</Pill>}>
-              <p className="text-sm text-muted">Owner {opportunity.owner}. Next: {opportunity.nextAction}</p>
+            <Panel
+              key={opportunity.id}
+              title={
+                <span className="flex items-center gap-2">
+                  <FirmLogo src={investor?.logo ?? ""} name={investor?.firm ?? "Firm"} />
+                  {investor?.firm ?? "Removed firm"}
+                </span>
+              }
+              aside={<Pill>{STAGES.find((stage) => stage.id === opportunity.stage)?.label}</Pill>}
+            >
+              {investor?.excerpt ? <p className="text-sm leading-relaxed">{investor.excerpt}</p> : null}
+              <p className="mt-2 text-sm text-muted">Owner {opportunity.owner}. Next: {opportunity.nextAction}</p>
               <p className="mt-1 text-sm text-muted">Introduction: {opportunity.introSource}. Confirmed by a person on {opportunity.updatedAt.slice(0, 10)}.</p>
               {opportunity.suggestion ? <p className="mt-2 text-sm text-primary">Suggestion waiting: {opportunity.suggestion}. The confirmed stage was not overwritten.</p> : null}
               <label className="mt-4 flex flex-col gap-1 text-sm">

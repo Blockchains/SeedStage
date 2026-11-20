@@ -59,6 +59,17 @@ test("a fitting lead with fresh activity is priority and the aid is labelled", (
   assert.ok(match.unknowns.some((item) => /capital/i.test(item)));
 });
 
+test("a missing cheque and broad stage language stay usable", () => {
+  const cheque = assessInvestor(investor({ chequeMinMinor: 0, chequeMaxMinor: 0 }), profile);
+  assert.equal(cheque.category, "priority");
+  assert.ok(cheque.unknowns.some((item) => /not stated/i.test(item)));
+  const early = assessInvestor(investor({ stages: ["early-stage"], activityDate: null }), profile);
+  assert.equal(early.category, "possible");
+  assert.ok(early.reasonsFor.some((item) => /covering seed/i.test(item)));
+  const pub = assessInvestor(investor({ synthetic: false }), profile);
+  assert.ok(pub.unknowns.some((item) => /public page/i.test(item)));
+});
+
 test("follow-only and stale activity stay possible rather than priority", () => {
   const follow = assessInvestor(investor({ participation: "follow" }), profile);
   assert.equal(follow.category, "possible");

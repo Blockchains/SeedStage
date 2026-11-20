@@ -28,7 +28,7 @@ export function fundingBrief(workspace: Workspace): string {
   return [
     `# Funding brief — ${name}`,
     "",
-    workspace.demo ? "Demonstration workspace. Names, documents and investors are synthetic." : "Founder-entered workspace.",
+    workspace.demo ? "Demonstration company. Investor rows are copies of public pages, not a live directory." : "Founder-entered workspace.",
     "",
     "## What is accepted",
     ...linesFor(accepted(workspace.claims)),
@@ -70,7 +70,9 @@ export function outreachDraft(workspace: Workspace, investor: Investor): { subje
       "",
       facts || "No claims have been accepted yet, so this draft does not state traction.",
       "",
-      `${investor.firm} is marked synthetic and unconfirmed. Please replace the recipient before any approval.`,
+      investor.synthetic
+        ? `${investor.firm} is a labelled fixture. Replace the recipient before any approval.`
+        : `${investor.firm} is a public-page extract. No email is on file. Do not treat this as an introduction.`,
       "",
       "Nothing in this draft is permission to send it.",
     ].join("\n"),

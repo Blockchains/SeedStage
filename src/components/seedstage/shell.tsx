@@ -10,25 +10,30 @@ import {
   Search,
   Settings,
   ShieldCheck,
-  SquareChartGantt,
+  FolderLock,
+  House,
+  Rocket,
   WalletCards,
   X,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { ROLE_LABEL } from "@/lib/seedstage/permissions";
+import { Mark } from "@/components/seedstage/mark";
 import { useSeedstage } from "@/lib/seedstage/store";
 import { cn } from "@/lib/utils";
 
 const NAV = [
-  { to: "/", label: "Review", icon: SquareChartGantt },
+  { to: "/", label: "Home", icon: House },
   { to: "/company", label: "Company", icon: Building2 },
   { to: "/evidence", label: "Evidence", icon: Files },
   { to: "/plan", label: "Funding plan", icon: WalletCards },
   { to: "/round", label: "Round", icon: Scale },
   { to: "/investors", label: "Investors", icon: Search },
+  { to: "/startups", label: "Startups", icon: Rocket },
   { to: "/pipeline", label: "Pipeline", icon: ClipboardCheck },
   { to: "/materials", label: "Materials", icon: FileText },
   { to: "/diligence", label: "Diligence", icon: ListChecks },
+  { to: "/room", label: "Data room", icon: FolderLock },
   { to: "/approvals", label: "Approvals", icon: ShieldCheck },
   { to: "/settings", label: "Settings", icon: Settings },
 ] as const;
@@ -74,11 +79,6 @@ export function Frame({ title, lede, children }: { title: string; lede?: string;
               </div>
               <p className="ml-auto truncate text-sm text-muted">{ROLE_LABEL[workspace.role]}</p>
             </div>
-            {workspace.demo ? (
-              <p className="border-t border-border px-4 py-2 text-sm text-muted md:px-8">
-                Synthetic demonstration. Northline is not a real company. Investor records are not verified. This is not a financial promotion.
-              </p>
-            ) : null}
           </header>
           {open ? (
             <nav className="grid grid-cols-2 gap-2 border-b border-border bg-surface px-4 py-3 md:hidden">
@@ -102,9 +102,9 @@ export function Frame({ title, lede, children }: { title: string; lede?: string;
 
 function Brand({ compact = false }: { compact?: boolean }) {
   return (
-    <Link to="/" className={cn("flex items-baseline gap-1 px-4 py-4", compact && "px-0 py-0")}>
+    <Link to="/" className={cn("flex items-center gap-2 px-4 py-4", compact && "px-0 py-0")}>
+      <Mark className="size-7 shrink-0 text-fg" />
       <span className="display text-2xl leading-none tracking-tight">SeedStage</span>
-      <span className="text-sm text-primary">.si</span>
     </Link>
   );
 }

@@ -13,13 +13,13 @@ export type Investor = {
   sectorExclusive: boolean;
   chequeMinMinor: number;
   chequeMaxMinor: number;
-  participation: "lead" | "follow" | "either";
+  participation: "lead" | "follow" | "either" | "unstated";
   themes: string[];
   portfolio: string[];
   activityDate: string | null;
   source: string;
   sourceDate: string;
-  synthetic: true;
+  synthetic: boolean;
   confirmed: false;
   currency: string;
 };
@@ -49,6 +49,15 @@ export type MatchAssessment = {
 const DAY = 86_400_000;
 const FRESH_DAYS = 540;
 
+function stageCovers(stated: string[], wanted: string): "exact" | "broad" | null {
+  const target = wanted.toLowerCase();
+  const list = stated.map((item) => item.toLowerCase());
+  if (list.includes(target)) return "exact";
+  const broad = ["early-stage", "early stage", "early risers", "no stage is too early"];
+  if (target === "seed" && list.some((item) => broad.includes(item))) return "broad";
+  return null;
+}
+
 function daysBetween(asOf: string, earlier: string): number | null {
   const a = Date.parse(asOf);
   const b = Date.parse(earlier);
@@ -67,8 +76,9 @@ export function assessInvestor(investor: Investor, profile: MatchProfile): Match
   const reasonsAgainst: string[] = [];
   const unknowns: string[] = [];
 
-  if (!investor.synthetic) unknowns.push("Record is not flagged synthetic, but this build has no licensed feed.");
-  unknowns.push("Available capital is unknown. A mandate card is not deployable capital.");
+  if (investor.synthetic) unknowns.push("This record is a labelled fixture, not a firm.");
+  else unknowns.push("Public page extract. Not confirmed with the firm. Not a licensed database.");
+  unknowns.push("Available capital is unknown. A website is not deployable capital.");
   unknowns.push("Contact route is unknown. No email address is inferred.");
 
   const geoExcluded = profile.geos.some((geo) =>
@@ -80,9 +90,11 @@ export function assessInvestor(investor: Investor, profile: MatchProfile): Match
   } else if (investor.geos.length === 0) unknowns.push("Geography mandate is blank.");
   else reasonsFor.push("Stated geography covers the company.");
 
-  if (!investor.stages.map((s) => s.toLowerCase()).includes(profile.stage.toLowerCase())) {
+  const stageHit = stageCovers(investor.stages, profile.stage);
+  if (!stageHit) {
     disqualifiers.push(`Stated stages (${investor.stages.join(", ") || "none"}) do not include ${profile.stage}.`);
-  } else reasonsFor.push(`Stage ${profile.stage} is inside the stated mandate.`);
+  } else if (stageHit === "exact") reasonsFor.push(`Stage ${profile.stage} is inside the stated mandate.`);
+  else reasonsFor.push(`Stated stage language (${investor.stages.join(", ")}) is treated as covering ${profile.stage}.`);
 
   const sectorExcluded = profile.sectors.some((sector) =>
     investor.sectorExclusions.some((ex) => sector.toLowerCase().includes(ex.toLowerCase()) || ex.toLowerCase().includes(sector.toLowerCase())),
@@ -94,7 +106,9 @@ export function assessInvestor(investor: Investor, profile: MatchProfile): Match
   else if (investor.sectors.length === 0) reasonsFor.push("No sector restriction is stated.");
   else reasonsAgainst.push("No direct sector overlap. Not treated as a hard exclusion.");
 
-  if (investor.currency !== profile.currency) {
+  if (investor.chequeMaxMinor <= 0) {
+    unknowns.push("Cheque range is not stated on the cited page.");
+  } else if (investor.currency !== profile.currency) {
     unknowns.push(`Cheque currency is ${investor.currency}. No conversion into ${profile.currency} is applied, so the range is not tested.`);
     reasonsAgainst.push("Cheque fit is unknown until both amounts share a currency.");
   } else if (investor.chequeMinMinor > profile.raiseMinor) {
@@ -107,7 +121,7 @@ export function assessInvestor(investor: Investor, profile: MatchProfile): Match
     reasonsAgainst.push("Profile says a lead is required, and this firm is marked follow-only.");
   } else if (investor.participation === "lead" || investor.participation === "either") {
     reasonsFor.push("Participation includes leading.");
-  }
+  } else unknowns.push("Lead or follow is not stated on the cited page.");
 
   const themeHit = investor.themes.some((theme) =>
     profile.sectors.some((sector) => theme.toLowerCase().includes(sector.toLowerCase()) || sector.toLowerCase().includes(theme.toLowerCase())),

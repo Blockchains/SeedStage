@@ -3,6 +3,7 @@ import { createJSONStorage, persist } from "zustand/middleware";
 import { releaseAction, approvalHash, type ApprovalPayload } from "./approvals.ts";
 import { authorityFromUntrustedText, parseStructuredClaims, quoteIsInSource } from "./claims.ts";
 import { can } from "./permissions.ts";
+import { grantAllows, roomFile, type RoomCategory, type RoomShare } from "./room.ts";
 import { demoWorkspace, emptyWorkspace } from "./seed.ts";
 import type { Claim, Company, PipelineStage, PlanAssumptions, Role, RoundInput, Workspace } from "./types.ts";
 
@@ -45,6 +46,9 @@ type Store = {
   approveDraft: (draftId: string, recipient: string, sender: string) => string | null;
   release: (approvalId: string) => string;
   setDiligence: (itemId: string, status: Workspace["diligence"][number]["status"]) => void;
+  setRoomShare: (documentId: string, share: RoomShare) => void;
+  setRoomCategory: (documentId: string, category: RoomCategory) => void;
+  toggleRoomGrant: (investorId: string, documentId: string) => void;
   markReviewed: () => void;
   restoreDemo: () => void;
   deleteWorkspace: () => void;
@@ -128,6 +132,7 @@ export const useSeedstage = create<Store>()(
                 },
                 ...workspace.documents,
               ],
+              roomFiles: [{ documentId, category: "01 Company overview", share: "held" }, ...workspace.roomFiles],
             },
             "document_added",
             "Paste stored. Instructions inside it were not applied.",
@@ -400,6 +405,54 @@ export const useSeedstage = create<Store>()(
           },
         });
       },
+      setRoomShare: (documentId, share) => {
+        const workspace = get().workspace;
+        if (!can(workspace.role, "edit_diligence")) return;
+        const current = roomFile(workspace.roomFiles, documentId);
+        const roomFiles = [
+          { ...current, share },
+          ...workspace.roomFiles.filter((file) => file.documentId !== documentId),
+        ];
+        const roomGrants = share === "approved"
+          ? workspace.roomGrants
+          : workspace.roomGrants.map((grant) => ({ ...grant, documentIds: grant.documentIds.filter((id) => id !== documentId) }));
+        set({ workspace: audit({ ...workspace, roomFiles, roomGrants }, "room_share", `${documentId} marked ${share}.`) });
+      },
+      setRoomCategory: (documentId, category) => {
+        const workspace = get().workspace;
+        if (!can(workspace.role, "edit_diligence")) return;
+        const current = roomFile(workspace.roomFiles, documentId);
+        set({
+          workspace: audit(
+            {
+              ...workspace,
+              roomFiles: [{ ...current, category }, ...workspace.roomFiles.filter((file) => file.documentId !== documentId)],
+            },
+            "room_category",
+            `${documentId} filed under ${category}.`,
+          ),
+        });
+      },
+      toggleRoomGrant: (investorId, documentId) => {
+        const workspace = get().workspace;
+        if (!can(workspace.role, "approve")) return;
+        const share = roomFile(workspace.roomFiles, documentId).share;
+        if (!grantAllows(share)) return;
+        const existing = workspace.roomGrants.find((grant) => grant.investorId === investorId) ?? { investorId, documentIds: [] };
+        const on = existing.documentIds.includes(documentId);
+        const documentIds = on ? existing.documentIds.filter((id) => id !== documentId) : [...existing.documentIds, documentId];
+        const roomGrants = [
+          { investorId, documentIds },
+          ...workspace.roomGrants.filter((grant) => grant.investorId !== investorId),
+        ].filter((grant) => grant.documentIds.length > 0);
+        set({
+          workspace: audit(
+            { ...workspace, roomGrants },
+            "room_grant",
+            on ? `${documentId} removed from ${investorId}.` : `${documentId} granted to ${investorId}.`,
+          ),
+        });
+      },
       markReviewed: () => {
         const workspace = get().workspace;
         set({ workspace: audit({ ...workspace, lastReviewedAt: now() }, "review_marked", "Review bookmark moved to now.") });
@@ -426,7 +479,7 @@ export const useSeedstage = create<Store>()(
       },
     }),
     {
-      name: "seedstage.workspace.v1",
+      name: "seedstage.workspace.v9",
       skipHydration: true,
       storage: createJSONStorage(() => (typeof window === "undefined" ? memory : window.localStorage)),
       partialize: (state) => ({ workspace: state.workspace }) as Store,

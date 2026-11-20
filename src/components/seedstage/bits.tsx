@@ -2,8 +2,30 @@ import { poundsToMinor } from "@/lib/seedstage/money";
 import { can, type Action } from "@/lib/seedstage/permissions";
 import { useSeedstage } from "@/lib/seedstage/store";
 import { cn } from "@/lib/utils";
+import { useState } from "react";
 
-export function Panel({ title, children, aside }: { title?: string; children: React.ReactNode; aside?: React.ReactNode }) {
+export function FirmLogo({ src, name, className }: { src: string; name: string; className?: string }) {
+  const [failed, setFailed] = useState(!src);
+  if (failed) {
+    return (
+      <span className={cn("inline-flex size-8 shrink-0 items-center justify-center rounded-md border border-border bg-surface-2 text-xs font-medium", className)} aria-hidden>
+        {name.slice(0, 1)}
+      </span>
+    );
+  }
+  return (
+    <img
+      src={src}
+      alt=""
+      width={64}
+      height={64}
+      className={cn("size-8 shrink-0 rounded-md border border-border bg-surface object-contain", className)}
+      onError={() => setFailed(true)}
+    />
+  );
+}
+
+export function Panel({ title, children, aside }: { title?: React.ReactNode; children: React.ReactNode; aside?: React.ReactNode }) {
   return (
     <section className="rounded-md border border-border bg-surface p-4 md:p-5">
       {title ? (

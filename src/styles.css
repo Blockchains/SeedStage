@@ -1,19 +1,29 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Newsreader", ui-serif, Georgia, serif;
-  --color-bg: #101614;
-  --color-surface: #18211d;
-  --color-surface-2: #212b27;
-  --color-fg: #e8e2d6;
-  --color-muted: #9aa59c;
-  --color-primary: #c6a15b;
-  --color-primary-fg: #1c160c;
-  --color-border: #2e3b36;
-  --color-danger: #d07a68;
-  --color-ok: #8fbfa3;
-  --radius-md: 0.7rem;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-bg: #f7f8fa;
+  --color-surface: #ffffff;
+  --color-surface-2: #f7f8fa;
+  --color-fg: #142033;
+  --color-muted: #526176;
+  --color-primary: #2457d6;
+  --color-primary-fg: #ffffff;
+  --color-border: #dce2ea;
+  --color-danger: #9f2d2d;
+  --color-ok: #1f7a34;
+  --color-canvas: #142033;
+  --color-canvas-fg: #f7f8fa;
+  --color-canvas-muted: #a8b3c4;
+  --color-canvas-line: #243044;
+  --radius-md: 1.125rem;
+  --radius-xl: 1.75rem;
+  --text-hero: 3.25rem;
+  --text-hero--line-height: 1.02;
+  --tracking-display: -0.045em;
+  --tracking-kicker: 0.14em;
+  --shadow-lift: 0 24px 70px rgb(0 0 0 / 0.12);
 }
 
 @layer base {
@@ -24,20 +34,141 @@
   html {
     background: var(--color-bg);
     color: var(--color-fg);
+    color-scheme: light;
   }
   body {
     font-family: var(--font-sans);
     min-height: 100%;
+    -webkit-font-smoothing: antialiased;
   }
   h1,
   h2,
   .display {
     font-family: var(--font-display);
+    letter-spacing: var(--tracking-display);
   }
 }
 
 .num {
   font-variant-numeric: tabular-nums;
+}
+
+.hit:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.mark .orbit {
+  transform-box: view-box;
+  transform-origin: center;
+}
+
+.mark .orbit-a {
+  animation: spin 16s linear infinite;
+}
+
+.mark .orbit-b {
+  animation: spin 10s linear infinite reverse;
+}
+
+.mark .core {
+  fill: var(--color-primary);
+  transform-origin: 32px 32px;
+  animation: core 2.8s ease-in-out infinite;
+}
+
+.mark-live .orbit-a {
+  animation-duration: 3.2s;
+}
+
+.mark-live .orbit-b {
+  animation-duration: 2.1s;
+}
+
+.intro-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-canvas);
+  color: var(--color-canvas-fg);
+}
+
+.intro-glow {
+  position: absolute;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 999px;
+  background: radial-gradient(circle, color-mix(in srgb, var(--color-primary) 42%, transparent), transparent 68%);
+  animation: core 2.8s ease-in-out infinite;
+}
+
+.intro-leave {
+  animation: veil 0.7s ease 1s forwards;
+  pointer-events: none;
+}
+
+.rise {
+  animation: rise 0.55s ease both;
+}
+
+.bar {
+  transition: width 520ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.signal path {
+  fill: none;
+  stroke: var(--color-primary);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+  stroke-dasharray: 140;
+  stroke-dashoffset: 140;
+  animation: draw 1.5s ease 0.35s forwards;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes core {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes veil {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -48,3 +179,4 @@
     transition: none !important;
   }
 }
+

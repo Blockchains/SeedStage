@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Frame } from "@/components/seedstage/shell";
-import { GhostButton, Notice, Panel, PrimaryButton } from "@/components/seedstage/bits";
+import { FirmLogo, GhostButton, Notice, Panel, PrimaryButton } from "@/components/seedstage/bits";
 import { draftWithGrok } from "@/lib/seedstage/grok";
 import { fundingBrief, meetingBrief, outreachDraft } from "@/lib/seedstage/materials";
 import { can } from "@/lib/seedstage/permissions";
@@ -32,10 +32,13 @@ function MaterialsPage() {
         <Panel title="Prepare">
           <label className="flex flex-col gap-1 text-sm">
             <span className="text-muted">Investor, if the piece needs one</span>
-            <select className="min-h-11 rounded-md border border-border bg-bg px-3" value={investorId} onChange={(event) => setInvestorId(event.target.value)}>
+            <span className="flex items-center gap-2">
+              {investor ? <FirmLogo src={investor.logo} name={investor.firm} /> : null}
+              <select className="min-h-11 w-full rounded-md border border-border bg-bg px-3" value={investorId} onChange={(event) => setInvestorId(event.target.value)}>
               <option value="">None</option>
               {workspace.investors.map((item) => <option key={item.id} value={item.id}>{item.firm}</option>)}
             </select>
+            </span>
           </label>
           <div className="mt-4 flex flex-wrap gap-2">
             <GhostButton onClick={() => show("Funding brief", fundingBrief(workspace))}>Funding brief</GhostButton>

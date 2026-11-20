@@ -1,75 +1,136 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
-import { Frame } from "@/components/seedstage/shell";
-import { Notice, Panel, Pill } from "@/components/seedstage/bits";
-import { findContradictions } from "@/lib/seedstage/claims";
-import { formatMoney } from "@/lib/seedstage/money";
-import { projectPlan } from "@/lib/seedstage/cash";
-import { modelPricedRound } from "@/lib/seedstage/round";
-import { nextAction } from "@/lib/seedstage/review";
+import { useEffect, useState } from "react";
+import { HomePreview, type PreviewTab } from "@/components/seedstage/home-preview";
+import { FirmLogo } from "@/components/seedstage/bits";
+import { Mark } from "@/components/seedstage/mark";
+import { track } from "@/lib/seedstage/analytics";
+import { publicStartups } from "@/lib/seedstage/startups";
 import { useSeedstage } from "@/lib/seedstage/store";
 
-export const Route = createFileRoute("/")({ component: ReviewPage });
+export const Route = createFileRoute("/")({ component: HomePage });
 
-function ReviewPage() {
-  const workspace = useSeedstage((state) => state.workspace);
-  const markReviewed = useSeedstage((state) => state.markReviewed);
-  const action = nextAction(workspace);
-  const contradictions = findContradictions(workspace.claims);
-  const plan = projectPlan(workspace.plan);
-  const round = modelPricedRound(workspace.roundDraft);
-  const changes = workspace.audit.filter((event) => !workspace.lastReviewedAt || event.at > workspace.lastReviewedAt);
+const NAV = [
+  { to: "/startups", label: "Startups" },
+  { to: "/investors", label: "Investors" },
+  { to: "/round", label: "Round" },
+  { to: "/plan", label: "Plan" },
+  { to: "/pipeline", label: "Pipeline" },
+  { to: "/room", label: "Room" },
+] as const;
+
+function HomePage() {
+  const investors = useSeedstage((state) => state.workspace.investors);
+  const [tab, setTab] = useState<PreviewTab>("round");
+  const [entered, setEntered] = useState(false);
+  const [live, setLive] = useState(false);
+
+  useEffect(() => {
+    void useSeedstage.persist.rehydrate();
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) {
+      setEntered(true);
+      return;
+    }
+    const timer = window.setTimeout(() => setEntered(true), 1700);
+    return () => window.clearTimeout(timer);
+  }, []);
 
   return (
-    <Frame title="What to do next" lede="SeedStage keeps the funding case attached to evidence, calculations and an approval. It does not score your chance of raising.">
-      <div className="flex flex-col gap-4">
-        <Panel title={action.title} aside={<Pill tone="warn">Next</Pill>}>
-          <p className="text-sm leading-relaxed text-muted">{action.detail}</p>
-          <Link to={action.to} className="mt-4 inline-flex min-h-11 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-fg">
-            Open
+    <div className="min-h-screen bg-bg text-fg">
+      <header className="sticky top-0 z-30 border-b border-canvas-line bg-canvas text-canvas-fg">
+        <div className="mx-auto flex h-14 max-w-5xl items-center justify-between gap-3 px-4">
+          <Link to="/" className="hit flex items-center gap-2 text-sm font-semibold tracking-display">
+            <Mark className="size-8" live={live} />
+            SeedStage
           </Link>
-        </Panel>
-        <div className="grid gap-4 md:grid-cols-3">
-          <Panel title="Evidence">
-            <p className="num text-2xl">{contradictions.length}</p>
-            <p className="mt-1 text-sm text-muted">Open contradiction{contradictions.length === 1 ? "" : "s"}.</p>
-            <p className="mt-3 text-sm text-muted">{workspace.claims.filter((claim) => claim.status === "pending").length} claims waiting for a person.</p>
-          </Panel>
-          <Panel title="Cash">
-            {plan.ok ? (
-              <>
-                <p className="num text-2xl">{plan.runwayMonths === null ? "Inside horizon" : `${plan.runwayMonths} mo`}</p>
-                <p className="mt-1 text-sm text-muted">Months at or above the buffer. Not cash ÷ burn.</p>
-                <p className="num mt-3 text-sm">Low point {formatMoney(plan.minClosingMinor, workspace.plan.currency)}</p>
-              </>
-            ) : (
-              <Notice>{plan.reason}</Notice>
-            )}
-          </Panel>
-          <Panel title="Round">
-            {round.ok ? (
-              <>
-                <p className="num text-2xl">{formatMoney(round.input.investmentMinor, round.input.currency)}</p>
-                <p className="mt-1 text-sm text-muted">New money on a {round.input.mechanic === "pre-money-pool" ? "pre-money pool" : "post-money pool"} scenario.</p>
-                <p className="num mt-3 text-sm">Investor {round.investorBps / 100}%</p>
-              </>
-            ) : (
-              <Notice>{round.reason}</Notice>
-            )}
-          </Panel>
+          <Link to="/company" className="hit inline-flex min-h-11 items-center text-sm font-medium text-canvas-fg" onClick={() => track("sample_opened")}>
+            Workspace
+          </Link>
         </div>
-        <Panel title="Since the last review" aside={<button type="button" className="min-h-11 text-sm text-primary" onClick={markReviewed}>Mark reviewed</button>}>
-          {changes.length === 0 ? <p className="text-sm text-muted">Nothing new since the bookmark.</p> : (
-            <ul className="flex flex-col gap-3">
-              {changes.slice(0, 6).map((event) => (
-                <li key={event.id} className="text-sm">
-                  <span className="text-muted">{event.at.slice(0, 10)} · {event.actor}</span>
-                  <p>{event.detail}</p>
-                </li>
-              ))}
-            </ul>
-          )}
-        </Panel>
+        <nav className="mx-auto flex max-w-5xl gap-1 overflow-x-auto px-3 pb-2" aria-label="Primary">
+          {NAV.map((item) => (
+            <Link
+              key={item.to}
+              to={item.to}
+              className="hit inline-flex min-h-11 shrink-0 items-center rounded-full px-3 text-sm font-medium text-canvas-fg"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+      </header>
+
+      <main className="mx-auto min-w-0 max-w-5xl overflow-x-clip px-4 py-8">
+        <p className="text-xs font-medium tracking-kicker text-muted uppercase">Seed funding</p>
+        <h1 className="mt-3 max-w-xl text-4xl font-semibold tracking-display text-balance md:text-5xl">See your next funding move.</h1>
+        <p className="mt-4 max-w-lg text-base leading-relaxed text-muted">Price the round in the workspace. Open the lists when you want the companies or the firms.</p>
+
+        <div className="mt-6 grid gap-3 sm:grid-cols-2">
+          <Link to="/startups" className="hit flex min-h-24 flex-col justify-between rounded-md bg-primary px-4 py-4 text-primary-fg">
+            <span className="text-lg font-semibold tracking-display">Startups</span>
+            <span className="text-sm text-primary-fg/80">{publicStartups.length} companies</span>
+          </Link>
+          <Link to="/investors" className="hit flex min-h-24 flex-col justify-between rounded-md border border-border bg-surface px-4 py-4" onClick={() => track("sample_opened")}>
+            <span className="text-lg font-semibold tracking-display">Investors</span>
+            <span className="text-sm text-muted">{investors.length} firms</span>
+          </Link>
+        </div>
+
+        <section className="mt-10 grid items-start gap-8 lg:grid-cols-2">
+          <div>
+            <h2 className="text-2xl font-semibold tracking-display">Raising</h2>
+            <p className="mt-2 max-w-md text-sm leading-relaxed text-muted">Ownership, cash and the shortlist live in one company record. The lists above are separate.</p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <Link to="/round" className="hit inline-flex min-h-11 items-center rounded-full bg-canvas px-4 text-sm font-medium text-canvas-fg">Model a round</Link>
+              <Link to="/plan" className="hit inline-flex min-h-11 items-center rounded-full border border-border bg-surface px-4 text-sm font-medium">Funding plan</Link>
+              <Link to="/pipeline" className="hit inline-flex min-h-11 items-center px-2 text-sm font-medium text-primary">Pipeline</Link>
+            </div>
+            <div className="mt-5" onFocus={() => setLive(true)} onBlur={() => setLive(false)}>
+              <HomePreview tab={tab} onTab={setTab} onUseful={() => track("first_output")} onSave={() => track("save_intent")} onComplete={() => track("preview_completed")} />
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-8">
+            <LogoBlock title="Companies" href="/startups" count={publicStartups.length} rows={publicStartups.slice(0, 16).map((company) => ({ id: company.id, name: company.name, logo: company.logo, href: company.website, meta: company.stage, room: true }))} />
+            <LogoBlock title="Firms" href="/investors" count={investors.length} rows={investors.slice(0, 16).map((investor) => ({ id: investor.id, name: investor.firm, logo: investor.logo, href: investor.sourceUrl, meta: investor.geos[0] ?? "" }))} />
+          </div>
+        </section>
+      </main>
+
+      {entered ? null : (
+        <div className="intro-screen intro-leave" role="presentation">
+          <div className="intro-glow" />
+          <Mark className="relative size-28" live />
+          <p className="relative mt-6 text-3xl font-semibold tracking-display">SeedStage</p>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function LogoBlock({ title, href, count, rows }: { title: string; href: "/startups" | "/investors"; count: number; rows: { id: string; name: string; logo: string; href: string; meta: string; room?: boolean }[] }) {
+  return (
+    <section>
+      <div className="flex items-baseline justify-between gap-3">
+        <h2 className="text-2xl font-semibold tracking-display">{title}</h2>
+        <Link to={href} className="hit inline-flex min-h-11 items-center text-sm font-medium text-primary">All {count}</Link>
       </div>
-    </Frame>
+      <ul className="mt-3 grid grid-cols-2 gap-2">
+        {rows.map((row) => (
+          <li key={row.id} className="flex min-h-14 items-center gap-1 rounded-md border border-border bg-surface pr-1">
+            <a className="hit flex min-w-0 flex-1 items-center gap-2 px-2" href={row.href} target="_blank" rel="noreferrer">
+              <FirmLogo src={row.logo} name={row.name} />
+              <span className="min-w-0">
+                <span className="block truncate text-sm font-medium">{row.name}</span>
+                {row.meta ? <span className="block truncate text-xs text-muted">{row.meta}</span> : null}
+              </span>
+            </a>
+            {row.room ? (
+              <Link to="/startups/$id" params={{ id: row.id }} className="hit inline-flex min-h-11 shrink-0 items-center px-2 text-xs font-medium text-primary">Room</Link>
+            ) : null}
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }
