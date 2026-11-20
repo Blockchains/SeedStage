@@ -42,7 +42,7 @@ function InvestorRoomPage() {
         <div className="mx-auto max-w-5xl px-5 pt-8 pb-16">
           <FirmLogo src={investor.logo} name={investor.firm} className="size-20 rounded-2xl bg-white" />
           <h1 className="mt-6 text-4xl font-semibold tracking-display text-balance md:text-6xl">{investor.firm}</h1>
-          {investor.excerpt ? <p className="mt-4 max-w-xl text-base leading-relaxed text-canvas-muted md:text-lg">{investor.excerpt}</p> : null}
+          {investor.excerpt ? <p className="mt-4 max-w-xl text-base leading-relaxed text-canvas-muted md:text-lg">{investor.excerpt.split(/(?<=[.!?])\s+/)[0]}</p> : null}
           <div className="mt-6 flex flex-wrap gap-2">
             {[...investor.geos.slice(0, 3), ...investor.stages].filter(Boolean).map((item) => (
               <span key={item} className="rounded-full border border-canvas-line px-3 py-1 text-sm">{item}</span>

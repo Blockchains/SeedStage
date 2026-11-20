@@ -57,7 +57,7 @@ function StartupRoomPage() {
         <div className="mx-auto max-w-5xl px-5 pt-8 pb-16">
           <FirmLogo src={company.logo} name={company.name} className="size-20 rounded-2xl bg-white" />
           <h1 className="mt-6 text-4xl font-semibold tracking-display text-balance md:text-6xl">{company.name}</h1>
-          {company.summary ? <p className="mt-4 max-w-xl text-base leading-relaxed text-canvas-muted md:text-lg">{company.summary}</p> : null}
+          {company.summary ? <p className="mt-4 max-w-xl text-base leading-relaxed text-canvas-muted md:text-lg">{company.summary.split(/(?<=[.!?])\s+/)[0]}</p> : null}
           <div className="mt-6 flex flex-wrap gap-2">
             {[company.stage, company.round, company.funder].filter(Boolean).map((item) => (
               <span key={item} className="rounded-full border border-canvas-line px-3 py-1 text-sm">{item}</span>
