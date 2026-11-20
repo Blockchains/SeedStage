@@ -1,9 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { FileText } from "lucide-react";
 import { useState } from "react";
 import { Frame } from "@/components/seedstage/shell";
-import { FirmLogo, GhostButton, Notice, Panel, Pill } from "@/components/seedstage/bits";
+import { FirmLogo, GhostButton, Notice } from "@/components/seedstage/bits";
 import { can } from "@/lib/seedstage/permissions";
-import { ROOM_CATEGORIES, categoryReadiness, investorRoom, roomFile } from "@/lib/seedstage/room";
+import { ROOM_CATEGORIES, categoryReadiness, investorRoom, roomFile, type RoomCategory } from "@/lib/seedstage/room";
 import { useSeedstage } from "@/lib/seedstage/store";
 
 export const Route = createFileRoute("/room")({ component: RoomPage });
@@ -17,110 +18,168 @@ function RoomPage() {
   const firms = workspace.investors.filter((investor) => audience.includes(investor.id));
   const [investorId, setInvestorId] = useState(firms[0]?.id ?? "");
   const [asInvestor, setAsInvestor] = useState(false);
+  const [category, setCategory] = useState<RoomCategory | "all">("all");
+  const [documentId, setDocumentId] = useState(workspace.documents[0]?.id ?? "");
   const readiness = categoryReadiness(workspace);
   const room = investorRoom(workspace, investorId);
   const investor = firms.find((item) => item.id === investorId) ?? null;
   const canFile = can(workspace.role, "edit_diligence");
   const canGrant = can(workspace.role, "approve");
+  const visibleDocs = workspace.documents.filter((document) => category === "all" || roomFile(workspace.roomFiles, document.id).category === category);
+  const selected = visibleDocs.find((document) => document.id === documentId) ?? visibleDocs[0] ?? null;
+  const selectedFile = selected ? roomFile(workspace.roomFiles, selected.id) : null;
+  const granted = selected ? workspace.roomGrants.some((grant) => grant.investorId === investorId && grant.documentIds.includes(selected.id)) : false;
+  const company = workspace.company.tradingName.value ?? "Company";
 
   return (
-    <Frame title="Data room" lede="Approved documents and accepted claims only. A disagreement stays out. A missing file stays missing.">
-      <div className="flex flex-col gap-4">
-        <Panel title="Audience">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-            <label className="flex min-w-0 flex-1 items-center gap-2 text-sm">
-              {investor ? <FirmLogo src={investor.logo} name={investor.firm} /> : null}
-              <select className="min-h-11 w-full rounded-md border border-border bg-bg px-3" value={investorId} onChange={(event) => setInvestorId(event.target.value)}>
-                {firms.length === 0 ? <option value="">No firm in the pipeline</option> : null}
-                {firms.map((item) => <option key={item.id} value={item.id}>{item.firm}</option>)}
-              </select>
-            </label>
-            <GhostButton onClick={() => setAsInvestor((value) => !value)}>{asInvestor ? "Back to internal" : "View as this investor"}</GhostButton>
+    <Frame title="Data room">
+      <div className="overflow-hidden rounded-xl border border-border bg-surface">
+        <div className="flex flex-col gap-3 border-b border-border px-4 py-4 md:flex-row md:items-center">
+          <div className="min-w-0 flex-1">
+            <p className="text-xs font-medium tracking-kicker text-muted uppercase">Data room</p>
+            <p className="truncate text-xl font-semibold tracking-display">{company}</p>
           </div>
-          <p className="mt-3 text-sm text-muted">This view is in this browser. It does not create a separate login.</p>
-        </Panel>
+          <label className="flex min-w-0 items-center gap-2 text-sm md:w-72">
+            {investor ? <FirmLogo src={investor.logo} name={investor.firm} /> : null}
+            <select className="min-h-11 w-full rounded-md border border-border bg-bg px-3" value={investorId} onChange={(event) => setInvestorId(event.target.value)} aria-label="Investor">
+              {firms.length === 0 ? <option value="">No firm in the pipeline</option> : null}
+              {firms.map((item) => <option key={item.id} value={item.id}>{item.firm}</option>)}
+            </select>
+          </label>
+          <GhostButton onClick={() => setAsInvestor((value) => !value)}>{asInvestor ? "Internal index" : "Investor view"}</GhostButton>
+        </div>
 
         {asInvestor ? (
           <InvestorPreview investorName={investor?.firm ?? "This investor"} documents={room.documents} claims={room.claims} questions={room.questions} />
         ) : (
-          <>
-            <Panel title="Readiness">
-              <ul className="flex flex-col gap-2">
+          <div className="grid lg:min-h-[36rem] lg:grid-cols-[240px_minmax(0,1fr)]">
+            <nav className="border-b border-border bg-surface-2 lg:border-r lg:border-b-0" aria-label="Categories">
+              <ul className="flex gap-1 overflow-x-auto p-2 lg:flex-col">
+                <li>
+                  <IndexButton active={category === "all"} label="All files" meta={String(workspace.documents.length)} onClick={() => setCategory("all")} />
+                </li>
                 {readiness.map((item) => (
-                  <li key={item.category} className="flex items-start justify-between gap-3 text-sm">
-                    <span>
-                      <span className="block font-medium">{item.category}</span>
-                      <span className="text-muted">{item.detail}</span>
-                    </span>
-                    <Pill tone={item.status === "approved" ? "ok" : item.status === "missing" || item.status === "needs_review" ? "warn" : "neutral"}>{item.status.replaceAll("_", " ")}</Pill>
+                  <li key={item.category}>
+                    <IndexButton
+                      active={category === item.category}
+                      label={item.category.replace(/^\d+\s/, "")}
+                      meta={item.status === "missing" ? "—" : item.status.replaceAll("_", " ")}
+                      onClick={() => setCategory(item.category)}
+                    />
                   </li>
                 ))}
               </ul>
-            </Panel>
-            <div className="flex flex-col gap-3">
-              {workspace.documents.map((document) => {
-                const file = roomFile(workspace.roomFiles, document.id);
-                const granted = workspace.roomGrants.some((grant) => grant.investorId === investorId && grant.documentIds.includes(document.id));
-                return (
-                  <Panel key={document.id} title={document.name} aside={<Pill>{file.share}</Pill>}>
-                    <div className="grid gap-3 md:grid-cols-2">
-                      <label className="flex flex-col gap-1 text-sm">
-                        <span className="text-muted">Category</span>
-                        <select className="min-h-11 rounded-md border border-border bg-bg px-3" disabled={!canFile} value={file.category} onChange={(event) => setRoomCategory(document.id, event.target.value as typeof file.category)}>
-                          {ROOM_CATEGORIES.map((category) => <option key={category} value={category}>{category}</option>)}
-                        </select>
-                      </label>
-                      <div className="flex flex-wrap items-end gap-2">
-                        <GhostButton disabled={!canFile} onClick={() => setRoomShare(document.id, "held")}>Hold</GhostButton>
-                        <GhostButton disabled={!canFile} onClick={() => setRoomShare(document.id, "approved")}>Approve</GhostButton>
-                        <GhostButton disabled={!canFile} onClick={() => setRoomShare(document.id, "restricted")}>Restrict</GhostButton>
-                        <GhostButton disabled={!canGrant || file.share !== "approved" || !investorId} onClick={() => toggleRoomGrant(investorId, document.id)}>
-                          {granted ? "Remove grant" : "Grant to this investor"}
-                        </GhostButton>
-                      </div>
+            </nav>
+            <div className="grid min-w-0 md:grid-cols-[220px_minmax(0,1fr)]">
+              <ul className="border-b border-border md:border-r md:border-b-0">
+                {visibleDocs.map((document) => {
+                  const file = roomFile(workspace.roomFiles, document.id);
+                  const active = document.id === selected?.id;
+                  return (
+                    <li key={document.id}>
+                      <button type="button" className={`hit flex min-h-14 w-full items-center gap-2 px-3 text-left text-sm ${active ? "bg-canvas text-canvas-fg" : ""}`} onClick={() => setDocumentId(document.id)}>
+                        <FileText className="size-4 shrink-0" aria-hidden />
+                        <span className="min-w-0">
+                          <span className="block truncate">{document.name}</span>
+                          <span className={`block text-xs ${active ? "text-canvas-muted" : "text-muted"}`}>{file.share}</span>
+                        </span>
+                      </button>
+                    </li>
+                  );
+                })}
+                {visibleDocs.length === 0 ? <li className="px-3 py-6 text-sm text-muted">No file in this section.</li> : null}
+              </ul>
+              <article className="min-w-0 px-4 py-5 md:px-6">
+                {selected && selectedFile ? (
+                  <>
+                    <h2 className="text-lg font-semibold tracking-display">{selected.name}</h2>
+                    <p className="mt-1 text-xs text-muted">{selectedFile.category}</p>
+                    <pre className="mt-4 max-h-80 overflow-auto whitespace-pre-wrap font-sans text-sm leading-relaxed text-muted">{selected.text.slice(0, 2000)}</pre>
+                    <label className="mt-4 flex flex-col gap-1 text-sm">
+                      <span className="text-muted">Category</span>
+                      <select className="min-h-11 rounded-md border border-border bg-bg px-3" disabled={!canFile} value={selectedFile.category} onChange={(event) => setRoomCategory(selected.id, event.target.value as RoomCategory)}>
+                        {ROOM_CATEGORIES.map((item) => <option key={item} value={item}>{item}</option>)}
+                      </select>
+                    </label>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      <GhostButton disabled={!canFile} onClick={() => setRoomShare(selected.id, "held")}>Hold</GhostButton>
+                      <GhostButton disabled={!canFile} onClick={() => setRoomShare(selected.id, "approved")}>Approve</GhostButton>
+                      <GhostButton disabled={!canFile} onClick={() => setRoomShare(selected.id, "restricted")}>Restrict</GhostButton>
+                      <GhostButton disabled={!canGrant || selectedFile.share !== "approved" || !investorId} onClick={() => toggleRoomGrant(investorId, selected.id)}>
+                        {granted ? "Remove grant" : "Grant"}
+                      </GhostButton>
                     </div>
-                  </Panel>
-                );
-              })}
-              {workspace.documents.length === 0 ? <Notice>No documents. Add one under Evidence.</Notice> : null}
+                  </>
+                ) : (
+                  <Notice>No documents. Add one under Evidence.</Notice>
+                )}
+              </article>
             </div>
-          </>
+          </div>
         )}
       </div>
     </Frame>
   );
 }
 
-function InvestorPreview({ investorName, documents, claims, questions }: { investorName: string; documents: { id: string; name: string; text: string }[]; claims: { id: string; text: string; evidenceQuote: string }[]; questions: { id: string; text: string }[] }) {
+function IndexButton({ active, label, meta, onClick }: { active: boolean; label: string; meta: string; onClick: () => void }) {
   return (
-    <div className="flex flex-col gap-4">
-      <Panel title={`Room for ${investorName}`}>
-        {documents.length === 0 ? <p className="text-sm text-muted">No approved document has been granted.</p> : null}
-        <ul className="mt-2 flex flex-col gap-3">
+    <button type="button" className={`hit flex min-h-11 w-full items-center gap-2 rounded-md px-3 text-left text-sm ${active ? "bg-canvas text-canvas-fg" : ""}`} onClick={onClick}>
+      <span className="truncate">{label}</span>
+      <span className={`ml-auto shrink-0 text-xs ${active ? "text-canvas-muted" : "text-muted"}`}>{meta}</span>
+    </button>
+  );
+}
+
+function InvestorPreview({ investorName, documents, claims, questions }: { investorName: string; documents: { id: string; name: string; text: string }[]; claims: { id: string; text: string; evidenceQuote: string }[]; questions: { id: string; text: string }[] }) {
+  const [documentId, setDocumentId] = useState(documents[0]?.id ?? "");
+  const selected = documents.find((document) => document.id === documentId) ?? documents[0] ?? null;
+  return (
+    <div className="grid lg:min-h-[32rem] lg:grid-cols-[240px_minmax(0,1fr)]">
+      <nav className="border-b border-border bg-surface-2 lg:border-r lg:border-b-0" aria-label={`${investorName} room`}>
+        <p className="px-3 pt-3 text-xs font-medium tracking-kicker text-muted uppercase">{investorName}</p>
+        <ul className="p-2">
           {documents.map((document) => (
             <li key={document.id}>
-              <p className="text-sm font-medium">{document.name}</p>
-              <p className="mt-1 whitespace-pre-wrap text-sm text-muted">{document.text.slice(0, 500)}</p>
+              <button type="button" className={`hit flex min-h-11 w-full items-center gap-2 rounded-md px-3 text-left text-sm ${document.id === selected?.id ? "bg-canvas text-canvas-fg" : ""}`} onClick={() => setDocumentId(document.id)}>
+                <FileText className="size-4 shrink-0" aria-hidden />
+                <span className="truncate">{document.name}</span>
+              </button>
             </li>
           ))}
+          {documents.length === 0 ? <li className="px-3 py-4 text-sm text-muted">No granted file.</li> : null}
         </ul>
-      </Panel>
-      <Panel title="Accepted claims">
-        {claims.length === 0 ? <p className="text-sm text-muted">No accepted claim is both sourced and free of a disagreement.</p> : null}
-        <ul className="flex flex-col gap-3">
-          {claims.map((claim) => (
-            <li key={claim.id} className="text-sm">
-              <p>{claim.text}</p>
-              <p className="mt-1 text-muted">“{claim.evidenceQuote}”</p>
-            </li>
-          ))}
-        </ul>
-      </Panel>
-      <Panel title="Open">
-        <ul className="flex flex-col gap-2 text-sm">
-          {questions.map((item) => <li key={item.id}>{item.text}</li>)}
-        </ul>
-      </Panel>
+      </nav>
+      <div className="grid min-w-0 gap-0 md:grid-cols-[minmax(0,1fr)_240px]">
+        <article className="min-w-0 px-4 py-5 md:px-6">
+          {selected ? (
+            <>
+              <h2 className="text-lg font-semibold tracking-display">{selected.name}</h2>
+              <pre className="mt-4 max-h-96 overflow-auto whitespace-pre-wrap font-sans text-sm leading-relaxed">{selected.text.slice(0, 2000)}</pre>
+            </>
+          ) : (
+            <p className="text-sm text-muted">Nothing has been granted to {investorName}.</p>
+          )}
+          {claims.length > 0 ? (
+            <ul className="mt-6 flex flex-col gap-3 border-t border-border pt-4">
+              {claims.map((claim) => (
+                <li key={claim.id} className="text-sm">
+                  <p>{claim.text}</p>
+                  <p className="mt-1 text-muted">“{claim.evidenceQuote}”</p>
+                </li>
+              ))}
+            </ul>
+          ) : null}
+        </article>
+        <aside className="border-t border-border bg-surface-2 px-4 py-5 md:border-t-0 md:border-l">
+          <p className="text-xs font-medium tracking-kicker text-muted uppercase">Open</p>
+          <ul className="mt-3 flex flex-col gap-3">
+            {questions.slice(0, 12).map((item) => (
+              <li key={item.id} className="text-sm text-muted">{item.text}</li>
+            ))}
+          </ul>
+        </aside>
+      </div>
     </div>
   );
 }
