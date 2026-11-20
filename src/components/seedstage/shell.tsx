@@ -13,6 +13,7 @@ import {
   FolderLock,
   House,
   Rocket,
+  ChartColumn,
   WalletCards,
   X,
 } from "lucide-react";
@@ -28,6 +29,7 @@ const NAV = [
   { to: "/evidence", label: "Evidence", icon: Files },
   { to: "/plan", label: "Funding plan", icon: WalletCards },
   { to: "/round", label: "Round", icon: Scale },
+  { to: "/metrics", label: "Metrics", icon: ChartColumn },
   { to: "/investors", label: "Investors", icon: Search },
   { to: "/startups", label: "Startups", icon: Rocket },
   { to: "/pipeline", label: "Pipeline", icon: ClipboardCheck },

@@ -13,6 +13,7 @@ const NAV = [
   { to: "/startups", label: "Startups" },
   { to: "/investors", label: "Investors" },
   { to: "/round", label: "Round" },
+  { to: "/metrics", label: "Metrics" },
   { to: "/plan", label: "Plan" },
   { to: "/pipeline", label: "Pipeline" },
   { to: "/room", label: "Room" },
