@@ -3,7 +3,7 @@ import { FileText } from "lucide-react";
 import { useState } from "react";
 import { AskBox } from "@/components/seedstage/ask-box";
 import { DocumentRoom } from "@/components/seedstage/document-room";
-import { STARTUP_FOLDERS, startupDocuments } from "@/lib/seedstage/public-docs";
+import { STARTUP_FOLDERS, investorDocuments, investorFolders, startupDocuments } from "@/lib/seedstage/public-docs";
 import { publicStartups } from "@/lib/seedstage/startups";
 import { canView, documentObject, type Tuple } from "@/lib/seedstage/authz";
 import { FirmLogo, GhostButton, Notice } from "@/components/seedstage/bits";
@@ -26,8 +26,10 @@ function RoomPage() {
   const [category, setCategory] = useState<RoomCategory | "all">("all");
   const [documentId, setDocumentId] = useState(workspace.documents[0]?.id ?? "");
   const richest = publicStartups.reduce((best, company) => ((company.files?.length ?? 0) > (best.files?.length ?? 0) ? company : best), publicStartups[0]);
-  const [libraryId, setLibraryId] = useState(richest?.id ?? "");
-  const library = publicStartups.find((company) => company.id === libraryId) ?? null;
+  const [libraryId, setLibraryId] = useState(richest ? `c:${richest.id}` : "");
+  const library = publicStartups.find((company) => libraryId === `c:${company.id}`) ?? null;
+  const libraryFirm = workspace.investors.find((item) => libraryId === `i:${item.id}`) ?? null;
+  const backer = library ? workspace.investors.find((item) => item.firm.toLowerCase() === library.funder.trim().toLowerCase()) ?? null : null;
   const readiness = categoryReadiness(workspace);
   const room = investorRoom(workspace, investorId);
   const investor = firms.find((item) => item.id === investorId) ?? null;
@@ -53,15 +55,34 @@ function RoomPage() {
   return (
     <Frame title="Data room">
       <label className="mb-4 flex min-w-0 flex-col gap-1 text-sm md:max-w-sm">
-        <span className="text-muted">Company</span>
-        <select className="min-h-11 rounded-md border border-border bg-surface px-3" value={libraryId} onChange={(event) => setLibraryId(event.target.value)} aria-label="Company">
+        <span className="text-muted">{publicStartups.length} companies · {workspace.investors.length} firms</span>
+        <select className="min-h-11 rounded-md border border-border bg-surface px-3" value={libraryId} onChange={(event) => setLibraryId(event.target.value)} aria-label="Company or firm">
           <option value="">Workspace</option>
-          {publicStartups.map((company) => (
-            <option key={company.id} value={company.id}>{company.name}</option>
-          ))}
+          <optgroup label="Companies">
+            {publicStartups.map((company) => (
+              <option key={`c:${company.id}`} value={`c:${company.id}`}>{company.name}</option>
+            ))}
+          </optgroup>
+          <optgroup label="Firms">
+            {workspace.investors.map((item) => (
+              <option key={`i:${item.id}`} value={`i:${item.id}`}>{item.firm}</option>
+            ))}
+          </optgroup>
         </select>
       </label>
-      {library ? <DocumentRoom documents={startupDocuments(library)} folders={STARTUP_FOLDERS} /> : (
+      {library ? (
+        <div className="flex flex-col gap-4">
+          <DocumentRoom documents={startupDocuments(library)} folders={STARTUP_FOLDERS} />
+          {backer ? (
+            <section>
+              <h2 className="mb-3 text-xl font-semibold tracking-display">{backer.firm}</h2>
+              <DocumentRoom documents={investorDocuments(backer)} folders={investorFolders(backer)} />
+            </section>
+          ) : null}
+        </div>
+      ) : libraryFirm ? (
+        <DocumentRoom documents={investorDocuments(libraryFirm)} folders={investorFolders(libraryFirm)} />
+      ) : (
       <div className="overflow-hidden rounded-xl border border-border bg-surface">
         <div className="flex flex-col gap-3 border-b border-border px-4 py-4 md:flex-row md:items-center">
           <div className="min-w-0 flex-1">

@@ -1,6 +1,6 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { DocumentRoom } from "@/components/seedstage/document-room";
-import { investorDocuments } from "@/lib/seedstage/public-docs";
+import { investorDocuments, investorFolders } from "@/lib/seedstage/public-docs";
 import { FirmLogo } from "@/components/seedstage/bits";
 import { Mark } from "@/components/seedstage/mark";
 import { linkedPortfolio } from "@/lib/seedstage/investor-room";
@@ -23,7 +23,6 @@ function InvestorRoomPage() {
   }
   const documents = investorDocuments(investor);
   const companies = linkedPortfolio(investor, publicStartups);
-  const folders = ["Firm", "Geography", "Stage", "Cheque", "Themes", "People", "Portfolio", ...documents.map((document) => document.category).filter((category) => !["Firm", "Geography", "Stage", "Cheque", "Themes", "People", "Portfolio"].includes(category))];
 
   return (
     <div className="min-h-screen bg-bg text-fg">
@@ -53,7 +52,7 @@ function InvestorRoomPage() {
 
       <main className="mx-auto max-w-5xl px-5 pb-16">
         <div className="-mt-8">
-          <DocumentRoom documents={documents} folders={[...new Set(folders)]} />
+          <DocumentRoom documents={documents} folders={investorFolders(investor)} />
           {companies.length > 0 ? (
             <ul className="mt-4 grid gap-2 sm:grid-cols-2">
               {companies.map((company) => (

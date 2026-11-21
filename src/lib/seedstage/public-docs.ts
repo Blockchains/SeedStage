@@ -65,6 +65,14 @@ export function investorDocuments(investor: Investor): HeldDocument[] {
   return documents;
 }
 
+export const INVESTOR_FOLDERS = ["Firm", "Geography", "Stage", "Cheque", "Themes", "People", "Portfolio"] as const;
+
+export function investorFolders(investor: Investor): string[] {
+  const known = new Set<string>(INVESTOR_FOLDERS);
+  const extra = (investor.files ?? []).map((file) => file.title).filter((title) => title && !known.has(title));
+  return [...INVESTOR_FOLDERS, ...new Set(extra)];
+}
+
 export const STARTUP_FOLDERS = [
   "01 Company overview",
   "02 Corporate records",
