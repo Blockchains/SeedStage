@@ -54,3 +54,14 @@ test("held public pages increase the room beyond the profile line", () => {
   const entities = companyEntities(company, extraInvestors);
   assert.equal(entities.some((row) => row.schema === "LegalEntity" && row.kind === "Investor"), true);
 });
+
+test("data companies and data firms are on the directory routes", () => {
+  const estuary = publicStartups.find((company) => company.id === "estuary");
+  const decibel = extraInvestors.find((firm) => firm.id === "decibel");
+  assert.ok(estuary);
+  assert.ok(decibel);
+  assert.match(estuary.logo, /^\/logos\/estuary\./);
+  assert.match(decibel.logo, /^\/logos\/decibel\./);
+  assert.match(startupDocuments(estuary).map((document) => document.text).join("\n"), /pipeline/i);
+  assert.match(investorDocuments(decibel).map((document) => document.text).join("\n"), /infrastructure/i);
+});
