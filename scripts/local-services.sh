@@ -18,6 +18,12 @@ if [ -x "$ROOT/keycloak/bin/kc.sh" ] && ! curl -sf -o /dev/null --max-time 1 htt
   "$ROOT/keycloak/bin/kc.sh" start-dev --http-port=8180 --http-host=127.0.0.1 --hostname-strict=false > /tmp/keycloak.log 2>&1 &
 fi
 
+if [ -x "$ROOT/docling-venv/bin/docling-serve" ] && ! curl -sf -o /dev/null --max-time 1 http://127.0.0.1:5001/health; then
+  UVICORN_HOST=127.0.0.1 UVICORN_PORT=5001 "$ROOT/docling-venv/bin/docling-serve" run > /tmp/docling.log 2>&1 &
+fi
+if ! curl -sf -o /dev/null --max-time 1 http://127.0.0.1:3010/health; then
+  node /workspace/scripts/chromium-convert.mjs > /tmp/chromium-convert.log 2>&1 &
+fi
 i=0
 while [ "$i" -lt 20 ]; do
   if curl -sf -o /dev/null --max-time 1 http://127.0.0.1:8200/v1/sys/health; then

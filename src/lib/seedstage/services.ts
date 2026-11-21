@@ -9,7 +9,7 @@ export type ServiceLive = {
 
 async function getJson(url: string, headers?: Record<string, string>): Promise<unknown | null> {
   try {
-    const response = await fetch(url, { headers, signal: AbortSignal.timeout(2000) });
+    const response = await fetch(url, { headers, signal: AbortSignal.timeout(2500) });
     if (!response.ok) return null;
     return await response.json();
   } catch {
@@ -17,17 +17,35 @@ async function getJson(url: string, headers?: Record<string, string>): Promise<u
   }
 }
 
+async function githubRelease(repo: string): Promise<string | null> {
+  const data = await getJson(`https://api.github.com/repos/${repo}/releases/latest`, {
+    Accept: "application/vnd.github+json",
+    "User-Agent": "seedstage",
+  });
+  const tag = (data as { tag_name?: string } | null)?.tag_name;
+  return tag ?? null;
+}
+
 export const readLocalServices = createServerFn({ method: "GET" }).handler(async (): Promise<ServiceLive[]> => {
-  const [bao, keycloak, temporal] = await Promise.all([
+  const [bao, keycloak, temporal, docling, chromium, doclingRelease, gotenbergRelease, langfuseRelease, contractsRelease] = await Promise.all([
     getJson("http://127.0.0.1:8200/v1/secret/data/seedstage", { "X-Vault-Token": "seedstage-dev" }),
     getJson("http://127.0.0.1:8180/realms/master/.well-known/openid-configuration"),
     getJson("http://127.0.0.1:8233/api/v1/namespaces"),
+    getJson("http://127.0.0.1:5001/health"),
+    getJson("http://127.0.0.1:3010/health"),
+    githubRelease("docling-project/docling-serve"),
+    githubRelease("gotenberg/gotenberg"),
+    githubRelease("langfuse/langfuse"),
+    githubRelease("Open-Source-Legal/OpenContracts"),
   ]);
 
   const secret = (bao as { data?: { data?: { company?: string; firm?: string } } } | null)?.data?.data;
   const issuer = (keycloak as { issuer?: string } | null)?.issuer ?? "";
   const namespaces = (temporal as { namespaces?: { namespaceInfo?: { name?: string } }[] } | null)?.namespaces ?? [];
   const names = namespaces.map((item) => item.namespaceInfo?.name).filter((name): name is string => Boolean(name));
+  const chromiumUp = (chromium as { details?: { chromium?: { status?: string } } } | null)?.details?.chromium?.status === "up";
+  const doclingStatus = (docling as { status?: string } | null)?.status ?? "";
+  const doclingUp = doclingStatus === "ok" || doclingStatus === "up";
 
   return [
     {
@@ -51,26 +69,26 @@ export const readLocalServices = createServerFn({ method: "GET" }).handler(async
     {
       id: "docling",
       name: "Docling",
-      running: false,
-      detail: "Parser package is not installed in this workspace",
+      running: doclingUp,
+      detail: doclingUp ? "Convert API" : doclingRelease ? `${doclingRelease} on GitHub. Not answering yet` : "Not answering",
     },
     {
       id: "gotenberg",
       name: "Gotenberg",
-      running: false,
-      detail: "Needs a container. None is available here",
+      running: chromiumUp,
+      detail: chromiumUp ? "Chromium route" : gotenbergRelease ? `${gotenbergRelease} needs a container` : "Not answering",
     },
     {
       id: "langfuse",
       name: "Langfuse",
       running: false,
-      detail: "Needs its own database and is not started",
+      detail: langfuseRelease ? `${langfuseRelease} needs its own database` : "Needs its own database",
     },
     {
       id: "opencontracts",
       name: "OpenContracts",
       running: false,
-      detail: "The Django app is not started",
+      detail: contractsRelease ? `${contractsRelease} needs a container` : "Needs a container",
     },
   ];
 });
