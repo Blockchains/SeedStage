@@ -1,8 +1,9 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
-import { AskBox } from "@/components/seedstage/ask-box";
+import { DocumentRoom } from "@/components/seedstage/document-room";
+import { investorDocuments } from "@/lib/seedstage/public-docs";
 import { FirmLogo } from "@/components/seedstage/bits";
 import { Mark } from "@/components/seedstage/mark";
-import { buildInvestorRoom, linkedPortfolio } from "@/lib/seedstage/investor-room";
+import { linkedPortfolio } from "@/lib/seedstage/investor-room";
 import { publicStartups } from "@/lib/seedstage/startups";
 import { useSeedstage } from "@/lib/seedstage/store";
 
@@ -20,16 +21,9 @@ function InvestorRoomPage() {
       </div>
     );
   }
-  const room = buildInvestorRoom(investor);
+  const documents = investorDocuments(investor);
   const companies = linkedPortfolio(investor, publicStartups);
-  const passages = [
-    { id: "profile", title: "Firm", text: investor.excerpt, entitled: true },
-    ...(investor.files ?? []).map((file, index) => ({ id: `file-${index}`, title: file.title, text: file.text, entitled: true })),
-  ];
-  const folders = [
-    ...room.sections.map((section) => ({ id: section.id, label: section.label, onFile: true })),
-    ...room.missing.map((label) => ({ id: label, label, onFile: false })),
-  ];
+  const folders = ["Firm", "Geography", "Stage", "Cheque", "Themes", "People", "Portfolio", ...documents.map((document) => document.category).filter((category) => !["Firm", "Geography", "Stage", "Cheque", "Themes", "People", "Portfolio"].includes(category))];
 
   return (
     <div className="min-h-screen bg-bg text-fg">
@@ -57,38 +51,9 @@ function InvestorRoomPage() {
         </div>
       </section>
 
-      <main className="mx-auto grid max-w-5xl gap-4 px-5 pb-16 lg:grid-cols-[200px_minmax(0,1fr)]">
-        <nav className="hidden lg:block" aria-label="Room index">
-          <ul className="sticky top-20 -mt-8 flex flex-col gap-1">
-            {folders.map((folder) => (
-              <li key={folder.id}>
-                <a href={`#${folder.id}`} className="hit flex min-h-11 items-center justify-between gap-2 rounded-md px-3 text-sm">
-                  <span>{folder.label}</span>
-                  <span className={folder.onFile ? "text-primary" : "text-muted"}>{folder.onFile ? "●" : "–"}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <div className="-mt-8 min-w-0">
-          <div className="mb-4">
-            <AskBox passages={passages} />
-          </div>
-          <div className="overflow-hidden rounded-xl border border-border bg-surface shadow-lift">
-            {room.sections.map((section) => (
-              <section key={section.id} id={section.id} className="border-t border-border px-5 py-5 first:border-t-0 md:px-8">
-                <h2 className="text-xs font-medium tracking-kicker text-muted uppercase">{section.label}</h2>
-                <dl className="mt-4 flex flex-col gap-4">
-                  {section.lines.map((line) => (
-                    <div key={line.label}>
-                      <dt className="text-xs text-muted">{line.label}</dt>
-                      <dd className="mt-1 text-base leading-relaxed break-words md:text-lg">{line.value}</dd>
-                    </div>
-                  ))}
-                </dl>
-              </section>
-            ))}
-          </div>
+      <main className="mx-auto max-w-5xl px-5 pb-16">
+        <div className="-mt-8">
+          <DocumentRoom documents={documents} folders={[...new Set(folders)]} />
           {companies.length > 0 ? (
             <ul className="mt-4 grid gap-2 sm:grid-cols-2">
               {companies.map((company) => (
@@ -101,14 +66,6 @@ function InvestorRoomPage() {
               ))}
             </ul>
           ) : null}
-          <ul className="mt-4 overflow-hidden rounded-xl border border-border bg-surface">
-            {room.missing.map((label) => (
-              <li key={label} id={label} className="flex min-h-12 items-center justify-between border-t border-border px-5 text-sm text-muted first:border-t-0">
-                <span>{label}</span>
-                <span>Not on file</span>
-              </li>
-            ))}
-          </ul>
         </div>
       </main>
     </div>

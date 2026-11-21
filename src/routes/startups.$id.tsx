@@ -1,11 +1,11 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
-import { AskBox } from "@/components/seedstage/ask-box";
 import { EntityTable } from "@/components/seedstage/entity-table";
 import { RelationshipGraph } from "@/components/seedstage/relationship-graph";
 import { FirmLogo } from "@/components/seedstage/bits";
 import { Mark } from "@/components/seedstage/mark";
 import { companyEntities } from "@/lib/seedstage/entities";
-import { buildStartupRoom } from "@/lib/seedstage/startup-room";
+import { DocumentRoom } from "@/components/seedstage/document-room";
+import { STARTUP_FOLDERS, startupDocuments } from "@/lib/seedstage/public-docs";
 import { publicStartups } from "@/lib/seedstage/startups";
 import { useSeedstage } from "@/lib/seedstage/store";
 import type { Investor } from "@/lib/seedstage/types";
@@ -38,16 +38,8 @@ function StartupRoomPage() {
       </div>
     );
   }
-  const room = buildStartupRoom(company);
+  const roomDocs = startupDocuments(company);
   const backer = findBacker(company.funder, investors);
-  const passages = [
-    { id: "summary", title: "Company", text: company.summary, entitled: true },
-    ...(company.files ?? []).map((file, index) => ({ id: `file-${index}`, title: file.title, text: file.text, entitled: true })),
-  ];
-  const folders = [
-    ...room.sections.map((section) => ({ ...section, onFile: true })),
-    ...room.missing.map((label) => ({ id: label, label, lines: [], onFile: false })),
-  ];
 
   return (
     <div className="min-h-screen bg-bg text-fg">
@@ -79,44 +71,14 @@ function StartupRoomPage() {
       </section>
 
       <main className="mx-auto max-w-5xl px-5 pb-16">
-        <div className="-mt-8 grid gap-4 lg:grid-cols-[200px_minmax(0,1fr)]">
-          <nav className="hidden lg:block" aria-label="Room index">
-            <ul className="sticky top-20 flex flex-col gap-1">
-              {folders.map((folder) => (
-                <li key={folder.id}>
-                  <a href={`#${folder.id}`} className="hit flex min-h-11 items-center justify-between gap-2 rounded-md px-3 text-sm">
-                    <span>{folder.label}</span>
-                    <span className={folder.onFile ? "text-primary" : "text-muted"}>{folder.onFile ? "●" : "–"}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          <div className="min-w-0">
-            <div className="mb-4 flex flex-col gap-3">
-              <AskBox passages={passages} />
-              <EntityTable rows={companyEntities(company, investors)} />
-              <RelationshipGraph rows={companyEntities(company, investors)} />
-            </div>
-            <div className="overflow-hidden rounded-xl border border-border bg-surface shadow-lift">
-              {room.sections.map((section) => (
-                <section key={section.id} id={section.id} className="border-t border-border px-5 py-5 first:border-t-0 md:px-8 md:py-6">
-                  <h2 className="text-xs font-medium tracking-kicker text-muted uppercase">{section.label}</h2>
-                  <dl className="mt-4 flex flex-col gap-4">
-                    {section.lines.map((line) => (
-                      <div key={line.label}>
-                        <dt className="text-xs text-muted">{line.label}</dt>
-                        <dd className="mt-1 text-base leading-relaxed break-words md:text-lg">{line.value}</dd>
-                      </div>
-                    ))}
-                  </dl>
-                </section>
-              ))}
-            </div>
-
-            {company.person || company.funder ? (
-              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+        <div className="-mt-8">
+          <DocumentRoom documents={roomDocs} folders={STARTUP_FOLDERS} />
+          <div className="mt-4 flex flex-col gap-3">
+            <EntityTable rows={companyEntities(company, investors)} />
+            <RelationshipGraph rows={companyEntities(company, investors)} />
+          </div>
+          {company.person || company.funder ? (
+            <div className="mt-4 grid gap-3 sm:grid-cols-2">
                 {company.person ? (
                   <article className="rounded-xl border border-border bg-surface p-5">
                     <p className="text-xs font-medium tracking-kicker text-muted uppercase">Person</p>
@@ -139,16 +101,6 @@ function StartupRoomPage() {
                 ) : null}
               </div>
             ) : null}
-
-            <ul className="mt-4 overflow-hidden rounded-xl border border-border bg-surface">
-              {room.missing.map((label) => (
-                <li key={label} id={label} className="flex min-h-12 items-center justify-between border-t border-border px-5 text-sm text-muted first:border-t-0">
-                  <span>{label}</span>
-                  <span>Not on file</span>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
       </main>
     </div>

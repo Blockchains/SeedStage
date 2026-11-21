@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FirmLogo } from "@/components/seedstage/bits";
 import { Frame } from "@/components/seedstage/shell";
 import { publicStartups } from "@/lib/seedstage/startups";
+import { startupDocuments } from "@/lib/seedstage/public-docs";
 
 export const Route = createFileRoute("/startups/")({ component: StartupsPage });
 
@@ -29,7 +30,7 @@ function StartupsPage() {
               <span className="min-w-0 flex-1">
                 <span className="flex items-baseline justify-between gap-3">
                   <span className="text-base font-medium">{company.name}</span>
-                  <span className="shrink-0 text-xs text-muted">{company.stage || "Room"}</span>
+                  <span className="shrink-0 text-xs text-muted">{startupDocuments(company).length} files</span>
                 </span>
                 <span className="mt-2 block text-sm leading-relaxed text-muted">{company.summary.split(/(?<=[.!?])\s+/).slice(0, 2).join(" ")}</span>
               </span>

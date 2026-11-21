@@ -2,9 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { FileText } from "lucide-react";
 import { useState } from "react";
 import { AskBox } from "@/components/seedstage/ask-box";
+import { DocumentRoom } from "@/components/seedstage/document-room";
+import { STARTUP_FOLDERS, startupDocuments } from "@/lib/seedstage/public-docs";
+import { publicStartups } from "@/lib/seedstage/startups";
 import { canView, documentObject, type Tuple } from "@/lib/seedstage/authz";
-import { Frame } from "@/components/seedstage/shell";
 import { FirmLogo, GhostButton, Notice } from "@/components/seedstage/bits";
+import { Frame } from "@/components/seedstage/shell";
 import { can } from "@/lib/seedstage/permissions";
 import { ROOM_CATEGORIES, categoryReadiness, investorRoom, roomFile, type RoomCategory } from "@/lib/seedstage/room";
 import { useSeedstage } from "@/lib/seedstage/store";
@@ -22,6 +25,9 @@ function RoomPage() {
   const [asInvestor, setAsInvestor] = useState(false);
   const [category, setCategory] = useState<RoomCategory | "all">("all");
   const [documentId, setDocumentId] = useState(workspace.documents[0]?.id ?? "");
+  const richest = publicStartups.reduce((best, company) => ((company.files?.length ?? 0) > (best.files?.length ?? 0) ? company : best), publicStartups[0]);
+  const [libraryId, setLibraryId] = useState(richest?.id ?? "");
+  const library = publicStartups.find((company) => company.id === libraryId) ?? null;
   const readiness = categoryReadiness(workspace);
   const room = investorRoom(workspace, investorId);
   const investor = firms.find((item) => item.id === investorId) ?? null;
@@ -46,6 +52,16 @@ function RoomPage() {
 
   return (
     <Frame title="Data room">
+      <label className="mb-4 flex min-w-0 flex-col gap-1 text-sm md:max-w-sm">
+        <span className="text-muted">Company</span>
+        <select className="min-h-11 rounded-md border border-border bg-surface px-3" value={libraryId} onChange={(event) => setLibraryId(event.target.value)} aria-label="Company">
+          <option value="">Workspace</option>
+          {publicStartups.map((company) => (
+            <option key={company.id} value={company.id}>{company.name}</option>
+          ))}
+        </select>
+      </label>
+      {library ? <DocumentRoom documents={startupDocuments(library)} folders={STARTUP_FOLDERS} /> : (
       <div className="overflow-hidden rounded-xl border border-border bg-surface">
         <div className="flex flex-col gap-3 border-b border-border px-4 py-4 md:flex-row md:items-center">
           <div className="min-w-0 flex-1">
@@ -134,6 +150,7 @@ function RoomPage() {
           </div>
         )}
       </div>
+      )}
     </Frame>
   );
 }
