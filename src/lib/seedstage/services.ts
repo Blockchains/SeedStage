@@ -46,7 +46,7 @@ export const readLocalServices = createServerFn({ method: "GET" }).handler(async
       id: "keycloak",
       name: "Keycloak",
       running: issuer.length > 0,
-      detail: issuer || "Not answering",
+      detail: issuer ? "master realm" : "Not answering",
     },
     {
       id: "docling",
