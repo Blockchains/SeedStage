@@ -24,6 +24,7 @@ function RoomPage() {
   const [investorId, setInvestorId] = useState(firms[0]?.id ?? "");
   const [asInvestor, setAsInvestor] = useState(false);
   const [category, setCategory] = useState<RoomCategory | "all">("all");
+  const [categoriesOpen, setCategoriesOpen] = useState(false);
   const [documentId, setDocumentId] = useState(workspace.documents[0]?.id ?? "");
   const richest = publicStartups.reduce((best, company) => ((company.files?.length ?? 0) > (best.files?.length ?? 0) ? company : best), publicStartups[0]);
   const [libraryId, setLibraryId] = useState(richest ? `c:${richest.id}` : "");
@@ -104,9 +105,15 @@ function RoomPage() {
         ) : (
           <div className="grid min-w-0 lg:min-h-[36rem] lg:grid-cols-[240px_minmax(0,1fr)]">
             <nav className="min-w-0 border-b border-border bg-surface-2 lg:border-r lg:border-b-0" aria-label="Categories">
-              <ul className="flex flex-col gap-1 p-2">
+              <div className="flex items-center justify-between gap-2 px-3 lg:hidden">
+                <span className="truncate text-sm font-medium">{category === "all" ? "All" : category.replace(/^\d+\s/, "")}</span>
+                <button type="button" className="hit inline-flex min-h-11 items-center text-sm font-medium text-primary" aria-expanded={categoriesOpen} onClick={() => setCategoriesOpen((open) => !open)}>
+                  {categoriesOpen ? "Close" : "Expand"}
+                </button>
+              </div>
+              <ul className={`${categoriesOpen ? "flex" : "hidden"} flex-col gap-1 p-2 lg:flex`}>
                 <li>
-                  <IndexButton active={category === "all"} label="All files" meta={String(workspace.documents.length)} onClick={() => setCategory("all")} />
+                  <IndexButton active={category === "all"} label="All files" meta={String(workspace.documents.length)} onClick={() => { setCategory("all"); setCategoriesOpen(false); }} />
                 </li>
                 {readiness.map((item) => (
                   <li key={item.category}>
@@ -114,7 +121,7 @@ function RoomPage() {
                       active={category === item.category}
                       label={item.category.replace(/^\d+\s/, "")}
                       meta={item.status === "missing" ? "—" : item.status.replaceAll("_", " ")}
-                      onClick={() => setCategory(item.category)}
+                      onClick={() => { setCategory(item.category); setCategoriesOpen(false); }}
                     />
                   </li>
                 ))}

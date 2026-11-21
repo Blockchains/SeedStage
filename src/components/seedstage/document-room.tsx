@@ -4,17 +4,30 @@ import type { HeldDocument } from "@/lib/seedstage/public-docs";
 
 export function DocumentRoom({ documents, folders }: { documents: HeldDocument[]; folders: readonly string[] }) {
   const [folder, setFolder] = useState<string>("all");
+  const [foldersOpen, setFoldersOpen] = useState(false);
   const visible = documents.filter((document) => folder === "all" || document.category === folder);
   const passages = documents.map((document) => ({ id: document.id, title: document.title, text: document.text, entitled: true }));
   const present = new Set(documents.map((document) => document.category));
+  const current = folder === "all" ? "All" : folder.replace(/^\d+\s/, "");
+
+  function choose(next: string) {
+    setFolder(next);
+    setFoldersOpen(false);
+  }
 
   return (
     <div className="w-full min-w-0 max-w-full overflow-hidden rounded-xl border border-border bg-surface shadow-lift">
       <div className="grid min-w-0 lg:grid-cols-[220px_minmax(0,1fr)]">
         <nav className="min-w-0 border-b border-border bg-surface-2 lg:border-r lg:border-b-0" aria-label="Folders">
-          <ul className="flex flex-col gap-1 p-2">
+          <div className="flex items-center justify-between gap-2 px-3 lg:hidden">
+            <span className="truncate text-sm font-medium">{current}</span>
+            <button type="button" className="hit inline-flex min-h-11 items-center text-sm font-medium text-primary" aria-expanded={foldersOpen} onClick={() => setFoldersOpen((open) => !open)}>
+              {foldersOpen ? "Close" : "Expand"}
+            </button>
+          </div>
+          <ul className={`${foldersOpen ? "flex" : "hidden"} flex-col gap-1 p-2 lg:flex`}>
             <li>
-              <FolderButton active={folder === "all"} label="All" meta={String(documents.length)} onClick={() => setFolder("all")} />
+              <FolderButton active={folder === "all"} label="All" meta={String(documents.length)} onClick={() => choose("all")} />
             </li>
             {folders.map((name) => (
               <li key={name}>
@@ -22,7 +35,7 @@ export function DocumentRoom({ documents, folders }: { documents: HeldDocument[]
                   active={folder === name}
                   label={name.replace(/^\d+\s/, "")}
                   meta={present.has(name) ? String(documents.filter((document) => document.category === name).length) : "—"}
-                  onClick={() => setFolder(name)}
+                  onClick={() => choose(name)}
                 />
               </li>
             ))}
