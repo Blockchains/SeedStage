@@ -83,7 +83,7 @@ function RoomPage() {
       ) : libraryFirm ? (
         <DocumentRoom documents={investorDocuments(libraryFirm)} folders={investorFolders(libraryFirm)} />
       ) : (
-      <div className="overflow-hidden rounded-xl border border-border bg-surface">
+      <div className="w-full min-w-0 max-w-full overflow-hidden rounded-xl border border-border bg-surface">
         <div className="flex flex-col gap-3 border-b border-border px-4 py-4 md:flex-row md:items-center">
           <div className="min-w-0 flex-1">
             <p className="text-xs font-medium tracking-kicker text-muted uppercase">Data room</p>
@@ -102,9 +102,9 @@ function RoomPage() {
         {asInvestor ? (
           <InvestorPreview investorName={investor?.firm ?? "This investor"} documents={room.documents} claims={room.claims} questions={room.questions} />
         ) : (
-          <div className="grid lg:min-h-[36rem] lg:grid-cols-[240px_minmax(0,1fr)]">
-            <nav className="border-b border-border bg-surface-2 lg:border-r lg:border-b-0" aria-label="Categories">
-              <ul className="flex gap-1 overflow-x-auto p-2 lg:flex-col">
+          <div className="grid min-w-0 lg:min-h-[36rem] lg:grid-cols-[240px_minmax(0,1fr)]">
+            <nav className="min-w-0 border-b border-border bg-surface-2 lg:border-r lg:border-b-0" aria-label="Categories">
+              <ul className="flex flex-col gap-1 p-2">
                 <li>
                   <IndexButton active={category === "all"} label="All files" meta={String(workspace.documents.length)} onClick={() => setCategory("all")} />
                 </li>
@@ -189,8 +189,8 @@ function InvestorPreview({ investorName, documents, claims, questions }: { inves
   const [documentId, setDocumentId] = useState(documents[0]?.id ?? "");
   const selected = documents.find((document) => document.id === documentId) ?? documents[0] ?? null;
   return (
-    <div className="grid lg:min-h-[32rem] lg:grid-cols-[240px_minmax(0,1fr)]">
-      <nav className="border-b border-border bg-surface-2 lg:border-r lg:border-b-0" aria-label={`${investorName} room`}>
+    <div className="grid min-w-0 lg:min-h-[32rem] lg:grid-cols-[240px_minmax(0,1fr)]">
+      <nav className="min-w-0 border-b border-border bg-surface-2 lg:border-r lg:border-b-0" aria-label={`${investorName} room`}>
         <p className="px-3 pt-3 text-xs font-medium tracking-kicker text-muted uppercase">{investorName}</p>
         <ul className="p-2">
           {documents.map((document) => (

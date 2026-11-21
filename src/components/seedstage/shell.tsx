@@ -58,7 +58,7 @@ export function Frame({ title, lede, children }: { title: string; lede?: string;
   }, [pathname]);
 
   return (
-    <div className="min-h-screen bg-bg text-fg">
+    <div className="min-h-screen overflow-x-clip bg-bg text-fg">
       <div className="flex min-h-screen">
         <aside className="sticky top-0 hidden h-screen w-56 shrink-0 flex-col border-r border-border bg-surface md:flex">
           <Brand />

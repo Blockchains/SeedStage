@@ -39,7 +39,7 @@ function HomePage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-bg text-fg">
+    <div className="min-h-screen overflow-x-clip bg-bg text-fg">
       <header className="sticky top-0 z-30 border-b border-canvas-line bg-canvas text-canvas-fg">
         <div className="mx-auto flex h-14 max-w-5xl items-center justify-between gap-3 px-4">
           <Link to="/" className="hit flex items-center gap-2 text-sm font-semibold tracking-display">
@@ -50,7 +50,7 @@ function HomePage() {
             Workspace
           </Link>
         </div>
-        <nav className="mx-auto flex max-w-5xl gap-1 overflow-x-auto px-3 pb-2" aria-label="Primary">
+        <nav className="mx-auto flex min-w-0 max-w-5xl gap-1 overflow-x-auto px-3 pb-2" aria-label="Primary">
           {NAV.map((item) => (
             <Link
               key={item.to}

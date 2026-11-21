@@ -10,7 +10,16 @@ const columns: ColumnDef<EntityRow>[] = [
 export function EntityTable({ rows }: { rows: EntityRow[] }) {
   const table = useReactTable({ data: rows, columns, getCoreRowModel: getCoreRowModel() });
   return (
-    <div className="overflow-hidden rounded-xl border border-border bg-surface">
+    <div className="w-full min-w-0 max-w-full overflow-hidden rounded-xl border border-border bg-surface">
+      <ul className="md:hidden">
+        {rows.map((row) => (
+          <li key={row.id} className="border-t border-border px-4 py-3 first:border-t-0">
+            <p className="text-sm font-medium break-words">{row.name}</p>
+            <p className="mt-1 text-xs text-muted">{row.schema} · {row.relation}</p>
+          </li>
+        ))}
+      </ul>
+      <div className="hidden overflow-x-auto md:block">
       <table className="w-full text-left text-sm">
         <thead>
           {table.getHeaderGroups().map((group) => (
@@ -31,6 +40,7 @@ export function EntityTable({ rows }: { rows: EntityRow[] }) {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 }

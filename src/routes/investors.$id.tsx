@@ -25,7 +25,7 @@ function InvestorRoomPage() {
   const companies = linkedPortfolio(investor, publicStartups);
 
   return (
-    <div className="min-h-screen bg-bg text-fg">
+    <div className="min-h-screen overflow-x-clip bg-bg text-fg">
       <header className="sticky top-0 z-20 border-b border-canvas-line bg-canvas text-canvas-fg">
         <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-5">
           <Link to="/investors" className="hit inline-flex min-h-11 items-center text-sm">Investors</Link>
@@ -39,7 +39,7 @@ function InvestorRoomPage() {
       <section className="bg-canvas text-canvas-fg">
         <div className="mx-auto max-w-5xl px-5 pt-8 pb-16">
           <FirmLogo src={investor.logo} name={investor.firm} className="size-20 rounded-2xl bg-white" />
-          <h1 className="mt-6 text-4xl font-semibold tracking-display text-balance md:text-6xl">{investor.firm}</h1>
+          <h1 className="mt-6 text-4xl font-semibold tracking-display text-balance break-words md:text-6xl">{investor.firm}</h1>
           {investor.excerpt ? <p className="mt-4 max-w-xl text-base leading-relaxed text-canvas-muted md:text-lg">{investor.excerpt.split(/(?<=[.!?])\s+/)[0]}</p> : null}
           <div className="mt-6 flex flex-wrap gap-2">
             {[...investor.geos.slice(0, 3), ...investor.stages].filter(Boolean).map((item) => (
@@ -50,7 +50,7 @@ function InvestorRoomPage() {
         </div>
       </section>
 
-      <main className="mx-auto max-w-5xl px-5 pb-16">
+      <main className="mx-auto w-full min-w-0 max-w-5xl px-5 pb-16">
         <div className="-mt-8">
           <DocumentRoom documents={documents} folders={investorFolders(investor)} />
           {companies.length > 0 ? (

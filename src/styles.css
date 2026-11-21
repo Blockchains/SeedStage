@@ -35,11 +35,25 @@
     background: var(--color-bg);
     color: var(--color-fg);
     color-scheme: light;
+    overflow-x: clip;
+    max-width: 100%;
   }
   body {
     font-family: var(--font-sans);
     min-height: 100%;
+    overflow-x: clip;
+    max-width: 100%;
     -webkit-font-smoothing: antialiased;
+  }
+  img,
+  svg,
+  video,
+  canvas {
+    max-width: 100%;
+  }
+  pre {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
   }
   h1,
   h2,

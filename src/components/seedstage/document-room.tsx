@@ -9,10 +9,10 @@ export function DocumentRoom({ documents, folders }: { documents: HeldDocument[]
   const present = new Set(documents.map((document) => document.category));
 
   return (
-    <div className="overflow-hidden rounded-xl border border-border bg-surface shadow-lift">
-      <div className="grid lg:grid-cols-[220px_minmax(0,1fr)]">
-        <nav className="border-b border-border bg-surface-2 lg:border-r lg:border-b-0" aria-label="Folders">
-          <ul className="flex gap-1 overflow-x-auto p-2 lg:flex-col">
+    <div className="w-full min-w-0 max-w-full overflow-hidden rounded-xl border border-border bg-surface shadow-lift">
+      <div className="grid min-w-0 lg:grid-cols-[220px_minmax(0,1fr)]">
+        <nav className="min-w-0 border-b border-border bg-surface-2 lg:border-r lg:border-b-0" aria-label="Folders">
+          <ul className="flex flex-col gap-1 p-2">
             <li>
               <FolderButton active={folder === "all"} label="All" meta={String(documents.length)} onClick={() => setFolder("all")} />
             </li>
@@ -34,9 +34,9 @@ export function DocumentRoom({ documents, folders }: { documents: HeldDocument[]
           <div className="mt-4 flex flex-col gap-8">
             {visible.map((document) => (
               <section key={document.id} id={document.id}>
-                <h2 className="text-lg font-semibold tracking-display">{document.title}</h2>
+                <h2 className="text-lg font-semibold tracking-display break-words">{document.title}</h2>
                 <p className="mt-1 text-xs text-muted">{document.category.replace(/^\d+\s/, "")}</p>
-                <p className="mt-3 whitespace-pre-wrap text-sm leading-relaxed">{document.text}</p>
+                <p className="mt-3 text-sm leading-relaxed break-words whitespace-pre-wrap">{document.text}</p>
               </section>
             ))}
           </div>

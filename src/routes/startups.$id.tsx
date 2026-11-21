@@ -42,7 +42,7 @@ function StartupRoomPage() {
   const backer = findBacker(company.funder, investors);
 
   return (
-    <div className="min-h-screen bg-bg text-fg">
+    <div className="min-h-screen overflow-x-clip bg-bg text-fg">
       <header className="sticky top-0 z-20 border-b border-canvas-line bg-canvas text-canvas-fg">
         <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-5">
           <Link to="/startups" className="hit inline-flex min-h-11 items-center text-sm">Startups</Link>
@@ -56,7 +56,7 @@ function StartupRoomPage() {
       <section className="bg-canvas text-canvas-fg">
         <div className="mx-auto max-w-5xl px-5 pt-8 pb-16">
           <FirmLogo src={company.logo} name={company.name} className="size-20 rounded-2xl bg-white" />
-          <h1 className="mt-6 text-4xl font-semibold tracking-display text-balance md:text-6xl">{company.name}</h1>
+          <h1 className="mt-6 text-4xl font-semibold tracking-display text-balance break-words md:text-6xl">{company.name}</h1>
           {company.summary ? <p className="mt-4 max-w-xl text-base leading-relaxed text-canvas-muted md:text-lg">{company.summary.split(/(?<=[.!?])\s+/)[0]}</p> : null}
           <div className="mt-6 flex flex-wrap gap-2">
             {[company.stage, company.round, company.funder].filter(Boolean).map((item) => (
@@ -70,7 +70,7 @@ function StartupRoomPage() {
         </div>
       </section>
 
-      <main className="mx-auto max-w-5xl px-5 pb-16">
+      <main className="mx-auto w-full min-w-0 max-w-5xl px-5 pb-16">
         <div className="-mt-8">
           <DocumentRoom documents={roomDocs} folders={STARTUP_FOLDERS} />
           <div className="mt-4 flex flex-col gap-3">

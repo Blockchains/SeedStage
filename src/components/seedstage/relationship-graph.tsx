@@ -25,7 +25,7 @@ export function RelationshipGraph({ rows }: { rows: EntityRow[] }) {
   });
 
   return (
-    <div className="h-72 overflow-hidden rounded-xl border border-border bg-surface">
+    <div className="h-72 w-full min-w-0 max-w-full overflow-hidden rounded-xl border border-border bg-surface">
       <ReactFlow nodes={nodes} edges={edges} fitView proOptions={{ hideAttribution: true }} nodesDraggable={false} nodesConnectable={false} elementsSelectable={false}>
         <Background />
       </ReactFlow>

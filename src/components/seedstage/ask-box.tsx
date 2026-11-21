@@ -18,7 +18,7 @@ export function AskBox({ passages }: { passages: RoomPassage[] }) {
         Ask the room
       </label>
       <div className="mt-2 flex gap-2">
-        <input id="room-ask" value={question} onChange={(event) => setQuestion(event.target.value)} placeholder="Ask from the files on this page" className="min-h-11 w-full rounded-md border border-border bg-bg px-3 text-sm" />
+        <input id="room-ask" value={question} onChange={(event) => setQuestion(event.target.value)} placeholder="Ask from the files on this page" className="min-h-11 min-w-0 w-full rounded-md border border-border bg-bg px-3 text-sm" />
         <button type="submit" className="hit inline-flex min-h-11 shrink-0 items-center rounded-md bg-canvas px-3 text-sm font-medium text-canvas-fg">Ask</button>
       </div>
       {answer?.answer ? (
