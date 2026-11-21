@@ -28,8 +28,12 @@ function RoomPage() {
   const [documentId, setDocumentId] = useState(workspace.documents[0]?.id ?? "");
   const richest = publicStartups.reduce((best, company) => ((company.files?.length ?? 0) > (best.files?.length ?? 0) ? company : best), publicStartups[0]);
   const [libraryId, setLibraryId] = useState(richest ? `c:${richest.id}` : "");
+  const [finder, setFinder] = useState("");
   const library = publicStartups.find((company) => libraryId === `c:${company.id}`) ?? null;
   const libraryFirm = workspace.investors.find((item) => libraryId === `i:${item.id}`) ?? null;
+  const needle = finder.trim().toLowerCase();
+  const companyHits = needle.length < 2 ? [] : publicStartups.filter((company) => company.name.toLowerCase().includes(needle)).slice(0, 12);
+  const firmHits = needle.length < 2 ? [] : workspace.investors.filter((item) => item.firm.toLowerCase().includes(needle)).slice(0, 8);
   const backer = library ? workspace.investors.find((item) => item.firm.toLowerCase() === library.funder.trim().toLowerCase()) ?? null : null;
   const readiness = categoryReadiness(workspace);
   const room = investorRoom(workspace, investorId);
@@ -55,22 +59,29 @@ function RoomPage() {
 
   return (
     <Frame title="Data room">
-      <label className="mb-4 flex min-w-0 flex-col gap-1 text-sm md:max-w-sm">
-        <span className="text-muted">{publicStartups.length} companies · {workspace.investors.length} firms</span>
-        <select className="min-h-11 rounded-md border border-border bg-surface px-3" value={libraryId} onChange={(event) => setLibraryId(event.target.value)} aria-label="Company or firm">
-          <option value="">Workspace</option>
-          <optgroup label="Companies">
-            {publicStartups.map((company) => (
-              <option key={`c:${company.id}`} value={`c:${company.id}`}>{company.name}</option>
+      <div className="mb-4 flex min-w-0 flex-col gap-2 text-sm md:max-w-sm">
+        <label className="flex flex-col gap-1">
+          <span className="flex items-center justify-between gap-3 text-muted">
+            <span>{publicStartups.length} companies · {workspace.investors.length} firms</span>
+            {libraryId ? <button type="button" className="hit min-h-11 text-sm font-medium text-primary" onClick={() => setLibraryId("")}>Workspace</button> : null}
+          </span>
+          <input className="min-h-11 rounded-md border border-border bg-surface px-3" value={finder} onChange={(event) => setFinder(event.target.value)} placeholder="Search a company or firm" aria-label="Search a company or firm" />
+        </label>
+        {companyHits.length > 0 || firmHits.length > 0 ? (
+          <ul className="overflow-hidden rounded-md border border-border bg-surface">
+            {companyHits.map((company) => (
+              <li key={company.id}>
+                <button type="button" className="hit flex min-h-11 w-full items-center px-3 text-left text-sm" onClick={() => { setLibraryId(`c:${company.id}`); setFinder(""); }}>{company.name}</button>
+              </li>
             ))}
-          </optgroup>
-          <optgroup label="Firms">
-            {workspace.investors.map((item) => (
-              <option key={`i:${item.id}`} value={`i:${item.id}`}>{item.firm}</option>
+            {firmHits.map((item) => (
+              <li key={item.id}>
+                <button type="button" className="hit flex min-h-11 w-full items-center px-3 text-left text-sm" onClick={() => { setLibraryId(`i:${item.id}`); setFinder(""); }}>{item.firm}</button>
+              </li>
             ))}
-          </optgroup>
-        </select>
-      </label>
+          </ul>
+        ) : null}
+      </div>
       {library ? (
         <div className="flex flex-col gap-4">
           <DocumentRoom documents={startupDocuments(library)} folders={STARTUP_FOLDERS} />

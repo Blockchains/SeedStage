@@ -64,4 +64,9 @@ test("data companies and data firms are on the directory routes", () => {
   assert.match(decibel.logo, /^\/logos\/decibel\./);
   assert.match(startupDocuments(estuary).map((document) => document.text).join("\n"), /pipeline/i);
   assert.match(investorDocuments(decibel).map((document) => document.text).join("\n"), /infrastructure/i);
+  const circuit = publicStartups.find((company) => company.id === "circuithub");
+  assert.ok(circuit);
+  assert.match(circuit.logo, /^https:\/\/bookface-images\.s3\.amazonaws\.com\//);
+  assert.match(startupDocuments(circuit).map((document) => document.text).join("\n"), /electronics manufacturing/i);
+  assert.ok(publicStartups.length >= 6000);
 });

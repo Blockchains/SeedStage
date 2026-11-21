@@ -9,21 +9,26 @@ export const Route = createFileRoute("/startups/")({ component: StartupsPage });
 
 function StartupsPage() {
   const [query, setQuery] = useState("");
+  const [shown, setShown] = useState(40);
   const needle = query.trim().toLowerCase();
   const rows = publicStartups.filter((company) => !needle || `${company.name} ${company.summary} ${company.stage} ${company.funder}`.toLowerCase().includes(needle));
+  const visible = rows.slice(0, shown);
   return (
     <Frame title="Startups">
       <div className="mb-4">
         <input
           value={query}
-          onChange={(event) => setQuery(event.target.value)}
+          onChange={(event) => {
+            setQuery(event.target.value);
+            setShown(40);
+          }}
           placeholder="Search companies"
           aria-label="Search companies"
           className="min-h-11 w-full rounded-md border border-border bg-surface px-3 text-sm md:max-w-xs"
         />
       </div>
       <ul className="flex flex-col gap-3">
-        {rows.map((company) => (
+        {visible.map((company) => (
           <li key={company.id}>
             <Link to="/startups/$id" params={{ id: company.id }} className="hit flex items-start gap-3 rounded-md border border-border bg-surface p-4">
               <FirmLogo src={company.logo} name={company.name} />
@@ -38,6 +43,11 @@ function StartupsPage() {
           </li>
         ))}
       </ul>
+      {shown < rows.length ? (
+        <button type="button" className="hit mt-4 inline-flex min-h-11 items-center text-sm font-medium text-primary" onClick={() => setShown((count) => count + 40)}>
+          Show more ({rows.length - shown})
+        </button>
+      ) : null}
     </Frame>
   );
 }
