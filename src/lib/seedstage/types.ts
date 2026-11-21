@@ -137,6 +137,7 @@ export type Investor = {
   sourceUrl: string;
   sourceDate: string;
   excerpt: string;
+  files?: { title: string; text: string }[];
   note: string;
   logo: string;
   synthetic: boolean;

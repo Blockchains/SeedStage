@@ -12,6 +12,7 @@ export type PublicStartup = {
   funder: string;
   source: string;
   sourceUrl: string;
+  files?: { title: string; text: string }[];
 };
 
 const listedStartups: PublicStartup[] = [

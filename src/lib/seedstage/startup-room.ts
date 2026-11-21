@@ -28,6 +28,11 @@ export function buildStartupRoom(company: PublicStartup): { sections: StartupRoo
   if (company.funder.trim()) financing.push({ label: "Named backer", value: company.funder.trim() });
   if (financing.length > 0) sections.push({ id: "financing", label: "Financing", lines: financing });
 
+  for (const [index, file] of (company.files ?? []).entries()) {
+    if (!file.text.trim()) continue;
+    sections.push({ id: `file-${index}`, label: file.title, lines: [{ label: file.title, value: file.text.trim() }] });
+  }
+
   const missing = [
     ...(sections.some((section) => section.id === "people") ? [] : ["People"]),
     ...(sections.some((section) => section.id === "financing") ? [] : ["Financing"]),

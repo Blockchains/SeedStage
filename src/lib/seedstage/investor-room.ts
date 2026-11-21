@@ -37,6 +37,10 @@ export function buildInvestorRoom(investor: Investor): { sections: InvestorRoomS
   if (investor.portfolio.length > 0) {
     sections.push({ id: "portfolio", label: "Portfolio", lines: [{ label: "Named on the site", value: investor.portfolio.join(", ") }] });
   }
+  for (const [index, file] of (investor.files ?? []).entries()) {
+    if (!file.text.trim()) continue;
+    sections.push({ id: `file-${index}`, label: file.title, lines: [{ label: file.title, value: file.text.trim() }] });
+  }
   const have = new Set(sections.map((section) => section.id));
   const missing = [
     ["geography", "Geography"],

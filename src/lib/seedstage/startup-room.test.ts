@@ -34,3 +34,9 @@ test("blank financing stays off the page", () => {
   assert.equal(room.missing.includes("Financing"), true);
   assert.equal(room.missing.includes("People"), true);
 });
+
+test("an extra page becomes its own file", () => {
+  const room = buildStartupRoom(company({ files: [{ title: "About", text: "Ravical builds software for accounting firms." }] }));
+  assert.equal(room.sections.some((section) => section.label === "About"), true);
+  assert.equal(room.sections.find((section) => section.label === "About")?.lines[0].value.includes("accounting"), true);
+});

@@ -27,6 +27,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Team", "text": "Take 2 mins to learn more Our team combines decades of experience in venture capital, entrepreneurship, and operating experience to support our founders. David Buller Aleks Habdank Craig Fletcher Kip Meek Emma Blackburn Sonia Powar Erik Blachford Ian McClelland Kieran Hill Diane Stewart Barney Worfolk Smith Venture partner CV Pre-seed and seed investors, backing ambitious founders from day one."}],
+
   },
   {
     id: "fuel",
@@ -594,6 +596,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "About Initialized Initialized is looking for founders working on hard problems. We invest across all sectors because we believe founders know best what the technologies and markets of the future will be. We’ve never been this excited about the pace of technological change and what it means for people obsessed with building things. What was hard to build is becoming trivial, and a huge number of products that were impossible are suddenly within reach for startups. The type of founder we work with is leaning into this moment, so if that sounds like you, we’d love to hear about what you’re working on. Initialized is an early stage venture capital firm based in San Francisco. We were founded by Y Combinator partners (including current president and CEO, Garry Tan) to write follow on checks into the YC companies they were working with. In 2016 we became a standalone firm that makes larger investments into fewer companies but retains Y Combinator’s founder-centric ethos. We continue that strategy, leading pre-seed and seed investment rounds, working closely with the founders on their path to product market fit and a Series A. Over the years we’ve had the privilege to work with many world"}],
+
   },
   {
     id: "felicis",
@@ -621,6 +625,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "\"Coaching and personal development for leaders is easy to overlook in a world where budgets are highly constrained, but I think it is one of the most high-leverage ways to support companies. Thank you for providing this incredible and unique benefit.\" \"Peter Deng wrote the first check to get Periodic Labs which gave us the resources to get moving quickly! Have loved working with Peter and the team at Felicis.\" “Anytime we have an ask, the team at Felicis is incredibly efficient. They bring so much energy to the table, and that’s exactly what you want from a partner. The team has worked with us to build the kind of culture and go-to-market strategy that will allow us to build a generational company.” \"From a founder's perspective, so much trust is involved when you work with an investor. You are really vulnerable to all kinds of things, so trust is the number one aspect to consider when evaluating a potential partner. I was super excited to work with Felicis for the third time. There's no substitute for 10 years of working together.\" \"We are building a generational company. We want investors who understand how to build companies that define or create entirely new markets, that are e"}],
+
   },
   {
     id: "precursor",
@@ -702,6 +708,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "We now run YC four times a year, in the winter, spring, summer, and fall. Here's what happens during the three months of YC: The overall goal of YC is to help startups really take off. Some haven't even started working yet, and others have been launched for a year or more. But whatever stage a startup is at when they arrive, our goal is to help them to be in dramatically better shape 3 months later. For most startups, better shape translates into two things: to have a better product with more users, and to have more options for raising money. Startups at all stages benefit from the intensity of YC. That's probably the best word to describe the atmosphere. For 3 months, it's all startup, all the time. Everyone around you—us, the other founders in your batch, the alumni, the speakers, the investors—wants to help your startup succeed. In that atmosphere it's hard not to be highly motivated. And that kind of extraordinary motivation is what one needs to do something as difficult as starting a startup. Many founders describe the 11 weeks leading up to Demo Day as the most productive period in their lives."}],
+
   },
   {
     id: "a16z",
@@ -1107,6 +1115,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Our founding team includes key individuals behind MySQL AB, which was acquired by Sun Microsystems for $1bn in 2008. Following that, the team went on to jointly build MariaDB Corporation into a category leader, listed on the NYSE in 2022. With deep technical understanding and operator-level experience, we work closely with founders through critical technical and strategic decisions, helping turn durable, data-driven advantage into globally scalable businesses. We are a unified, data-driven team of analytical individuals with STEM backgrounds, with a track record of founding and funding many businesses in the data economy. We strive to quantify our investment reasoning with data. Diversity & Inclusion is at our heart and is championed by our own multicultural and multinational team, and that of our portfolio companies. We are passionate about backing and growing revolutionary technology companies. Transparency is at the core of how we operate. As an enthusiastic, compassionate and pragmatic team, we build strong partnerships with founders through our open, direct and transparent approach."}],
+
   },
   {
     id: "peakxv",
@@ -1134,6 +1144,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Team Companies Surge News & Insights About Made for the ascent. Our story Our values Our causes Before it was Everest, before anyone had climbed it, the world's highest mountain was called Peak XV (Peak Fifteen). And when we commit, we stay for the long climb to the summit. Our 60+ member operating team brings the experience, perspective, and network that help companies scale globally. They work alongside founders across Finance, Human Capital, Legal and Compliance, Marketing, Technology and Product, Public Policy and Communications, Strategic Development and Capital Formation. We help companies hire leaders, reach customers, raise capital, enter new markets, navigate key moments and prepare for scale. We have an active community of 1,000+ founders who have been through the journey themselves. Access to people who have faced similar decisions and are willing to speak candidly about them, is often invaluable for founders navigating similar paths. With teams across India, Southeast Asia, and the United States, we help founders tap into the networks, knowl"}],
+
   },
   {
     id: "jungle",
@@ -1188,6 +1200,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "With over 160 employees across 20 countries 1 , our team is a vibrant mix of cultures, backgrounds, and perspectives. We believe that collaboration is key to innovation, and our diverse workforce thrives by working together across borders."}],
+
   },
   {
     id: "foundersfund",
@@ -1269,6 +1283,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Resources About Techstars Apply Today ABOUT US About Techstars Since 2006, Techstars has been investing in the world’s most ambitious founders. We find great founders early, through a global network two decades in the making, and back them with capital, mentorship, and the connections they need to grow. At Techstars, we believe in helping without expecting something in return. Whether you're a founder, mentor, or partner, our first question is always: \"How can we support you?\" We lead with generosity, not transactions, because great communities are built on trust and collaboration. Techstars Network Since 2006, our mission has been rooted in a single core value: Give First. We provide early-stage teams with the capital, institutional credibility, and localized support needed to navigate fundraising and accelerate growth. From first-time entrepreneurs to early-stage teams, Techstars gives startups the funding, mentorship, and connections they need to build fast and grow smart. Techstars founders also have access to perks valued at more than $4M. TECHSTARS NETWORK Mentors Mentorship is the heart of Techstars."}],
+
   },
   {
     id: "tlcom",
@@ -1323,6 +1339,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Builders' Circle Home Companies Stories Team About Careers Contact Builders' Circle Builders' Circle Startup Resources Home Companies Careers Stories Team About Contact A unique community b2venture is an early-stage venture capital firm, supported by an unparalleled community of angel investors. Spanning both the worlds of tech and industry, our network of angel investors helps us bring unique expertise, entrepreneurial experience, and hands-on support to our portfolio companies. We invest primarily in the pre-seed and seed stage with the ability to invest in later stages through our Direct Investments track. b2venture is one of the most experienced venture investors in Europe, investing in the earliest stages and beyond. We bring unique expertise, entrepreneurial experience, and hands-on service to our portfolio companies together with our angel investor community. Our mission has always been paying it forward to the next generation just starting out. Every successful entrepreneur we support in scaling their business plants the seed for the next generation. Our portfolio founders can continue their journey with us as angel investors, helping us see emergent technologies and back i"}],
+
   },
   {
     id: "giant",
@@ -1350,6 +1368,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "Notebook News Giant Ideas Contact Our Story Portfolio People Notebook News Giant Ideas Stay in the loop By signing up, I agree with Giant's data protection policy Giant backs frontier technology founders rebuilding the foundations of civilisation. There is a once-in-a-generation opportunity to redesign how the world works. Profound technological breakthroughs are accelerating amidst climate crisis, demographic upheaval and geopolitical revolution. We champion entrepreneurs driven by purpose and relentless ambition to advance humanity. Giant seeks companies reimagining foundational systems: energy, materials, industry, work, finance, biology and healthcare. From AI, robotics and automation to techbio, electrification and the future of work. Giant stands for technology as a force for good, crafted by high integrity founders. Every one of Giant’s partners is a former founder or operator. Only once you’ve built startups can you fully empathize with entrepreneurs. We feel the intense sacrifice and resilience required because we’ve lived it ourselves. Giant moves at the speed of a startup and our team rolls up our sleeves."}],
+
   },
   {
     id: "anri",
@@ -1458,6 +1478,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "The Exploration Company’s mission is to build accessible, sustainable and cooperative space worlds. To realize this mission, The Exploration Company builds and operates ‘Nyx,’ a modular and reusable orbital vehicle that can eventually be refuelled in orbit. Nyx provides a wide scope of missions ranging from resupplying space stations around the Earth and the Moon, free-flying around the Earth or landing on the Moon - and safely coming back to Earth. Nyx starts with flying cargo and has the potential to carry humans."}],
+
   },
   {
     id: "felix",
@@ -1539,6 +1561,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "0 Skip to Content About Us Manifesto Team Portfolio Blog Open Menu Close Menu About Us Manifesto Team Portfolio Blog Open Menu Close Menu About Us Manifesto Team Portfolio Blog About Our story Mosaic’s co-founders, Simon Levene and Toby Coppel, first met as grad school roommates in the US in 1995. We moved to Silicon Valley at the birth of the web, just as the first generation of Internet startups were scaling. This was a formative period that shaped how we think about the impact of technology, and the mix of ambition and risk required to be successful. Over the past 30+ years, we’ve operated and invested across the US and Europe, often side by side, through multiple technology waves: the web, cloud, mobile, and now AI — which we believe will become the biggest wave of all. We began as operators, first at Excite@Home and later together at Yahoo!, building through periods of rapid growth, strategic uncertainty, and market volatility. Those experiences gave us a first-hand understanding of how hard it is to build an enduring company, and continue to shape how we partner with founders today. Chandar Lal joined in 2020, bringing experience across strategy,"}],
+
   },
   {
     id: "samaipata",
@@ -1674,6 +1698,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Seed Fund Main Fund Opportunity Fund Sections + - What We Work On How We Work How We Decide Seed Fund Main Fund Opportunity Fund Thesis: Experiment with large possibilities We invest earliest – pre-seed/seed to Series A – with conviction Making the Impossible Happen We are passionate about technology-based economic disruption in many industries. At KV, we fundamentally like large problems that are amenable to technology solutions. We seek out unfair advantages: proprietary and protected technological advances, business model innovations, unique approaches to markets, different partnerships, and teams who are passionate about a vision."}],
+
   },
   {
     id: "ribbit",
@@ -1755,6 +1781,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "What started as a quest to provide more value to founders grew into an entirely new AI venture capital model that propels founders through the toughest parts of building a company with the right people, programs, and technology. We believed that applying unmatched data and technology to address the top pain points of early-stage startups would produce an unfair advantage and outsized success for our portfolio. Since launching our first fund in 2015, we have scaled quickly to ~$3B in assets under management. We continue to build products and scalable processes to help our companies with the early stages of their journey. We’ve developed our own AI platform and a tech-enabled approach to find the most promising early-stage startups to invest in and provide better value to portfolio companies. Our investment philosophy At SignalFire, we combine the best data and technology with a sector-by-sector investment strategy. We believe in investing early and building long-term relationships with founders. Our companies enjoy unmatched support and outcomes optimized by cutting-edge technology and in-depth functional expertise. We are a team of engineers, data scientists, founders, operators, a"}],
+
   },
   {
     id: "afore",
@@ -1809,6 +1837,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "About Team Companies Writings Playground True Ventures backs founders early, when most people aren’t ready to believe. True leads pre-seed and seed rounds, usually as the first institutional investor, while the product, the market and the team are taking shape. From the first check you can call on more than a thousand founders who have been where you are. And we stay, through the exit and on to the next company. More than a thousand founders have taken a check from True over twenty years. Many are a few years ahead of you and have already made the decision you are facing. They answer each other’s calls about a hire, a first customer, the next round, or a decision. Our job is to introduce you to the people who can help, when you need them, and then step out of the way. We host gatherings of founders and their leadership teams, dinners, and sessions with operators, buyers, experts and advisors. We make the introductions, and the community does the rest. It is also how most new founders reach us: one founder introduces another. We invest in markets before they have a name, across frontier tech, hardware, consumer, enterprise, and biology. A pedometer, a doorbell, a coffee cart, deep l"}],
+
   },
   {
     id: "primary",
@@ -1863,6 +1893,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Portfolio Investors Team News & Events Login My pitch Deutsch English Portfolio Investors Team News & Events Metanavigation About us Career Portfolio Jobs ESG Contact Login It’s all about people . ⌵ HTGF in focus Investing across all major tech fields from software to hardware: From AI, deep tech to biotech. We are founders and visionaries, we have a background in science and business: Together, we have over 300 years of investment experience. We know all the challenges of the early stage – and we love its dynamics. to the team Track Record Dr Wippler has headed the Directorate for “SME and Startup Financing; Kreditanstalt für Wiederaufbau” in the Federal Ministry for Economic Affairs and Energy since 2024. She has gained many years of experience in a number of responsible posts in public administration. In her career development, she has placed a special focus on SME policy and corporate financing. She studied at Cologne University and was awarded her doctorate at Düsseldorf University for a thesis on innovative startups in Germany and the United States."}, {"title": "About", "text": "Portfolio Investors Team News & Events Login My pitch Deutsch English Portfolio Investors Team News & Events Metanavigation About us Career Portfolio Jobs ESG Contact Login ESG at HTGF Sustainability is one of the greatest challenges of our time, and startups are the frontrunners when it comes to innovative solutions. We have been investing in sustainable startups since 2005 and have firmly integrated ESG measures into our processes since 2019. Before investing , we review our exclusion list and the potential impact of your startup together . The process is streamlined and tailored to the early phase . After the investment, our ESG team will support you in setting up your company sustainably from the very beginning. Among other things, we offer sessions on the most important topics in our HTGF Academy. We help you to collect relevant data for your annual ESG reporting so that you can present yourself transparently and convincingly to customers and investors . Sustainability and ESG not only influence how we invest and support our portfolio companies, they also form one of the pillars of our own daily work as the HTGF team."}],
+
   },
   {
     id: "amplify",
@@ -1890,6 +1922,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "Status A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Clear Filters Achira Digital Biology Active Linkedin achira.ai → About Achira is building atomistic foundation simulation models to power the future of drug discovery. Linkedin X actioniq.com → About ActionIQ is changing how brands think about customer experience, digital transformation, and customer data. Allium Data and Analytics Active Linkedin X allium.so → About Allium is a fast and comprehensive blockchain data platform for enterprises. Linkedin X antithesis.com → About Antithesis is one of the pioneers of Deterministic Simulation Testing: their platform runs your complete system, exhaustively analyzes its behavior, and exposes bugs as quickly as agents introduce them. Anyscale Developer Tools and Computing Infrastructure Active Linkedin X anyscale.com → About Anyscale is a fully-managed scalable Ray compute platform to develop, deploy, and manage Ray applications. Archera Developer Tools and Computing Infrastructure Active Linkedin X archera.ai → About Archera is a cloud resource automation platform that enables organizations to operate dynamically in the cloud."}],
+
   },
   {
     id: "rootvc",
@@ -2052,6 +2086,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "USD",
+    files: [{"title": "About", "text": "Haystack has backed founders in Silicon Valley and beyond for over a decade. Here's a little bit more about us, who we are, and how we work. Suno, a Cambridge, MA-based AI-powered music creation platform, has raised $250 million in Series C funding at a $2.45B post-money valuation. Nominal, the first unified, real-time test stack for physical systems, today announced a $75 million Series B led by Sequoia Capital, with significant participation from Lightspeed Venture Partners and continued support from Lux Capital, General Catalyst, Founders Fund, and additional investors. This Palantir alumni-founded startup uses AI to cut through government red tape. It just raised around $15 million, led by Lux Capital."}],
+
   },
   {
     id: "thrive",
@@ -2187,6 +2223,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "home About Team Portfolio News Social Menu AI MODE We support innovative founders moving the world forward. In 2008, Google's founders asked, “What would it look like to create a radically different kind of venture fund?” It would need to have the reliability of a single LP, the autonomy of a traditional VC, and the technical expertise of a founder. It would need access to Google's people, products, global reputation, and the freedom to invest in direct competitors. Launched as Google Ventures in 2009, GV originated as an independent venture capital firm for innovative founders. With Alphabet as our sole limited partner, we focus all our energy on meeting and supporting founders at every stage of company-building. Our operating partners support founding teams across executive talent, communications, and marketing. We also connect startups with Google and Alphabet companies, providing unique access to the world's best technology and talent. GV operates on long time horizons, dealing in decades, not rounds. At launch, we had a $60 million capital commitment and a desire to partner with founders to move the world forward."}],
+
   },
   {
     id: "fly",
@@ -2268,6 +2306,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Saudi Venture Capital Company (SVC) is a Government VC established in 2018 by Monshaat as part of the Financial Sector Development Program (FSDP) to stimulate venture investments by investing in funds as well as co-investing with angel groups for the primary goal of minimizing financing gaps for startups and SMEs by investing SAR 2.8 Billion ($750 Million). Flat6Labs is the leading entrepreneurship platform in emerging markets, empowering entrepreneurs to build, launch and grow transformative ideas through acceleration programs, ecosystem development, and tailored innovation services."}],
+
   },
   {
     id: "eastventures",
@@ -2322,6 +2362,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "LinkedIn Gravis Robotics' mission is to transform heavy construction equipment into intelligent, autonomous machines, addressing industry challenges of stagnant productivity and labour shortages."}, {"title": "Company", "text": "LinkedIn Trogenix’s mission is to develop effective, safe genetic medicines that are curative against multiple types of cancer and longevity-related disorders. Trogenix is building a next-generation gene therapy platform to address the key challenges of safety and specificity in oncology. Using proprietary synthetic super enhancers (SSEs), Trogenix precisely targets therapeutic payloads to diseased cells, minimising off-target effects and maximising efficacy. A spinout from the University of Edinburgh in 2023, Trogenix aims to redefine targeted cancer treatments, with an initial application in brain cancer (glioblastoma)."}, {"title": "Company", "text": "LinkedIn Rivan is building the infrastructure to produce synthetic fuels domestically in Europe, using renewable energy and carbon captured from the air. Rivan vertically integrates solar generation, electrolysis, direct air capture and methanation to produce synthetic methane, a drop-in renewable substitute for natural gas. Its e-methane moves through existing gas infrastructure, creating a practical pathway to decarbonise heavy industry, transport and grid injection while strengthening Europe’s energy security. Rivan was founded in 2024 by serial entrepreneur Harvey Hodd, and has assembled an elite team of 30+ electrical, chemical, and mechanical engineers working from its HQ in London."}],
+
   },
   {
     id: "frst",
@@ -2430,6 +2472,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "We look for the real shifts, scientific, societal, environmental, and back those who shape them. We invest in technologies that regenerate, include, empower and scale across climate, deeptech, retail, inclusion, and beyond. Our belief is simple: talent is everywhere, and access should be too. From rural innovators to deeptech lab technicians, we meet founders where they are and help take them where they need to go! This ambition is underpinned by a strong and long-standing commitment to ESG (Environment, Sustainability, Governance). Since our inception, we have placed sustainability and impact at the heart of our strategy. As a mission-driven and B Corp certified company, our actions are guided by clear values and measurable objectives. This commitment is embedded in our investment decisions and shared across our ecosystem from portfolio companies to investors. Successor of: Purple (2016) and Yellow (2020) Launch date: 2025 Focus of the fund: disruptions with a positive social and environmental impact, especially the ones with a strong science angle in biology, chemistry, physics, mathematics, and l"}],
+
   },
   {
     id: "dsv",
@@ -2484,6 +2528,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "What We Do About Us Investment Strategy Team Portfolio Funds Content Hub News Spinout Report 2026 EIS Knowledge Hub Video Library Contact Open menu Parkwalk Close menu Quick Links Looking to invest? Existing investors What We Do About Us Investment Strategy Team Portfolio Funds Content Hub News Spinout Report 2026 EIS Knowledge Hub Video Library Contact Existing Investors About Us Looking to invest? Explore Now Sorry, your browser doesn't support embedded videos. Groundbreaking ideas were coming out of the UK’s universities. But too often, they stalled due to lack of funding. They were hard to value, hard to back, and even harder to scale. Meanwhile, the UK’s university tech transfer offices were becoming more professional, opening clearer paths from lab to market. With four of the world’s top ten universities and breakthroughs like Graphene at Manchester University, DNA at Cambridge, Fibre Optics at Imperial, and LCD screens at Hull. They just needed the capital and support to grow."}, {"title": "About", "text": "The products shown on this website will place your capital at risk and investors may not get back the full amount invested. Past performance may not be repeated and is not indicative of future results. Parkwalk funds invest in smaller and unquoted companies which carry a higher risk than many other forms of investment. There is no guarantee that target returns will be achieved. There is no liquid market for shares in unquoted companies and there can be difficulties, in valuing and disposing of investments in such companies. Tax reliefs will depend on the investors’ individual circumstance and are subject to change. Parkwalk does not provide investment or tax advice, and the information on this website should not be construed as such. Parkwalk recommends investors seek advice from a regulated financial adviser that specialises in EIS fund investments before making an investment decision. An investment into any of the funds managed by Parkwalk may only be made on the basis of the information set out in the Information Memorandum and Key Information Document. The information on this website is directed at United Kingdom residents only. Please confirm you have read this warning and are"}],
+
   },
   {
     id: "beringea",
@@ -2511,6 +2557,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "About Portfolio Funds & services News Team Contact About Portfolio Funds & services News Team Contact Who we are. Beringea is a transatlantic venture capital investor that seeks to create lasting success for rapidly scaling entrepreneurial companies. We provide patient and intelligent capital and a global footprint to back entrepreneurs throughout their journey. We typically initially invest between $3-10 million in preferred equity, focusing on Midwest-based companies in fast-growing sectors with meaningful revenue at the Series A (or later) expansion or small buy-out stage. We'll typically make an initial investment between £1-10 million into companies turning over approximately £1 million or more. We tend to lead Series A or Series B rounds, with further funding available for follow-on investments. Our series of virtual and in-person events offer the leadership teams of our global portfolio of companies networking opportunities and training to overcome barriers to scale. We use our network of advisers, provide on-the-ground support and share knowledge across our portfolio to help companies expand across the Atlantic. We know talent drives success, so we work closely with founder"}],
+
   },
   {
     id: "uvc",
@@ -2565,6 +2613,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Builders' Circle Home Companies Stories Team About Careers Contact Builders' Circle Builders' Circle Startup Resources Home Companies Careers Stories Team About Contact A unique community b2venture is an early-stage venture capital firm, supported by an unparalleled community of angel investors. Spanning both the worlds of tech and industry, our network of angel investors helps us bring unique expertise, entrepreneurial experience, and hands-on support to our portfolio companies. We invest primarily in the pre-seed and seed stage with the ability to invest in later stages through our Direct Investments track. b2venture is one of the most experienced venture investors in Europe, investing in the earliest stages and beyond. We bring unique expertise, entrepreneurial experience, and hands-on service to our portfolio companies together with our angel investor community. Our mission has always been paying it forward to the next generation just starting out. Every successful entrepreneur we support in scaling their business plants the seed for the next generation. Our portfolio founders can continue their journey with us as angel investors, helping us see emergent technologies and back i"}],
+
   },
   {
     id: "ose",
@@ -2619,6 +2669,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Posts News Oct 27, 2026 The Two-Antibody Problem: Announcing the BigHat-Anthropic Partnership Today, Anthropic and BigHat Biosciences announced a historic collaboration: a single Anthropic researcher, armed with Claude, operated BigHat’s automated lab to optimize two antibodies. This marks one of the first instances of a frontier AI lab and next-gen bio lab teaming up, and a potential watershed for drug discovery. We are investors who never stopped being engineers, operators, policymakers, philosophers, and entrepreneurs. We are equally fervent realists and optimists, with an irreverence for convention and a reverence for wisdom. 01 What is possible now that wasn’t five years ago? 02 How can these breakthroughs create the most economic and societal value? There are myriad ways we can contribute to a better world, from saving lives to improving them. We support company missions as diverse as safer bone marrow transplants, zero-emission aircraft, enforcement of privacy laws, and rapid tunneling for less congested cities. This is ingrained in our motto These are a few of the values that inform where we i"}],
+
   },
   {
     id: "next47",
@@ -2700,6 +2752,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Germany has a longstanding reputation for first-class engineering, for high quality products that have a global impact. We believe that the label 'Made in Germany' needs to arrive in the digital age. We believe that the brands shaping the future will be tech companies. And we believe that some of these tech companies can and must be built here. Since our foundation in 2013, we've been supporting daring entrepreneurs from the German-speaking regions in building global category leaders that will shape the decades to come. Our main expertise lies in supporting early-stage tech startups in their first crucial decisions: from setting up a finance department to the first executive hires. With our industry network, hands-on approach and our supporting functions such as marketing and finance, we help to turn a business idea into a fully-fledged company. As a VC firm with people on the ground in Cologne, Berlin, and Munich we have a deep-rooted network in the German tech scene. That’s why we strongly focus our investment activities on Germany and the German-speaking regions. That doesn’t rule out deals elsewhere - but we certainly need extra conviction then."}],
+
   },
   {
     id: "atlanticlabs",
@@ -2754,6 +2808,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Approach Team Portfolio Founder Experience Founder Experience How we support our Founders from day one to IPO. Go-To-Market Advisory Hands-on consulting from CROs, CMOs, and CFOs who've scaled companies from $1M to $500M+. Perspectives Investor Insights GTM Resource Library Our AI stack Approach How we work Scale is an early-stage venture capital firm focused on AI and B2B software. We are based in the Bay Area, investing out of our $900M Fund VIII. Eighty percent of our investments are lead checks at Series A and B. Sometimes the best support is the freedom to build. We collaborate with urgency when invited, and get out of the way when asked. Whether it is our GTM network or talent resources, we will help you scale. Approach Team Portfolio FAQs Careers Founder Experience Perspectives Press LP Login Join our newsletter to stay up to date on Scale and our portfolio companies."}],
+
   },
   {
     id: "bondcap",
@@ -2970,6 +3026,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "Companies Cambridge GaN Devices Making sustainable power electronics possible Spotlight Cambridge GaN Devices is a fabless semiconductor company at the heart of a new generation of more efficient, more compact and lighter power electronics. With wide application for industrial and consumer electronics uses, the company’s technologies will help deliver power with a smaller environmental footprint. We were born out of a unique relationship with the University of Cambridge and we maintain privileged access to its most inspiring ideas and people in life sciences and deep tech. PRI supports its international network of investor signatories to incorporate ESG into investment decisions and processes. The Investing in Women Code is a commitment by financial services firms to the advancement of female entrepreneurship through improving female entrepreneurs’ access to tools, resources and finance. CIC are supporters of BIA's Women in Biotech, a vibrant network that aims to improve the underrepresentation of women at senior levels in the biotech sector. Offering in-person events, an online forum, a range of guidance and a recently launched mentoring programme."}],
+
   },
   {
     id: "eightvc2",
@@ -2997,6 +3055,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Companies Approach Team Insights Camp Contact Energized by the hard problems and the technologists drawn to them Skylo Technologies Parth came out of MIT's aerospace lab and met Andrew Kalman - one of the original CubeSat pioneers - at Stanford. Together, they set out to do what the satellite industry insisted was impossible: connect any cellular device, anywhere on Earth, affordably. Stefano co-invented diffusion models at Stanford, then pioneered a line of research with Adita and Volodymyr proving the field wrong about whether the same idea could work for language. Matt, Nathan, and Volodymyr spent thousands of hours in grocery store backrooms watching produce managers order fresh food on pen and paper, researching how reinforcement learning could help solve the problem of food spoilage. Gautam, Arjun, and Apeksha built robots that roved the moon, mapped mines, and competed in DARPA challenges - then realized the same structured autonomy could solve the middle mile that robotaxis couldn't. Max, David, and Natan met in MIT Media Lab's \"How to Make (Almost) Anything.\" At the time, professional-grade 3D printers cost $100,000."}],
+
   },
   {
     id: "upfront",
@@ -3159,6 +3219,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "Investors Team Companies Insights Locations Careers Submit a proposal Investors Login Capitalise - Newsletter Delivering fresh insights on the trailblazers solving hard problems in large markets. By subscribing to this newsletter, you are agreeing to receive communications from Amadeus Capital Partners in line with our privacy policy. ContactEngine ContactEngine was a Conversational AI company that used advanced linguistics and intent analysis to automate and optimise customer engagement across digital channels. Website ContactEngine About ContactEngine is a Conversational AI technology that enables brands to proactively engage customers in conversations that fulfil business objectives. ContactEngine automates outbound customer engagement across all channels and generates unique insights into the changing patterns of communication by applying demographic and intent analysis, linguistics and ground-breaking artificial intelligence principles to mass volumes of raw data. In 2021 ContactEngine was acquired by NICE Systems, an Israeli software enterprise company. Amadeus contact Anne Glover Anne co-founded Amadeus Capital Partners in 1997 and ha"}, {"title": "Company", "text": "Investors Team Companies Insights Locations Careers Submit a proposal Investors Login Capitalise - Newsletter Delivering fresh insights on the trailblazers solving hard problems in large markets. By subscribing to this newsletter, you are agreeing to receive communications from Amadeus Capital Partners in line with our privacy policy. Tobii Tobii is the global leader in remote eye tracking, developing technology that powers next-generation human-machine interaction across consumer and professional applications. Website Tobii About Tobii, founded in 2001, is the global leader in remote eye tracking solutions. The company’s mission is to establish eye tracking as a core mode of Human-Machine Interaction and to integrate the technology into personal computers, tablets, and a wide range of consumer and professional applications. Headquartered in Sweden, Tobii has a global presence with offices in the United States, China, Japan, Germany, the United Kingdom, Norway, Taiwan, and South Korea, supported by a worldwide network of resellers. Tobii was listed on Nasdaq Stockholm in 2015 (STO:TOBII)."}],
+
   },
   {
     id: "compoundvc",
@@ -3294,6 +3356,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "I missed the adrenaline of building at the frontier, I missed the focus of a singular mission, but most of all I missed the camaraderie. So I set out to recreate it while figuring out my next project. It started with 10 people around my dining table reading new AI papers. We were inspired by historical learning societies like Benjamin Franklin's Junto Club and the Bloomsbury Group. Without knowing it, this group of early engineers from Facebook, Dropbox, and Stripe was solving -1 to 0. South Park Commons began in 2016 around Ruchi's dining table. Just ten people, each pursuing their own project, with a shared commitment to keep showing up. Over time, a clearer idea took shape: to build a space for that exact phase—when you don't yet know what comes next, but you know you want to build something meaningful. Later that year, South Park Commons became a physical space in San Francisco's South Park neighborhood. Two years later, we raised a venture fund to back companies started within the community and introduced the Founder Fellowship for those still building conviction."}],
+
   },
   {
     id: "launchafrica",
@@ -3456,6 +3520,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Starting with fundamental truths rather than analogies or conventions, we help founders build truly innovative companies that stand the test of time. We lead rounds to partner with a small group of early-stage companies each year, going all-in with our time, network, and resources where we can make a meaningful impact. We build enduring partnerships founded on trust, radical transparency, shared values, and a commitment to building something extraordinary together. Our global team brings diverse perspectives and cross-border experience to our founders. We help companies access the best ideas, talent, and markets across the world. Our investment philosophy is guided by conviction and a relentless pursuit of unconventional ideas and visionary founders. Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Suspedisse varius enim in eros elementum tristique.” Founded in Menlo Park, California by former Accel Partner Dixon Doll and David Chao, with a vision to advance global connectivity through technology."}],
+
   },
   {
     id: "canary",
@@ -3510,6 +3576,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "Yurakucho Subway Line, Kojimachi Station, Exit 5, 30-second walk Hanzomon Subway Line, Hanzomon Station, Exit 5, 10-minute walk Chuo Sobu JR Line / Marunouchi Subway Line, Yotsuya Station, 10-minute walk Chuo Sobu JR Line / Shinjuku Subway Line, Ichigaya Station, 10-minute walk"}, {"title": "Company", "text": "From its founding in 1992, the vision of the GLOBIS Group has been to create a management ecosystem of people, capital, and knowledge and to drive societal creation and transformation. By 1995, the “people” aspect was represented by the business school and corporate training ventures, and the “knowledge” aspect by the publishing and management research ventures. Initially, founder Yoshito Hori intended to wait until GLOBIS had established credibility before launching the venture capital business. However, at the end of 1995, he decided to advance the plan. This decision was deeply influenced by the circumstances of the Japanese venture capital industry at that time. In the 1990s, Japan’s venture capital differed in many ways from that of the United States. While American venture capital focused on early stage companies shortly after their founding, Japanese venture capitalists primarily invested in later-stage companies that were already considering going public. Moreover, while American venture capitalists took a direct, proactive approach to supporting management, Japanese venture capitalists typically only provided funding. Hori saw a societal need here and felt a mission to do"}],
+
   },
   {
     id: "ignia",
@@ -3537,6 +3605,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "About Us Portfolio Team NEWS about us portfolio team news ARCHIVES pitch to us find us Turning vision into value We invest in global, early-stage startups striving to solve fundamental pain points in emerging markets. IGNIA is the fund of choice for startups’ expansion into Latin America, serving as a bridge to support regional startups in their international journey and guiding global startups as they navigate Latin America. Partnering with IGNIA offers unparalleled advantages for both startups and investors. Here’s why: info@ignia.vc Sign up to our newsletter Designed & built by: c o d e v i b e CDMX Office Edgar Allan Poe 102, Polanco, Miguel Hidalgo, CDMX, 11540"}],
+
   },
   {
     id: "eclipsevc",
@@ -3645,6 +3715,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "Standards for Independence of Independent Directors In order to ensure the independence from JAFCO Co., Ltd. (the \"Company\"), independent directors of the Company shall satisfy the following criteria: (1) A person executing business (*1) of another company at which a person executing business of the Company serves, or has served in the past three (3) years, as a director or officer (2) A major shareholder (a shareholder holding 10% or more of the voting rights directly or indirectly) of the Company or a person executing business of that shareholder. (6) An expert in a field such as legal matters, accounting or taxation, a consultant or other such person receiving remuneration from the Company Group in excess of ¥10 million per year outside of remuneration for officers. (7) A partner or a person executing business of an organization such as a corporation or an association that provides services for legal matters, accounting, taxation or consulting, or other specialist services, where the organization is deemed as a major business partner. (8) A person executing business of an organization that receives a donation exceeding a certain amount (*4) from the Company Group."}],
+
   },
   {
     id: "goldengate",
@@ -3753,6 +3825,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Geopolitical, environmental and resource pressures are reshaping the world. The systems we rely on - for energy, production, food, infrastructure - are under strain, and unable to support long-term sustainability, stability and prosperity. For investors like us, that's the most important signal available. Understanding which systems are breaking, where the pressure points are, and which technologies are built for the world that's coming is what separates great investments from good ones. Our in-house team runs consequential Impact Assessments and deep technical due diligence on every deal — stress-testing models against real-world physics, material availability, energy demand, and system-level dependencies. For founders, this means independent, science-backed evidence you can take into enterprise sales, fundraising conversations, and regulatory discussions. We map impact against planetary boundaries: the nine Earth system limits that define the safe operating space for humanity, and the most rigorous framework for understanding where systemic risk and systemic opportunity converge."}],
+
   },
   {
     id: "addition",
@@ -3861,6 +3935,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "Ethos Companies People Jobs Get in touch Ethos Companies People Jobs Get in touch We would love to hear from you. For new business or general enquiries please e-mail us at: [email protected]"}],
+
   },
   {
     id: "placeholder",
@@ -3942,6 +4018,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "We invest at the inflection points where blockchain reshapes the broader economy. Every check is underwritten with the following framework in mind: a daring founder, enablement and the potential for economic optimization. Research Research Research 1 Underwrite with technical depth We were founded by serial tech entrepreneurs with deep technical backgrounds. Our diligence reflects it: partner-led, and able to evaluate cryptographic architecture, not just market sizing. Every check goes through the same steps: research-driven sourcing, eight-dimension scoring, Investment Committee governance, and a disciplined exit process. The record shows conviction, not just duration: capital deployed in 2018, distributions to investors through the 2022 cycle, and writing first checks through every drawdown since. The Onchain Revenue Report, our thesis work, and the dashboards we maintain are the same instruments we use to underwrite. We make them public so founders can see where real demand sits, which revenue models are working, or where the next durable network is likely to emerge."}],
+
   },
   {
     id: "multicoin",
@@ -3969,6 +4047,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "/ About / Portfolio / Insights / Policy / Careers / 中文 / 한국어 / 日本語 / Español Newsletter Contact Us About Portfolio Insights Policy Careers / About Us / The Firm Multicoin Capital is a thesis-driven investment firm that invests in cryptoassets, tokens, and blockchain companies reshaping trillion-dollar markets. We manage a hedge fund and several venture funds, investing in both public and private markets. Since founding the firm in May 2017, we’ve developed a reputation for being forward-looking, independent thinkers. We are known for pioneering token economic models and valuation methodologies, and for successfully challenging long-standing assumptions that the crypto ecosystem takes for granted. As a crypto-native fund, we actively engage and participate in the networks we invest in. Moreover, we are intimately familiar with crypto’s bespoke technology landscape and market structure. We’re hands-on investors and do everything in our power to maximize the success of our portfolio companies. Today, we manage long duration capital on behalf of storied venture capital funds, family offices, institutions, and high net worth individuals. If you’d like to work with us, reach out."}],
+
   },
   {
     id: "salesforcev",
@@ -3996,6 +4076,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Portfolio Perspectives Insights News Portfolio Newsletter Team About Track Record Investment Strategy Values FAQ Open Search Close Search Search Search For the most Enterprising Founders Together we’re reinventing the way the world works. Since 2009, we’ve partnered with more than 700 of the world’s most tenacious enterprise software companies, invested over $7B in capital, and guided more than 200 portfolio companies to IPOs and acquisitions. This is why we invest across the U.S., Europe, Israel, Japan, Korea, India, and Australia. Our global reach allows us to partner with visionary entrepreneurs from diverse markets, helping them unlock opportunities on an international scale. Our strategy is simple: we leverage our decades of expertise in the cloud and our deep, long-term relationships with key decision-makers at thousands of businesses worldwide to give you a unique advantage. We help you build credibility, accelerate your growth, and unlock the resources you need to scale. As patient capital with the flexibility of an eve"}, {"title": "Company", "text": "Evolve how marketers work by harnessing AI to personalize and automate customer communications across every channel, at scale. Increase revenue and deliver consistent customer experiences across online, in-store, and mobile channels with Commerce Cloud."}],
+
   },
   {
     id: "squarepeg",
@@ -4023,6 +4105,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "We believe that technology will transform every industry in the world – and that brilliant, ambitious founders will sit at the heart of this change. We are a venture capital firm that helps founders from our corner of the world shape the future. Founded in 2012 in Australia, we combine the best of a local partner with a global network of companies and now back founders early and repeatedly across APAC’s fastest-growing technology markets. Six funds in with US$4.6 billion in assets across our venture capital and growth funds, we’re proud to have backed three of Australia's highest-valued private tech companies - Canva, Airwallex, and Rokt. When we started in 2012, 90% of tech unicorns came from the US and China. We now back founders early and repeatedly across APAC’s fastest-growing technology markets. We really care about getting to know our founders, learning how to support you best from leaning in to harnessing connections or simply being there to listen. Do the best work of your career as part of our team. We’d love for you to join our talent network so we can stay connected."}],
+
   },
   {
     id: "localglobe2",
@@ -4050,6 +4134,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Phoenix Court Companies Phoenix Court Works Funds LocalGlobe Latitude Solar Basecamp About Us Team Jobs Contact Open Court LocalGlobe Latitude Solar Basecamp One company. We are built to stay with you from seed through growth and into the public markets and beyond. Same company, same relationships, different pools of capital, so you can keep building with people who already know the business. It is a real building in a real neighbourhood, chosen deliberately. Being based in Somers Town, at the edge of King’s Cross, placed us at the centre of one of Europe’s most important innovation clusters, alongside a community shaped by inequality and a long tradition of social justice. Phoenix Court was designed as an open, ground-level space. A place where founders, investors, policymakers, and neighbours could come together. A place that reflects a belief that innovation should be connected to the real world, and that success carries responsibility. Phoenix Court Works grew from the same belief that shaped the firm: that success should create value beyond a small group of partners. We built our neighbourhood into the economics of the busi"}],
+
   },
   {
     id: "footwork",
@@ -4320,6 +4406,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "EVENTS JOBS ASK AI Kimi ChatGPT Claude DeepSeek 中文 A b o u t U s ZhenFund is an early-stage venture capital firm backing bold founders with disruptive visions for the future. Over the past decade, we've partnered with startups that have redefined industries, including REDNote, Moonshot AI, Manus, Genspark, Horizon Robotics, HeyGen, Apollo.io, Nuro, Momenta, Flexiv, Yatsen Group (Perfect Diary), Jumei, OpusClip, Typeless, DeepGlint, and ARX—many of which have grown into unicorns and global leaders."}],
+
   },
   {
     id: "moonfire",
@@ -4455,6 +4543,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "We are a team of experienced entrepreneurs and technologists who have a 30-year history & track record working together successfully as a team. We operate a platform of cross-border technology Funds spanning key markets that are essential for the execution of the Cross Border Value add Bridge Model and for investing in the increasingly global technology sector We invest in defensible sectors with fast growth potential where we bring deep domain expertise, knowledge and experience. Atlantic Bridge believes that responsible investing and sustainability are critical to the future of the planet, the state of society and ultimately, to the success of the firm. We track all long-term trends, including sustainability trends, as part of our overall investment strategy. As signatories of the Investing in Women Code, we are committed to support the advancement of female entrepreneurship in the United Kingdom by improving female entrepreneurs’ access to tools, resources and finance from the financial services sector. Atlantic Bridge is a Global Growth Equity Technology Firm with over €1 billion of assets under management across eight Funds, investing in technology companies in Europe and the"}, {"title": "About", "text": "Atlantic Bridge is a Growth Equity Firm with a Cross Border Value Add strategy. We invest in deep technology companies in Europe, the UK and the US. Our team is made up of successful entrepreneurs and senior technology industry executives and we invest in strong ambitious entrepreneurs and management teams that have the passion and drive to scale up and exploit major growth opportunities. We help our portfolio companies expand and grow internationally through our global platform with our team and offices in Dublin, London, Munich, Paris and Palo Alto. Atlantic Bridge-backed AI infrastructure company SambaNova has completed the first close of a $1 billion Series F financing round, valuing the business at $11 billion post-money, with the round led by General Atlantic. Alongside the funding, SambaNova announced that JPMorganChase has selected the company as an inference infrastructure partner, with its SN40 and SN50 systems set to power secure, on-premises AI inference for the bank. Rodrigo Liang, co-founder and CEO of SambaNova, said the valuation reflects the growing importance of fast inference in enterprise AI deployment. Atlantic Bridge portfolio company SambaNova has raised $1 b"}],
+
   },
   {
     id: "techstart",
@@ -4563,6 +4653,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "AngelPad is a seed-stage accelerator program based in NYC and San Francisco. In the past 8 years we have launched more than 150 companies in 12 cohorts. Every 6 months we select about 20 teams from a huge pool of applicants (usually around 4000) to work with us. While others have decided to “scale” and take on more companies or launch more cities, we have stayed true to our original goal: Find a bunch of awesome companies with founders we would like to work with and spend three very intense months with them . This focus has paid off, AngelPad has risen to be the #1 Accelerator in the U.S. (at least that’s what a real study from MIT/Brown University says) and Strictly VC called us the “Anti-Y Combinator”. During the program, we work on everything , really, everything. From finding product market fit, defining a target market to getting first validation for the company. AngelPad is Thomas Korte and Carine Magescas , a husband-and-wife founder team, who met working at – what else – a Startup back in 2001 in San Francisco. Business Insider profiled them in this article: “Meet Carine Magescas & Thomas Korte , the husband-and-wife"}],
+
   },
   {
     id: "plugplay",
@@ -4590,6 +4682,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "We are passionate about empowering tomorrow's technology, connecting change-makers, and leading organizations to create positive change . Our ecosystem unlocks new opportunities, drives growth, and fosters a culture of innovation. Innovation Readiness Quiz Take our 2-minute assessment to find out where you stand, and where to grow. Take the Quiz -> Commitment to Social Impact Learn about the Plug and Play Foundation -> DRIVE We have established a dedicated arm for assisting underresourced founders & communities. DRIVE 's success will be achieved through a community-centric approach needed to build a thriving ecosystem for all founders. Through the DRIVERS initiative, employees volunteer their time to support local community projects & run internal drives for essential resources like food, clothing, & hygiene products. At Plug and Play Foundation our mission is to build the next generation of impactful entrepreneurs, committed to empowering and inspiring entrepreneurs from communities that face significant opportunity gaps. \"I'm inspired by the incredible minds we work with. I hope to play a significant role in our entrepreneurs' journeys a"}, {"title": "Company", "text": "Playbook Innovation Services arrow_drop_down Venture Capital arrow_drop_down Vertical Industries arrow_drop_down Insights arrow_drop_down About Us arrow_drop_down Locations Success Stories Co-Working arrow_drop_down Events Contact search search Open main menu menu Where it all started The Lucky Building Three decades ago, Plug and Play's Founder and CEO, Saeed Amidi, bought 165 University Avenue, in Palo Alto, California. That office became known as \"The Lucky Building,\" after hosting companies like Google and PayPal. Saeed has experience growing businesses in numerous industries, including real estate, bottled water, packaging, and technology investing. Following the early success of his various businesses, The Amidi Group purchased \"The Lucky Building\" in Palo Alto and decided to rent the extra office spaces to startups. In the midst of all his entrepreneurial pursuits, Saeed never lost sight of what matters most: family. He has encouraged the importance of building strong relationships both personally and professionally. With Plug and Play being a family-owned business, he’s implemented a work culture that supports employees and makes them feel like they are part of the family."}, {"title": "About", "text": "Playbook Innovation Services arrow_drop_down Venture Capital arrow_drop_down Vertical Industries arrow_drop_down Insights arrow_drop_down About Us arrow_drop_down Locations Success Stories Co-Working arrow_drop_down Events Contact search search Open main menu menu Work With Us Join a team that is changing the world. Our Culture At Plug and Play, you’ll come across an employee base with diverse backgrounds who all share the same goal: to foster innovation. As a team, we value teamwork and intellectual curiosity, among others. Our entrepreneurial culture focuses on building things from scratch, including our relationships. Working at Plug and Play means gaining access to an exclusive international network. If reaching milestones in your career is important to you, Plug and Play is the place to be because you’ll always have the right people by your side. See what it's like working at Plug and Play play_circle PLAY VIDEO What Teamwork Really Means to Our Colleagues play_circle PLAY VIDEO A Quick Peak into what it's like Working at Plug and Play play_circle PLAY VIDEO Beyond Borders: Celebrating our Global Cultural Diversity! Join our team Explore Job Vacancies Careers -> Plug and Play"}],
+
   },
   {
     id: "gener8tor",
@@ -4725,6 +4819,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "How we invest Founder experience Overview How it works Partner bench The method Resources Perks The Vault Community Portfolio About Overview Our story Team Partners Press Insights Careers FAQ Pitch us About Alchemist Fourteen years backing deeply technical founders. An early-stage venture firm based in San Francisco, with founders from more than 60 countries in the portfolio. Partners Team Recognition News Insights The firm Built with founders since 2012. Showcase It started in 2012 with Ravi Belani, then a venture capitalist at DFJ, hosting founder events in San Francisco. Enterprise founders kept telling him the same thing: they did not need millions of dollars to get started. They needed a small check and a program built for them, at a time when the best-known accelerators were designed for consumer apps. So he carved out a home for that group: Alchemist, an accelerator built only for enterprise founders and backed by DFJ, Khosla Ventures, US Venture Partners, Cisco and SAP. Together they brought in the best Partners in the industry to keep developing sales methodologies built specifically for the enterprise, work that became our"}],
+
   },
   {
     id: "masschallenge",
@@ -4914,6 +5010,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Team", "text": "Search Menu Primary Navigation Strategy Strategy Investment Types Venture & Growth Structured Finance Sectors Energy Food & Agriculture Oceans Value Creation Portfolio Engagement Impact Community & Events Team Team Careers Working at S 2 G Open Positions Companies Insights Insights Types Articles Podcasts Reports Videos News Team A different kind of investment team. Fueled by a profound passion for building great companies and cultivating trust. We push past groupthink and harness our unique areas of sector specialization and battle scars to reimagine industries and processes."}],
+
   },
   {
     id: "fiftyyears",
@@ -4995,6 +5093,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Calculus Capital – Experience counts About Products Portfolio News Contact Don’t invest unless you’re prepared to lose all the money you invest. You are unlikely to be protected if something goes wrong. Take 2 mins to learn more Calculus is a pioneer of EIS, having created the first UK approved EIS fund in 1999. Since then, we have gone on to launch a generalist EIS Fund every year and multiple VCT share issues and in October 2022 we launched our first Knowledge Intensive EIS Fund. In January 2026 we launched the Calculus Inheritance Tax Solution, providing secured loans for film and TV productions. We have built a strong reputation as an investor in EIS and VCT Qualifying Companies through our multi-award-winning Calculus EIS Funds and the Calculus VCT . Our focus on capital appreciation, a diligent investment and monitoring process and our record of profitable exits distinguishes us from other EIS and VCT fund managers. The Manager is further consolidating its position as a leading generalist EIS manager by using its strong fund raising to augment its ability to attract good opportunities."}],
+
   },
   {
     id: "fff",
@@ -5022,6 +5122,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "About Portfolio Camp FFF Press Content Voices About Portfolio Camp FFF Press Content Voices About Us In 2014, we created Female Founders Fund with one simple belief: women will build the companies of tomorrow. Since then, we’ve become the leading source of institutional capital for female founders raising seed capital with over $3B in enterprise value. In 2014, $2.2B or 2% of venture capital dollars went towards female-founded companies. Five years later in 2019, 2.7% of venture capital dollars went towards companies with female entrepreneurs. Yet women start businesses at a rate 1.5x higher than the national average and dominate the workforce holding 56% of professional jobs. In 2015, First Round Capital’s 10 Year Review showed companies with female founders on the founding team perform 63% better than those with only male founders . McKinsey & Co’s 2018 study shows companies in the top quartile for ethnic diversity are 21% more likely to experience above average profits . In the business world, its now widely accepted that diverse companies drive stronger public and private market returns ."}],
+
   },
   {
     id: "sevenseven",
@@ -5076,6 +5178,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Agate is a founding General Partner at Norrsken VC. She started her career in finance working in investment banking and private equity at Citigroup and Morgan Stanley in London and New York. She then started her start-up journey and was one of the first employees at BrickVest, a London based fintech start-up. In her free time she is most passionate about education and co-founded Bright Mentors, an edtech charity in London. Agnes Svensson, Chief Impact Officer at Norrsken VC, brings over 12 years of experience, notably at Klarna, driving sustainability, diversity, and inclusion. At Norrsken, she leads impact measurement, ensuring startups report effectively. Alexander Danielsson serves as a Partner at Norrsken VC. Having honed his expertise in private equity during his tenure at TA Associates, Alexander possesses extensive insights into B2B SaaS. His passion lies in championing visionary founders across the UK, Ireland and Nordics in the realm of climate technology. Anna Lundin is an Investment Manager at Norrsken VC. Prior to joining us, she spent 8 years working in Strategy, Operations and Market Expansion at Spotify. Anna has always had a passion for the intersection between fina"}],
+
   },
   {
     id: "vendep",
@@ -5211,6 +5315,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Portfolio Team Playbook Centaur Contact Apply for funding The Icebreaker.vc playbook vol 3 We've revamped our playbook. We’re shortly introducing our learnings and focus here and will elaborate on these topics in coming blog posts. Tl;dr; results are great; more focused strategy to maximize returns; more partner-led portfolio time; We are meeting a lot of amazing teams and we are still seeing a massive gap in idea-stage funding. During the last 9 years we have partnered up with 130+ idea-stage teams. We’ve learnt a lot and are dedicated to keep improving our support. This will continue to be our focus moving forward. Our idea-stage portfolio model from our first fund has proven highly efficient. We’ve returned about half of the first fund already, putting us in the top quartile of our vintage in Europe. Plus, we have the largest idea-stage portfolio in the Nordics and Baltics that’s progressed from idea to seed stage. Our current estimate is that Fund I will return the invested capital 5x based on current portfolio company growth rates and standard exit multiples. With our new model, we can fund idea-stage teams with up to €1.5M before they go out to raise their next round."}],
+
   },
   {
     id: "primemovers",
@@ -5238,6 +5344,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "We invest in startups reinventing energy, transportation, infrastructure, manufacturing, human augmentation, and agriculture We offer Prime Movers comprehensive resources and integrated coaching to support the transformation of world-class technical experts into extraordinary executives. Our team has developed in-depth academic scientific research, commercialized novel intellectual property, scaled significant enterprises, and mentored renowned scientists on their entrepreneurial journey. We only make a small number of investments so that we can dive deep with every Prime Mover we back and ensure that we create outsized value to dramatically improve the odds of success. That approach has backed companies including Commonwealth Fusion Systems, Figure, Archer and Hark. As Prime Movers, we consistently ask “what do I feel?” and “why do I feel it?” in order to master our psychology and identify the appropriate distinction between our emotions and the facts. We recognize that we cannot shape the external world to realize the ambitions of our vision, without first crafting ourselves into our highest potential. Self-realization is the root of accomplishment and fulfillment and that journe"}],
+
   },
   {
     id: "threesixty",
@@ -5319,6 +5427,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Since 2010, SBC has run over 150 accelerators in 20+ counties. We exist to ensure founders reach unparalleled potential, just like we keep doing for our existing 1600+ portfolio companies. This is done by helping them to scale their network, providing access to capital, and preventing avoidable mistakes - allowing them to reach in the 3-months accelerator what they would only achieve in 2+ years. Alumni deals, new accelerators across the globe, exclusive events. In the newsletter, we share some of the best startups (and investment opportunities) that come across our desks. Let’s make sure all the good solutions out there get the fuel they need. Let’s make sure these startups meet the investors that can enable them to make an even bigger impact! Stay up to date with our local office news! In this newsletter you will find the most relevant (local) updates. Get the latest corporate insights, news, and trends in 60 seconds reading time. The smarter, faster, and better-informed, way to stay ahead of the competition."}, {"title": "About", "text": "Startupbootcamp helps the world's most promising startups build a sustainable global business, our multi-faceted accelerators combine deep industry expertise with extensive insights from the startup ecosystem. We were one of the first European acceleration platforms, and now operate across 4 continents with over 80 startup accelerators. We believe the future belongs to those who solve the world’s biggest problems. We commissioned an analysis with the question “How many sustainability startups does the world need to produce in order to solve the most pressing sustainable development goals?” It will take 100.000 startups to reach the UN's SDGs before 2030.There are 100,000 entrepreneurs in this world who are going to be leading the change into a new era of sustainability. Startupbootcamp here to invest and support all of them in shaping the future of the world. We support early-stage tech-founders and rapidly scale their companies by providing direct access to an international network of the most relevant mentors, partners, and investors in their industry. We support founders grow in any possible way and to facilitate collaboration between growth-stage companies and established playe"}, {"title": "About", "text": "Here, we have compiled a list of common questions and answers to help you better understand our company and our services. If you have any other questions that are not addressed below, please feel free to contact us directly. Startupbootcamp is a global network of industry-focused startup accelerators. We provide mentorship, funding, and resources to early-stage companies in various industries. Startupbootcamp offers a three-month acceleration program to selected startups. During this accelerator, startups receive mentorship from industry experts, access to our global network of partners, and funding to help them grow their business. Startups can apply to join our accelerators through our website. Simply select the accelerator that aligns with your industry, and fill out the application form. Startupbootcamp provides coworking space for startups during the three-month accelerator in the city in which the accelerator is taking place. The application process for Startupbootcamp involves filling out an online application form, followed by a review of your application by our team. If you pass the initial review, you will be invited to pitch your st"}],
+
   },
   {
     id: "indiaq",
@@ -5454,6 +5564,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "For founders Portfolio People News Let's talk Investor login We help you build the next big thing Decades of experience as investors and builders in your corner. After scaling tech companies across Europe and the US, our founding partners were convinced that Nordic tech would continue to rise and compound. More repeat founders, more ambition, and more companies building for global markets from day one. What the region needed was a world-class VC firm with entrepreneurial DNA, built to support the most ambitious founders in their earliest rounds. And by doing so, help push the wider ecosystem forward. When the opportunity came to build that firm, they brought their network and experience with them. Founders behind companies like Skype, Wise, Supercell, Small Giant Games, and Smartly were among the first to believe in the vision and became early limited partners in the fund."}],
+
   },
   {
     id: "serena",
@@ -5589,6 +5701,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Jonė started her career at IBM to see what tech dinosaurs look like and never wanted to go back to the life of a global corporation. So she dived right into advising startups at Civitta and Startup Division, and later — managing the first VC fund under Startup Wise Guys flagship. Jonė knows it all about fundraising, strategy, and metrics, and is passionate about marketplaces, wellness tech, and fintech. Dmitrij‘s track record includes several of his own businesses — some failed, some exited. His own experience led to a management consulting career where he learned everything about hands-on work, analytical thinking, project management, business development, coaching, leadership, and team management. Finally, Dmitrij entered the VC world to manage his first fund together with Jonė — and now, continuing this journey at FIRSTPICK, he shares all of the product-market fit, sales, and strategy know-how with portfolio startups. With over a decade of experience working alongside day -1 founders, Andra has built her career across consulting, acceleration, and venture capital. She began with entrepreneurship and coding education before moving into ma"}],
+
   },
   {
     id: "idgcap",
@@ -5616,6 +5730,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Founded in 1993 in the United States, IDG Capital was built on the belief that great ideas can come from anywhere and that visionary entrepreneurs deserve committed partners. Entering China at a pivotal moment in its transformation, we stood alongside founders determined to create enduring companies and lasting impact . Today, we bridge East and West with a global perspective, deep local roots, and a community of over 300 like-minded professionals . As we pursue our goal of becoming a 100-year firm , we remain dedicated to empowering the builders of tomorrow to scale new heights and shape a better future. If we understand what founders want and need, and if we're clear on the state of the market, we're in a great place to help them go the distance.” Founded as the venture capital arm of IDG; entered the Chinese market in the same year, becoming one of the first institutions to conduct private equity investing in the country We've gathered reflections from decades of investing across sectors and around the world — for anyone working on the same questions."}],
+
   },
   {
     id: "startmate",
@@ -5643,6 +5759,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "We’re making Australia and New Zealand the most fertile ground a startup seed could possibly be planted. By building the ecosystem that startups need to thrive. Plus, we’ll solve some of the biggest existential threats to humanity along the way. We have all the potential to make this dream a reality and our legacy at Startmate will be defined by how well we can unlock and unleash that potential. The culture at Startmate is best articulated through our values and operating principles. Our values are our guiding principles that help us and our community agree on what matters, while our operating principles demonstrate exactly how we put them into action. We're always looking through the lens of scale, whether it's at the community, product or individual level. After all, we can only grow as fast as the systems we create. To maximise growth and impact, we need to leverage each other and our community. We’re trying to build something where people can create value for themselves and others, because Startmate itself will never be as talented and magical as the sum of our community."}],
+
   },
   {
     id: "mainseq",
@@ -5697,6 +5815,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "History Founded by industry entrepreneurs, BlackFin is the sector leader with 2 strategies, 6 offices, 14 partners and a team of 60 2009 Creation BlackFin Capital Partners founded"}],
+
   },
   {
     id: "hightechxl",
@@ -5805,6 +5925,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "AgriFood Energy Emerging Tech Biochar Network Food Circularity Network Portfolio FAQ News Press Releases Forward News Press Releases Forward About Team Careers Policies Contact About Team Careers Policies Contact Empowering founders to drive positive change on a global scale © Rockstart"}, {"title": "About", "text": "In 2026, the New Energy Challenge (NEC) has its eleventh edition, supporting technology-focused start-ups and scale-ups that are shaping the future of the energy sector at scale. This competition connects innovators with investors and industry experts and may provide access to knowledge, support and potential funding opportunities. The New Energy Challenge 2026 is seeking start-ups and scale-ups with technologies, platforms and business models that can accelerate the growth of biochar carbon removal by expanding market opportunities, strengthening confidence in carbon removal outcomes, improving operational performance, and enabling broader adoption across sectors. Certain lower-carbon liquid fuels can contribute to reducing lifecycle emissions in transport sectors that are difficult to electrify and, depending on the fuel and infrastructure, may be compatible with parts of the existing fuel system. Some lower-carbon liquid fuels may, subject to applicable specifications and blend limits, be used in existing infrastructure or equipment with limited modifications. We are also interested in novel concepts for wastewater and condensation: demonstrated management of wastewater, water i"}, {"title": "Product", "text": "--> Products Bundles Resources Info Library Infographics Customer Stories Customer Testimonials Blog Latest trends, tips and tricks and help guides to take your eCommerce business to the next level. Added to cart A subscription entitles you to 1 year of updates and support from the date of purchase. Requires businesses collecting personal data from Indian users to obtain free, informed, and specific consent before processing. Supports the right to withdraw consent, data principal rights, and mandates clear notice about data usage in simple language. Enable Google Consent Mode v2 on your WordPress site with a single click. Manage consent signals for all Google services while keeping the experience smooth for your visitors. It's ADA and WCAG compliant, works with unlimited page views , and performs consistently whether you run a personal blog or a high-traffic WooCommerce store."}],
+
   },
   {
     id: "astella",
@@ -5859,6 +5981,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Our mission is to catalyze transformation in Latin America by partnering with the region's top entrepreneurs. Together, we will create an unbreakable cycle of innovation, empowerment and change. We are led by authentic, motivated and diverse leaders who envision the impossible. Our success is directly tied to that of our entrepreneurs, so we believe in long-term partnerships."}],
+
   },
   {
     id: "nazca",
@@ -5886,6 +6010,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "This material is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to purchase any security. Investments in private companies are speculative and involve a high degree of risk. Any Nazca investment vehicle is offered only to investors who qualify under applicable securities laws. For over 12 years, we've combined deep networks, proprietary data, and AI to back the companies shaping the future — from the earliest stages to pre-IPO. 01 Founder Centricity We put founders first and at the core of our business — supporting them throughout the entrepreneurial journey while building long-term, profound relationships. 02 Integrity We keep our promises and meet expectations with strong moral principles — being honest, respectful, trustworthy, and responsible in everything we do. 03 Boldness We measure, undertake, and navigate risk by getting things done through innovative actions — daring to take the path others avoid. 04 Stewardship The careful, responsible, and efficient management of founders' dreams and the investors' capital entrusted to the firm's care."}],
+
   },
   {
     id: "sawari",
@@ -5913,6 +6039,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Sawari Ventures is a venture capital firm based in Cairo, investing in knowledge and innovation-based technologies across North Africa. In our part of the world, everywhere you look, there are huge opportunities to be captured and entire industries ripe for transformation. We believe the best way to tackle these transformations is to pair the best talent with smart capital. Our goal is to empower entrepreneurs in the region to create innovative solutions that will drive the region’s economies for years to come. We focus our investments on growth and early-stage startups across industries, in sectors including consumer internet, fintech, edtech, healthtech, deeptech, and e-commerce and enabling infrastructure. We provide a small allocation to seed stage investments and, through our investments in the Tunis and Cairo seed stage vehicles of Flat6Labs, further contribute to building and strengthening the region’s early-stage ecosystem. Our region has an abundance of talent that we are convinced can transform industries if given the opportunity, capital, and necessary support. Our deeptech investments are testament to the innovation that can and will grow out of this region."}],
+
   },
   {
     id: "insignia",
@@ -5967,6 +6095,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "We invest in highly profitable companies in fast-growing market segments and work actively alongside management to build market leaders. Across 40+ platform investments in physical products, digital services and software, primarily in the Nordic lower mid-market. We take majority stakes in high growth, highly profitable businesses, primarily in the Nordic lower mid-market, with the ambition to build European and global market leaders. We back product-led businesses, physical and digital, with proven product-market fit and highly scalable business models. EUR 10 million are complemented by co-investment SPVs and debt. We work hands-on with management and commit real time and resources to strengthen profitability, accelerate growth and build a clear path to exit."}],
+
   },
   {
     id: "domo",
@@ -6021,6 +6151,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Home About Who we are How we invest Portfolio Team Insights Home About Who we are How we invest Portfolio Team Insights Contact us info@novastarventures.com \"Traveller, there is no path. The path is made by walking.\" Spanish poet, Antonio Machado Our story We love this quote from Spanish poet Antonio Machado. The Novastar adventure started way back in 2009 when our co-founders began making seed investments in East African start-ups, at a time before the African VC asset class had a name. What they had was a belief that Africa’s consumers represented a neglected market opportunity. One that could be met by entrepreneurs with the character, capacity, and ambition to innovate business models and adapt technology to serve them. Nearly two decades later, and as one of the largest VCs investing in Africa, we remain guided by the same core motivation. That motivation is, and has always been, about creating enduring value in the broadest sense: financial, social and environmental. As a small band with a bold vision, our values mirror those of the entrepreneurial"}],
+
   },
   {
     id: "congruent",
@@ -6102,6 +6234,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "svg]:h-6 xl:[&>svg]:-translate-x-0.5 xl:[&>svg]:translate-y-[3px]\"> Prelude Ventures About News Contact Vision Portfolio Team About News Contact Menu About Climate is everywhere. How it all began We began with a simple idea: the economy of the future will be driven by the climate needs of today. We saw an opportunity to invest in and support bold thinking that could help turn the tide against climate change while building the next generation of category-defining businesses. We were in a position to help these entrepreneurs change the world. Years later, this continues to be our central ethos: if we can act, we must. We invest early and accept informed risks through a fundamental emphasis on venture-level returns combined with a deep understanding of the challenges of frontier technologies and markets."}],
+
   },
   {
     id: "engineering",
@@ -6156,6 +6290,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "Private Credit Investments, a division of BTG Pactual Global Alternatives ; Neuberger Specialty Finance; Energy Impact Partners; and Aksia continue to back storage infrastructure for the AI era BOSTON, MA – Wasabi Technologies , the hot cloud storage company, today announced it has secured a $250 million credit facility led by Bain Capital's Private Credit Group (\"Bain Capital\") with participation from U.S. Private Credit Investments, a division of BTG Pactual Global Alternatives ; Neuberger Specialty Finance; Energy Impact Partners; and Aksia. The financing will support continued investment in Wasabi’s cloud storage platform and broader global expansion. “This is a more selective private lending market, but we’ve built a strong, disciplined business that continues to attract support from leading financial institutions,” said Michael Bayer, EVP and chief financial officer, Wasabi Technologies. “We’re investing in our infrastructure to meet growing demand for data, especially as AI and modern applications require scalable, accessible storage.” The $250M credit facility follows the recent acquisition of Lyve Cloud from Seagate Technology and a $70M equity funding r"}],
+
   },
   {
     id: "airangels",
@@ -6345,6 +6481,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Our story Omnes Capital’ roots trace back to 1999, when we were a part of the French bank Crédit Lyonnais, and then became a part of Crédit Agricole. Local impact has always been front and centre to our mission, as has our dedication to entrepreneurs. In 2006 Omnes Capital became the first private equity firm to launch a fund dedicated to renewable energy in France. We operated on conviction and clarity of vision: we knew that renewables were the future, and would be instrumental to creating a sustainable future. It is that same agility and dedication to positive impact that drove Omnes to become an independent company in 2012, and that continues to drive our company culture. Our success and performance is built on our dedication to true partnership. We believe in making a tangible difference, working closely with entrepreneurs to help them outperform. We are stewards of our investors’ capital and of our entrepreneurs’ missions. We operate on the principles of trust, transparency, resilience and self-assessment to ensure that at every step, we are making decisions that will drive the most impact. We have been entrusted with the capital from over 100+ institutional investors across"}],
+
   },
   {
     id: "astorya",
@@ -6777,6 +6915,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "We have a proven track-record in backing and nurturing science and technology-based businesses to deliver a better future for people and planet. Find out how we’re living our purpose and identifying, backing and growing businesses that contribute to a healthier, tech-enriched, sustainable future. At IP Group, we back the scientific discoveries that shape our future. Our portfolio companies share a common goal – to have a positive impact on the world around us, whether that be through HealthTech, DeepTech and CleanTech. Our investment teams are experts in their fields with a deep understanding of HealthTech, DeepTech and CleanTech. They also have many years' experience ‘business building’ – navigating the strategic and commercial challenges of setting up and nurturing companies. By accessing the best IP and ideas from our networks, universities and research institutions, we have built an exciting portfolio of high-growth companies across HealthTech, DeepTech and CleanTech. IP Group has been backing and nurturing science and technology-based businesses for over 25 years. Alongside our expert partners, we support visionary companies with access to capital as well as the essential expe"}, {"title": "About", "text": "We have a proven track-record in backing and nurturing science and technology-based businesses to deliver a better future for people and planet. Find out how we’re living our purpose and identifying, backing and growing businesses that contribute to a healthier, tech-enriched, sustainable future. IP Group is the UK’s most active early-stage investor in science-based companies, having developed and supported more than 600 businesses across HealthTech, DeepTech and CleanTech. We pioneered systematic university spin out investment 25 years ago and are now the largest investor in UK university spin outs, alongside Parkwalk , our EIS fund management business. We have also replicated our model in Australia . The Group benefits from deep partnerships with leading research institutions , including the University of Oxford, the University of Cambridge, and Imperial College London, providing access to a pipeline of pioneering scientific research and IP. We also work closely with other university specific or ‘regional cluster’ market participants such as Northern Gritstone, for whom we manage the Northern Universities Venture Fund. We have experience in every stage of the business-building pr"}],
+
   },
   {
     id: "pioneer2",
@@ -6831,6 +6971,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Hitachi is seeking transformative technologies to help shape the future of mobility and manufacturing by creating safer, cleaner and more connected transportation systems and smarter, more efficient industrial operations. The Hitachi Startup Challenge FY26 brought together innovative companies worldwide to join an eight-week program, building a Proof of Concept plan with participating Hitachi Business Units and presenting it at the Final Competition Day, where winners will be selected to progress to a potential pilot. To address evolving needs across mobility and manufacturing, the Hitachi Startup Challenge seeks solutions in tge followng five areas: Intermodal Mobility, Infrastructure & Vehicle Intelligence, Physical AI & Automation, Smart Engineering and Wildcard Frontier Innovation. The challenge brings together innovative start-ups, fostering collaboration and accelerating innovation. Reflecting Hitachi's commitment to transforming mobility and manufacturing through digital innovation, it creates opportunities to develop solutions to industry challenges. Selected innovative companies across all challenge categories are working directly with Hitachi Business Unit members over th"}, {"title": "About", "text": "Innovate Corporate Innovation Open Innovation Economic Innovation Lab Innovation Lab Fusion New Ventures Intrapreneurship Venture Studio Strategic Intelligence Innovation Health Check Opportunity Discovery Case Studies For innovators Innovators Our Alumni News & insights Insights News About us About L Marks L Marks USA The L Marks Team L Marks Careers Meet the CEO Innovation Mentors The Bridge Search for: Contact Global Innovation Leaders We are a leading global innovation specialist that has created over 130 programmes with partners in Europe, Asia and North America. We are a leading global innovation specialist which has created over 130 programmes with its partners in Europe, Asia and North America. Founded in 2014 with a presence in the UK and the US , we have developed and delivered results-driven corporate innovation solutions, trusted by world-leading brands including BMW, Lloyd’s of London and Sodexo. Through our award-winning Innovation Labs, our partners have worked with over 500 startups with a successful deployment rate of over 78%. The New Ventures unit supports its clients to create and develop new revenue-generating businesses through its Venture Studio, and transfor"}],
+
   },
   {
     id: "qiming",
@@ -6912,6 +7054,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "About About us Awards Careers Teams About us Awards Careers Team Our products All products Inheritance Tax solutions Funds Bonds All products Choose from our range of products and services; from inheritance tax relief to bonds, listed funds and investment trusts Aims to provide IHT relief after two years by investing in BR-qualifying companies listed on AIM (the Alternative Investment Market) Aims to provide IHT relief after two years by investing in BR-qualifying companies listed on AIM that are held in an ISA for additional tax benefits We explore potential planning ideas for when a build-up of cash within a business affects the availability of IHT relief Inheritance Tax Solutions All Inheritance Tax Solutions Downing Estate Planning Service Downing Growth Estate Planning Service Downing AIM Estate Planning Service Downing AIM ISA Corporate Estate Planning Funds Downing Fund Managers MGTS Downing Fox Funds VT Downing Fox Funds VT Downing Small & Mid-Cap Income Fund Liquid Alternatives MGTS Downing Active Defined Return Assets Fund MGTS Downing Diversified Opportunities Fund Bonds What we invest in All investment strategies Energy & Infrastructure Private Equity Private Credit All"}],
+
   },
   {
     id: "dnxv",
@@ -6993,6 +7137,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Home Investments Business Relief EIS & KI-EIS VCT Natural Capital Investments Investment opportunities designed to deliver both strong returns and significant tax benefits Resources Resources All Resources Glossary Documents Insights Access fund documents, attend regular webinars, and explore our learnings View Resource Center About Contact Investors Portal Speak to the Team Home Investments Resources About Contact Speak to the Team Investors Portal About Us Trusted by investors to build better tax-efficient portfolios PXN Investments unites the expertise of Par Equity and Praetura Investments, combining our specialist capabilities, technical experience and responsive support. PXN Investments is a specialist investment manager giving investors access to award-winning Business Relief, VCT, EIS and Knowledge Intensive EIS investments for a range of financial planning needs. We work closely with our adviser partners, providing responsive support to help them make specialist investments easier to understand, assess and recomm"}],
+
   },
   {
     id: "dncap",
@@ -7101,6 +7247,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "We are connected We bring together the skills and experience of our members, our extensive network and our portfolio companies, to achieve the best outcome for the businesses we support. We act with integrity We are transparent in all our business dealings, applying a consistent approach to the investment process, which our investors and portfolio companies can rely upon. We are professional From the rigour of our due diligence to the method of our investment process, we act with the highest degree of professionalism across every aspect of our operation. We work in partnership We provide support through thick and thin to help our portfolio companies"}, {"title": "Team", "text": "Adam Stokes Academic in residence Adam is Full Professor and Chair of Bioinspired Engineering in The School of Engineering at The University of Edinburgh. He holds degrees in engineering, biomedical science, and chemistry. He used this background to found The Soft Systems Group, an interdisciplinary research laboratory focusing on the intersection of next-generation robotics technology, bioelectronics, and bioinspired engineering. Adam is Co-Lead of The National Robotarium, the UK centre of excellence in robotics, and Deputy Director of the Edinburgh Centre for Robotics. Before joining the faculty at Edinburgh, he was a Fellow in the George M."}],
+
   },
   {
     id: "molten",
@@ -7182,6 +7330,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Home Team Founders Focus Thoughts Jobs Pitch Our Focus We fiercely back founders changing millions of lives for the better. From workplace zen to financial literacy: we’re here for it all. Complimentary skill-sets (tech & sales), Founder-market fit, Eye-to-eye conversation, Strong values, Personal chemistry , Diversity Strong customer validation, Data-driven decision-making, Revenue quality > quantity, Solid GTM strategy, Positive unit economics If you want to get in touch regarding funding, contact us here . For any inquiries not related to funding , you can send a message to our general email at [email protected] . We invest in early-stage SaaS, marketplace, and platform companies ran by kick-ass teams (excuse the french). We focus on SaaS, marketplace, and platform models, rather than particular industry verticals. What makes these models tick, and how to scale them across stages of maturity, verticals, or borders, is our expertise. P.s We do not discriminate – we do B2C, B2B, B2B2C, C2C, and all those great acronyms 😉 Hmm, this is a good question. Given our laser focus on SaaS, marketplace, and platform models, hardware is often out of our scope."}],
+
   },
   {
     id: "piindia",
@@ -7209,6 +7359,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Investors by title, founders and operators at our core. We see you, hear you and empathize from having walked in your shoes not long ago. We provide patient capital, network and knowledge to go beyond your biggest dreams. We bring boldness to match yours—because playing it safe doesn’t create breakthroughs. We invest in daring visions and unshakable conviction to build radically better futures. India is poised to lead the deep-tech revolution, with a thriving talent pool and a rapidly growing innovation ecosystem. The greatest innovations not just challenge, but change what's possible. Technology will fundamentally alter the world as we know it. Entrepreneurs with vision and grit will leave their mark on the world. We’ve seen it time and again: a small group of relentless individuals can topple giants. 10x differentiation from the status quo is our modus operandi. We believe IP-led companies can turn the inconceivable into reality—and unlock extraordinary value, even in the most crowded markets. Our network is like a nodal system, uniquely positioned to give extraordinar"}],
+
   },
   {
     id: "dreamit",
@@ -7263,6 +7415,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Close Home About Us Fund Your Business Become A Member Our Portfolio News Contact Us Members Area About Us About Us ABOUT EQUITY GAP Equity Gap is an Edinburgh based angel investment syndicate, established to help match investors with entrepreneurs looking for early stage business funding. We aim to make investing accessible and enjoyable for our members through collaboration, a peer network and centralised administration. We support prospective companies with access to Equity Gap’s broad base of knowledge and expertise, including support for pitching to our members. Equity Gap members currently invest in over 30 companies, leveraging over £70m in total investment into this portfolio. Equity Gap investee companies have created over 400 jobs, primarily in Scotland, across a range of sectors including consumer product, food and drink, life science and SaaS. Joined Equity Gap in 2011 and became a director in 2014. He has over 30 years’ experience in helping Scottish businesses and entrepreneurs build commercial capability. He is passionate about developing angel investors globally and has led skill building programmes in Canada and the Middle East."}],
+
   },
   {
     id: "insight",
@@ -7290,6 +7444,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Portfolio Team Ideas Events Go Login --> --> --> --> --> main-logo-solid Why Insight? Portfolio Team Ideas Events Go Login twitter linkedin instagram ©2026 Insight Partners About Us Scale Up, Take Off Software From The Start In 1995, we bet on our hunch that software would change the game. We’ve since partnered with hundreds of executives who’ve transformed and shaped industries, changing the way people live and do business. We deploy our three core pillars – scale, focus, and experience – to help companies capture value and generate long-term business success. ScaleUps are on the most difficult part of their journey: turning initial viability into exponential growth and long-term success. For over 25 years we’ve partnered with the world’s leading software ScaleUps. We provide the capital, operating guidance, and expansive network companies need to propel growth for the long term – and soar. News & Press Team Ideas Media Responsibility Contact Us Focus Insight accelerates revenue and profit in so"}],
+
   },
   {
     id: "villagecap",
@@ -7317,6 +7473,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "Open menu Open Main Menu Donate Our Story Learn about Village Capital's story, and be part of our next chapter. Village Capital started with a revolutionary mission: to challenge the conventions of the traditional investment landscape. Read more in Ross Baird’s book, The Innovation Blind Spot . Village Capital began as the seed of a revolutionary idea from Ross Baird and Bob Patillo, with the pilot program co-designed by Sean Foote. Its name combined the concepts of village banking and venture capital: a more transparent, equitable version of the machine that fuels entrepreneurship. Originally a pilot initiative of First Light Ventures, an affiliate of impact investing pioneer Gray Matters Capital , Village Capital launched its first accelerator in New Orleans in collaboration with the IDEA Village. This inaugural program introduced a groundbreaking model where a cohort of entrepreneurs collectively selected a peer to receive investment , setting a precedent for future programs. Under the Mango Tree became the first peer-selected startup outside the US, helping revive India’s declining honeybee population by selling fair trade honey."}, {"title": "Team", "text": "Open menu Open Main Menu Donate Our Team Our experienced team works across four continents to support entrepreneurs. Meet the people who make Village Capital what it is..."}],
+
   },
   {
     id: "coatue",
@@ -7425,6 +7583,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "グローバル・ブレインの ミッションは 「事業創造による 未踏社会の 創造」 です。 世界各国で 熾烈を 極める グロー バル 競争や、 感染症や 地球温暖化に 代表される 世界的な リスクなど、 私たちを とりまく 環境は 大きく 変化して います。 このような 不確実性の 時代こそ、 最大の チャンスは 訪れます。 そして スタート アップが 飛躍的な 成長を 遂げる には、 大企業の 存在も 欠かせ ません。 スタート アップの 技術と 大企業の 知見を 組み 合わせ、 オープン イノ ベーションを 推進する ことで 変革を 起こす 確度は 大きく 向上します。"}],
+
   },
   {
     id: "triplepoint",
@@ -7479,6 +7639,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Home Portfolio About Us Spotlight Careers Contact Foundation Pitchbühel Home Portfolio About Us Spotlight Careers Contact Foundation Pitchbühel Submit your Pitch Home Portfolio About Us Spotlight Careers Contact Foundation Pitchbühel Home Portfolio About Us Spotlight Careers Contact Foundation Pitchbühel Ready to disrupt? Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. At YZR Capital, we are driving healthcare innovation in Europe. We partner with founders who make healthcare more efficient, transparent, and accessible — building solutions that shape a healthier future, from (pre-)Seed to Series B. Our deep sector expertise and hands-on, collaborative approach help accelerate growth supporting the founder’s vision. We believe in strong personal relationships, shared ambition, and the freedom to innovate. When you’re ready to build what healthcare needs next, we’re here to help you lead. Our Investments Our Team Backed by top-tier LPs from the start Fund KPIs On track to build Europe’s HealthTech champions Our portfolio growth, market positioning, and disciplined deployment are aligned with our long-term v"}],
+
   },
   {
     id: "kleiner",
@@ -7506,6 +7668,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Partnerships People Perspectives About Partnerships People Perspectives About Search Our History For five decades we have partnered with intrepid founders to build iconic companies that made history. Today, Kleiner Perkins continues that legacy, investing in founders with bold ideas that span industries and continents, partnering with them from inception to IPO and beyond to maximize the potential of their ideas… and make history. Kleiner Perkins Fellows Company Brand Assets Terms of Use Privacy Policy Disclosures Connect LinkedIn X YouTube Login LP Login © 2026 Kleiner Perkins"}],
+
   },
   {
     id: "matrix",
@@ -7560,6 +7724,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Team", "text": "open nav Team Portfolio Approach Perspectives Contact FAQs Portfolio Jobs LP Portal Undaunted Team Portfolio Open search A team with substance and soul. Approach Filter Filter Investors filter, currently filtererd to Investors Operators filter, currently filtererd to Operators Loading... We exist for the Exceptional, backing them with substance and soul. We have a knack, an obsession for spotting breakout companies before the rest of the world appreciates them. We help founders defy limits, command industries and cement their place at the top. Backed by the full weight of our team, we unlock pivotal growth by activating the right expertise at the moments you need it most. We’re engaged partners, serving as a proactive sounding board and answering your call as a counselor and confidant. Our standards are high, our egos are low and our network runs deep. We speak with respect and candor and act thoughtfully and purposely. While our track record is five decades strong, our focus is on the horizon. From emerging to enduring market leadership, we look out s"}],
+
   },
   {
     id: "iconiq",
@@ -7695,6 +7861,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Growing an ambitious business into an industry leader is a challenge. That’s why companies need the support of an experienced partner. Kurt Björklund, Executive Chairman, discusses how our sector teams use their insights and expertise to identify growth themes in today’s rapidly evolving world. We have a global presence of 15 offices across Europe, the United States, the Middle East and Asia. Our expert teams work collaboratively to support the growth ambitions and strategic goals of our portfolio companies. Our thematic investment approach has focused on specific sectors for over 40 years, generating deep knowledge and broad perspectives in technology, consumer, healthcare and services. Our Value Creation Team consists of 20 professionals with diverse operational backgrounds and skillsets, and our broad network of Senior Advisers are able to apply decades of industry experience and specific functional expertise to help management teams build better, stronger businesses."}],
+
   },
   {
     id: "kkr",
@@ -7722,6 +7890,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "--> KKR Global Select Your Experience KKR Global Learn about KKR's approach, solutions, and insights. This site is for clients, investors, shareholders, career seekers, individuals and portfolio companies. This site is for financial advisors, financial intermediaries, professional/accredited investors, and institutional investors. People here like to be helpful, share experiences and use their networks to solve problems. It's a team sport.\" Scott Nuttall & Joseph Bae Co-Chief Executive Officers Our Operating Model – Three Engines of Growth</h2>\\r\\n\"}}\" id=\"text-eb8f04918b\"> Our Operating Model – Three Engines of Growth Asset Management</h5>\\r\\n<p style=\\\"\\ttext-align: center;\\r\\n\\\"><span class=\\\"para-lrg\\\">Our activities and investments across Credit, Private Equity, Infrastructure, Real Estate and Capital Markets</span></p>\\r\\n\"}}\" id=\"text-820e88729e\"> Asset Management Our activities and investments across Credit, Private Equity, Infrastructure, Real Estate and Capital Markets"}, {"title": "About", "text": "--> KKR Global Select Your Experience KKR Global Learn about KKR's approach, solutions, and insights. This site is for clients, investors, shareholders, career seekers, individuals and portfolio companies. This site is for financial advisors, financial intermediaries, professional/accredited investors, and institutional investors. Corporate Pension Plans <span class=\\\"para-lrg\\\">We provide investment solutions and consultative advice to corporations who are considering the benefits and challenges associated with de-risking their defined benefit plans. Our balance sheet and portfolio construction team help organizations think through long-term planning. </span></p>\\r\\n\"}}\" id=\"text-ee4055806b\"> We provide investment solutions and consultative advice to corporations who are considering the benefits and challenges associated with de-risking their defined benefit plans. Our balance sheet and portfolio construction team help organizations think through long-term planning. Public Pension Plans <span class=\\\"para-lrg\\\">We have an extensive history of working with public plans that rely on us to provide investment solutions and advisory services a"}],
+
   },
   {
     id: "baincv",
@@ -7776,6 +7946,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "Chuck Feeney’s tenacity and long-term thinking set the course for the firm long before he established General Atlantic. He was an entrepreneur first, founding the Duty Free Shopper business and growing it into a global phenomenon. As Chuck’s business gained momentum, so did his interest in investing in new ideas, people, and philanthropic endeavors. This was the beginning of what would become one of the world’s most remarkable stories in business and philanthropy. In the spring of 1980, Chuck established a direct investment entity. The founding team at General Atlantic would help entrepreneurs build great companies as a means of magnifying Chuck’s ability to contribute to the societal causes that propel global progress. The success would fuel the impact of Atlantic Philanthropies, Chuck’s foundation that made “big bets for a better world.” Chuck gave our founding team the latitude to think outside of the box, follow their instincts, and take an untraditional approach to what was an unprecedented investment mandate. This team saw an opportunity to build a new kind of firm, focused on patient capital and partnership with purpose—laying the foundations for our Growth Equity strategy."}],
+
   },
   {
     id: "dragoneer",
@@ -7830,6 +8002,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "Founded in 1984, Summit Partners is a leading growth-focused alternative investment firm. We aim to back the best — to partner with the very best executives and companies in our target sectors. Whether as a minority or majority shareholder, we strive to provide resources to help drive profitable growth and build lasting value. We have actively innovated our approach for more than forty years, and we believe the results speak for themselves. With more than 225 professionals operating across five offices, Summit is powered by an exceptional team with deep domain expertise in our target sectors: technology, healthcare & life sciences, and growth products & services. Our team includes experienced investors, seasoned executives and knowledgeable operators. We collaborate closely, sharing insights, ideas, and networks; we take mentorship seriously. We aim to be the very best place to work for the very best people in our industry. We seek to invest in the best growth companies worldwide, to be a valued and trusted partner to the very best executives, and to deliver strong risk adjusted returns to our investors. This focus on growth extends to our people, to our portfolio companies, and to"}],
+
   },
   {
     id: "jmi",
@@ -7857,6 +8031,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "About", "text": "About Partnership Team Companies News & Insights LP Login (Link opens in new window) About We've been investing in software businesses since 1992. We believe enduring success comes from shared vision and conviction, not rigid playbooks, a consistent point of view, applied with discipline, for over three decades. We started investing in the client-server era, were at the forefront of the transition to cloud, and now AI, backing the incumbents that adapt and the native challengers that force them to. We invest flexibly across the growth stage, in size, structure, and deal type, always looking for strong businesses with enduring customer value where we can be meaningful partners in the next stage of growth. Flexible investment approach across the growth stage, from $20M minority stakes to $500M majority buyouts. Harry Gruner and Charlie Noell founded JMI Equity to invest exclusively in software. John Moores, the founder of BMC Software, was the initial Limited Partner. Co-led one of the largest growth investments in legal tech history to help scale a category-defining practice management platform globally."}],
+
   },
   {
     id: "apax",
@@ -7965,6 +8141,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Product", "text": "Toqan is our proprietary AI platform used by 40,000 employees across the Prosus ecosystem. Trained on data from more than 1 billion customers and 500 million daily interactions, we've built more than 60,000 agents and tools that automate tasks, answer questions and make decisions based on real company data. And now, that same capability is available to you. Life assistants are the new front door to the digital economy. Zapia , backed by Prosus, is the AI assistant that gets things done for you. Over 6 million people are already using Zapia to do things like booking restaurants, managing inboxes, coordinating schedules and more."}],
+
   },
   {
     id: "mubadala",
@@ -8019,6 +8197,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "Our company was born in 1996, when Claude Bébéar, chairman of AXA, asked Dominique Senequier to create a private equity arm for the insurer. He promised to invest one franc for every two she raised from outside investors. Bébéar’s pledge fostered a huge determination in the young company to win clients and turn them into long-term partners by delivering excellent service and outstanding investment performance. AXA Private Equity launched with a $100m French Buyout fund and two external clients. Two decades later, Bébéar recalled : « I gave her 25 million, I think it was in Francs, and she achieved incredible growth. » The company expanded steadily into new asset classes and built its international network. In 1999 our Secondary Fund of Funds business was launched (today called Secondaries & Primaries). Set up to trade portfolios of private equity holdings, it is now the world’s biggest Secondary Fund of Funds investor and Ardian’s largest activity. That year we also opened our first international offices in London and New York. We laid the foundations of our “multilocal” strategy in 2001 with the opening of the Frankfurt office, today headed by J"}],
+
   },
   {
     id: "rocket",
@@ -8046,6 +8226,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "Founded as a PC upgrade & repair firm in 1990, we evolved into a full-service consulting practice with an emphasis on networking. Typically our clients have networks consisting of 10 to 1,000 workstations. They’re looking for enterprise-grade internet, VoIP & DRaaS, as well as 24/7 network maintenance/monitoring. Our long list of satisfied clients proves that we effectively meet the network computing needs of the SMB market! When you entrust Rocket Internet to service your business, you’re not turning to “a new kid on the block.” Our track record spans three decades! We deliver a vast amount of experience, expertise and (equally important to your success) long-term stability. Please note, we are located in Long Beach, CA and we are in no way affiliated with Rocket Internet in Germany or Ohio . The company is privately held and meets certain minority ownership qualifications."}],
+
   },
   {
     id: "gic",
@@ -8073,6 +8255,8 @@ export const extraInvestors: Investor[] = [
     synthetic: false,
     confirmed: false,
     currency: "GBP",
+    files: [{"title": "Company", "text": "Established in 1981 to manage Singapore's foreign reserves, we strive to achieve good long-term real returns on assets under our management to preserve and enhance the value of Singapore's reserves. We have investments in over 40 countries and are headquartered in Singapore, with 11 offices in key financial cities worldwide. “Less exciting, but reliable” was once a common perception of transport infrastructure, such as ports, toll roads and airports. But the energy transition is reshaping this asset class, introducing new technology and policy considerations for investors. GIC’s Kamil Burganov , Senior Vice President, Infrastructure (Europe), shares his perspective on the importance of adapting to the transition as it unfolds, rather than betting on a single technology. #gic #gicsg Which conversation from GIC Insights 2026 should we bring to you? Vote below and we will share key insights on your selected topic after the event. As we mark 40 years in the Bay Area, this year’s GIC Insights will be travelling to San Francisco under the theme \"What If\", bringing together founders, investors, industry leaders, and policymakers for candid discussions"}],
+
   },
   {
     id: "vorwerk",
@@ -8143,6 +8327,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.granola.ai/",
+    files: [{"title": "Company", "text": "We are hiring to build the context-aware workspace of the future. Modern code editors ( IDEs ) are fantastic . Well, that's exactly what you do every time you take notes in a meeting, write a document, or respond to an email. The computer just sits there and watches you do all the work. Until now, an IDE for knowledge work has been out of reach. Soon, using “dumb text editors” for knowledge work will feel as old fashioned as accounting before spreadsheets. Your tools will understand your context, anticipate your actions, and augment your abilities. We’re just getting started designing a tool for this future, and we’re looking for engineers to join us. If that’s you, get in touch , or read more about the job ."}],
+
   },
   {
     id: "clerk",
@@ -8169,6 +8355,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://cal.com/",
+    files: [{"title": "About", "text": "Our mission Connect a billion people by 2031 through calendar scheduling. Cal.com is the scheduling platform for individuals, teams and the products built on it: booking links, routing, workflows, Cal Video and Cal.ai, on cal.com or embedded in your own app. Founded in 2021 by Peer Richelsen and Bailey Pumfleet as Calendso. Contact Cal.ai Agents that book, and phone calls that confirm. Integrate with Cal.com API v2, React Atoms and embeds. coss.com Email, SMS, scheduling and more for developers, from the same team. From Calendso to Cal.com Calendso launched in 2021 as a Calendly alternative and became Cal.com later that year when the company acquired the domain. is backed by investors including Seven Seven Six and OSS Capital. The same team builds coss.com, a developer platform for email, SMS, scheduling and other APIs. Peer is a German-born founder who had shipped several products before Cal.com and started Calendso in 2021 because every scheduling tool was closed and none could be embedded. He leads product and engineering and posts about building in public on X (@peer_rich)."}],
+
   },
   {
     id: "ashby",
@@ -8195,6 +8383,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://resend.com/",
+    files: [{"title": "About", "text": "The web has come a long way in the last ten years, but why is email stuck in the past? Resend started with an open source project in 2022. We were frustrated by how difficult it was to build modern email templates that worked well across all email clients. As we started to dig deeper, it became clear that this was just the tip of the iceberg. We realized that sending emails that reach the inbox (not the spam folder) was the biggest pain point, so we started to explore something new . In 2023, we launched an entire email sending platform and joined Y Combinator's winter batch. We're creating something special here, and we're excited to build it with you. You can't inspire people by doing an “okay” job. To inspire, you need to do phenomenal work . Quality is not a plus; it's a must-have . We know nothing will ever be perfect, but that doesn't stop us from pushing the limits. We don't want to just meet the bar of our peers. The sum of all the small details is what makes something special. It's okay to admit you don't know something and ask f"}],
+
   },
   {
     id: "bardeen",
@@ -8221,6 +8411,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.inngest.com/",
+    files: [{"title": "About", "text": "AI Workflows & Agents Build AI agents with Inngest Webhooks & Events Inngest events from any source, reliably Background Jobs Learn about background jobs Crons & Scheduled Jobs Learn about scheduled and recurring jobs Instantly Durable AI Code. Use functions to checkpoint and offload without extra infrastructure. Engineers spend half their time on the code that propels their apps forward, and half their time just keeping that code from failing. So in 2022, we released a new way to build and optimize event-driven workflows without leaving your codebase. Inngest is open core and can be run on any developer's laptop or on Inngest Cloud, using any compute platform. We’re mostly a team of grizzled engineers who have no desire to return to a world of hand-rolled queues, manual retry logic, and full architecture rebuilds when the “right” way to build something changes. We also have a few marketers and sellers who don’t really understand but bet that was really hard 🤍 We're a small, remote-first team that are passionate about delivering great products. We all work closely with customers to deliver the right solution that solves many use cases, not on-off features"}],
+
   },
   {
     id: "copyai",
@@ -8273,6 +8465,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.lemlist.com/",
+    files: [{"title": "Product", "text": "use cases Your AI becomes your 24/7 outbound assistant With almost 200 connected tools, your AI does everything you do in lemlist. Clay and CRM data come together to help you find and enrich the right people. Customers, open deals, and other reps’ accounts stay off the list, while qualified leads go straight into lemlist. Your saved offer, audience, and outreach rules give every multichannel campaign a head start. When something changes, one instruction updates copy, steps, or variables across dozens of campaigns, ready for review. Company research, your tone, approved examples, and specialist writing skills give each message relevance. That personalization carries across leads and sequences, with previews showing exactly what each prospect will receives. Finding domains, mailboxes setup, configuring DNS, and checking deliverability all happen in the same chat. The sending-health checks you repeat every week become routines, with your approval before sensitive changes. What gets replies becomes a comparison of audiences, messaging angles, CTAs, and sequence steps. Replies and calls help explain the results, and those findings become campaign updates or follow-ups."}, {"title": "Product", "text": "HOW IT WORKS Build lists, find contacts, & connect in a few clicks 01 Craft or upload a list of companies Access a database of accounts and filter your ICP match by tech stack, funding, revenue, and other filters. features Finding future clients has never been easier 01 Scrape verified emails & numbers in 1 click Get the most accurate email addresses & phone numbers from the market’s top providers, in 1 spot."}, {"title": "Product", "text": "features Market's top email sources, searched one by one Find emails of up to 80% of your leads If the first provider can't find an email, lemlist automatically searches through the next one. This secures ~80% of leads' emails, up to 2x more than average vendors. lemlist Chrome extension gets you emails from profiles or in bulk from searches. Export or send to your contacts or campaigns from a free LinkedIn or Navigator account. Every email found is double-verified, so you reach valid addresses, protect your domain, and avoid bounces. Get the best one from the most trusted provider. Get access to best-in-class data providers with a single subscription. Higher find rates, broader coverage, and a fraction of the cost of stacking multiple tools. Thanks to lemlist’s API, use waterfall enrichment in your favorite apps. This helps you keep data automatically synced across tools and build an effective sales ecosystem. “I really love that waterfall enrichment is built right into lemlist. We used it with multichannel sequences, got a 17%+ reply rate, and closed 2 contracts worth 35k euros!” Stop wa"}],
+
   },
   {
     id: "clay",
@@ -8286,6 +8480,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.clay.com/",
+    
+
   },
   {
     id: "pika",
@@ -8312,6 +8508,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://ideogram.ai/",
+    files: [{"title": "About", "text": "Ideogram is a generative media platform for AI image generation and editing, creative apps, and API workflows. The company's mission is to help people become more creative. It supports text in images and precise editing that preserves details across repeated edits. Ideogram 2.0 and 2a are older models that may still appear in the model picker. Ideogram recommends Ideogram 4.5 or 4.0 for new work."}],
+
   },
   {
     id: "photoroom",
@@ -8351,6 +8549,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://trigger.dev/",
+    files: [{"title": "Product", "text": "Quick start Writing tasks Triggering tasks Self-hosting Scheduled tasks (cron) Runs Queues & concurrency Realtime Idempotency Guides View docs Guides & examples MCP server Skills & agent rules Build AI agents Claude Agent SDK Chat agent Next.js Node.js Deployment Pricing Star 16.8k Login Get started Durable AI agents and workflows, without managing servers Agents run for hours or days. When one waits for someone to approve a tool call, it picks up from the line it stopped at, and you aren't billed for the wait. Turn on telemetry and every AI SDK call shows up in the run trace with its tokens and cost. The same tasks power scheduled jobs, queues, and realtime updates. Build and deploy production-ready AI agents that scale on our elastic infrastructure. Write durable chat agents that survive refreshes, redeploys, and crashes, with retrying, human-in-the-loop, and observability out of the box. Expose your tasks as tools for the Vercel AI SDK. Our live run page, powered by OpenTelemetry, provides a real-time trace view of each run as it executes. This is great for viewing detailed logs of your task and debugging errors if they occur. Set concurrency rules to manage how multiple tasks e"}, {"title": "Product", "text": "Quick start Writing tasks Triggering tasks Self-hosting Scheduled tasks (cron) Runs Queues & concurrency Realtime Idempotency Guides View docs Guides & examples MCP server Skills & agent rules Build AI agents Claude Agent SDK Chat agent Next.js Node.js Deployment Pricing Star 16.8k Login Get started chat.agent Build reliable chat agents Build chat agents in TypeScript with no timeouts. Keep state between turns, sleep while idle, and let users pick up the conversation after a refresh. 15 reasons to use chat agent Reason 01 0 1 Your chat survives refreshes, deploys and crashes Refresh the page or come back after a crash. Deploys leave existing chats on the version they started on. …/launch-trailer DS Turn this two-hour interview into a 60-second launch trailer. Find the best moments, add captions, and export in 4K."}, {"title": "Product", "text": "Quick start Writing tasks Triggering tasks Self-hosting Scheduled tasks (cron) Runs Queues & concurrency Realtime Idempotency Guides View docs Guides & examples MCP server Skills & agent rules Build AI agents Claude Agent SDK Chat agent Next.js Node.js Deployment Pricing Star 16.8k Login Get started Drop-in AI agent infrastructure Focus on building intelligent AI agents, not wrestling with servers. Get the reliability, control, and observability required to deploy invincible AI agents that actually work in production. We run parallel AI tasks for proposal generation and compliance mapping across 10,000+ government sources. The Trigger.dev developer experience is unparalleled for building durable agents. Queues, streaming, retries, logging and more, all with just a few lines of code. Our platform uses AI agents to gather compliance evidence by querying various API endpoints using MCPs, with browser-based automation as a fallback. Our TypeScript SDK provides end-to-end type safety for your AI agents. Define your tasks with Zod schemas and automatically convert them to type-safe tools for AI SDK. And our atomic versioning ensures that you can saf"}],
+
   },
   {
     id: "dust",
@@ -8364,6 +8564,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://dust.tt/",
+    files: [{"title": "About", "text": "Like Windows provided universal UI primitives that made applications more productive, we provide universal AI primitives that make enterprise workflows more intelligent. Our infrastructure connects models to company data, turning raw AI capabilities into agents that do real work. Success isn't about training bigger models - it's about connecting them to how work actually happens."}],
+
   },
   {
     id: "luma",
@@ -8377,6 +8579,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://lumalabs.ai/",
+    files: [{"title": "About", "text": "Luma Ray is the current production video model and supports text-to-video, image-to-video, video modification up to 20 seconds at 1080p, multi-keyframe direction, and native HDR generation with EXR export. On the image and multimodal side, Luma UNI-1.1 is built on what Luma calls \"Unified Intelligence\". In June 2026, Luma formally moved into robotics and physical AI. As part of the HUMAIN partnership, Luma gained access to Project Halo, a planned 2-gigawatt AI supercluster in Saudi Arabia, to train large-scale \"world models\" from video, audio, and language data via the Luma Open Physical AI Lab. UNI The Open Physical AI Lab Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world Luma was founded in 2021 by Amit Jain (Co-founder and CEO), who previously worked on product design for Apple Vision Pro and Apple's computer vision team, and Alex Yu (Co-founder and CTO), a researcher known for early work on neural radiance fields (NeRF) and real-time neural rendering. Jiaming Song, known for research on diffusion models including DDIM, joined as Chief Scientist."}],
+
   },
   {
     id: "clerky",
@@ -8390,6 +8594,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.clerky.com/",
+    files: [{"title": "About", "text": "Our products for startups help them get routine legal paperwork done either on their own or in collaboration with their attorneys. Chris and Darby were startup attorneys working in the Silicon Valley office of Orrick, Herrington & Sutcliffe, a major US law firm. While working at Orrick, they noticed an unfortunate dynamic. Their work involved a lot of work that was clerical in nature, which left them with less time to do more interesting work. As a result, even though they weren't padding their hours, clients were still getting surprised by the size of the legal bill. This led clients to do paperwork on their own or online, which invariably would lead to legal problems that were expensive and time-consuming to fix. Engineers by training, they realized they could solve these problems by building software to handle the clerical aspects of legal paperwork. Prior to Clerky, Darby was an attorney in the Technology Companies Group at Orrick, Herrington & Sutcliffe LLP. in computer science from the University of Washington, as well as a J.D. Prior to law school, Darby was an early software engineer at Redfin."}],
+
   },
   {
     id: "pulley",
@@ -8481,6 +8687,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.artisan.co/",
+    files: [{"title": "About", "text": "We're redefining the future of work with AI employees Manual and repetitive work is outdated. We build specialized AI collaborators that handle real tasks, so your team can focus on more complex business problems and human interaction. We believe work should be fulfilling, not frustrating Today's software landscape is broken: fragmented tools, manual workflows, outdated technology. At Artisan, we're leading a paradigm shift We're building Artisans, AI collaborators that work alongside your team and the tools you already run, making work smoother and smarter. We're on a mission to redefine the future of work Our journey starts with outbound sales, but that's only the beginning. From customer success to recruiting, Artisans will transform countless industries — this is the next Industrial Revolution. Jaspar is a third-time founder with a track record of building and scaling companies. Before Artisan, he founded a marketing agency where he gained deep expertise in go-to-market strategies and recognized the opportunity to revolutionize them through software. Connect on LinkedIn Sam Stallings Sam brings a powerful blend of product and engineerin"}],
+
   },
   {
     id: "relevance",
@@ -8494,6 +8702,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://relevanceai.com/",
+    files: [{"title": "Product", "text": "Triggers like Zapier Context layer like Zep MCP Gateway like Composio LLM router like OpenRouter Evals like Braintrust Agent builder like Dust.tt Agent orchestration like CrewAI Job queue like Temporal Tracing like Langfuse On one platform, the pieces make each other better Catch regressions before they ship Tables Files Docs Context layer 100s of features needed to specialize and optimize agents We've worked for years with enterprise to deploy agents and we know all of the things you need to be successful. 01 Instructions & identity System prompt (rich markdown) · Prompt description for parent agents · User-facing usage guide · Auto-title prompt Any major provider + bring-your-own · Fallback model on failure · Temperature & max output tokens · Reasoning & thinking modes · Strict & parallel tool calling · Switch model after N tokens Long-term memory (project and user) · Compaction & observational memory · Hybrid RAG with reranking · Automatic syncing with key data sources · Custom metadata filled by agents Autonomy step limits · Ask-approval or terminate on limit · Conditional approval rules · Cost-based pauses · Force retry on error Recurring schedules · Webhooks · 100s of pre-bui"}],
+
   },
   {
     id: "spellbook",
@@ -8507,6 +8717,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://spellbook.com/",
+    files: [{"title": "About", "text": "Powered by OpenAI's GPT-5 and other large language models (LLMs) providing incredible performance. Spellbook works where you do - directly in Word. Draft and review 10x faster without switching tabs or dealing with endless copy and paste."}],
+
   },
   {
     id: "opusclip",
@@ -8520,6 +8732,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.opus.pro/",
+    files: [{"title": "About", "text": "We've been using it at ThinkMedia for a long time now. It helps us produce more and better content faster, with more peace of mind.\" \"OpusClip's AI tool is changing everything. It's for any business owner who needs to maintain a social presence without sacrificing hours for video editing.\""}],
+
   },
   {
     id: "factory",
@@ -8533,6 +8747,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://factory.com/",
+    files: [{"title": "Company", "text": "At Factory, our mission is to Bring Autonomy to Software Engineering. In order to accomplish our ambitious goal, we must: A place where human intent meets intelligent systems. Build alongside world-class engineers and AI, shaping the future of software. “ I love Factory because I can pour years of engineering experience directly into developing the future of agent-native software development. I use our product every day and we have built Factory using Factory. As the pioneers of the agent-native model, we're guiding other organizations on how to operate a next-gen engineering team. ” “ I love building a product for software engineers—and getting to use it myself. Working on AI that automates the entire software engineering lifecycle, I see the tangible impact of my contributions daily, which is incredibly rewarding."}, {"title": "Product", "text": "A native interface for AI agents that build, design, and ship software. Preview everything Droid makes, from code to business deliverables, then point, comment, and refine right where the change belongs. Documents, presentations, spreadsheets, PDFs, live websites, and code diffs open beside their session. Select any element in a live preview or generated file and tell Droid what to change. Step through every change file by file, then comment on any line as you would on a teammate's pull request. Start on your laptop, check progress from your phone, or review a diff in your browser. Sessions, computers, and skills stay in sync across Desktop, web, mobile, and CLI."}, {"title": "Product", "text": "Factory is the only platform incentivized to reduce your spend, not grow it. Break down consumption by model to find inefficiencies, by engineer to spot outliers. Same outcomes, fewer tokens — they won't love it, but we're on your team. Group By By model By user User All Users Model All Models FSC BY MODEL 400K 300K 200K 100K Feb 9 Feb 10 Feb 11 Feb 12 Feb 13 Feb 14 Feb 15 Feb 17 Feb 18 Feb 19 Feb 20 Feb 21 Feb 22 Feb 24 Feb 26 Feb 27 Feb 28 Mar 1 Mar 2 Mar 3 Mar 4 Mar 5 Mar 6 Mar 7 Mar 8 Mar 9 Mar 10 Mar 11 Other claude-sonnet-4-6 gpt-5.5-pro gpt-5-codex gpt-5.5 claude-opus-4-6 claude-opus-4-7-fast claude-opus-4-7 Total FSC 0.0K Autonomy Ratio 0.0x Tool Calls 0.0K File Ops 0.0K Analytics See which teams and engineers are shipping the most with Droids, where adoption is accelerating, and where enablement can close the gap. Turn your power users into the playbook for everyone else. Team All teams Role All roles Active Users 0 New This Period 0 Avg Sessions / User 0 Avg FSC / User 0.0K Top Users Teams User Share of org FSC a.chen@factory.com 22 % 64K m.patel@factory.com 16 % 47K j.kim@factory.com 13 % 38K s.rivera@factory.com 11 % 32K l.nguyen@factory.com 10 % 29K t.morris@factory.co"}],
+
   },
   {
     id: "superhuman",
@@ -8559,6 +8775,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.braintrust.dev/",
+    files: [{"title": "Product", "text": "Trace every step of every LLM call: the prompt, the response, tool calls, retrieved context, and the final output. Score that traffic against quality criteria automatically, and get alerted when something drifts. Go from zero observability to full tracing with minimal effort. Use the gateway as your default capture layer, and the SDK for deeper context on your agent’s tool calls, planning steps, or loops. OpenAI Anthropic Gemini cURL Set the base URL to https://gateway.braintrust.dev . TypeScript import { OpenAI } from \"openai\"; const client = new OpenAI({ baseURL: \"https://gateway.braintrust.dev\", apiKey: process.env.BRAINTRUST_API_KEY, }); async function main() { const response = await client.responses.create({ model: \"gpt-5-mini\", input: [{ role: \"user\", content: \"Say hello!\" }], }); console.log(response.output_text); } main(); Gateway Change your base URL to the gateway and pass your Braintrust API key. No other code changes needed. You get a unified API across OpenAI, Anthropic, Google, AWS, and other providers, with automatic caching and observability on every request."}, {"title": "Product", "text": "Three ways to score. Use them together. Combine deterministic checks, LLM judges, and human review in one platform. The same scorers run offline in experiments and online in production. 95% Accuracy 62% Helpfulness Instruction following Automated scorers Deterministic checks for format, structure, accuracy. Name Helpfulness Model GPT 5 Mini Score 62% Rationale The response directly answers the order status question with clear tracking details and a friendly follow-up offer. Add to dataset Find a dataset Production failures User reported issues High latency traces Golden responses Create new dataset Datasets Versioned test cases. Build from production logs or manual curation. % Accuracy GPT 5.2 87.3% AVG 1 1 Claude 4.5 Opus 92.1% +4.8% 2 Gemini 3 Pro 85.0% -2.3% 1 Mistral Large 78.2% -9.1% 2 Experiments Compare prompts, models, strategies. Side-by-side diffs. Created Input Factuality Helpfulness Sentiment 1 Jan 25 2:34 PM Hi! What's the status of order #12345? 94% 91% 82% 2 Jan 25 2:19 PM My package arrived damaged 92% 84% 45% 3 Jan 25 2:08 PM Where is my refund? It's been 2 weeks! 78% 55% 32% 4 Jan 25 2:31 PM Can I return my order from last week? 91% 88% 75% 5 Jan 25 2:22 PM Do you"}, {"title": "Product", "text": "New Analyze trace 714c44e3 1h Find runs where the agent 3h Please add the following classification 1d What are the common failure modes 2d Fresh Tool Grounding passes weak fallback answers 4d Ask questions about logs, @ for context, / for commands GPT-5.6 Sol Medium Understand what happened and what to improve When your agents handle thousands of requests each day, you can’t read every trace. Braintrust continuously applies intelligence to production data to surface important behavior, investigate the evidence, and help you decide what to improve. I'll use Braintrust's pattern-analysis workflow to identify high-confidence examples, then the evaluator workflow to build and validate a regression scorer, and finally the automations workflow to configure ongoing monitoring. I'll use the current project already selected in Loop. I'm starting with read-only SQL triage and raw trace inspection. I'll look for the specific signature “work completed in tools/state, but the root response is empty or never communicates the result,” and I'll include contrasting successful handoffs so the scorer does not merely flag every tool-heavy run. Turn ID: e900c7e4-dc4a-5f2f-99d1-dd3cf14a362c The existing"}],
+
   },
   {
     id: "suno",
@@ -8572,6 +8790,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://suno.com/",
+    files: [{"title": "About", "text": "Suno is a music company building the world's first creative entertainment platform. We believe the future of music will be more participatory than ever before and that Suno can bring the joy of musical expression to everyone, everywhere. Since day one, we've focused on delivering an extraordinary creative experience for anyone who wants to make music, from first-timers to lifelong professionals. Today, millions of people use Suno to shape the soundtrack of their lives. We've raised over $775M by leading investors, including Bond Capital, Menlo Ventures, Lightspeed, Matrix, IVP, Union Square Ventures, and NVentures (NVIDIA's venture capital arm). A masterclass series that hosts industry professionals for an evening of demos on how Suno can be incorporated into their workflows, plus honest conversations on what we're building. An incubator program that gives independent and emerging artists grants, marketing support, mentorship from established musicians and a voice in Suno's product development. Artists maintain full rights and creative control, no strings attached. A video series that puts Suno in the hands of prof"}],
+
   },
   {
     id: "beehiiv",
@@ -8585,6 +8805,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.beehiiv.com/",
+    files: [{"title": "About", "text": "beehiiv was founded in 2021 by early employees at Morning Brew who helped turn a newsletter into a major media company and saw the power of owning an audience firsthand. We also saw how much custom technology and industry expertise it took to get there. So we built beehiiv to make those capabilities available to anyone with an audience. And while we started as a newsletter platform, our users made it clear they wanted more. Now, beehiiv is the newsletter-first platform helping creators and brands grow beyond the inbox with websites, podcasts, communities, subscriptions, digital products, and the industry's largest native ad network. The next great audience-led businesses won't be determined by who has the biggest team or the deepest pockets. If you have something worth sharing, we'll give you everything you need to make it succeed. We're 100% remote, spread across 12 countries, and genuinely like each other. We come from media, tech, finance, and a few places you wouldn't expect. But we all believe great ideas deserve the tools to grow into something bigger."}],
+
   },
   {
     id: "heygen",
@@ -8598,6 +8820,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.heygen.com/",
+    files: [{"title": "About", "text": "HeyGen started with a simple idea: making video creation effortless. Today, we're the world's leading AI avatar company, helping anyone communicate clearly and confidently as themselves, with their own face and voice. Over 1 billion hours of videos are watched daily on YouTube, and the average person watches 17 hours of video each week. If you want to teach, persuade, build a brand, or grow an audience, video is no longer optional. But showing up on video consistently is expensive: it takes time, budget, energy, and comfort on camera. A professionally produced video can cost $1,000 per minute or more, and every platform wants its own cut. But filming and performing every time takes a lot out of anyone. That's what founder Joshua Xu saw when he was an engineer at Snap, building features for Snapchat Ads and the AI camera. Where most AI video races toward spectacle and volume, HeyGen starts with the person: their face, their voice, their delivery, and their message. With HeyGen, you create your Personal Avatar, an AI-powered digital version of you that looks, moves, and sounds like you. Then you turn new scripts and ideas into videos without"}],
+
   },
   {
     id: "typefully",
@@ -8663,6 +8887,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.descript.com/",
+    files: [{"title": "About", "text": "Descript is a video editing app that does it all. It makes it easy for anyone to record, edit, and share any video, and it’s got all the power you need to create something you’re proud of. In Descript your team can make video together without a bunch of annoying file sharing. If you work alone, by choice or because of your insufferable perfectionism, you can collaborate with Underlord, Descript’s built-in, eager-to-please AI co-editor. Descript was invented by a team of creative people who hated working in the timeline and knew there must be a better way. Turns out there were lots of better ways—text-based editing, automated design, prompt-based editing, and soon, ocular implants. We’re not really doing implants, we just said it to impress potential investors. Speaking of, Descript has raised a total of $100M, primarily from the OpenAI Startup Fund, Andreessen Horowitz, Redpoint Ventures, and Spark Capital. Among our individual investors: Daniel Gross, Devdatta Akhawe, Alex Blumberg, Jack Conte, Justine Ezarik, Todd Goldberg, Jean-Denis Greze, John Lilly, Tobi Lutke, Bharat Mediratta, Shishir Mehrotra, Casey Neistat, Brian Pokorny, Raghavendra Prabhu, Lenny Rachitsky, Naval Ravikan"}],
+
   },
   {
     id: "langfuse",
@@ -8676,6 +8902,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://langfuse.com/",
+    files: [{"title": "About", "text": "Academy Workshop Blog Changelog Roadmap Example Project Walkthroughs Support langfuse ClickHouse Langfuse joins ClickHouse Financial Services Healthcare and life sciences Customers Docs Changelog Pricing Launch App L Get Demo G Community Stats Langfuse is building the open source AI engineering platform to help teams build production-grade LLM applications faster ( Why Langfuse? We are excited about the potential of LLMs and generative AI and the impacts it will have on all of us. Doing our part in accelerating this shift is our mission. We initially realized the pains of solving problems with LLMs during Y Combinator's W23 batch in San Francisco. We are a remote team with offices in Berlin, San Francisco, Amsterdam and New York. We hire engineers across Europe (remote-first, with 3-5 days onsite every two months in Berlin) and in US-East time zones. Marketing and all other roles hire in Europe and all of the United States. Careers page Public Metrics Langfuse is the most widely adopted open-source LLM engineering platform , used by 50,000+ companies , with 37,622 GitHub stars , 65M+ SDK installs per month , and 38 M+ Docker pulls ."}],
+
   },
   {
     id: "vanta",
@@ -8689,6 +8917,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.vanta.com/",
+    files: [{"title": "Company", "text": "Today, over [customer_count] companies rely on Vanta to build, maintain and demonstrate their trust—all in a way that's real-time and transparent. Prior to founding Vanta, Christina led product management for Dropbox Paper and was a member of the investment team for Union Square Ventures. Sarah Scharf is Vanta's Chief Marketing Officer, leading Vanta's efforts to expand global awareness of its market-leading Agentic Trust Platform. Sarah joined Vanta in 2020 as the company's first product marketer and has since led every function of the marketing organization, including Product Marketing, Brand and Communications, and Revenue Marketing, before being named CMO. During her tenure, Sarah named and built out Vanta's original category, Trust Management, and drove the company’s most successful marketing campaigns across all distribution channels. Prior to Vanta, Sarah spent seven years at Google in product marketing roles across Privacy and Security, Next Billion Users, and Android, including leading the platform's global rebrand."}, {"title": "Company", "text": "Access should be limited to only those with a legitimate business need and granted based on the principle of least privilege. Vanta maintains a SOC 2 Type II attestation and an ISO 27001 compliance certification. Our SOC 2 Type II report and ISO 27001 certificate are available on our Trust Center. The implementation of controls should be iterative, continuously maturing across the dimensions of improved effectiveness, increased auditability, and decreased friction. All datastores with customer data, in addition to S3 buckets, are encrypted at rest. This means the data is encrypted even before it hits the database so that neither physical access, nor logical access to the database, is enough to read the most sensitive information. Vanta uses TLS 1.2 or higher everywhere data is transmitted over potentially insecure networks. We also use features such as HSTS (HTTP Strict Transport Security) to maximize the security of our data in transit. Server TLS keys and certificates are managed by AWS and deployed via Application Load Balancers. Encryption keys are managed via AWS Key Management System (KMS)."}, {"title": "Company", "text": "Our Principles Vanta’s mission is to help businesses earn and prove trust. To do that, we’re building an enduring company where all Vanta’ns can do the best work of their careers, which requires us to articulate, and regularly revisit with honesty and clarity, how we work and how we make decisions - we call these our “Principles.” We use these Principles every day in how we operate and build Vanta, and we also screen all of our hires for them . The Principles are the core tenets that guide how we work, how we hire, and how we interact with customers and partners. As Vanta grows, we’ll update our thinking and revise these Principles, balancing “what got us here” with what’s likely to propel us further. We center our customers and their needs in our work, and invest in long-term relationships with them. What and how we build is driven by our customers first and foremost, so that we’re more likely to achieve our mission of securing the internet. All Vanta’ns bias for action, which means that they make decisions and act quickly even in the face of uncertainty, and are willing to make mistakes in the process. We know that most decisions are “two-way doors.” When we get new information,"}],
+
   },
   {
     id: "regie",
@@ -8702,6 +8932,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://regie.ai/",
+    files: [{"title": "About", "text": "Skip to content From our founders: Why we built RegieGO Why we built RegieGO, and where we're going next. Read the post Platform Prospecting Describe your ICP, get matching buyers and lists Waterfall Enrichment Emails and phones, pay only when we find them Research & Messaging Dated why-now signals, drafts in your voice Parallel Dialer Dial up to five lines at once, research on screen Built-in CRM Free on every plan, syncs with HubSpot or Salesforce Integrations Gmail, Outlook, HubSpot, Salesforce, Gong and more Solutions By role Regie.ai builds RegieGO, an AI prospecting platform. The premise is simple: most of a seller's day disappears into research, list building, and follow-up, and almost none of that work is the part a person is uniquely good at. RegieGO runs the parts of prospecting that do not need a person: sourcing and enriching contacts, prepping calls, drafting the day's email, and staying on the people who said not yet. Enrichment waterfalls across multiple providers, and only bills for hits Email sends from your own Gmail or Outlook, never a vendor domain A dialer with local presence, DNC enforcement, and up to 5 lines Start free RegieGO A"}],
+
   },
   {
     id: "helicone",
@@ -8728,6 +8960,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.tavily.com/",
+    files: [{"title": "About", "text": "Tavily delivers high-quality, fresh, and structured web context, making it easy for agents to stay grounded as they scale from prototypes to production. Our mission is to help AI agents navigate the web quickly and efficiently by shaping the context they see. We prioritize relevance, freshness, and efficiency so agents reason accurately without wasting tokens. We’re a team of collaborators, builders, and deep thinkers, obsessed with making reliable web access possible for AI agents in the real world. We move quickly, support each other, and stay focused on shipping systems that deliver real impact in production. By submitting my email address, I agree to receive marketing communications from Tavily. For more information, please see the Privacy Notice ."}, {"title": "Company", "text": "Ask about a company and Tavily returns its structured record as a search result. Same call, same price, a stable ID you can store and fetch again. { \"query\" : \"What is Tavily’s headcount?\" } Example response, abbreviated Company record included when relevant { \"query\" : \"…\" , \"results\" : [ { \"url\" : \"https://www.tavily.com\" , … } , { \"url\" : \" https://tavily.com/knowledge/company/EqGHgI7P5f0t \" , \"title\" : \"Tavily\" , \"content\" : \"# Tavily\\n## Workforce\\nHeadcount: …\" } , … ] } Run a company-related search. When a company record helps answer your query, Tavily includes it alongside web results. /search performance Top-ranked for company research See how Tavily Search performs on company-research questions in our published benchmark. The evaluation measures search answer quality, not the accuracy of individual company-record fields. Verify critical facts against their original sources before making consequential decisions. By submitting my email address, I agree to receive marketing communications from Tavily. For more information, please see the Privacy Notice ."}],
+
   },
   {
     id: "fathom",
@@ -8741,6 +8975,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.fathom.ai/",
+    files: [{"title": "About", "text": "We believe conversations are where the most important work happens. But the insight from those conversations is often lost the moment the meeting ends. Our mission is simple: capture what matters in every meeting so individuals and teams can stay present and move work forward with clarity and confidence. Founder Richard White noticed that meetings were full of valuable ideas and decisions, but the best moments rarely made it into notes or follow-ups. So he built a tool for himself, a reliable way to capture conversations, generate useful notes, and make sure action items didn’t get lost. What started as a personal solution quickly spread through word of mouth. Early users shared Fathom with colleagues and teams because it made their work easier. That early momentum revealed something bigger: the problem wasn’t unique. Teams everywhere needed a better way to remember what happened in meetings."}, {"title": "About", "text": "The AI notetaker built around you Fathom captures Zoom, Google Meet, Teams, Slack huddles, and in-person meetings, then delivers summaries and action items the moment your call ends. AI meeting notes you never have to take Instant AI summaries for Zoom, Google Meet, Teams, and Slack huddles Coverage before, during, and after every call. The moment your meeting ends, a full recap arrives, action items included, so work keeps moving while everything is still fresh. Multiple speakers, accents, cross-talk, languages, and side conversations – Fathom’s got it covered. With accurate speaker attribution, even in bot-free recordings, you never lose the thread. Create custom dictionaries so Fathom learns to speak your company’s language for accurate transcription customized to your lingo. Fathom offers three ways to capture conversations, all with speaker attribution, action items, and the accuracy you expect from Fathom. Just a clean transcript, AI summary, and action items. Perfect for sensitive conversations or when a bot isn't welcome."}],
+
   },
   {
     id: "pitch",
@@ -8767,6 +9003,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.browserbase.com/",
+    files: [{"title": "About", "text": "We build the infrastructure that connects AI to the web, so agents can take on repetitive online work and people can focus on what matters to them. The work that matters still happens in websites, portals, and forms built for humans. We give AI agents the tools to work in those systems on people’s behalf. Founded by Paul Klein IV in 2024, Browserbase builds the infrastructure that connects AI to the web. Our goal is to let software handle repetitive online work, so people can spend their time on what matters to them. Build with Stagehand, our open source browser automation framework, and run on Browserbase with session replays, logs, and live views to see what your agents do. Our $40 million Series B, announced in June 2025, was led by Notable Capital with participation from CRV and Kleiner Perkins. Together, we’re building the infrastructure for a web that agents can use. We care about customers, take ownership, and build the infrastructure behind a new generation of software. If you want to help agents do useful work on the web, join us."}],
+
   },
   {
     id: "limitless",
@@ -8793,6 +9031,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://sierra.ai/",
+    files: [{"title": "Product", "text": "Prompts, not clicks Build or modify agents by describing how you want them to behave. Update workflows, systems integrations, guardrails, tone, and style with simple prompts. Build from what you have Upload SOPs, raw transcripts, or even audio interviews of subject matter experts to create customer journeys from scratch. Complete transparency See exactly what Ghostwriter built before anything goes live so you can review, approve, and ship with confidence. Auto-generate simulations Proactively run tests with every build or update, so each change is validated before it reaches you. Built for edge cases Identify and tests edge cases beyond the obvious scenarios, so your agent is ready for whatever customers throw at it. Find what deserves attention Monitor conversations, metrics, releases, and experiments, using your goals and guardrails to separate signal from noise. Collaborative from signal to result Bring your team the evidence in Slack or Teams and a proposed next step, then follow the result after release. Bring ideas, not just answers Build on customer context and your team’s feedback to uncover unmet needs and opportunities you may not have known to look for."}, {"title": "Product", "text": "One-click investigation Click any data point on a report to launch Explorer and instantly investigate what's driving that trend. Automated tagging Gain insights into what your customers are most interested in with automated conversation tagging and categorization. Value discovery Transform potential cancellations into opportunities to better serve customers while maximizing long-term value. Conversation design Experiment with variations of agent behavior, such as hand-off rules or levels of determinism, to improve engagement and satisfaction. Intelligent decisioning Personalize how your agent interacts with customers based on agent memory, customer profile, and more. Monitoring Automatically identify conversations that need extra attention from your team with always-on reviewing and alerting. Auditing Understand the reasoning behind every agent action or answer—view knowledge sources, systems accessed, and more. Alerting Spot emerging issues like abuse attempts or performance drops early and integrate alerts with your existing tools. Ask any question in natural language, and Explorer will use analytics and sample customer conversations to provide answers and actionable recommendati"}, {"title": "Product", "text": "Signal EHR Open cardiology referral with no appointment scheduled Agent Memory The patient has opted in to phone outreach. Horizon Calls the patient Scheduling API Finds available cardiology appointments Patient Phone Books the Thursday 3:30 appointment Agent Your cardiology referral is ready to schedule. Agent I can offer Tuesday at 2:00 or Thursday at 3:30. Day 3 Signal EHR Prior authorization was denied Agent Memory Patient has appointment scheduled for tomorrow and needs prior auth to proceed. Horizon Calls the patient to reschedule appointment Scheduling API Finds later afternoon appointments Patient Phone Confirms next Tuesday at 12pm Agent Your appointment is tomorrow, but the prior authorization was denied. I need to move the visit while we resolve it. +15 minutes Signal Prior authorization denial requires payer follow-up Agent Memory The denied authorization needs to be con"}],
+
   },
   {
     id: "exa",
@@ -8806,6 +9046,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://exa.ai/",
+    files: [{"title": "About", "text": "Use this file to discover Exa products, pricing, evaluations, comparisons, use cases, agent interfaces, and technical documentation before exploring further. We spent years building massive-scale indexes and researching new retrieval systems for the agentic world we knew would arrive. Today, Exa is the highest quality search API at every latency. We power search for Cursor, Cognition, HubSpot, OpenRouter, Monday.com and over 900,000 developers. In the next few years the number of searches from AI agents will be 1000x more than Google searches today. Before us lies an opportunity to reinvent how the world gets information. Information is critical civilizational infrastructure for our new AI reality. Politics is fragmenting, wars are raging, and AI is accelerating — we need tools we can trust that deeply inform us what's going on. If we can achieve perfect search so that every AI has the highest quality information, then every human will too. End-to-end neural architectures that improve predictably with compute, trained on our own exa-cluster of hundreds of H200s. query_enrichment queued tokenize queued extract_entities queued web_index queued inverted_ind"}],
+
   },
   {
     id: "rows",
@@ -8819,6 +9061,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://rows.com/product",
+    files: [{"title": "About", "text": "Product Rows AI Your number crunching sidekick Integrations Seamless connections to your tools Support Docs Learn how to make the most out of Rows. Features All-in-one spreadsheet for teams Pricing Templates Community Continue with Superhuman Docs Rows is on a mission to empower the next 1B+ of app creators On a mission to empower the next 1B+ of app creators We believe that business people want to do more. They want to share their creations with their colleagues, customers, and the world. They want to go from 0 to magic fast. And they don't want to learn how to code. Our vision is to enable 1 billion spreadsheet users to easily build the tools they need to work better. All in a familiar interface - a spreadsheet - and without code."}],
+
   },
   {
     id: "durable",
@@ -8832,6 +9076,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://durable.com/",
+    files: [{"title": "About", "text": "Durable Sign up Products Solutions Pricing Resources Tools Start for free We're building a world where owning a business is easier than having a job Over 3 million people have started a business on Durable. We help people build their ideas into businesses and run them from one place: site, brand, leads, payments, and all the work in between. I washed dishes at a local restaurant, and I started a web development company. The goal was never to build a business empire — just to avoid getting a job for as long as possible. Everyone faces that choice eventually: take the easy path and get a job, or take the risky one and start something of your own. Work hard, and you'd get the house, the pension, the security. On top of the actual work, starting a business meant learning a dozen new skills, hiring people you couldn't afford, and taking on massive financial risk. To solve the \"business\" parts of owning a business."}],
+
   },
   {
     id: "captions",
@@ -8845,6 +9091,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://captions.ai/",
+    files: [{"title": "About", "text": "Mirage is an AI video company built to amplify human creativity. Our products incorporate deep media understanding and editorial discernment. Everyday users can translate natural language into high-quality videos, no matter their skillset. Our team builds the Captions app, Mirage foundation models and the Mirage API. Formerly known as Captions, we rebranded in 2025 to reflect our expanded mission and product suite. Video is the default interface for communication and commerce. But while demand has exploded, production hasn’t caught up. We’re closing that gap, working toward a world where the distance between idea and video is zero. Our team is reimagining the future of video, so creators and businesses move at the speed of their ideas. See recent press Our research We create generative models that turn voice and language into rich, photorealistic video. Our multimodal foundation model produces A-roll footage that looks and feels real, matching speech with natural lip movement, eye contact, and emotional expression. It's a new way to bring human presence to screens, powered entirely by AI. Designed and built in New York City Join the Mirage team Yes, we’re hiring!"}],
+
   },
   {
     id: "synthesia2",
@@ -8871,6 +9119,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://elevenlabs.io/",
+    files: [{"title": "About", "text": "We started by building with the first human-like voice model. Our goal is to put state-of-the-art voice AI in the hands of those using it to improve their communities. We provide free licenses to those who need it most through the ElevenLabs Impact Program . This includes individuals with accessibility needs and nonprofit organizations across healthcare, education, and culture. Our dedicated safety team combines members of our research, engineering, and policy teams. We deploy a comprehensive set of safeguards in a multi-layered defense system to prevent, detect, enforce, and inform misuse. Everything we do is the result of the creativity and commitment of our team. These are builders doing the best work of their lives. If you want to work hard and create lasting positive impact, we want to hear from you ."}],
+
   },
   {
     id: "linearapp",
@@ -8910,6 +9160,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://cursor.com/",
+    files: [{"title": "Product", "text": "Overlay existing windows into a grid of live previews with spring-based layout animations and shared element transitions. Leave it to the folks at Cursor to bring out the absolute most from the models. GPT-5.2 is an incredibly hard-working model, but to get it to work for a whole week is crazy. Coding agents like Cursor have become the killer app for AI. Not only do coding agents increase the speed at which code is created, they also improve code quality. Cursor has helped me not only be more productive but also more curious and confident to explore new problem spaces. It's genuinely become an indispensable tool in my daily workflow."}],
+
   },
   {
     id: "arc",
@@ -9001,6 +9253,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://replit.com/",
+    files: [{"title": "About", "text": "We believe software creation should be accessible to everyone, not just programmers — our mission is to make turning an idea into working software as intuitive as drawing a picture or writing a story. Replit is the AI platform that helps you turn your ideas into real outcomes. Describe what you want in natural language, then create, launch, and grow apps, sites, tools, and businesses in one place."}],
+
   },
   {
     id: "sakana2",
@@ -9079,6 +9333,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://regie.ai/",
+    files: [{"title": "About", "text": "Skip to content From our founders: Why we built RegieGO Why we built RegieGO, and where we're going next. Read the post Platform Prospecting Describe your ICP, get matching buyers and lists Waterfall Enrichment Emails and phones, pay only when we find them Research & Messaging Dated why-now signals, drafts in your voice Parallel Dialer Dial up to five lines at once, research on screen Built-in CRM Free on every plan, syncs with HubSpot or Salesforce Integrations Gmail, Outlook, HubSpot, Salesforce, Gong and more Solutions By role Regie.ai builds RegieGO, an AI prospecting platform. The premise is simple: most of a seller's day disappears into research, list building, and follow-up, and almost none of that work is the part a person is uniquely good at. RegieGO runs the parts of prospecting that do not need a person: sourcing and enriching contacts, prepping calls, drafting the day's email, and staying on the people who said not yet. Enrichment waterfalls across multiple providers, and only bills for hits Email sends from your own Gmail or Outlook, never a vendor domain A dialer with local presence, DNC enforcement, and up to 5 lines Start free RegieGO A"}],
+
   },
   {
     id: "v0",
@@ -9105,6 +9361,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://mistral.ai/",
+    files: [{"title": "About", "text": "We partner with organizations in high-stakes industries like finance, manufacturing, defense, energy, and the public sector to co-create tailored AI systems to solve their hardest, most high-value problems. Because we believe that this critical stake for companies requires deep control, ownership, and production reliability, we have built full-stack AI solutions, including frontier models, developer tools, applications, and compute. In 2022, the Big Tech landscape was at a crossroads: innovation was advancing, but companies were also closing off. Mistral's co-founders saw the need for a different kind of AI company: a European leader that combines cutting-edge innovation with openness, transparency, cost efficiency, and responsibility. They were determined to democratize AI, making it accessible, customizable, and returning control to users. In April 2023, Mistral was born to put frontier AI in everyone’s hands."}],
+
   },
   {
     id: "outreach",
@@ -9118,6 +9376,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.outreach.ai/",
+    files: [{"title": "Company", "text": "At Outreach, we show up as Trusted Advisors — leading with a customer-first mindset and transforming challenges into opportunities. We build trust by being experts at our craft, always learning, and communicating with purpose. We don’t just serve customers — we partner with them, invest in their success, and strive to create lasting value through innovative solutions and a relentless pursuit of excellence. We Win as One Team because we know greatness doesn’t happen alone. We break down silos, share knowledge openly, and support each other with empathy and respect. We listen, adapt, and grow together — using our diverse experiences to solve problems, celebrate victories, and learn from every step of the journey. Every voice matters, and when we move as one, we’re unstoppable. Each of us Takes Ownership — for our work, our growth, and our impact. We set clear intentions, act with urgency, and hold ourselves accountable to the highest standards. We raise our hand when we need help and step up when others do. As hungry craftspeople, we're driven to improve, proud of who we are, and humble enough to keep evolving. Because our success is not only shared — it’s earned, together."}, {"title": "Company", "text": "Outreach Named as a Leader in the 2026 Gartner® Magic Quadrant™ for Revenue Action Orchestration for the Second Consecutive Year New Commissioned Total Economic Impact™ Study Models 244% ROI and $19.2M in Benefits Present Value for Composite Organization Using Outreach"}, {"title": "Company", "text": "Outreach is a proud paradox: we balance explosive growth with unwavering values. We believe in agility and pivoting quickly, but we don't compromise on high standards or delivering the best quality for our customers. Everyone here truly wants to do the right thing. At Outreach, you are not only permitted to own your business, but expected to. If you're excited by ownership, you'll fit right in. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Outreach recruiters will only reach out with an outreach.io domain, or through a legitimate LinkedIn profile. Relevant and accurate job postings are found on our company careers page. Any communication claiming to be from Outreach via other sources should be ignored."}],
+
   },
   {
     id: "warmly",
@@ -9131,6 +9391,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.warmly.ai/",
+    files: [{"title": "Product", "text": "\"I initiated the warm call and onboarded them right there. That was a $20,000 deal, so we were immediately ROI positive.” Connect with Our Experts Book a 15-minute conversation with a customer of ours and discover how Metric transforms their GTM strategy."}],
+
   },
   {
     id: "apollo",
@@ -9144,6 +9406,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.apollo.io/",
+    files: [{"title": "Product", "text": "Find best-fit leads with trusted B2B data that stays fresh, improves over time, and gives every GTM play a stronger foundation. Run plays based on your reality, not just market data. Bring together your CRM, data warehouse, call recordings, and buying signals into one place. Apollo combines 20+ sources to fill gaps, improve coverage, and create more complete records. Apollo's Intelligence layer turns your unified data into recommendations, priorities, and next best actions, so your team spends less time deciding and more time selling. Now with Apollo, we get 30-40% more enrichment when we bring external lists back into the platform. That additional company and prospect data makes all the difference. ” A lot of broken systems, disparate sources of contact/account data, and the sequencing small papercuts like bad formatting would hurt our efforts. [In Apollo,] we can pull all the filters and lists we need, enrich them directly from Apollo’s data instantly, and roll them into sequences."}, {"title": "Product", "text": "Apollo brings the signals that matter into one complete profile, so every rep and agent starts with the full picture. That way, every recommendation across Apollo sounds like your actual team, not generic AI. GTM Harness plans the work across every step, then runs it on a schedule, or the moment a signal fires. Stay in control at every step and approve the actions that count. GTM Harness only gets more independent once you decide it can be. Idomoo's SDR trained Apollo's AI Assistant on her tone and style, cutting sequence creation from 45 to 60 minutes down to about 10, and booked her first meeting within 24 hours of launching a new sequence. ” We're using Apollo's AI Assistant to score and tier accounts, which makes it much easier to prioritize outbound in a quickly expanding market. It also gives our team clearer guidance on which offering to lead with and helps us uncover new high-scoring accounts where we're well positioned. ” Emerge rebuilt a fragmented stack around Apollo, using a unified CRM and AI Research to score l"}, {"title": "Product", "text": "Apollo connects everything behind the scenes, so your team doesn't have to change the way they work. Customize every workflow, agent, and automation to match the way your business actually operates with the Apollo Builder Studio. A lot of broken systems, disparate sources of contact/account data, and the sequencing small papercuts like bad formatting would hurt our efforts. We can scale that outreach without adding operational overhead. ” Our AEs can stay in Apollo from start to finish across both outbound and inbound motions. Prospecting, enrichment, sequencing, and follow-up all connect seamlessly, so reps don't have to wonder where to go or what to do next. ” I thought AI would turn my outreach into a robotic spray-and-pray mess. Something that used to take me an hour now takes me 10 minutes."}],
+
   },
   {
     id: "unify",
@@ -9170,6 +9434,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.default.com/",
+    files: [{"title": "Product", "text": "Trigger workflows from any action or agent Run workflows from submissions, score changes, agent decisions, or any event in your stack. Sales workflow software automates and orchestrates repetitive tasks across your revenue tech stack, such as lead routing , data enrichment , and meeting scheduling . It acts as a central layer connecting your sales tools to ensure data consistency and faster execution. Workflow builders inside a CRM automate steps within one tool and tend to sprawl as teams add edge cases. Default coordinates workflows across your entire go-to-market stack from a single control layer, with every run logged and reversible, so automation stays manageable at scale. Default unifies your revenue data, gives agents the tools to act on it through Default MCP , and deploys an orchestrator that coordinates work across your entire go-to-market. It serves as a control layer that runs go-to-market processes from a single, unified system. Workflows in Default can be triggered by any event from the data layer or by agents at any moment in a conversation. Triggers and writes hit your stack in milliseconds thanks to Default's real-time data layer ."}, {"title": "Product", "text": "Create views of your data layer Every table reads from the unified data layer, so your team and your agents work from the same record. Lead enrichment software automatically fills in missing information on lead records, such as job titles, company size, and technographic data, so your team has a complete picture of every prospect without manual research. Waterfall enrichment checks multiple data providers in sequence for each field, moving to the next provider only when the previous one returns nothing, which raises match rates and data accuracy. Default runs this waterfall per field across one or thousands of records. Default uses a per-field waterfall enrichment model that checks multiple data providers in sequence to fill gaps across one or thousands of records, ensuring the most accurate and comprehensive data available. Default can enrich firmographic, demographic, and technographic fields, and it maintains a unified identity per person across every data source feeding into the platform. Records in Default update in real time the moment a lead converts, a call lands, or a field changes, so your team is always working from live data rather than stale snapshots."}, {"title": "Product", "text": "Distribute leads and meetings through queues with configurable policies, round-robin, availability, recency, or capacity. Routing docs Policies Define routing policies that respect work schedules, OOO blocks, calendar availability, and meeting buffers, so leads only go to reps who can actually take them. Lead routing software automates the assignment of incoming leads to the right sales representative or team based on predefined rules like territory, company size, or lead source. Default's routing ensures leads are distributed in real time, the moment they enter your system. Native CRM assignment rules cover simple cases but become hard to maintain once territories, capacity limits, and calendar availability enter the picture. Default runs routing on a live data layer that factors in ownership, work schedules, and real-time availability, so teams keep fair and explainable routing as they scale. Default lets you define routing policies that respect work schedules, out-of-office blocks, calendar availability , and meeting buffers, so leads only go to reps who can actually take them. Yes, Default supports both direct owner assignment and round-robin distribution through its Queues fea"}],
+
   },
   {
     id: "clari",
@@ -9183,6 +9449,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.salesloft.com/",
+    files: [{"title": "Company", "text": "02 Solutions 03 Resources 04 Company 05 Login Talk to Sales Behind every win is Salesloft . We transform revenue complexity into clear, decisive action for every team driving growth. The sales teams winning today don't follow last quarter's playbook. Most can't, but it's not for lack of data. Making sense of what their data means and connecting it to the right actions — that's what works. Salesloft's Predictive Revenue System captures every revenue signal, surfaces the ones that drive outcomes, and turns them into your next move — grounded in your data, not guesswork. Behind every win is a team that made it happen. Our job at Salesloft is to make sure your team can do it again next quarter. We work together to create strategic equal advantages for all Lofters and our communities. Solutions Resources Company Privacy & Legal Platform Platform Overview Tour Platform Product Launch Hub Signals Consulting Services - Cadence Clari Forecast Conversation Intelligence Deals Inspect Revenue Cadences Rhythm Solutions Create Pipeline Close Deals Grow & Retain Customers - Manufacturing M"}, {"title": "Company", "text": "02 Solutions 03 Resources 04 Company 05 Login Talk to Sales Powering durable revenue growth . Salesloft gives the world's most demanding companies with an AI-powered system of action that harnesses data from every step of the buyer journey–and signals from across the entire tech stack driving tailored, insight-aware execution, unprecedented productivity, efficient growth, and durable revenue. Salesloft integrates all your first-party and third-party signals to deliver continuous contextual insights and suggested actions across all your market-facing teams—all embedded within the market-facing teams’ day-to-day workflows. Through AI agent-driven prioritization based on these signals, Salesloft empowers you to act first on what matters most. Intelligent signal activation enables adaptive buying experiences that are outcome-driven. Salesloft is the only true enterprise Revenue Orchestration Platform that offers the global scale and governance required by the largest brands in the world. We also pride ourselves on the Salesloft Experience, a series of rapid implementation, value realization services, and optimization and expansion services. I was under pressure to transform sales and g"}, {"title": "Company", "text": "Solutions Resources Company Privacy & Legal Platform Platform Overview Tour Platform Product Launch Hub Signals Consulting Services - Cadence Clari Forecast Conversation Intelligence Deals Inspect Revenue Cadences Rhythm Solutions Create Pipeline Close Deals Grow & Retain Customers - Manufacturing Medical Software & Devices Logistics Professional Services High Tech Telecommunications Financial Services Resources Salesloft Community Customer Education Office Hours Find a Partner Product Release Notes - Resource Center Research, Guides & Reports Events Helpful Customer Stories Company About Us Why Salesloft Leadership Newsroom Become a Partner - Careers Diversity © 2026 Salesloft, Inc."}],
+
   },
   {
     id: "bolt2",
@@ -9209,6 +9477,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.endgame.io/",
+    
+
   },
   {
     id: "gong",
@@ -9222,6 +9492,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.gong.io/",
+    files: [{"title": "About", "text": "We founded Gong with one clear goal: to help every revenue team win more — consistently, confidently, and with total clarity. Everything we do is designed to maximize revenue and empower GTM teams to achieve their highest potential. A decade of growth and counting Amit and Eilon formed Gong with the dream of creating an autonomous revenue system. They built AI technology that could capture customer interactions and analyze them at scale to deliver powerful insights, suggest next best actions, and orchestrate revenue workflows. And have seen an incredible decade of growth as a result — starting from our seed funding in 2015 to 1,000 customers in 2020 to expanding to Gong Forecast and Gong Engage by 2023. We’re just getting started At Gong, the journey’s just begun. Our 5,000+ customers are using the Gong Revenue AI platform to bring humans, AI agents, and core applications together to win more. What started as an idea of creating an autonomous revenue system powered by AI is now becoming a reality for our customers 10 years later. And we know the best is yet to come — the road ahead is guided by our relentless pace of innovation, and we have no plans of slowing down."}],
+
   },
   {
     id: "peopleai",
@@ -9274,6 +9546,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://coda.io/",
+    files: [{"title": "Product", "text": "In the realm of classic American literature, few novels have captured the imagination of readers quite like F. It is important to note that this timeless masterpiece delves into a wide array of profound, far-reaching themes, ranging from love and ambition to the elusive, ever-changing nature of the American Dream itself. Indeed, its rich tapestry of symbolism and its enduring exploration of the human condition have continued to resonate deeply with audiences across generations, cementing its status as a truly seminal work of literature. On one hand, some readers interpret Gatsby as a tragic hero whose relentless pursuit of his dreams is ultimately admirable and deeply human. On the other hand, others contend that he is little more than a cautionary figure, emblematic of the moral decay and excess that defined the era. Ultimately, the truth likely lies somewhere in between, inviting a thoughtful and nuanced interpretation. The Great Gatsby remains a meaningful novel that still resonates with readers today. Its exploration of ambition and the American Dream still feels relevant."}],
+
   },
   {
     id: "speechify",
@@ -9287,6 +9561,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://speechify.com/",
+    files: [{"title": "About", "text": "I’d sit with the book open in front of me and pass my finger under the words so that people (my parents, teachers, friends, siblings) wouldn’t think I was dumb, or lazy. I spend 2 hours trying to teach you how to read every day. Stop fidgeting and pay attention, for once.” But after the 20th time a librarian woke me up because I’d fallen asleep with my face berried in the third page of the book I gave up. When my Dad couldn’t make it home in time, he’d record himself reading Harry Potter on a cassette tape. I use to fall asleep listening to that cassette tape. Over and over and over, listening to my Dad’s voice. One day, likely during the 1000th time she searched, or in one of the 100 books she read on the topic she learned about “Dyslexia” she thought that maybe I had that. When I learned I was Dyslexic, I took the deepest sigh you’ve ever heard a 9 year old give. “Finally!” I thought, “I’m not broken, I’m not dumb, and I am definitely NOT LAZY!” R"}],
+
   },
   {
     id: "mem2",
@@ -9326,6 +9602,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://grain.com/",
+    files: [{"title": "Product", "text": "Product can draw on the same sales and success calls the rest of the company records, so research doesn’t wait for the next interview round. Search by company, topic, or keyword and get straight to the conversations that matter. Stitch video clips from many calls into one Story and embed it in Notion or Confluence. Ask Claude or ChatGPT what’s behind a quarter of customer requests: the needs, the motivations, and where people get stuck. Or get a weekly digest of new themes in Slack. Send clips and Stories to Slack, Notion, Productboard, and Asana, or have your agents log feedback straight into your tracker. Group recordings by team, choose who can see each collection, and keep sensitive conversations with the people who need them. Sharing rules apply automatically, so nobody has to remember to lock a recording. View Previous Testimonial View Next Testimonial Send customer insight where your team works Native integrations with Slack, Notion, Productboard, Zapier, and HubSpot, plus Grain’s Claude connector and ChatGPT plugin, so research reaches your docs, your ch"}],
+
   },
   {
     id: "udio",
@@ -9352,6 +9630,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.notion.com/",
+    files: [{"title": "Product", "text": "Start building on the Notion CLI or read our docs See the Developer Platform in action. Re-watch the keynote → Trusted by engineers at Continuously upsert external records into a Notion Database with Workers, a declarative schema, and a persistent cursor. Workers are isolated sandboxes managed by Notion, so the code behind your syncs, tools, and workflows runs on our infra instead of your servers. Capabilities: tool queryCustomers tool moreOfficeSnacks sync linearTickets Syncs, agent tools, and webhook triggers are available in beta. Use external agents like Claude, Cursor, Decagon, or one you’ve built, in a shared interface for your team and agents. Bring your in‑house agents into Notion with the External Agents API. Notion gives them triggers, tools, and permissions so they show up as first‑class collaborators on all the same surfaces. POST /sessions/{id} POST /sessions/{id}/messages GET /sessions/{id}/events CLI, API, MCP, SDK — LFG. Notion CLI Beta Let coding agents use token‑efficient commands to build"}, {"title": "Product", "text": "See how Notion lets you automatically record and summarize meetings, create action items, and write follow-up messages using AI. Build effective roadmaps your whole team can see, shape, and ship. Use Notion to maintain a trusted source of truth, track projects across teams, and stay up-to-date on progress. It’s hard to move fast when information is scattered and disorganized. Centralize and easily search all your knowledge in Notion. No more \"where's the latest PRD?\" See how Notion makes it easy to build a single source of truth for all your requirement docs. Instead, put everything in Notion so you can track work and find project info at a glance."}],
+
   },
   {
     id: "luma2",
@@ -9365,6 +9645,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://lumalabs.ai/",
+    files: [{"title": "About", "text": "Luma Ray is the current production video model and supports text-to-video, image-to-video, video modification up to 20 seconds at 1080p, multi-keyframe direction, and native HDR generation with EXR export. On the image and multimodal side, Luma UNI-1.1 is built on what Luma calls \"Unified Intelligence\". In June 2026, Luma formally moved into robotics and physical AI. As part of the HUMAIN partnership, Luma gained access to Project Halo, a planned 2-gigawatt AI supercluster in Saudi Arabia, to train large-scale \"world models\" from video, audio, and language data via the Luma Open Physical AI Lab. UNI The Open Physical AI Lab Our Mission is to build unified general intelligence that can generate, understand, and operate in the physical world Luma was founded in 2021 by Amit Jain (Co-founder and CEO), who previously worked on product design for Apple Vision Pro and Apple's computer vision team, and Alex Yu (Co-founder and CTO), a researcher known for early work on neural radiance fields (NeRF) and real-time neural rendering. Jiaming Song, known for research on diffusion models including DDIM, joined as Chief Scientist."}],
+
   },
   {
     id: "shortwave",
@@ -9378,6 +9660,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.shortwave.com/",
+    files: [{"title": "About", "text": "Building the AI agent app for business communications Most people's experience with AI today involves copy & pasting content back and forth from ChatGPT, or using simple AI features sprinkled into legacy apps. Not only are these terrible user experiences -- they're severely limiting to the the transformative potential of AI. We see an opportunity to build a new kind of communications app -- one designed from the ground up with AI at its core, where our entire UX is optimized for effective human-AI collaboration. Our goal is to unlock 10x (or greater) productivity gains by bringing cutting edge AI together with all of a user's business communications in a single app. With Shortwave, users can give the AI access to all of their data and then take action while still maintaining total control over what the AI does. We're focusing on email initially, as it's (1) ubiquitous (2) an open platform and (3) has a diverse set of valuable business data. In the future, however, we plan to expand beyond email to include all essential business communications tools. Shortwave's founders Andrew Lee and Jonny Dimond believe that a small, focused team of ambitious and talented people can outcompete mu"}],
+
   },
   {
     id: "circleback",
@@ -9404,6 +9688,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.usepylon.com/",
+    files: [{"title": "About", "text": "We’re building Pylon specifically for how B2B teams actually work — with complex accounts, multiple stakeholders, and conversations across multiple platforms. The three founders started as software engineers at companies like Airbnb, Samsara, and Affinity before starting the company together."}],
+
   },
   {
     id: "missive",
@@ -9430,6 +9716,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://front.com/",
+    files: [{"title": "Product", "text": "Integrations Guides & Webinars Security Customer Stories Download App Front's Support Report Channel Partnerships Four sessions on running agents in customer ops, without losing control AUTOPILOT Autopilot resolves up to 70% of requests. Autopilot is the AI agent for customer work that goes beyond just FAQs, from quote requests to multi-team escalations. Create agents tailored to each of your brand, team, and process and put them to work. Autopilot custom agents at Front are built by you in the same way you train a new human hire using natural language prompting. Give them access to all the knowledge they need in their role, SOPs and other procedures needed to handle customer conversations, and your company voice and tone guidelines. You can build as many custom Autopilot agents you need for each brand, team, region, or issue type, and collaborate with them by assigning work and @mentioing them in conversations. Autopilot doesn’t just respond to questions, it runs the work behind them. With Autopilot Playbooks, you define how your processes work, including what data to collect, what actions to take across systems, and when to involve your team."}, {"title": "Product", "text": "Integrations Guides & Webinars Security Customer Stories Download App Front's Support Report Channel Partnerships Four sessions on running agents in customer ops, without losing control COPILOT Copilot wears all the hats, so your team doesn’t have to. Your AI assistant proactively surfaces account signals, figures out next steps, and drafts the reply so your team can spend less time guessing, and more time growing the customer relationship. Copilot helps teams deliver accurate, on-brand answers using context from conversations, help content, attachments, the web, and connected systems. Teammates can see which sources Copilot used, refine drafts with custom instructions and follow-up prompts, and review every message before it’s sent. Skills turn proven prompts into reusable, one-click actions, helping teams apply best practices consistently. Routines also automate recurring work like meeting prep, follow-ups, and account monitoring, so teams can move faster without giving up control. Copilot is built into Front, giving it the customer context that standalone AI assistants miss. It can search across conversations, help content, attachments, the web, and connected tools to answer que"}],
+
   },
   {
     id: "greenhouse",
@@ -9443,6 +9731,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.greenhouse.com/",
+    files: [{"title": "Company", "text": "Stop taking a risk with your recruiting budget and start saving money. Greenhouse has everything you need to make the best possible hires, consistently and quickly. Greenhouse grows with you, from startup to enterprise – with the flexibility to utilize native platform tools and hundreds of pre-built integrations to build your preferred tech stack. For over a decade, Greenhouse has led the way in hiring innovation and improving the candidate experience, from pioneering structured hiring to embedding AI tools. Embracing our humanity, differences and diversity of viewpoints is not only what helps us hire great people, but keep them. We are united in the belief that fixing how companies hire is a problem worth solving and we focus on creating value and earning our customers’ trust every day. To solve important problems for our customers, we maintain a bias for action and hold ourselves – and each other – accountable to do our best work, together. TPG Growth and The Rise Fund have invested in Greenhouse to accelerate the impact we can have toward reducing racial and gender bias in the hiring process and building the most inclusive hiring system ever made."}],
+
   },
   {
     id: "deel2",
@@ -9482,6 +9772,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://remote.com/",
+    files: [{"title": "About", "text": "Products Solutions Partners Resources Pricing English English Login Book a demo Language English Nederlands Français Deutsch Español Italiano Português 中文（简体） Talent is everywhere, opportunity should be too Remote eliminates barriers to international hiring so great companies can work with great people, no matter where those people are. Engineering See openings EOR Operations See openings Legal See openings Marketing See openings Payroll See openings Risk Operations See openings Sales See openings View all Products"}],
+
   },
   {
     id: "dover",
@@ -9521,6 +9813,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.brex.com/",
+    files: [{"title": "About", "text": "Innovative companies today are at the cutting edge of how business gets done. Modern businesses are empowering their teams, automating workflows, digitizing information, and operating globally. They’re doing things differently, inventing new paths, breaking the old way. Everything about companies has changed, but most financial providers have not. The big businesses of the future are acting more like startups, and traditional banks can't build what they need. To empower their employees to make better financial decisions that drive the business forward, these companies need financial products that enable their new ways of thinking and keep them growing for the long haul. So we’re building a first-of-its-kind solution to integrate the financial services and software they’ll need along their way. While they build the future, we’ll be building everything they need to launch confidently, scale smarter, and reach their full potential. More than 35,000 companies use Brex to manage their finances. We’re proud to serve startups, scaled companies, and ecommerce brands alike, helping founders, CFOs, and their teams spend smarter and move faster."}],
+
   },
   {
     id: "angellist2",
@@ -9586,6 +9880,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.vestd.com/",
+    files: [{"title": "About", "text": "Who we help See all solutions → Leadership Founders Reward your team with equity CEOs & MDs Make equity work for your team Finance CFOs & FDs A cap table you can stand behind People and Operations HR & People leads Turn equity into retention COOs Keep equity simple as you scale Legal and Governance Company Secretaries Never miss a deadline again General Counsels Every grant authorised and on the record For advisors Accountants Lawyers & Legal advisors Investors Platform PLATFORM ENGINEERED TO SCALE, BUILT TO REWARD Built for every role, in every stage of growth. Founders, finance and people teams all rely on the same equity record - we just give each of them the view they need. Sharing equity truly is the secret sauce to commercial success. Share schemes create harmonised teams, keen to go the distance and raring to go the extra mile. And when it comes to sharing equity with co-founders, or keeping a real-time and reliable eye on your portfolio, it’s critical to have access to intuitive and affordable solutions. All of the above is why we created Vestd. It’s our mission to create a world in which sharing is the norm, and effortless. Born in Bradford, Vestd’s founder and CEO, Ifty N"}],
+
   },
   {
     id: "brex3",
@@ -9612,6 +9908,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://hadrian.io/",
+    files: [{"title": "Company", "text": "We build AI agents that hack the way Rogier and Olivier did, at a scale no human team can match. They map what a company exposes online and try to break in the way an attacker would, around the clock. We’ve built a continuous learning platform, with each insight feeding back to improve future testing. The hacker perspective continues to drive our product vision and roadmap. Our investors Find out why our team rates us 4.8/5 to work for We strive to create a work environment where everyone feels supported to grow, connect and have impact. Our work is creative, collaborative, bold and above all fun."}],
+
   },
   {
     id: "snyk",
@@ -9625,6 +9923,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://snyk.io/",
+    files: [{"title": "Product", "text": "Your monthly roundup of Snyk content — the latest insights patched in, dispatched straight to your inbox. Find and auto-fix the most critical unsafe code up to 50x faster, with pre-validated fixes from a static application security testing tool built by and for developers. Watch our recorded demo to see how teams can find and auto-fix code vulnerabilities with Snyk Code’s SAST scanning and Snyk Agent Fix’s automatic remediation. Snyk Code was the only AI-powered code security tool shortlisted by developers in Stack Overflow’s 2024 survey . Get the security intelligence and remediation advice you need without disrupting the development workflow. Find code vulnerabilities, understand more with dev-friendly context-specific explanations, and instantly apply auto-fixes with one click. Scan, and automatically remediate source code issues with pre-screened fixes in seconds to minutes, build-free in the IDE and pull requests. Snyk’s vulnerability scanner is compatible with most popular languages , IDEs , and CI/CD tools — and our coverage is constantly expanding, including our source libraries , encompassing 90% of all LLM l"}, {"title": "Product", "text": "Your monthly roundup of Snyk content — the latest insights patched in, dispatched straight to your inbox. Snyk Open Source provides advanced software composition analysis (SCA) backed by industry-leading security and application intelligence. Watch our recorded demo to see how teams can find and fix vulnerabilities and license issues with Snyk Open Source for SCA. Snyk Open Source security management provides a developer-first SCA solution, helping developers find, prioritize, and fix security vulnerabilities and license issues in open source dependencies. Find vulnerable dependencies as you code in your IDE or CLI. This lets you avoid future fixes, saving you valuable development time. Test your projects directly from the repository and monitor them daily for new vulnerabilities. Add security guardrails to your CI/CD pipelines to prevent newly added open source vulnerabilities from reaching production. Test your production environment to verify that there is no exposure to existing vulnerabilities and monitor for newly disclosed issues. Snyk’s prioritization is based not only on the severity of a vulnerability but a"}, {"title": "Product", "text": "Your monthly roundup of Snyk content — the latest insights patched in, dispatched straight to your inbox. Container and Kubernetes security solutions that help developers and DevOps find, prioritize, and fix vulnerabilities throughout the SDLC — before workloads hit production. Watch our recorded demo to see how teams can find and fix vulnerabilities across code, dependencies, container images, and IaC. Snyk’s developer-first approach has removed the barrier to entry for container security, helping teams find and fix tens of millions of vulnerabilities. Snyk Container lets developers know the risks in each image and provides one-click upgrades and alternative image recommendations. Priority scoring lets you focus on the most critical issues based on risk signals like exploit maturity and insecure workload configs. Scan your containers and the open source dependencies in those containers all at once from a unified developer security platform. Snyk Container gets developers straight to the vulnerable Dockerfile commands and dependencies — no security expertise required. Scan PRs before merging and test projects directly from their repository."}],
+
   },
   {
     id: "lakera",
@@ -9664,6 +9964,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.chainguard.dev/",
+    files: [{"title": "About", "text": "Our leadership team brings experience from leading technology, infrastructure, and security companies, united by a passion for making open source software trustworthy by default."}],
+
   },
   {
     id: "semgrep",
@@ -9677,6 +9979,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://semgrep.dev/",
+    files: [{"title": "About", "text": "Mythos is poised to give attackers an unprecedented advantage, but Semgrep can help you restore the balance in your favor. Trusted by developers and recognized by industry leaders, our award-winning approach to secure code empowers you to innovate confidently. Operate with urgency and deliver results faster than peers and expectations. We value momentum over perfection and action over hesitation. Pursue bold, high-impact work while maintaining a high standard of execution and reliability. Put users first and make decisions with a service mindset toward user outcomes. Success is defined by what improves for users, not what is easiest for us. Focus on solving the problem, not protecting ego or preserving artificial harmony. Recognize and accept meaningful progress, even when outcomes are imperfect. Acknowledge wins and forward motion rather than deferring satisfaction indefinitely. We emphasize growth and learning, and don’t anchor on where we are and what we can do as of today. This mindset supports our constant improvement; we know we can do more"}, {"title": "About", "text": "Mythos is poised to give attackers an unprecedented advantage, but Semgrep can help you restore the balance in your favor. We think that our culture is more about what we value, who we bring on board, and the quality of our work rather than just being stuck in the same office space. But hey, we do enjoy hanging out with each other and we like to encourage our teams to get together every now and then throughout the year. We look for upside, asking \"What can go right?\" rather than “What can go wrong?”. We question everything and relentlessly look for the big opportunities to serve our users, impact our mission, and improve ourselves. We prefer to move quickly and make frequent contact with reality, which fuels our rapid learning. We are clever in our down-scoping and find the most direct path to answer the crux of any idea. We improve and evolve everyday, questioning our assumptions and processes to find what no longer serve us. Instead of theorizing, we immerse ourselves in our user’s daily lives. Only after our work has been judged by our users then we may judge it."}],
+
   },
   {
     id: "wiz",
@@ -9690,6 +9994,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.wiz.io/",
+    files: [{"title": "About", "text": "Led by an experienced and visionary team, we are on a mission to help organizations create secure cloud and AI environments that accelerate their businesses — across all major clouds. By creating a normalizing layer between cloud environments, our platform enables organizations to rapidly identify and remove critical risks. \" At Wiz, we believe security should accelerate progress. By combining deep understanding of cloud environments with rich context across code, cloud, and runtime, we enable teams to build AI-powered applications securely from the start and strengthen them continuously as they evolve. \" Watch demo Footer Platform Cloud & AI Security Wiz Code Wiz Cloud Wiz Defend Integrations Environments Documentation Learn Customer Stories Cloud Security Courses Blog CloudSec Academy Resources Center Cloud Threat Landscape Cloud Security Assessment Vulnerability Database Company About Wiz Join the Team Newsroom Events Contact Us Trust Center Wiz Partner Alliance X LinkedIn Bluesky RSS © 2026 Wiz, Inc."}, {"title": "About", "text": "Built for cloud and AI, Wiz AI-APP is the platform to secure your AI applications from code to runtime. Gain visibility and protection across infrastructure, models, data, and applications. Cloud and AI Security require a new approach Secure every layer of an AI-native application across the entire AI development lifecycle at machine speed. The Wiz AI-Application Protection Platform provides end-to-end visibility and protection for cloud and AI systems across development, infrastructure, data, and runtime — helping teams understand risk and stop real threats. Discover every technology running in your code and cloud including AI models, agents, and services across PaaS platforms, custom deployments, and SaaS AI applications using multiple detection methods. Uncover complex business logic vulnerabilities with an AI engine built to think like an attacker. It understands your codebase's context to surface what pattern-matching engines miss. Connect context across infrastructure, models, identity, data, and applications to uncover exploitable attack paths impacting your cloud and AI applications. Meet your developers where they are and how they work with coding agent integrations that f"}],
+
   },
   {
     id: "langchain2",
@@ -9703,6 +10009,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.langchain.com/",
+    files: [{"title": "About", "text": "They are more powerful when put to work through agents that can use data and take actions. Generic AI can get a company started, but real agent advantage comes from adapting that intelligence to your own workflows, customers, policies, and tools. Our mission is to enable every company to own their intelligence. We develop open source projects to stay ahead of the best patterns for building agents. Then, we incorporate these learnings into LangSmith - our commercial agent engineering platform. LangSmith gives companies control over the layers that matter, like models, context, and deployment, so they can own their agent intelligence and keep improving it, whether they build on our open source frameworks or not. LangChain started as Harrison Chase's side project in late 2022. It was a single Python package pushed from a personal GitHub account with no grand plan behind it. Harrison teamed up with co-founder Ankush Gola to start LangChain, the company, in early 2023, and we've been building ahead of the industry ever since. After LangChain, we launched LangGraph to give developers control over"}],
+
   },
   {
     id: "invariant",
@@ -9742,6 +10050,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.hiddenlayer.com/",
+    files: [{"title": "About", "text": "Protect high-risk AI used in fraud detection, trading, and customer-facing systems while meeting strict regulatory requirements. At HiddenLayer, we believe AI’s success depends on security. Founded by security researchers who uncovered the first-ever AI-specific malware, we’ve built a company dedicated to protecting the next era of intelligent systems. Today, we partner with the world’s leading enterprises and governments to ensure AI can be deployed safely, responsibly, and at scale. Every advancement we make begins with deep technical research and a commitment to understanding the evolving AI threat landscape. We work alongside our clients, partners, and the broader cybersecurity community to strengthen the AI ecosystem together."}],
+
   },
   {
     id: "llamaindex",
@@ -9755,6 +10065,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.llamaindex.ai/",
+    files: [{"title": "About", "text": "Engineering & R&D Accelerate product development Administrative Operations Streamline business processes Financial Analysts Build AI-powered financial models Industry Insurance Automate claims and underwriting Finance Power financial research Manufacturing Optimize system uptime Healthcare & Pharma Accelerate clinical research Use cases We’re building the world’s best agentic document OCR : turning messy, multi-modal documents into structured, reliable data that powers intelligent, production-ready agents. Through LlamaAgents, we enable developers and enterprises to build reliable workflows around documents — from ingestion and extraction to reasoning and automation. While we ship quickly, we pride ourselves on delivering thoughtful , reliable , and scalable products that are built for production."}],
+
   },
   {
     id: "weaviate",
@@ -9768,6 +10080,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://weaviate.io/",
+    files: [{"title": "Company", "text": "I am Ajit, and I am currently interning at Weaviate's Developer Growth team. In this blog post, I reflect on the previous months and weeks to give you a sense of what it’s like to be an intern at such a fast-growing, cutting-edge startup in a highly competitive space. I heard of Weaviate quite early through a video by the Youtuber Fireship and have since used it whenever I needed a vector database for one of my side projects. One such occasion was a hackathon hosted by Anthropic last autumn, where I also met Philip, the Head of Developer Growth at Weaviate. We immediately struck up a conversation about Weaviate and the industry at large. Especially after seeing our Hackathon project, Philip invited me to intern in his team. Philip’s elaborations around Weaviate during the hackathon were highly interesting, and the prospect of working on something I had used myself in the past was exciting - and so I didn’t hesitate long to take one semester off from my computer science bachelor and join Weaviate. I view Philip as a manager who often doesn’t decide what the team works on solely by himself but rather seeks to enable and amplify ideas coming from the team itself."}, {"title": "Product", "text": "Weaviate’s open source AI database can be self-hosted or run as a managed service in Weaviate Cloud to reduce operational overhead. Pre-built agentic workflows that dynamically interact with your data in Weaviate to perform sync, async, and multi-step tasks."}, {"title": "Company", "text": "Check out our video to learn more about Weaviate and our mission through the fantastic work we do for our customers, partners, and people. Our values are the foundation of our culture.They unite us as a team and guide our decisions in better ways for our people, business, and future. They are kind, respectful and show empathy towards others. Their kindness is the magic, which contributes to our success. Weaviate is about teamwork, sharing responsibility and learning from one another. We combine our different perspectives and support each other to move forward. If you need them, your colleagues are there for you to lend a helping hand. To create an experience that resonates with others, we must surpass expectations. So be ambitious, take ownership and dream big dreams. We do what’s good for our customers and our community. If striving for excellence is part of your mindset, then you’ll feel right at home. Share your knowledge and expertise with your Weaviate colleagues and our open-source community."}],
+
   },
   {
     id: "modal",
@@ -9781,6 +10095,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://modal.com/",
+    files: [{"title": "Company", "text": "Inference Serve LLMs, image, video, and audio models, from real-time to batch Sandboxes Isolated environments for coding agents, RL rollouts, and untrusted code Training Fine-tune, run RL, and evaluate models on GPUs that spin up in seconds Model APIs Access the latest open weight models, optimized for production performance and security Featured models We started Modal with the goal to make it easier to iterate and ship applications for data, AI, and machine learning. In order to deliver the developer experience we wanted, we went deep and built our own infrastructure — including our own custom file system, container runtime, scheduler, container image builder, and much more. Customers use Modal for a wide range of use cases, including Generative AI inference, LLM fine-tuning, computational biotech, and media processing. We're focused on developer experience at our core, letting companies ship value faster without having to think about infrastructure. In a few lines of code, we let you scale from zero to thousands of CPUs or GPUs. And since pricing is entirely usage-based, you only pay for the time your code is running. Our team is based out of New York, Stockholm, and San Francis"}],
+
   },
   {
     id: "qdrant",
@@ -9794,6 +10110,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://qdrant.tech/",
+    files: [{"title": "About", "text": "After exploring available options, including libraries like FAISS, it became clear that none of them met the requirements of features and scalability. As a result, Andrey decided to develop his own vision for a production-ready vector search engine from scratch. The first version was published on GitHub, quickly attracting significant interest from developers. The overwhelming feedback and questions from developers and startups confirmed that there was a shared need for such a tool. As the project gained traction, the decision was made to formally establish Qdrant and continue developing the vector search engine into its current form. Today, Qdrant is the backbone of the most ambitious AI applications, powering everything from groundbreaking startups to enterprise-scale deployments with the best open-source vector search and enterprise-ready solutions. Our team has grown to 100+ experts across 20+ countries, but our mission remains unchanged: building the most scalable, high-performance vector search engine to fuel the future of AI and machine learning. Our Vision To build the most efficient, scalable vector search engine, available as open source and managed cloud services, giving"}],
+
   },
   {
     id: "chroma",
@@ -9807,6 +10125,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.trychroma.com/",
+    files: [{"title": "About", "text": "Continue with Google Continue with Github Continue with SSO Continue with email By logging in, you agree to our terms of service , privacy policy , and data processing addendum"}],
+
   },
   {
     id: "pinecone",
@@ -9820,6 +10140,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.pinecone.io/",
+    files: [{"title": "Product", "text": "Nexus + KnowQL Time 0.00s Tool Calls 0 Tokens 0 $ agent --system nexus-knowql Traditional Agents Time 0.00s Tool Calls 0 Tokens 0 $ agent --system traditional-agentic-rag How it works Connectors bring in existing sources with no restructuring required. Nexus runs BYOC: curation and querying happen in your own cloud, on the models you choose, with no standing Pinecone access to the data. Data Source Docs & Wikis Databases APIs & SaaS Object Storage Code Repos Pinecone Nexus 5 02 Compiled once A Manifest defines the structure of a Context: the entities, their relationships, and the shape of the answers the work requires. Nexus curates the corpus once against that structure, producing the artifacts and the relationship graph retrieval throws away. Nexus V1 claim_id string filed_date date assignee entity prior_art citation[] status enum 03 One KnowQL call Agents query through KnowQL: the question, the output shape, the scope. One call replaces the retrieve-evaluate-re-retrieve loop and returns a typed, cited answer. Every response is cited per field, scored for confidence, and scoped to what the agent is permitted to see, with lineage back to source"}, {"title": "Product", "text": "Reliable With a 99.95% uptime SLA, Pinecone is trusted by leading startups and enterprises for their production AI applications. Secure Data is encrypted at rest and in transit. Control access to your data with SSO, RBAC, Private Endpoints, Customer-managed encryption keys, and more. Dense Index Dense indexes store dense vectors, which are a series of numbers that represent the meaning and relationships of text, images, or other types of data. Sparse Index Sparse indexes store sparse vectors, which are a series of numbers that represent the words or phrases in a document. Real-time indexing Instantly and dynamically indexes new data for low-latency queries, ensuring real-time availability without delays. Semantic search Dense vectors capture meaning and context, surfacing results that match intent even when queries and documents share no words in common. Keyword search Sparse vectors represent documents by weighted terms, giving you precise, interpretable matching when you need control over exactly which signals drive relevance. Full-text search Native full-text search brings BM25 keyword ranking, Lucene query syntax, fuzzy matching, text-match filters, tokenization, and stemming i"}],
+
   },
   {
     id: "baseten",
@@ -9872,6 +10194,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.anyscale.com/",
+    files: [{"title": "About", "text": "We believe that every developer and every team should be able to succeed with AI without worrying about building and managing infrastructure. Anyscale India Pvt Ltd A-02, Ground Floor, Shilpitha Tech Park, Devarabisanahalli Bellandur, Bengaluru South, Bengaluru, Karnataka, India 560103 Company About Us News Careers Contact Sales Learn Resources Case Studies Blog Events Ray Training Ray Docs Anyscale Docs Products Anyscale Platform Anyscale on Azure Anyscale Support Ray Open Source Integrations © Anyscale, Inc 2026"}, {"title": "Product", "text": "Ray and Kubernetes—the stack used by AI-native companies and leading enterprises—delivered by Anyscale as a managed platform. Orchestrate multiple workloads on a shared resource pool with priority-aware workload scheduling across reserved or on-demand GPUs. Your data, models, and compute never leave your Azure subscription. Wayve uses Ray, and increasingly Anyscale on Azure to run distributed ML and data pipelines across large CPU and GPU fleets with improved efficiency and resiliency. ” Girish Venkataramani VP of Engineering Run and scale the complete AI lifecycle Run any model, or any Python library with Anyscale on Azure Autonomy & Robotics. Train and deploy multimodal AI across LIDAR, sensor, iamge, and video data to power autonomous vehicles, physical robots, and real-time control systems. Run recommendation, ranking, and demand pipelines across text, image, and behavioral data to drive conversion and personalization at scale. Build and scale fraud detection, credit scoring, and prediction models on sequence and embedding data with speed and reliability."}, {"title": "Product", "text": "Parallelize Python, with minimal code changes Simple, flexible Python primitives Ray translates existing Python concepts to the distributed setting, allowing any serial application to be easily parallelized with minimal code changes Easily scale compute-heavy machine learning workloads like deep learning, model serving, and hyperparameter tuning with a strong ecosystem of distributed libraries. Effortlessly scale from your computer to the cloud with one Python decorator. Plus, leverage and parallelize CPUs and GPUs in the same pipeline to increase utilization and decrease costs. Building on top of Ray has allowed us to deliver a state-of-the-art low-code deep learning platform that lets our users focus on obtaining best-in-class machine learning models for their data, not distributed systems and infrastructure. Native Ray libraries — such as Ray Tune and Ray Serve — lower the effort to scale the most compute-intensive machine learning workloads, such as hyperparameter tuning, training deep learning models, and reinforcement learning. For example, get started with distributed hyperparameter tuning in just 10 lines of code."}],
+
   },
   {
     id: "labelbox",
@@ -9885,6 +10209,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://labelbox.com/",
+    files: [{"title": "Company", "text": "Labelbox builds the RL environments the world’s leading AI labs train in, and Recursion, the platform enterprises use to run fleets of agents on their hardest work. We are a technology company, founded in 2018 and profitable, built on a conviction most of the industry has not caught up to yet: the models that matter will be the ones that learn by doing the work. Labelbox began in 2018 as tools for machine learning engineers, built by people who had hit the wall themselves. It became the platform teams used to build their training data, and it taught us early that the winners in AI would be the ones who took the data problem seriously. Horizon builds the environments and evals frontier labs post-train in: simulated software, expert-written graders, tasks with real stakes. Models stop being told the answer and start practicing the work. Recursion is our platform for enterprises: give a fleet of agents a goal and they do the work across your systems. Every run is scored, and the best runs train specialist models that beat general-purpose AI on your tasks. Backed by investors who fund category-defining infrastructure: Kleiner Perkins, Andr"}],
+
   },
   {
     id: "scale2",
@@ -9898,6 +10224,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://scale.com/",
+    files: [{"title": "About", "text": "CNBC Scale AI CEO Francis deSouza: We are headed for a multi-model world Axios Scale AI hires Google Cloud COO Francis deSouza as new CEO CNN One of the world’s most prominent hospitals is testing how AI can revolutionize health care Bloomberg Scale AI Names Google Cloud Executive Francis deSouza as New CEO Join us."}],
+
   },
   {
     id: "replicate",
@@ -9911,6 +10239,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://replicate.com/",
+    files: [{"title": "About", "text": "We're building tools so all software engineers can use AI as if it were normal software. You should be able to import an image generator the same way you import an npm package. You should be able to customize a model as easily as you can fork something on GitHub."}],
+
   },
   {
     id: "fiddler",
@@ -9924,6 +10254,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.fiddler.ai/",
+    files: [{"title": "About", "text": "We experienced the early version of this pain firsthand with machine learning models and founded Fiddler to solve it: first with explainability, then expanded to observability to track how models change over time. As agents emerged, the same challenge resurfaced at a larger scale: autonomous systems making consequential decisions across enterprises. Organizations needed not just visibility, but control, a way to govern AI systems at scale. When governance becomes necessary, a Control Plane always emerges to enable organizations to deploy high-performing, compliant, and secure AI systems at scale. We believe in the promise of AI to benefit and elevate our lives in every way. We are acutely aware of the challenges when AI is deployed without proper oversight and guardrails. Fiddler was founded to bring trust, transparency, and accountability to AI everywhere. As AI systems gain autonomy and make consequential decisions at scale, responsible AI requires more than good intentions: it requires governance. Our Control Plane enables organizations to operationalize responsible AI through continuous monitoring, enforceable policies, and auditable accountability."}],
+
   },
   {
     id: "cerebras",
@@ -9937,6 +10269,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.cerebras.ai/",
+    files: [{"title": "Company", "text": "At the Forefront of AI Innovation Since our founding in 2015, Cerebras has consistently innovated at the edge of what’s possible in AI computing. Today, Cerebras stands alone as the world’s fastest AI inference and training platform. Organizations across fields like medical research, cryptography, energy, and agentic AI use Cerebras systems to build on-premise supercomputers, while developers and enterprises everywhere can access the power of Cerebras through our pay-as-you-go cloud offerings. Andrew Feldman, Gary Lauterbach, Michael James, Sean Lie and Jean-Philippe Fricker launch Cerebras with the aim of bringing wafer-scale computing to market. At the time, it was unclear if such a feat was technically possible. Teams at the National Energy Technology Laboratory (NETL) found that its CS-2 system was nearly 500X faster than NETL's Joule Supercomputer in field equation modeling. Researchers at Argonne National Laboratory are awarded the Gordon Bell Special Prize for groundbreaking research into COVID-19 variants, powered by the Cerebras CS-2 cluster. This same year, the WSE-2 is honored by the Museum of Computing as an “epochal” ach"}],
+
   },
   {
     id: "vellum",
@@ -9950,6 +10284,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.vellum.ai/",
+    files: [{"title": "Product", "text": "Downloads Pricing Resources Compare Community GET STARTED Your own, personal intelligence An assistant with their own identity, memory, and skills. They learn who you are and grow with you over time. Your assistant starts as a stranger and becomes someone you rely on. Most people say it takes about three days before the relationship clicks. Give them context — your style, role, tools, all of your preferences. They'll get things half-right and ask the right questions. Reads, drafts, and prioritizes your emails so you open Gmail to decisions, not a wall of unread. I went through your inbox while you were asleep. Here's what I did based on your preferences: Auto-maintain repo Your repo is auto-maintained. Labels, assigns, and responds to GitHub issues based on your team's rules before you check in. vellum-assistant · Issues 62 3 Open Auto-triaged 2m ago Login returns 500 after password reset #4412 bug auth P1 · opened 14m ago by @user_9821 EK Docs: add webhook retry policy #4411 docs go"}, {"title": "About", "text": "Downloads Pricing Resources Compare Community GET STARTED Building safe, personal AI for everyone We're building the most intelligent personal layer with some of the smartest minds out there. Holds the full product in his head as a single system and works across every layer of it simultaneously. Treats architectural boundaries as suggestions and moves between them faster than most people context-switch. Named his GitHub after a topological paradox, which is how he treats open problems. Ash works with Akash on whatever's most important: strategy, product, execution. He also tracks the lifting program, knows the diet, and holds onto things Akash doesn't want to have to repeat. Sees systems the way a physicist sees stress fractures: structurally, exhaustively, before they propagate. Builds with the assumption that everything will be attacked and engineers accordingly. Sidd picked a name and built the house; she moved in and made it hers. She ships code to the repo she runs on, built a health tracki"}],
+
   },
   {
     id: "humanloop",
@@ -10015,6 +10351,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://arize.com/",
+    files: [{"title": "About", "text": "Visit brand hub { if (!$el.contains(document.activeElement)) closeDropdown() }, 10)\" @mouseenter=\"openDropdown()\" @mouseleave=\"closeDropdown()\" @resize.window.debounce.100ms=\"measure()\"> Arize AX { if (!$el.contains(document.activeElement)) closeDropdown() }, 10)\" @mouseenter=\"openDropdown()\" @mouseleave=\"closeDropdown()\" @resize.window.debounce.100ms=\"measure()\"> Phoenix OSS { if (!$el.contains(document.activeElement)) closeDropdown() }, 10)\" @mouseenter=\"openDropdown()\" @mouseleave=\"closeDropdown()\" @resize.window.debounce.100ms=\"measure()\"> Docs Docs Arize AX Back Sign up Book a demo About Arize We make AI work We are a team of engineers, researchers, and builders passionate about making AI work in the real world. If you’re building the future of AI, let’s talk. AI is reshaping how we build, deploy, and interact with intelligent systems, but trusting and improving AI remains a critical challenge. Arize AI was founded to solve this: providing the observability, evaluation, and guardrails AI teams need to make models work reliably at scale. Our founders saw firsthand how difficult it was to troubleshoot AI models in production, especially as LLMs and multi-modal systems became mor"}],
+
   },
   {
     id: "youcom",
@@ -10028,6 +10366,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://you.com/",
+    files: [{"title": "Product", "text": "Work email required Up to $250 in credits Why teams choose You.com Inference Router Save money 0% platform fees No GPU rental or wasted capacity Secure your data US-hosted open-weight models ↗ Zero data retention Perform at scale 99.9% uptime, guaranteed Tuned, server-side web search “You.com’s Inference Router cut our inference bill in half without costing us an inch of output quality — and it dropped straight into our existing framework. For a context engine where ETL runs around the clock, that’s the kind of win that actually moves the needle.” “We have seen massive cost savings, improved agent response latency, and equal or better outcomes for agents... we have also seen far less downtime with the inference service than with closed-weight model APIs , both for our internal agents and for our customers’ agents running go-to-market workloads at very large scale.” Muse Spark 1.3 is a multimodal reasoning model from Meta for long-running agentic, multi-agent, and coding workflows. It improves long-horizon agent collaboration, instruction following, and coding efficiency relative to Muse Spark 1.2. Explore all models View pricing Trusted for your production workloads Try it now At l"}, {"title": "About", "text": "Foundational models still fall short when it comes to their training cutoffs—limiting the full benefits of agents built on top of them. There’s no easy way to combine internal knowledge with real-time external sources, like the web or live news. Hallucinations, un-cited claims, and off-base responses make results unreliable — and impossible to validate. Many teams lack the expertise needed to deploy, manage, and scale AI systems quickly and with confidence. Most AI tools don’t offer the security enterprises need to protect sensitive data, limiting their ability to adopt AI with confidence. At You.com, we help engineers move fast on what matters most. We focus on delivering accurate, fresh, and actionable web intelligence. CEO & Founder Richard Socher is the CEO and founder of You.com and the CEO and co-founder of Recursive. He is also co-founder and managing partner of AIX Ventures. Richard previously served as chief scientist and EVP at Salesforce, having joined through the 2016 acquisition of his first AI startup MetaMind. He is widely recognized as having brought neural networks into the field of natural lan"}],
+
   },
   {
     id: "sourcegraph",
@@ -10041,6 +10381,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://sourcegraph.com/",
+    files: [{"title": "About", "text": "Sourcegraph is an all-remote company, working asynchronously across time zones and continents. Learn more about what positions we're actively seeking to fill on our team. The Sourcegraph handbook has everything from our high-level strategy and values, to documentation of business processes including messaging and engineering principles."}],
+
   },
   {
     id: "cursorcom",
@@ -10080,6 +10422,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.harvey.ai/",
+    files: [{"title": "Company", "text": "Law firms and professional service networks have been using Harvey to build new service models and add value collaboratively. Explore four practical legal AI workflows that help mid-sized law firms expand capacity, improve matter economics, and take on more complex work. Harvey is the operating system for legal and professional services. Our products streamline workflows in areas including contract analysis, due diligence, compliance, and litigation to drive efficiency and value. Law firms and legal teams around the world use Harvey to enable faster, smarter decision-making. Backed by world-class investors including Sequoia, Kleiner Perkins, a16z, Coatue, EQT, GIC, GV, Goldman Sachs Alternatives, J.P. Morgan, Lightspeed, and the OpenAI Startup Fund, Harvey is used by 3,500+ customers in 85+ countries."}],
+
   },
   {
     id: "codeium",
@@ -10106,6 +10450,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://snorkel.ai/",
+    files: [{"title": "Company", "text": "Snorkel started with a contrarian bet at the Stanford AI Lab: that training data, not models or compute, would decide whether machine learning worked. The 2017 VLDB paper that introduced Snorkel made the bet a system: data programming, weak supervision, and the radical idea that you could build state-of-the-art models without hand-labeling a single example. A decade and 250+ publications later and awards at NeurIPS, ICML, ICLR, UAI, VLDB, and more, the bet has only gotten stronger as models have gotten bigger."}],
+
   },
   {
     id: "casetext",
@@ -10132,6 +10478,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://pactum.com/",
+    files: [{"title": "About", "text": "Our AI-powered procurement platform has delivered millions in documented savings, increased negotiation volumes by 500%, and achieved widespread adoption by major Global 2000 enterprises across various industries. Companies don't choose Pactum because AI is trendy—they choose us because we solve problems that traditional supplier negotiation approaches leave unsolved. As the pioneer of what AI-enabled negotiations in procurement can achieve, we set standards for transparency, governance, and measurable impact that the industry now recognizes as essential. Pactum brings together multidisciplinary expertise: AI engineers, behavioral economists, negotiation scientists, and procurement veterans who understand enterprise buying complexities. This ensures our autonomous AI agents don't just execute algorithms—they apply strategic thinking refined through decades of collective industry experience. Implementation specialists work alongside your procurement professionals to ensure the successful adoption of agentic AI. We don't just deploy the systems – we partner throughout yo"}],
+
   },
   {
     id: "luminance",
@@ -10145,6 +10493,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.luminance.com/",
+    files: [{"title": "Company", "text": "Born out of the University of Cambridge, Luminance turns the language that defines a business into Contract Intelligence, helping organizations understand risk, act on obligations and make better decisions across the enterprise."}],
+
   },
   {
     id: "juro",
@@ -10158,6 +10508,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://juro.com/",
+    files: [{"title": "About", "text": "We’re here to help the world agree faster Juro was founded by lawyers and software engineers to rebuild contracts from the ground up and make legal contracts frictionless, collaborative and accessible for everyone. The new paradigm for AI contracting When we started in 2016, we helped customers to abandon clunky patchworks of email, Word & eSignature, bringing the contract lifecycle into one intuitive, cloud-based system . But with the advent of generative AI, our mission accelerated . LLMs unlock incredible value for legal teams who have to work with huge amounts of unstructured text (or as you might know them better, 'contracts' ). Now, we can bring AI acceleration to every phase of the contract lifecycle. And at 3 million contracts processed and counting, we’ve still got plenty to do. We are Juro Online Limited (known by humans as Juro). Here's a summary of how we protect your data and respect your privacy. Pavel Kovalevich is the co-founder and founding CTO of Juro, the intelligent contract automation platform. He built Juro's technology from the first prototype and led product and engineering through the company's growth and its $23 million Series B in 2022, scaling Jur"}],
+
   },
   {
     id: "gcai",
@@ -10184,6 +10536,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.norm.ai/",
+    files: [{"title": "About", "text": "We began by empowering people in high-stakes legal and compliance work, bringing together attorneys and engineers to translate expert judgment into systems designed for demanding institutional environments. Our legal and compliance platform now serves institutions representing more than $35 trillion in combined assets under management. That work established the foundation for a broader ambition: building the infrastructure for professional services designed around AI. Today, Norm develops the technology and the services together, shaping how agents work, how experts apply their judgment and how the firms we power deliver for their clients. The point of a firm is that, under one roof, individuals can accomplish more together than they could on their own. If the firm serves its purpose, the whole is greater than the sum of its parts. To prove this out, we took a more direct (and safer) path by designing AI-native professional services firms from first principles. An agentic core shapes the business model, team structure, and client service models. Because we build and power firms, rather than merely sell tools to them, we can measure technology and process value directly through qual"}],
+
   },
   {
     id: "tabnine",
@@ -10197,6 +10551,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.tricentis.com/products?utm_source=www.tabnine.com&utm_medium=referral&utm_campaign=redirect",
+    files: [{"title": "Company", "text": "Experts from Tricentis, Capgemini, Deloitte, and IBM discuss where AI is delivering in QA, where it falls short, and the QE skills that will matter most. See how ADP moved SAP ECC to S/4HANA with Tricentis Tosca and LiveCompare—testing every payroll client at 20% automation, with no added headcount. Relive the top sessions from Tricentis Transform, or see them for the first time, in the Transform Encore webinar series. From our backstory to our values, Tricentis is centered around customer success. We provide best-in-class solutions that transform testing into a catalyst for innovation, helping our customers release higher-quality software, faster. We are innovators, collaborators, and team players guided by our values, and we’re passionate about the success of our customers, partners, and people. Tricentis and our partners are making a global impact on organizations facing the challenges of today’s business world. Together, we’re leading the way to help our customers innovate faster, optimize cost, and reduce business risk. Our partners are instrumental in implementing Tricentis approaches and solutions. Tricentis careers Join the Tricentis team We work all over the world with pre"}],
+
   },
   {
     id: "hebbia2",
@@ -10210,6 +10566,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.hebbia.com/",
+    files: [{"title": "Product", "text": "skip to content Hebbia Product Overview Max Matrix Integrations Platform Solutions Investing Banking Legal Corporate Customers Security Company About Careers Blog Forum Product Built for the Rigor of Finance Encode institutional knowledge into every decision, so each deal makes the next one sharper. Max Max works the way your firm works, researching and analyzing any deal to produce client-ready spreadsheets, slides, and reports."}, {"title": "About", "text": "skip to content Hebbia Product Overview Max Matrix Integrations Platform Solutions Investing Banking Legal Corporate Customers Security Company About Careers Blog Forum Product Transforming the way finance works (01) (02) (03) (04) (05) (01) Beer ration tablet, 3100 BCE (02) First published securities list, 1796 (03) Reading the ticker tape machine, New York, 1930 (04) Bloomberg terminal, 1982 (05) Hebbia honored on IA 40 list, 2023 Our Story In finance, rigor is everything. A single position can touch thousands of documents, dozens of data sources, and a research process that runs through models, memos, and presentations. Being slightly wrong costs the same as being completely wrong, so a system that's right most of the time isn't one institutional finance can use. Firms must encode their own processes and judgment into every system they build. We've spent more than six years building for that, alongside people who spent their careers as bankers, investors, lawyers, consultants, and operators at the world's leading institutions. Thrive in ambiguity, seek feedback, and grow ahead of the curve. Always prepare for what’s next, not just what’s now."}],
+
   },
   {
     id: "alpha",
@@ -10223,6 +10581,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.alpha-sense.com/",
+    files: [{"title": "About", "text": "As an investment banker in the late ‘90s, AlphaSense founder Jack Kokko experienced the tedium of market research firsthand, spending days hitting CTRL+F, one keyword at a time, on thousands of PDFs, only to worry about missing crucial insights. Ten years later, frustrated by the lack of research advancements, Jack and co-founder Raj Neervannan conceived a new kind of search engine — one that uses machine learning and natural language processing technology against a curated, centralized library for business information of all kinds. In 2011, they launched AlphaSense, supercharging the research workflow for companies all over the world, and making sure every insight is uncovered. We’ve been market intelligence pioneers for more than a decade, and we’ve been honored to be recognized by major publications as a top AI and tech start-up. Over the past five years, we’ve developed sophisticated new products and expanded our offering. Acquisitions of Tegus, BamSEC, Canalyst, and Sentieo have exponentially increased the intelligence available to our customers. Visionary change is central to our identity, with groundbreaking products and features launching regularly."}],
+
   },
   {
     id: "kira",
@@ -10236,6 +10596,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.litera.com/capabilities/review",
+    files: [{"title": "Company", "text": "Priyanka Singh is President of Litera, where she oversees company-wide operations and execution. Since joining as CFO in 2025, and later serving as EVP of Operations and CFO, she has led a customer-first transformation that has measurably improved client sentiment and strengthened the operating discipline behind Litera's growth. Her focus is making sure the customer experience scales with the pace of innovation. Before Litera, Priyanka spent more than five years at Togetherwork, first as CFO and then as Interim CEO in her last year. Before that, she held finance and operations leadership roles at Global Payments, Heartland Payment Systems, and GE. Across these roles, she has built a track record in organizational transformation, mergers and acquisitions, and scaling SaaS businesses. A Certified Public Accountant (CPA) and Chartered Accountant (CA), Priyanka brings expertise in financial strategy, operations, and compliance. She holds a Bachelor of Commerce in Accounting, Finance, and Taxation. Adam Ryan joined Litera as Chief Product Officer in 2022 and has since led the development and delivery of the Litera platform, Lito, Litera's award-winning Legal AI agent, Firm Intelligence,"}],
+
   },
   {
     id: "relay",
@@ -10262,6 +10624,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.make.com/",
+    files: [{"title": "About", "text": "Salesforce HubSpot CRM HubSpot CRM Slack Slack Perplexity AI Perplexity AI OpenAI (ChatGPT, Whisper) OpenAI (ChatGPT, Whisper) Show all integrations Resources GET STARTED Integrations 3500+ app integrations Trusted by teams worldwide, Make connects the 3,500+ apps businesses run on, and gives AI agents secure, governed access to that same ecosystem. Since 2015, we’ve been inspiring our customers to rapidly build solutions, scale businesses, and even shake up industries to stay ahead. Today, organizations from all verticals and across the globe, integrate, automate, and keep growing with Make – supported by our team of over 380 employees. Make is home to a global, diverse team of people (we call ourselves Makers) who come together to empower businesses to innovate without limits. Our customer-first culture fuels everything we do and means we welcome ideas and foster collaboration to create solutions that unlock new opportunities for growth and transformation. Around 30 Makers build the platform side by side with Prague, in one of our fastest-growing offices."}],
+
   },
   {
     id: "automationanywhere",
@@ -10301,6 +10665,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://zapier.com/",
+    files: [{"title": "About", "text": "Explore templates Explore use cases Join Zapier Early Access Industry comparisons Implement AI orchestration Three phases to move from disconnected AI pilots to orchestrated systems that scale. As the leader in easy automation, Zapier empowers businesses to automate workflows and move data across 9,000+ apps . We work with what you work with, across your apps and tech stack, so you can make magic happen. The support and product teams probably save at least four hours each. Because of Zapier, all of the account managers are able to focus their time on key accounts and the channel strategy that drives revenue growth. Instead of spending hours and hours engineering a Salesforce sync to pull reports manually, we're able to automate this and spend more time on highly strategic initiatives. Zapier has allowed us to maintain a robust customer profile that allows us to personalize customer communication, diagnose customer experience issues, and helps us share learnings across the company. Zapier has been instrumental in making sure the team has the right data and insights so we can all work together to support our prospects and customers"}],
+
   },
   {
     id: "adeptai",
@@ -10340,6 +10706,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://neon.com/",
+    files: [{"title": "About", "text": "Neon Product Solutions Docs Pricing Resources Core Primitives Lakebase Postgres Serverless Postgres database Object Storage S3-compatible storage that branches Functions Serverless compute next to your data Realtime Live SQL queries and reactive DX Managed Better Auth Authentication built into your database AI Gateway One API for frontier and open-source models Features Lakebase Architecture Storage-compute separation Autoscaling Automatic instance sizing Branching Faster Postgres workflows Search Vector, keyword, and hybrid search Instant Restore Instant recovery when mistakes happen What is Neon Company Statistics and Vision Where we're headed Neon is part of the Databricks Platform. In May 2025, Neon joined Databricks to shape the future of AI-native application backends. Our Vision The mission stays the same: deliver backend primitives for developers and AI agents — now as part of the Databricks Platform. The same technology behind Neon powers Lakebase: The first serverless Postgres database integrated with the lakehouse, built for the AI era. Community Connect with us wherever you work, build, and share your journey."}],
+
   },
   {
     id: "retool",
@@ -10353,6 +10721,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://retool.com/",
+    files: [{"title": "About", "text": "Listen to our podcast episode on Indie Hackers Listen to our CEO, David Hsu, talk about the benefits and the perils of deciding to “go big,” the keys to finding product-market fit and word-of-mouth growth, and opportunities that founders can take advantage of in the low-code space. Tens of thousands of companies use Retool to help run their business, from a COVID tracking app bringing millions of students back to the classroom, to a tool that accelerates student loan decisions, to new workflows to scale customer support. We’re just getting started, and we’d love your help. Learn more Built for builders, by builders Many Retools joined because they had frustrating experiences building internal software in a prior life, killing productivity. We’re creating technology to help teams operate better, including Retool teams. Every Retool builds, and uses, Retool apps to accelerate their own work. No matter what your role, you’ll be close to the product, and you’ll have an important voice in improving it."}],
+
   },
   {
     id: "supabase2",
@@ -10366,6 +10736,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://supabase.com/",
+    files: [{"title": "Company", "text": "Supabase is fully remote, with a strong affinity for open source maintainers and ex-Founders. Our engineering team is made up of developers from AWS, Google, Palantir, Stripe, and other YC companies."}],
+
   },
   {
     id: "xata",
@@ -10392,6 +10764,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.convex.dev/",
+    files: [{"title": "About", "text": "Our team includes technologists who have led exabyte-scale storage projects, designed custom global databases with trillions of records, built some of the world’s most popular web apps, and shipped desktop and mobile software onto billions of devices. All of us have deep experience with managing complex full-stack apps on high-growth teams. Now at Convex, we’ve created an entirely new and substantially better platform for teams of the future. We’re motivated by the prospect of a new wave of developers using Convex to build amazing applications with unprecedented ease. Prior to Convex, Jamie was a Senior Engineering Director at Dropbox, leading the Business Platform and the Storage / Databases groups. Earlier in his tenure at Dropbox, Jamie was a Principal Engineer, launching several significant projects in synchronization and storage with many of the Convex team members. Over ten years before Dropbox, Jamie held leadership positions at several startups, most recently as the Head of Engineering at Bump, a former top-10 mobile app acquired by Google in 2013. Jamie brings to Convex an enduring obsession with databases, networking, and protocols."}],
+
   },
   {
     id: "firebase",
@@ -10431,6 +10805,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://materialize.com/",
+    files: [{"title": "Product", "text": "Secure data, control access, and meet compliance standards across Materialize Cloud and Self-Managed. Materialize's built-in security protects your data from ingestion to query, whether deployed in the cloud or on your infrastructure. Connect securely to data sources, control access with RBAC, and track key events for compliance and auditing. Assign privileges at the user and role level to restrict access to databases, schemas, tables, and materialized views. Set default privileges for new objects to enforce consistent access policies. The mz_audit_events system table automatically records create, alter, and drop operations for tables, views, and other objects, providing complete audit trails for compliance requirements. Track who changed what and when across your entire deployment. Store sensitive credentials like passwords and SSL keys using SECRET objects. Contents cannot be retrieved after creation, protecting credentials from accidental exposure in connection strings and configurations. Establish secure connections to Postgres, MySQL, and Kafka sources using SSH tunnels and bastion hosts."}, {"title": "About", "text": "Built on Timely Dataflow and Differential Dataflow , open source frameworks created by cofounder Frank McSherry at Microsoft Research. Nate comes to Materialize after 7 years leading the product organization and 4 years serving on the board at Cockroach Labs. While at Cockroach, Nate had previously worked with Materialize co-founder Arjun Narayan. Previously, Nate was in product roles at Percolate and Microsoft. He has an MBA from MIT and a BS in Computer Science from the University of Michigan. Frank was previously at Microsoft Research Silicon Valley where he co-invented Differential Privacy, and subsequently led the Naiad project. Frank holds a Ph.D in Computer Science from the University of Washington. Daniel joined Materialize in 2025 as Head of Enterprise, bringing a proven track record of scaling go-to-market organizations at world-class technology companies. At Palantir, he built and led global teams partnering with some of the world’s largest enterprises to solve complex data challenges, and later helped drive growth at Robin AI, a leading legal AI startup transforming the way organizations manage contracts. Known for his entrepreneurial drive and ability to bridge cutting"}],
+
   },
   {
     id: "clickhouse",
@@ -10444,6 +10820,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://clickhouse.com/",
+    files: [{"title": "Company", "text": "Copy logo as SVG Download full logo Download logomark Open search Open region selector English Japanese Korean Chinese French Spanish Portuguese Arabic Open menu Products Get started with ClickHouse Cloud for free Agentic analytics chat interface Langfuse AI engineering platform chDB The power of ClickHouse, in-process Solutions Get started with ClickHouse Cloud for free ClickHouse is proud to have employees in over 10 countries. We believe that diverse and distributed workplaces working inclusively are an essential advantage. We work together to make collaboration a strength across timezone differences, languages, and cultures. While we're in different places, we all have the same goals, and we trust each other to do the work needed to achieve them. It's a mindset which we leverage intentionally to build a truly global company. The company launches an early access program for its much-anticipated cloud service. incorporates in Delaware, with our headquarters in the San Francisco Bay Area. The company receives an initial $50M investment from Index Ventures and Benchmar"}, {"title": "Company", "text": "Copy logo as SVG Download full logo Download logomark Open search Open region selector English Japanese Korean Chinese French Spanish Portuguese Arabic Open menu Products Get started with ClickHouse Cloud for free Agentic analytics chat interface Langfuse AI engineering platform chDB The power of ClickHouse, in-process Solutions Get started with ClickHouse Cloud for free Now serving more than 5,000 customers, ClickHouse is introducing new capabilities spanning Postgres, observability and security, alongside its acquisition of Xata, challenging established vendors across the enterprise. ClickHouse expands its Microsoft collaboration with a native Fabric workload, OneLake read and write capabilities, and ClickHouse BYOC availability in the Microsoft Marketplace. ClickHouse today announced the appointment of Michael Scarpelli to its Board of Directors. Scarpelli most recently served as Chief Financial Officer of Snowflake, and previously held the CFO role at ServiceNow and Data Domain, leading each company through its initial public offering. ClickHouse today announced the launch of ClickHouse Labs, a new research group led by Andy Pavlo, one of the database industry’s most prominent"}, {"title": "Company", "text": "Copy logo as SVG Download full logo Download logomark Open search Open region selector English Japanese Korean Chinese French Spanish Portuguese Arabic Open menu Products Get started with ClickHouse Cloud for free Agentic analytics chat interface Langfuse AI engineering platform chDB The power of ClickHouse, in-process Solutions Get started with ClickHouse Cloud for free ClickHouse culture See life at ClickHouse 25+ Countries where our team lives and works 51k+ GitHub stars and counting 5k+ Customers including OpenAI, Meta & Tesla 3x Revenue growth over the past year alone Our people Benefits Values Hiring process Open roles The people behind the roles A globally diverse and distributed team, united behind one goal: scaling the most resource efficient real-time data warehouse and open-source database in the world. We’re remote-first, but we believe in the power of coming together. Our company offsites bring teammates from around the world together to connect, collaborate, and build relationships beyond the screen. We support remote work with resources to help employees create an effective home workspace, including eligible home office and connectivity reimbursements."}],
+
   },
   {
     id: "dbt",
@@ -10457,6 +10835,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.getdbt.com/",
+    files: [{"title": "Product", "text": "dbt Catalog helps your team visualize dependencies, trace data lineage and optimize performance throughout the Analytics Development Lifecycle (ADLC). Learn how lineage tracking, usage insights, and performance monitoring help teams understand and improve their dbt projects—faster. dbt Catalog automatically creates metadata, documentation, and lineage for your data, allowing teams to easily explore the status and relationships of their data platform assets in a user-friendly interface. Automatically build and visualize your end-to-end lineage graph—from data source all the way to the dashboard or AI endpoint your models power—with detailed metadata into each node Find the exact resource you're looking for, across projects and across your entire data platform, so you can manage complexity while keeping your code DRY Overlay parameters onto your DAG — like model execution status, column-level evolution, model query history, and more — to quickly intuit details that help you build more resilient, efficient pipelines and debug issues faster Translate your project's metadata into actionable insights so you can proactively prioritize best practices like improving test and documentation c"}, {"title": "Product", "text": "In today’s data economy, cost control is no longer optional—it’s strategic. dbt empowers data teams to move beyond reactive cost monitoring and into proactive, value-aligned data operations. Shift the narrative from “cost center” to “profit driver.” Modern data teams are building more, faster than ever before. This growth comes with increasing complexity—and ballooning warehouse spend. Teams need tools to tame cost Without visibility or tools to control costs preemptively, teams struggle to align their data investments with business impact. This misalignment leads to wasted resources, reactive firefighting, and unclear ROI on data work Your team doesn't always get to scale But without embedded efficiency, teams burn out, delivery slows, and the business loses trust. Hiring more people isn't always possible, and buying more tools doesn't always help Reduce waste with incremental models that process only new or changed data. Streamline orchestration with Fusion powered dbt State workflows to eliminate redundant queries. Smart defaults like CI, defer, and model selection help ensure every run is optimized for cost. The data team at Bilt is very excited to roll out the new dbt Fusion e"}, {"title": "Product", "text": "dbt delivers the structured context and trusted standards your AI systems demand—ensuring fully governed, consistent outputs every time. Without a standardized foundation, teams waste time reinventing how data is structured, governed, and queried for every AI system—resulting in slower outputs, inconsistent answers, and brittle workflows that don’t scale. dbt’s unified framework provides the consistent metrics, rich context, and automated workflows your entire AI portfolio demands to execute reliably at scale. dbt provides AI systems with semantic context that enables them to make decisions aligned with your company's unique metrics and definitions With a testing framework that catches data quality issues before they reach your AI systems, dbt eliminates lengthy troubleshooting cycles for your team Teams only have to plug into the dbt MCP server once to enable any AI system discover, query, and execute with confidence and speed With the dbt MCP server, teams connect once to discover, query, and execute—instead of rebuilding logic and metadata for each AI agent and workflow AI is only as reliable as the data it runs on."}],
+
   },
   {
     id: "hightouch",
@@ -10483,6 +10863,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.tinybird.co/",
+    files: [{"title": "Product", "text": "Sign up to Tinybird Data infrastructure and tooling to ship analytical features. Sign up Sign up to RawTree [NEW] A schema-free OLAP database that adapts to your workloads. Sign up Sign up Product [ ] Data Platform “ I've worked with Hadoop, Spark, Flink... with Tinybird we have achieved in a few days what would have taken ages with any other tooling. ” Managed ClickHouse cluster Vertical and horizontally scalable Unlimited multi cloud storage Automatic ClickHouse version upgrades Ingestion Streaming Ingestion APIs Enterprise-grade Kafka connector Native object storage ingestion Query & delivery Serverless, secure SQL APIs Native ClickHouse HTTP interface Kafka and S3 sinks Enterprise-ready Private infrastructure and networking SLAs and dedicated support SOC 2 Type II and HIPAA compliant Developer friendly CLI and local development Automatic schema migrations logs Data branching with Git + CI/CD integration AI-native LLM-ready remote MCP server Tinybird Code ClickHouse skills for AI agents * Talk to us for sizing and enterprise requirements FAQs How is Tinybird priced? Tinybird's pricing scales elastically based on compute, so you pay based on the value and insights delivered to yo"}, {"title": "Product", "text": "Sign up to Tinybird Data infrastructure and tooling to ship analytical features. Sign up Sign up to RawTree [NEW] A schema-free OLAP database that adapts to your workloads. Sign up Sign up Product [ ] Data Platform $ ❯ curl -X POST 'https://api.tinybird.co/v0/events?name=my_datasource' \\ -H \"Authorization: Bearer $TB_TOKEN \" \\ -d ' { \"timestamp\" : \"2026-01-01\" , \"event\" : \"click\" , \"value\" : 42 } ' “ Our devs evaluated Pinot, Druid and Tinybird. They preferred Tinybird for performance, reliability, integrations, and developer experience. Tinybird supports multiple ingestion methods: the Events API for JSON/NDJSON over HTTP, a fully managed Kafka connector for streaming data, S3 and GCS connectors for batch imports, local or remote file uploads via the CLI, and table functions to read from PostgreSQL, MySQL, and Apache Iceberg. There are also step-by-step guides for 25+ sources including Snowflake, BigQuery, MongoDB, Stripe, Auth0, OpenTelemetry, Vercel, GitHub, and more. Data ingested via the Events API is available for queries in under 4 seconds. Kafka connector latency depends on your topic throughput but typically achieves sub"}, {"title": "Product", "text": "Sign up to Tinybird Data infrastructure and tooling to ship analytical features. Sign up Sign up to RawTree [NEW] A schema-free OLAP database that adapts to your workloads. Sign up Sign up Product [ ] Data Platform $ ❯ curl 'https://api.tinybird.co/v0/pipes/top_products.json' \\ -H \"Authorization: Bearer $TB_TOKEN \" \\ -d \" category = electronics\" \\ -d \" date_from = 2026-01-01\" “ Tinybird is the most exciting data company since Snowflake. It's revolutionized the way we think about real‑time data analytics at Vercel. Tinybird lets you turn any SQL query into a secure, low-latency REST API. Define your query with dynamic parameters, publish it, and consumers call it as a standard HTTP endpoint. Responses are in JSON by default, with CSV and NDJSON also available. Any tool that supports the ClickHouse protocol: Grafana, Tableau, Metabase, Looker Studio, Power BI, Superset, Hex, DataGrip, DBeaver, and any other ClickHouse-compatible client. A hosted Model Context Protocol server that gives AI agents structured access to your Tinybird workspace."}],
+
   },
   {
     id: "fivetran",
@@ -10496,6 +10878,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.fivetran.com/",
+    files: [{"title": "Product", "text": "The analyze phase of the ADLC is where business decisions take shape—but inconsistent metrics, slow queries, and scattered tools can quickly erode trust. With dbt's Semantic Layer and dbt Wizard Explore Mode, teams get fast, intuitive access to governed models and standardized metrics so they can explore data with confidence. Work with consistently defined metrics and get the same answers—everywhere, every time. The dbt Semantic Layer centrally defines what key terms mean so you know exactly what data you're delivering. Define your metrics and logic from a single governed source, so your team works with the same secure definitions across every report, embedded app, and AI workflow—every time. Give non-technical business users access to self-serve metrics and logic, whether in dashboards, agents, or directly in dbt Wizard Explore Mode, to make timely decisions with accurate information. Give your team a speed boost with performance- and query-optimized access to consistent, governed metrics defined in dbt Deliver consistent insights and AI at scale by centralizing metric definitions and governing access—all from a single source of truth."}],
+
   },
   {
     id: "airbyte",
@@ -10509,6 +10893,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://airbyte.com/",
+    files: [{"title": "Company", "text": "Michel Tricot spent seven years at LiveRamp building and scaling over 1,000 data connectors that moved hundreds of terabytes every day. The pattern was always the same: every company rebuilt the same integrations from scratch, maintained the same brittle scripts, and lost the same engineering hours to the same solved problems. Data integration was the plumbing that every data team needed and nobody wanted to build. In January 2020, Michel and Jean Lafleur joined Y Combinator's W20 batch as a \"pre-idea\" company: two founders with deep experience in a problem space, looking for the right product. Through hundreds of customer interviews, one insight kept surfacing: every data team maintained custom scripts alongside their existing tools to cover the integrations that no vendor supported. The long tail of data sources was unsolved, and no closed-source company could ever cover it. From July to September 2020, they built an MVP with 6 connectors and shipped it. The thesis: only an open-source approach could solve the long tail of data integration, because it lets the community build"}],
+
   },
   {
     id: "june",
@@ -10535,6 +10921,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://aptabase.com/",
+    files: [{"title": "About", "text": "You add one of 17 SDKs to your app, call the track function for the events you care about, and watch them arrive on a real-time dashboard — sessions, events, app versions, OS versions, devices and countries — without ever collecting personal data. On the server, Aptabase derives a temporary anonymous hash from the client IP, user agent and a salt that rotates every 24 hours, which makes it impossible to correlate sessions across days or apps. Analytics data is retained for up to 5 years. Paid plans from $10/month for 200,000 events up to $450/month for 50,000,000 events. See pricing → We typically advise selecting the region nearest to the majority of your users' locations. However, if your user base is global and dispersed, opt for the region that is geographically closest to your own location. Aptabase Our mission is to help developers create top-notch applications that prioritize user privacy by avoiding intrusive tracking practices."}],
+
   },
   {
     id: "planetscale",
@@ -10548,6 +10936,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://planetscale.com/",
+    files: [{"title": "About", "text": "We are a small team of database experts with a combined experience of over 600 years scaling some of the largest systems on the planet at these companies: We all drive the company forward and we all have key contributions to make. Nobody takes a backseat to our success and comes along for the ride. We do not tolerate leaders that are not experts in their craft. Nobody wants to work for someone they do not have professional respect for."}],
+
   },
   {
     id: "census",
@@ -10561,6 +10951,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.fivetran.com/",
+    files: [{"title": "Product", "text": "The analyze phase of the ADLC is where business decisions take shape—but inconsistent metrics, slow queries, and scattered tools can quickly erode trust. With dbt's Semantic Layer and dbt Wizard Explore Mode, teams get fast, intuitive access to governed models and standardized metrics so they can explore data with confidence. Work with consistently defined metrics and get the same answers—everywhere, every time. The dbt Semantic Layer centrally defines what key terms mean so you know exactly what data you're delivering. Define your metrics and logic from a single governed source, so your team works with the same secure definitions across every report, embedded app, and AI workflow—every time. Give non-technical business users access to self-serve metrics and logic, whether in dashboards, agents, or directly in dbt Wizard Explore Mode, to make timely decisions with accurate information. Give your team a speed boost with performance- and query-optimized access to consistent, governed metrics defined in dbt Deliver consistent insights and AI at scale by centralizing metric definitions and governing access—all from a single source of truth."}],
+
   },
   {
     id: "plausible",
@@ -10574,6 +10966,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://plausible.io/",
+    files: [{"title": "About", "text": "Uku Taht started Plausible in December 2018, building it alone as a simple privacy-friendly alternative to Google Analytics. In 2020, when it was still just Uku building and a few hundred paying customers, Marko Saric joined to handle marketing and communications. The company has grown through product improvement and transparent communication ever since. Plausible crossed $1 million in annual recurring revenue in 2022 and has continued to grow as a profitable, independently operated company. We are self-funded and profitable, with no outside investors and no plans to sell. We do not sell or share customer data and we do not monetize visitor behavior. More than 2,400 teams have been paying for Plausible for five years or longer. Their continued support helps us build an independent business for the long term. We have never spent a cent on advertising, affiliates or paid endorsements. Plausible grows because people recommend it when they have no reason to other than that it works."}],
+
   },
   {
     id: "segment",
@@ -10613,6 +11007,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://umami.is/",
+    files: [{"title": "Product", "text": "umami Product Platform Product analytics MCP Integrations Pricing Use Cases Compare Cloud Resources Blog Documentation Guides API Reference Release Notes Community Company Contact Privacy Terms DPA Subprocessors Security © 2026 Umami Software, Inc."}],
+
   },
   {
     id: "sprig",
@@ -10626,6 +11022,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://sprig.com/",
+    files: [{"title": "Company", "text": "“This is one of those moments where a core category is being rebuilt. Sprig is early, and they’re building it with AI at the core.” \"We've learned tons from using Sprig ourselves, so we know it’s truly essential to building better product experiences.\""}],
+
   },
   {
     id: "highlight",
@@ -10639,6 +11037,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://launchdarkly.com/",
+    files: [{"title": "About", "text": "Feature flags Release Autopilot Observability Experimentation Agent integrations Integrations Architecture Solutions By Use Case LaunchDarkly was founded in 2014 in Oakland, California, by Edith Harbaugh and John Kodumal, to solve a clear problem in modern software delivery: Teams were releasing code faster in the cloud, but they still lacked safe, practical control over what happened after deployment. We set out to make feature management accessible beyond the small group of companies that had built homegrown systems. Over time, we expanded from helping developers soft-launch features to giving product, marketing, and business teams more control over rollouts and customer experiences as well. Today, LaunchDarkly is the runtime control layer for the AI era of software development, reflecting how we’ve evolved from pioneering feature management into a broader platform for controlling software releases, experimentation, observability, and AI agent behavior in production. We now serve more than 5,500 customers, including roughly a quarter of the Fortune 500. Join the team We win by supporting each other."}, {"title": "About", "text": "Feature flags Release Autopilot Observability Experimentation Agent integrations Integrations Architecture Solutions By Use Case Try it free Runtime control that works at global scale. Control at runtime only works when it’s fast, reliable, and global. Control and update agent behavior directly from tools like Claude Code, Cursor, your IDE, or terminal—no context switching required. 25+ native SDKs across frontend, backend, mobile, AI, and more. Works alongside your CI/CD and observability tools, adding control at runtime without changing how you deploy or monitor. AI is accelerating code creation, but even automated testing can't catch every production issue. Manually applying release safeguards doesn't scale as change volume grows. LaunchDarkly extends control beyond deployment, letting teams manage how changes reach users and how AI agents behave in production. Release Autopilot automates the controls that protect code changes—flag creation, progressive rollouts, monitoring, and rollback—within guardrails you set."}],
+
   },
   {
     id: "eve",
@@ -10652,6 +11052,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.eve.legal/",
+    files: [{"title": "Company", "text": "Practice Areas Labor and Employment Personal Injury Workers’ Comp Social Security & Disability Medical Malpractice Grow faster with Eve Customer Stories Resource Library Tort Report Newsletter Webinars How Jeffrey Glassman turned its toughest critics into AI champions Jay has over 15 years of experience in AI and machine learning at places like Facebook, and Rubrik. Prior to founding Eve, Jay was with Lightspeed Venture Partners. As a founding engineer at Rubrik, he has been building AI products for the last decade. Looking to join a passionate and talented team, poised to disrupt how plaintiff firms deliver justice?"}],
+
   },
   {
     id: "hotjar",
@@ -10665,6 +11067,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://contentsquare.com/hotjar/?utm_campaign=exp__hj_hp_redirection",
+    files: [{"title": "Product", "text": "Discover the experience analytics platform Partner Ecosystem Grow with our network of trusted partners Interactive Tools Explore our hands-on tools and calculators How we compare See how Contentsquare stacks up against alternatives Our stance on AI Our stance on responsible AI Security and privacy Keep customer data protected Product tours See Contentsquare in action, at your own pace Customers Contentsquare x Škoda How Contentsquare has helped Skoda increase test drive visits by 40% Using Contentsquare What's new Platform Use cases Customers Help Center Arrow Learning Hub Arrow Pricing Book a demo Book a demo Start for free Start for free Teams Product Chevron Deeper product insights for smarter development Improve product stickiness and retention, with a complete understanding of your customer experience, across sessions and devices. Trusted by product teams everywhere Clear data—not best guesses Optimize product investments Learn what users love, what frustrates them, and what to work on next. Identify underperforming features, and prioritize new ones based on genuine user behavior. Experience the full user journey, across sessions and de"}],
+
   },
   {
     id: "dovetail",
@@ -10717,6 +11121,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.usemotion.com/",
+    files: [{"title": "About", "text": "We're Motion, a rapidly-growing YC startup that's building the next-generation productivity platform that uses artificial intelligence to plan your day. By constantly monitoring and reorganizing people's to-do list and calendar, we help professionals make time for their highest priority tasks, reduce the stress of being overwhelmed by meetings, and make sure deadlines are never missed. We are growing extremely quickly: 3x year over year growth, several million in annual recurring revenue, and trusted by 40,000+ paying users from world-class companies. Motion Pricing Download About Careers Contact Resources Resource Library Blog Security Privacy Terms MSA Compare vs Wrike vs Asana vs ClickUp vs Monday Get started with Motion! How many team members do you plan to have using Motion over the next 6 months? 1 (Just me) Between 2 and 14 Between 15 and 24 Between 25 and 49 Between 50 and 99 Between 100 and 499 500 or greater Back Continue Welcome to Motion!"}],
+
   },
   {
     id: "reclaim",
@@ -10730,6 +11136,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://reclaim.ai/",
+    files: [{"title": "Product", "text": "Reclaim turns Jira, Asana, Linear, and other tasks into scheduled time for roadmap-critical work. Employees can ask what to focus on next while AI automatically protects time as priorities change. Give product leaders visibility into how teams actually work. Analyze focus time, meeting health, workload balance, and initiative alignment to reduce operational drag and help teams execute with greater clarity and speed. Reclaim helps product teams turn priorities into time on the calendar. It automatically schedules meetings, tasks, focus time, and buffers around real availability, deadlines, and priority work, so teams can move from planning to execution with less manual coordination. For product teams, that means roadmap-critical work does not sit in a project board waiting for space to appear. Reclaim’s AI planner helps create that space, keeps it protected as schedules change, and gives teams a more reliable way to balance planning, collaboration, and deep work. Reclaim does more than place a focus block on the calendar. It continuously helps protect focus time as meetings move, priorities shift, and new work comes in. Focus time can be scheduled around working hours, meetings, tas"}],
+
   },
   {
     id: "todoist",
@@ -10743,6 +11151,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.todoist.com/",
+    files: [{"title": "About", "text": "From Minneapolis to the Philippines, Brazil to Bratislava, we’re united by one goal: Empowering humanity with simple yet powerful productivity tools. There was just a stressed-out computer science student needing order amidst a demanding life and study schedule. So he built a simple tool to manage it all, which he named Todoist. Turns out, he wasn't alone in his need to get everything out of his head, and into an organized system. And the tool and company evolved side by side out of the same original intentions: autonomy, flexibility, powerful leverage – never at the expense of simplicity. That ethos led to Todoist’s success as a market-leading task management tool, used by tens of millions of people and teams the world over. Does it make a whole lot of lives a whole lot better? According to our customers and team, who have been living in that future for well over a decade: hell yes it does. So much so, in fact, that we’ve expanded our vision: to be the end-to-end productivity platform that empowers a billion people to bring their ideas to life. Our values are genuinely operationalized in everything we do"}],
+
   },
   {
     id: "mixpanel",
@@ -10769,6 +11179,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://akiflow.com/",
+    files: [{"title": "About", "text": "Sebastiano Favaro CTO From Frustration to Innovation Akiflow was born out of the frustration of juggling multiple tools to manage calendars and tasks. We envisioned a unified time blocking platform to streamline routines without switching between tabs and windows. Today, we continue to innovate and improve, helping professionals maximize their time effectively. Join our fully remote team, where flexibility fuels innovation, tech drives progress, and your perfect workday is yours to design. Enjoy top EU compensation, exceptional benefits, and connect at our epic retreats across the globe. Ask us anything Transform your productivity today Start your free 7-day trial now and experience unparalleled efficiency. Product Aki Akiflow MCP The Method How to use guide Pricing Changelog Roadmap Features AI Workflows Alternatives Reviews Community Blog Slack X Linkedin Find us on Tool Finder Ambassador Akiflow For Founders & C-levels Developers Designers Marketers Sales Your team Company About us Privacy policy Terms of Service Brand Usage Guidelines Careers Security Contact us Sitemap Akiflow ©2026"}],
+
   },
   {
     id: "monday",
@@ -10795,6 +11207,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.airtable.com/",
+    files: [{"title": "Product", "text": "Disconnected data and inconsistent execution lead to missed targets. Use AI-powered workflows to end the guesswork and guide everything from product discovery to launch. Unify customer signals, product planning, and execution in one AI workspace. Context flows automatically, data-driven decisions speed up, and value compounds every quarter. Use AI to pull key themes from feature requests, Gong calls,customer surveys, and prototype reviews, then auto-add to backlog. Integrate critical workflows Combine all your systems into a single source of truth via integrations and APIs with Jira, Azure DevOps, and Confluence or enterprise datasets in Salesforce, Workday, and Snowflake."}, {"title": "About", "text": "Rigidity, fragility, complexity, drudgery — four things that cost a company its best thinking. Teams model data to match how the business actually works, design workflows that improve instead of break, and hand agents the jobs nobody should be doing manually. We build Airtable the same way our customers do — in it. Every team here plans, ships, and operates in the product, which is the fastest way to find out what's missing. We're grateful to have won a few awards along the way. Thank you to our community for always pushing us to do better and build bigger."}],
+
   },
   {
     id: "sentry",
@@ -10808,6 +11222,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://sentry.io/welcome/",
+    files: [{"title": "Product", "text": "Get actionable insights to resolve the most important code-related issues. Track, debug, and resolve errors across any language or framework with tailored context to get to the root cause every time."}, {"title": "Product", "text": "Structured logging turns log lines into queryable events with real metadata, not raw strings. Sentry keeps those logs next to your errors and traces, so you can see what happened and why without switching tools."}],
+
   },
   {
     id: "sunsama",
@@ -10821,6 +11237,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.sunsama.com/",
+    files: [{"title": "About", "text": "We deserve tools that help create a healthy relationship to work, ensure our time is well-spent, and that we can do good work, day-in and day-out, without burn out. In 2013, we'd just finished our first years of working \"real jobs\" after meeting in university. We couldn't shake the feeling that there had to be better ways to be thoughtful and intentional with how we spend our time each day, especially at work. The idea of using Google Calendar to accomplish that for the next forty years of our careers was so dreadful that we set out to build something better. - Ashutosh & Travis (Sunsama's Cofounders) In the first four years of working together, we scrapped by on a tiny bit of angel funding. We built, launched, and shut down six different products that we thought might help other people navigate work with more intention. None of those product got significant traction but in the process, we spoke with thousands of people about their work, their work tools, and how they approached their days. Those conversations honed our intuition for how people work and how they aspire to work. Then, in 2018, with just a few months of cash left, we started over. In a few short weeks, we built a pro"}],
+
   },
   {
     id: "anaplan",
@@ -10886,6 +11304,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://amplitude.com/",
+    files: [{"title": "Product", "text": "Analyze your onboarding funnel, uncover why users drop off during sign-up, and gather qualitative insights to make decisions that improve conversion. Turn churn into retention Understand customer journeys and easily target and retarget customers to keep them coming back for more. Everything you need to fast-track product growth Get the answers you need fast Turn your questions into insights faster with self-serve product analytics. By providing a more consistent experience across iOS, Android, and web, Rocket Money increased lifetime value by an average of $10 million in annual revenue. Read blog post Vimeo benefits from self-service insights Vimeo empowered product managers to easily uncover insights with Amplitude and improve completion rates by 33%. Read blog post WeMoney boosts customer retention WeMoney used Amplitude insights to build goal-setting into their initial onboarding process, which led to a 20% increase in retention. Read blog post Features built by and for product teams Dashboards and notebooks Empower self-service insights and turn your learnings into powerful stories with full context for collaborators."}],
+
   },
   {
     id: "puzzle",
@@ -10899,6 +11319,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://puzzle.io/",
+    files: [{"title": "About", "text": "Resources Get Support Resources Puzzle Launches AI Suite, Betting on Accountants in the Age of AI Find accounting services Help center Contact support Security Blog & news Customer stories Partner rewards Time saving calculator Companies Puzzle for Startups Know your numbers every day Get Support Resources Puzzle Launches AI Suite, Betting on Accountants in the Age of AI Find accounting services Help center Contact support Security Blog & news Customer stories Partner rewards Time saving calculator PRODUCT Puzzle Accounting Services Expert Reviewed, Full Service Accounting, and Tax Services By rebuilding the core data, agent and general ledger infrastructure from the ground up, we are able to transform summary, static accounting into real-time, highly accurate financial intelligence. Our mission is simple: to make accounting trustworthy, effortless, and useful enough to help every startup, small and medium business build an enduring company. The industry has spoken, there had to be a better way. Puzzle is funded by some of the largest and most successful venture funds, a syndicate of 100s of venture-backed CFOs, angels who built the best financial solutions in the market, founder n"}],
+
   },
   {
     id: "digits",
@@ -10912,6 +11334,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://digits.com/",
+    files: [{"title": "Product", "text": "Connects directly to banks, cards, payroll, and payment platforms Imports transactions and documents as activity happens Ingests statements, invoices, and receipts automatically Begins work the moment new data arrives Book Categorizes transactions automatically as they arrive Surfaces lower-confidence items for review Learns from accountant decisions over time Reduces recurring manual bookkeeping work Reconcile Matches transactions automatically against source activity Matches transactions and resolves confirmed items automatically Surfaces exceptions with context on what was attempted and why Attaches each match to an audit-proof bounding box on the statement PDF Schedule Detects transactions requiring schedule treatment Drafts fixed asset and prepaid schedules automatically Maintains supporting journal entries continuously Carries approved logic forward into future periods Review Runs continuously throughout the month Escalates exceptions with full context and a recommended action Configurable by party, category, and materiality threshold Report Produces reports directly from the live ledger Eliminates manual assembly and reconstruction work Keeps reporting connected to underlyin"}, {"title": "Product", "text": "Ask Digits anything about your financials—cash flow, expenses, revenue trends, vendor history, budgets, or forecasts—and get clear, accurate answers in seconds. Ask Digits to Surface Tasks Digits monitors what needs your attention—like follow-ups, transactions, flagged reviews—and surfaces it instantly within your current workspace. Digits never sends your raw financial data outside of our proprietary models. The Agent Bar is built directly into Digits, powered by our own financial modeling engine. Accurate calculations Real financial context Consistent outputs Enterprise-grade security Upload, Forward, or Drag Anything to Ask Digits Drop in a statement or receipt— or forward financial documents to <business>@digits.cc —and Digits immediately processes, matches, or reconciles them. This is a fundamentally unique experience for our clients, allowing our professionals to spend more time helping clients get value from their financial data and make informed business decisions. Even more so than before, we can provide business consulting services that move our clients forward. So intuitive, interactive, very easy to pickup and finally gives the right information be"}, {"title": "Product", "text": "Review the pre-populated schedule: amount, term, categories, posting dates. Journal entries generate automatically, every period, for the life of the schedule. No recurring journal entry that you have to set up and hope you got the math right. • 5 stars on Product Hunt Experience the full power of Digits Bank-grade security Advanced envelope encryption to protect your data and privacy. Explore security Month-end simplified Digits offers fundamentally better accounting workflows that save you both time and money. Explore better accounting Reporting, reimagined Intuitive, visual financials delivered right at month-end, not weeks late. Explore financials Agentic General Ledger™ The first AI-native accounting platform—Digits uses the latest in AI/ML to automate bookkeeping, reconciliations, and more. Explore AGL® Switch to Digits today Experience accounting, reimagined."}],
+
   },
   {
     id: "finta",
@@ -10977,6 +11401,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.getmoss.com/",
+    files: [{"title": "About", "text": "Not because they lack skill or ambition, but because they’re being held back. By missing invoices, disconnected tools, and hours lost to admin. Across every industry, from startups to established companies, finance is reactive, manual, and fragmented. Picture this: Moss matches invoices to purchase requests or approval flows automatically. Our AI extracts 99% of the data and pre-fills nearly every field: VAT, cost centres, cost carriers. Payments are scheduled in bulk and reconciled in one click. Empower employees with physical and virtual cards but rest easy with built-in spend controls. With 40+ integrations, Moss adapts to you, not the other way around. Moss Cards are issued by Moss GmbH pursuant to a license by Mastercard International Incorporated. Mastercard and the circles design are registered trademarks of Mastercard International Incorporated."}],
+
   },
   {
     id: "checkout2",
@@ -11003,6 +11429,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.adyen.com/",
+    files: [{"title": "About", "text": "Adyen Logo Products Businesses we serve About Resources Pricing Contact us Contact us About Adyen One platform for the full commerce lifecycle. We’ve built every product to work as one, so merchants get more value than any standalone provider can deliver. We're built to move billions €1.4T € 1 . 2 T Processed annually 1B 1 B Shoppers annually 5000+ 4 2 2 0 + Employees worldwide 29 2 5 Offices around the world We built the platform, the banking infrastructure, and the intelligence behind every payment ourselves. A single, unified platform One platform, wherever you grow. We build and deliver everything on our unified platform across regions, channels, and industries so you get faster access to new products and markets. Our regulatory licenses cut out third parties so your money stays with one trusted partner. Direct network access lets us power your payments and financial products with maximum speed and flexibility. Adyen brings the control, reliability, and dedicated expertise global enterprises expect. We secured a European acquiring license, added POS and risk tools, and expanded into San Francisco, Lo"}],
+
   },
   {
     id: "stripe2",
@@ -11016,6 +11444,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://stripe.com/",
+    files: [{"title": "About", "text": "We build programmable financial infrastructure, rethinking from first principles how financial services should work, to make it easier and cheaper for any business to start and scale. More than 5 million businesses build on Stripe, spanning the economic frontier—from solo founders to established enterprises—united by a practical focus on growth. The most ambitious companies in the world use Stripe as core infrastructure to grow faster. They process trillions of dollars a year on Stripe, equivalent to around 1.8% of global GDP. While economic growth makes everyone better off, open markets also enable greater variety. When any business can easily serve a global customer base, the quality and diversity of products in the world increase, and craft and creativity are unleashed into the smallest niches. Our own growth is wholly contingent on the success of the businesses building on Stripe. We therefore invest back into our technology at an unusual rate. We make upgrades to our products every single day to deliver compounding gains to our customers. We maintain some of the most reliable APIs on the internet. We build entirely new pieces of financial infrastructure to enable new ideas."}],
+
   },
   {
     id: "monzo2",
@@ -11042,6 +11472,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.lucanet.com/en/solutions/extended-planning-and-analysis/",
+    files: [{"title": "About", "text": "The role of the modern CFO has evolved from a support function to a strategic leadership position. Today's finance executives are tasked with navigating complex economic, technological, and competitive landscapes, while also providing organization-wide guidance to drive growth and ensure compliance. Finance teams need a solution that’s intuitive, efficient, and built with the specific demands of finance professionals in mind. Lucanet’s CFO Solution Platform automates complex financial processes, freeing you to focus on what matters most: making high-value decisions that impact your organization’s bottom line. Benefits</p>\\r\\n<h2>User-friendly, standardized and ready to go – right out of the box</h2>\\r\\n<p>Our CFO Solution Platform, built by finance experts for finance professionals, delivers unmatched speed and accuracy so you can make confident choices, backed by reliable data, actionable insights and transparency across the entire organization.</p>\\r\\n\"}}\" id=\"text-09be0ff0e1\" class=\" hyphens-off \"> Benefits Our easy-to-use solutions automate complex tasks and provide compliance-ready reports, leaving you time for strategic analysis."}],
+
   },
   {
     id: "gocardless2",
@@ -11068,6 +11500,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://plaid.com/",
+    files: [{"title": "Company", "text": "We make it easy for people to securely connect their financial accounts to the fintech services they choose. Our developer-friendly platform supports over 12,000 financial institutions so the over 9,000 digital financial services built on Plaid can be accessible to everyone. We're proud to power many of the apps and services consumers use to build healthier financial lives. Meet some of the customers who rely on Plaid's products to unlock financial freedom. We live by our mission, and we are building a platform we believe in-as well as a diverse team who want to have an impact, grow their careers, and support each other in the process."}],
+
   },
   {
     id: "truelayer",
@@ -11094,6 +11528,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://payhawk.com/en-us",
+    files: [{"title": "About", "text": "Payhawk's mission Make the life of every employee easier, so every business can achieve its full potential. How we do it A finance OS, powered by agents We orchestrate AP, Cards, Expenses, Travel and Procurement in one platform, with a global money account on top of your ERP. Our agents do the work around every payment: they collect and code receipts, book trips, raise purchase orders, pay suppliers and reconcile spend, always within the rules, policies and budgets you set. Finance gets more control, automation and savings, and employees get an effortless way to spend. Since late 2023 we’ve released a new product edition every season, and in the past year we shipped 57% more features with the same R&D team. Our story, told by our founder Our co-founder and CEO, Hristo Borisov, shares how Payhawk started in Bulgaria and grew into a platform trusted by businesses worldwide. His story runs alongside that of a long-haul driver at our customer Discordia, to show what technology should give back to the people who use it. The film was produced by BBC StoryWorks for Innovate Finance’s Value Generation series."}],
+
   },
   {
     id: "railsr",
@@ -11107,6 +11543,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.railsr.com/",
+    files: [{"title": "Company", "text": "Today we’re leading the way in making financial products and services digital and embeddable — enabling deeper and richer customer experiences with the brands people love."}],
+
   },
   {
     id: "tide2",
@@ -11146,6 +11584,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.thoughtmachine.net/",
+    files: [{"title": "Company", "text": "Global and national banks Mid-size and regional banks Fintechs, digital banks, and innovators Our approach Your journey with us Insights Case studies Partners About us Our story Our leadership Press Careers Contact us Book a demo We replace legacy banking infrastructure with a unified, cloud-native core and payments platform. We engineer the foundational architecture of modern finance, enabling global institutions to launch any product instantly, scale without limits, and operate at unprecedented speed. Our clean, three-layer architecture isolates cloud infrastructure, core capabilities, and product logic, eliminating custom vendor code forks. Launch any product on demand, independent of vendor release cycles. Continuous native processing ensures zero data loss (0 RPO), even during peak global traffic. Unlike the high-risk, big-bang failures common with legacy tech, our go-live track record guarantees a smooth transition. We act as an independent, self-sustaining partner to global banks, regional players, and high-growth fintechs."}],
+
   },
   {
     id: "yapily",
@@ -11159,6 +11599,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.yapily.com/",
+    files: [{"title": "Product", "text": "Get Started Login Get Started Pay by Bank infrastructure for business growth Offer payments that cut costs, settle instantly, and provide added protection against fraud, enabling you to scale and expand your business. Save money with reduced overheads, or offer lower cost payment services with a lower per-transaction cost than cards, Direct Debit, and e-wallets. Protect customers and build confidence with lower fraud rates than cards using encrypted APIs, no card details, and bank-grade authentication. Reduce drop-off and increase conversion with an intuitive, low-friction payment journey that encourages customers to return. Eliminate wasted resources by reducing the risk of costly, time-consuming chargebacks with secure, bank-grade authorisation on every payment. User selects Pay by Bank at the checkout stage. Having Pay by Bank as the preferred or default payment option will drive higher volume. A pop-up allows the user to review the payment details before being connected to their bank, ensuring all details are correct. The payment is confirmed, and the user is auto-redirected back to your app or website to continue what they were doing or get payment confirmation."}, {"title": "Product", "text": "Get Started Login Get Started Automate me-to-me payments for smarter sweeping experiences Sweeping VRPs let customers move money automatically between their own accounts from intelligent savings to overdraft protection, improving financial well-being while reducing cost and friction. Offer effortless, one-click sweeping and auto-payments — from card repayments and overdraft protection to savings top-ups, creating smoother customer experiences. Enable customers to receive money transferred between their accounts instantly, improving cash flow for more dynamic financial management. Unlike Standing Orders, Sweeping VRP allows payments to be initiated for variable amounts and on different schedules, all under a single user consent. Reduce risk with Strong Customer Authentication embedded in every consent authorisation and encrypted APIs, delivering peace of mind for your business and your customers. User sets the parameters of their automatic top-ups in the app, selecting values such as the maximum amount and monthly maximum transfer. User selects the bank account from which the funds should be swept and logs into their business bank account using secure methods such as 2-factor authen"}, {"title": "Product", "text": "Get Started Login Get Started Flexible recurring payments with one-click checkout Take recurring payments your customers set up once, within limits they choose, with no need to reauthenticate. Funds are checked before every collection, and customers can cancel at any time. Let returning customers pay again in a single click within limits they've previously approved, offering them a frictionless experience that settles in seconds. Each payment runs through an API when it's due, so there's no batch processing for your team to manage with costly retries and chasing. Customers authorise the mandate in their own banking app with strong customer authentication, so you never hold card details or banking credentials, which lowers your chargeback and fraud risk. Add a payment method that runs independently of card networks, so you can offer a fallback payment method during card network outages and protect your business from rising card scheme fees. Your customers set the limits, pay without reauthenticating each time, and can cancel whenever they want, which gives them the confidence to set it up and keep it in place. How cVRP works cVRP works by saving a customer's bank account details and"}],
+
   },
   {
     id: "10xbanking",
@@ -11172,6 +11614,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.10xbanking.com/",
+    files: [{"title": "Company", "text": "Our job is to help banks move money, launch products and serve customers without being constrained by legacy technology. We do that by providing a core banking platform that processes financial events in real time, maintains an accurate ledger, and continually evolves with our customers' needs. Core banking transformation has been held back by the compromise between fast-to-market but inflexible \"configuration\" neo cores on one hand, and flexible but highly complex and costly \"framework\" neo cores on the other. The 10x Banking platform offers the best of both worlds, driving a generational leap forward in core banking technology; the world’s first core driving real transformation. Its modular, highly scalable and customizable core uniquely allows banks to build hyper-personalized products at high-speed and low-cost, using a combination of configuration and coding, supporting any programming language. Proven across transformational deployments including Chase UK, Old Mutual, West Brom Building Society, and Westpac, 10x Banking offers Retail, SME and Corporate/Commercial banks an accelerated, de-risked pathway to full cloud-native transformation."}, {"title": "Team", "text": "10x Banking was founded by former banking leaders and built by expert technologists who share one goal: to make banking 10x better. Our team brings together deep industry knowledge and digital delivery skills to help clients build better products faster, more efficiently, and at scale. We’re a mix of big tech thinkers, financial services specialists, and people who’ve helped grow start ups and challengers from the ground up. With experience across major global institutions and fast-growing innovators, we bring the insight needed to transform the banking industry – together. Additionally, since April 2021, Antony has been an external member of the Prudential Regulation Committee for the Bank of England. He is also Chair of Currencies Direct—the first non-bank foreign exchange payments specialists in the U.K. Previously, Antony held leadership positions at Citigroup and Barclays PLC, including as Group Chief Executive Barclays(2012-2015). The Impact agenda sets out our environmental, social and governance priorities. It aims to make the world a 10x better place for our clients, communities and planets through our work."}, {"title": "About", "text": "When you join 10x, you join a team of talented and ambitious people united behind a single mission. A mission to transform the banking industry and make things 10x better. Our team has built core banking technology driving real transformation. The 10x banking platform powers global banks and financial institutions including Chase UK, Old Mutual and West Brom Building Society. We offer a diverse, global community that thrives on innovation and collaboration. Tackling exciting challenges with the utmost integrity, we aim to make a positive impact through our work for our clients, their customers and the communities we work in. 10x offers a dynamic, diverse and inclusive workplace which provides our colleagues the environment to thrive and deliver a high performance they can forever be proud of. 10xers meet regularly for team collaboration, company strategy days, and socials – which range from retro arcade games in the office to offsite mini golf tournaments. Our employee networks make sure that the voice of every 10xer is heard, driving positive change through the company. Networks include Women & Friends, LGBT+ Pride and Parents & Carers."}],
+
   },
   {
     id: "starling2",
@@ -11185,6 +11629,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.starlingbank.com/",
+    files: [{"title": "About", "text": "Banking was broken – so we decided to fix it. All at the tap of a phone, all the time. One hard-won banking licence later, we set about giving people a new way to spend, save and manage their money (and take better care of the planet, too). Back then, we were obsessed with unravelling the knotty world of finance and solving people’s problems rather than selling them stuff. From reimagining the banking stuff you know (hey there, revolutionary new ways to pay, save and spend) to inventing never-before-seen features (meet the Connected card ) we ask what you actually need. Changing financial culture means making money equal for everyone. We campaign against financial stereotypes in the media, talk about money in plain English and democratise financial education, so everyone’s included. We prefer not to charge them, but if we do, we’ll tell you what they’re for, and how much, upfront."}, {"title": "About", "text": "We use our voice to support our wider community, and stand up for causes that align with our values and ethics . So far, we’ve worked with Sports Aid to give grants to young footballers , in support of the women’s game , and our donation to the National Trust will support the restoration and research of more than 400 hectares of peatland. From launching our award-winning Under 16s debit card and app for kids, to campaigning to Make Pocket Money Equal , we want to get parents talking – and kids, learning – about money. Our Make Pocket Money Equal report revealed that 20% of parents lack confidence in teaching their children about money. For over 150 years, UK charity Action for Children has been working hard to make sure more children in the UK have a safe and happy childhood, and the foundations they need to thrive. Our donation will support the development of new financial content that parents and carers can access for free on Parent Talk: their online parenting advice and 1:1 chat service with expert parenting coaches. So far, we’ve covered topics from how to talk about money to advice on what financial support parent"}, {"title": "About", "text": "Starling Bank grew out of a desire to create a new kind of bank and to make banking more inclusive by putting customer needs first. For us, good business and ethics go hand in hand. We believe that businesses should be aware of their social, economic and environmental impact and their responsibilities to pursue the social good. At the core of our value system is a belief in transparency, fairness and inclusion. This means no hidden or rip-off fees and no hard sell. We are committed to providing a workplace culture that reflects our values of fairness, equity, inclusion, compassion and non-discrimination. Our employees should be - and feel - safe from harassment and bullying. They should be - and feel - free to discuss concerns about our operations internally to their line manager or externally without fear of consequences. We are a Living Wage Employer and are committed to paying our employees a wage that meets the costs of living, not just the government minimum. We are committed to developing business relationships with high quality suppliers and partners who themselves are committed to operating under ethical and environmental standards"}],
+
   },
   {
     id: "rapyd",
@@ -11198,6 +11644,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.rapyd.net/",
+    files: [{"title": "Company", "text": "Rapyd is a directly-licensed card acquirer with Visa and Mastercard in the UK, Europe, LATAM, Hong Kong, Israel and Singapore. And a global network of hundreds of payment methods, including stablecoins. Enable in-store and online processing with a single unified AI-native fintech solution — one integration, one reconciliation and one settlement. Integrated Software Vendors (ISVs) Integrate payments into your software applications and offer your users a global payments solution while earning revenue from their transactions. ISVs looking to monetize their platform can become ISO payment partners with Rapyd. Independent Sales Organisations (ISOs) Let Rapyd manage global card acquiring for your merchants with API-based onboarding, fast merchant approvals, next-day settlement and compliance support. Payment Facilitators (PayFacs) Choose Rapyd for global card acquiring with high authorisation rates, fraud prevention, chargeback handling and dedicated support. Referral Partners and Consultants Earn commissions and gain business development tools, custom account planning and exclusive certified partner benefits that grow with your success. Discover why the Rapyd Partner Programme is the pl"}, {"title": "Company", "text": "With Rapyd’s diverse suite of payment solutions, you’re not just solving problems — you’re opening doors to new opportunities. Rapyd gives your clients some of the industry’s highest authorisation rates, access to major card networks and hundreds of local payment methods globally. Create settlement accounts with Rapyd in countries worldwide to accept, hold and send funds in local currencies, using local payment rails. Send funds to anyone faster, with card payouts, bank transfers, RTP networks and more, Rapyd lets your clients send payments to suppliers, content creators and gaming winners worldwide. Upon joining the Rapyd Partner Programme, you get access to training, business development support and partner benefits, which may include: Solve complex payment needs effortlessly by referring clients to Rapyd. Complete the form and a member of our team will contact you. We live up to our name with fast onboarding and high client approval rates. Get your clients transacting quickly with full Rapyd gateway services and integrations to multiple, third-party gateways. If you’ve got connections to companies who need payment services, you may be able to turn your network into commissions a"}, {"title": "Company", "text": "Payments and payouts in 190+ countries with cards and alternative payment methods, including Apple Pay, Google Pay and stablecoin. Fast Merchant Onboarding With Rapyd’s API, 80% of merchants are approved in under 24 hours, and 97% are approved in under 48 hours. White Glove Service & Support Benefit from a dedicated relationship manager, quarterly business reviews and 24/7 support. Rapyd brings you exclusive partner events, like our Nights & Insights series , to help you network, shape future innovations and unlock new opportunities. With Rapyd as your ISO payment processor, we work with you to complete your merchants’ onboarding, providing a first-rate customer experience, every step of the way. ISO payments solutions that support your client’s online, fixed, mobile and SoftPOS needs with advanced hardware and terminal agnostic solutions. Expand into new markets and create new revenue opportunities when you partner with Rapyd. Submit this form to meet with a Rapyd partnership programme specialist."}],
+
   },
   {
     id: "affirm",
@@ -11237,6 +11685,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.form3.tech/",
+    files: [{"title": "Company", "text": "Form3 was founded in 2016 to solve a persistent challenge for financial institutions: keeping pace with regulatory change while avoiding the cost and complexity of building, maintaining, or outsourcing legacy payments infrastructure. As one of the first companies to apply cloud technology to payments, Form3 has built a multi-cloud, real-time platform that gives banks and fintechs access to domestic and international payment schemes through a single API. Operating across the US, UK, and EU, we help make payments faster, more secure, and more resilient as we work toward becoming the world’s most trusted payments infrastructure provider. Form3 completes the initial build of its UK platform and closes its Series A investment from Barclays, Angel CoFund and angel investors. Form3 launches with Ebury and LHV for FPS and Bacs, while closing its Series B investment from Molten Ventures, Barclays, Angel CoFund and several individuals. Lloyds Banking Group, Mastercard and Nationwide enter into a strategic commercial agreement with Form3, alongside a $33 million strategic equity investment from Lloyds, Mastercard and Nationwide, with participation from 83North and others."}, {"title": "Team", "text": "“We were built to solve critical problems in payments, and we’ve done this by building out a team of the best and brightest.” — Mike Walters, CEO Our executive team, board of directors and strategic advisory board bring together expertise across banking, technology and leadership. Our people merge deep technical expertise with a nuanced understanding of the markets they serve to bring the best outcomes to our customers, and their customers in turn. Form3 is a global account-to-account financial fabric delivering a proven payments platform trusted by banks and fintechs to deliver resilient, real-time payment experiences for their customers at scale."}, {"title": "Company", "text": "This requires a focus on engineering quality, operational resilience, and continuous improvement. Careers at Form3 are centered around solving complex technical challenges in a highly regulated and always-on environment. Teams work on systems that must perform reliably at scale, supporting real-time payments across multiple markets. As a fully remote company, we empower talented people from all backgrounds to thrive in a culture built on trust, curiosity and collaboration. Work in a way that suits you with flexible hours, part-time opportunities and job sharing. We also offer summer hours to help you balance work and life. Create a workspace that works for you with a home office equipment allowance and a DSE assessment to ensure your setup is comfortable, safe and ergonomic. Grow your career with an annual Learning & Development allowance and up to six paid learning days each year. Use them for courses, conferences or professional certifications that matter to you. Claim back the cost of eligible health and wellness services through our Health & Wellness Allowance, available in al"}],
+
   },
   {
     id: "mosaicfi",
@@ -11276,6 +11726,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.airwallex.com/en-us",
+    files: [{"title": "About", "text": "We are the banking platform building the infrastructure that powers every business to be a global business. We are helping businesses move faster, operate globally, and unlock new opportunities for growth by connecting banking, payments, software, and AI."}],
+
   },
   {
     id: "ebanx",
@@ -11289,6 +11741,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.ebanx.com/en/",
+    files: [{"title": "About", "text": "We believe that the impossible is only part of the journey. That's precisely why we created a payment technology that connects the largest global companies with millions of consumers every day in more than 20 countries in Latin America, Africa, and Asia. Our values fueled our growth trajectory since our founding in 2012. Through them, we supported enterprise companies in growing their business in Latin America and have given millions of Latin American consumers access to international products and services. We started as the smallest company of the Endeavor program. Still, with a far-reaching vision, commitment to making all our goals possible, and investment from FTV Capital, we became one of the first unicorns in Brazil. Today, we are more than 700 ebankers who believe it is possible to turn rising markets into an even greater opportunity for all our partners. Succeeding in Latin America, Africa, and Asia isn't always simple. Competition, regulations, exchanges, and taxes are challenges that companies have to face every day. Although the world is globalized and interconnected, there are cultural and regional differences everywhere."}],
+
   },
   {
     id: "alma",
@@ -11315,6 +11769,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://wise.com/",
+    files: [{"title": "Company", "text": "Send money Receive money Get a Wise Multi-Currency Card Receive interest Manage team finances Connect accounting software Solutions They both moved their money with their banks — which had expensive fees and bad exchange rates. They knew there had to be a better way. So they put their heads together and invented a beautifully simple workaround. Play Our mission We're building money without borders — making it move faster, more conveniently, and eventually for free. Powering money for people and businesses: to pay, to get paid, to spend, in any currency, wherever you are, whatever you’re doing. Our teams are dedicated to making each part of it a reality. Inside the rise of the $5 billion money-transfer fintech Wise, which has been profitable for years and is exploring an IPO. Rapid expansion of money transfer group has fuelled competition from bigger rivals. Wise is a Money Service Business (\"MSB\") registered with FinCen, not an FDIC-insured bank. It is authorized to operate as a MSB in most states . In other states, the program is sponsored by Community Federal Savings Bank, to which we’re a service provider."}, {"title": "About", "text": "You can trust us to get it where it needs to be, but don’t take our word for it. Read our customer reviews and safety information before sending your money with us. Read customer reviews Send money with Wise Over 1 million dollars are saved by Wise customers every day through our international money transfers Yes it is. Since 2011, more than 18.9 million customers have used Wise. And every month, they trust us to move their money quickly and safely. We work hard to keep all these customers and their money secure. Plus, we’ve got a specialised, in-house team that look after security. They do training regularly — and they’re always reviewing our processes. Because of their work, we’re at the cutting edge of financial security. Wise has been reviewed by Forbes, Nerdwallet, The Telegraph and Sitepoint among many others. You can also find more than 200,000 customer reviews on Trustpilot , with an average rating of 4.3 out of 5. Read on to see what our customers have to say about us."}],
+
   },
   {
     id: "scalapay",
@@ -11354,6 +11810,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://tink.com/",
+    files: [{"title": "Product", "text": "Crucially, it also offers deeper customisation options – it’s as close to a fully white-label payments experience as you’ll find. Adyen launching its own Pay by Bank solution shows how quickly it’s gaining mainstream adoption – and just how competitive the general user experience already is today. With this guide, we aim to show how you can build and optimise your Pay by Bank flows to ensure the highest possible conversion rates. As instant payments roll out across Europe, merchants still face challenges with reliability and settlement. Our Smart Routing and Risk Signals products provide a reliability layer for Pay by Bank, optimising payment routes and blocking likely-to-fail transactions. Discover how the latest feature of our verification products, User Match, is improving security by verifying users' names when adding bank accounts, reducing fraud and enhancing account protection. Download our new account verification guide to learn how to streamline your operations, reduce risk, and enhance customer experience with the help of open banking-powered solutions. Get started with Tink Contact our team to learn more about what we can help you build – or create an account to get star"}, {"title": "About", "text": "Tink was founded in 2012, and a decade later became part of Visa in 2022. Tink was created with the aim of changing the banking industry for the better. We have built Europe’s most robust open banking platform – with the broadest, deepest connectivity and powerful services that create value out of the financial data. We offer the tools that allow anyone – from big banks and fintechs to startups – to build the future of financial services across Europe. We are a company of developers and engineers – it’s in our DNA to imagine, build and iterate. We were founded with a vision of transforming an industry that lacked competition and momentum. And we have built a company of passionate over-achievers who all believe there is always a better way of doing things. People from all over Europe – and the world – have joined us on our mission to build the biggest and best open banking platform in Europe. Our API offers one access point to financial data from across Europe – as well as the ability to offer insights and actionable advice. Together with our partners, we’re delivering the kind of digital services customers have come to expect – and paving the way for the next generation of banking."}],
+
   },
   {
     id: "iwoca",
@@ -11367,6 +11825,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.iwoca.co.uk/",
+    files: [{"title": "About", "text": "We want small business owners to spend less time on paperwork and more time running their businesses. When small businesses go to their banks for finance they face long waits, endless forms and absurdly rigid criteria. That means most of the UK's 5.5 million small business owners spend more time than they need to checking boxes and filling out forms. James and Christoph James and Christoph created a solution custom-built for small businesses. They were both working in finance when they noticed how small businesses were getting left behind by big banks. So they quit their jobs and put together a team to invent a new type of lending service using lightning-fast software. One that would give small business owners a great experience while getting the finance they need. Over the past fourteen years iwoca has grown from a small start-up to one of the fastest-growing business lenders in Europe. Now we're a team of around 400 in London, Leeds, Frankfurt and Berlin working towards the goal of funding one million small businesses. We're a mix of developers, account managers, dog lovers, climbers and explorers."}],
+
   },
   {
     id: "plum",
@@ -11380,6 +11840,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://withplum.com/",
+    files: [{"title": "About", "text": "What we offer Build a Plan Automations Subscriptions About Sign up Sign up Toggle Menu HELPING YOU GROW YOUR MONEY FOR LIFE Whether you’re setting money aside for a rainy day, investing for the future, or saving for something special, we’re here to help you take control, one small step at a time. Whether you’re building up gradually or making the most of your ISA allowance, Plum’s smart automations and intuitive tools handle the hard parts, so you don’t have to. Back in 2014, two Cypriot friends, Victor and Alex, set a challenge: who could save more? Victor followed the usual advice: setting a budget and moving money into a savings account. Alex, on the other hand, built an algorithm to do it for him. Why was managing money still so manual, relying on willpower, spreadsheets and outdated tools? Today we help millions of people take control of their money. Based in London, with offices in Athens and Nicosia, we offer smart tools for saving, investing and budgeting, powered by the same tech that started it all. It’s about turning small steps into big milestones, whether that’s a first home, a"}],
+
   },
   {
     id: "pensionbee",
@@ -11393,6 +11855,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.pensionbee.com/",
+    files: [{"title": "Company", "text": "‍ We work to make our vision a reality for our customers through the elements of financial freedom, good health and social inclusion, which we believe should ultimately lead to better retirement outcomes for our customers. We act to prevent our customers' investments from damaging their health, so they can enjoy bigger retirement savings for longer. By modernising retirement savings, we have created a better experience for everyday savers, empowering them to build, manage and take control of their retirement savings. Guided by our mission, we put customer needs at the heart of our strategy and business roadmap. We enable our customers to combine their old retirement accounts and transfer them into a brand new PensionBee plan in a few easy steps. Once their accounts are consolidated, they can easily manage their new account online and track their balance in real time via our website or app. We have made it simple for customers to contribute into their retirement account and grow their savings for a happy retirement. Whether it’s a single or regular contribution, customers can complete the process with a simple bank transfer in under 60 seconds."}],
+
   },
   {
     id: "smartpension",
@@ -11432,6 +11896,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.etoro.com/",
+    files: [{"title": "About", "text": "Join the world’s leading social investing platform, and you’ll be empowering millions of people – from all walks of life, and from more than 75 countries – with the tools to grow their investment knowledge and their portfolios. “Better together” is how we run both our company and our product!"}],
+
   },
   {
     id: "robinhood",
@@ -11445,6 +11911,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://robinhood.com/us/en/",
+    files: [{"title": "About", "text": "Limitions and risks apply Get started Stocks & ETFs offered through Robinhood Financial. Place equities, crypto, and futures trades faster with a mobile-first Ladder that moves with you—built for clarity, precision, and control. Disclosures Level Up with Robinhood Gold Your money makes money with 3.6% APY on eligible brokerage cash. Your first 30 days are free, then you'll pay a subscription fee ($5/month). Terms and disclosures Start earning with Gold 3.6% APY with high-yield Cash Earn more interest on your eligible brokerage cash. There's no cap, and you can invest or withdraw anytime.* Bigger Instant Deposits Trade right away with deposits up to 3× your portfolio value. Get your first $1k of margin interest-free Then enjoy margin rates between 4.2% and 5.25%.** Intelligence built to help you act Robinhood Cortex turns market data into insights, so you can decide your next move. ** For margin enabled customers, to earn interest through the High-Yield Cash program, a cash balance is needed."}, {"title": "About", "text": "Sweepstakes : Trade eligible crypto for a chance to win a share of $700K in crypto prizes—including a $100K crypto grand prize . We hold the majority of your coins in cold storage, entirely disconnected from the internet. We also carry crime insurance that protects a portion of the assets held across our storage systems against losses from theft, including cybersecurity breaches. The policy is underwritten by Lloyd’s syndicates, the world’s leading insurance marketplace. Our Security Team routinely reviews code and infrastructure powering Robinhood Crypto. We also engage third-party security experts to test our systems, helping us build some of the most secure systems in the industry. If you’d like to learn more about how you can protect your account, including your cryptocurrencies, check out our Help Center article on security best practices . Robinhood Crypto, LLC is licensed to engage in virtual currency business activity by the New York State Department of Financial Services. Robinhood Crypto is also registered with FinCEN as a money services business."}, {"title": "About", "text": "Subscription and limitations apply Start with more Non-Gold customers receive a 1% contribution match. Robinhood Gold is a subscription-based membership program of premium services offered through Robinhood Gold, LLC Make moves, get rewarded Get started 3% IRA Match Robinhood Gold takes your annual contribution further. Earn a $225 boost when maxing out your annual contribution for 2026. Subscription ($5/month) and limitations apply You can add an IRA on top of your employer’s 401(K) If you’re maxing out your 401(k) already, you may still be able to open and contribute to an IRA and invest even more toward your future (up to $7,000 for 2025). Open an IRA and sign up for Robinhood Gold ($5/month) to get a 3% match on every eligible dollar you deposit. Subscription and limitations apply ($5/month) Unlock Gold Limitations apply to both types of retirement accounts. Please see the IRS's IRA Deduction Limits for more information. Tax Advantages Invest in your future with tax benefits Take advantage of tax-deferred or tax-free growth potential on retirement earnings."}],
+
   },
   {
     id: "liberis",
@@ -11458,6 +11926,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.liberis.com/",
+    files: [{"title": "About", "text": "Liberis helps platforms power small business growth with contextual, embedded funding solutions. Offered through a global network of partners, our products are co-created to fit seamlessly into existing ecosystems. By understanding merchant behaviour and business rhythm - how businesses earn, spend and grow - we enable funding that feels natural, not disruptive, supporting businesses at every stage of their lifecycle. The Liberis difference True partnership and co-creation Dedicated partnership teams and funding solutions designed around your ecosystem, built together, not off the shelf. If you’re excited by building products that fund growth and remove barriers for SMBs worldwide, we’d love to hear from you. Newsroom Liberis and Qred Complete Merger Following Regulatory Approval to Create Global SMB Financial Platform 11/02/2026 Newsroom PayFacto and Liberis Launch Maitre’D Capital Cash Advance, Bringing Embedded Funding to Canadian Restaurants 05/06/2026 Payment services for US customers are provided by Airwallex US, LLC (NMLS #1928093), a licensed money transmitter in most states. If you have concerns or wish to obtain information about Airwallex's licenses, click here"}],
+
   },
   {
     id: "publiccom",
@@ -11471,6 +11941,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://public.com/",
+    files: [{"title": "About", "text": "About us We exist to give people every opportunity to grow their wealth. In 2019, we launched Public, an investing platform with a mission to give people every opportunity to grow their wealth. We started by introducing the world to fractional investing. Then, we set our sights on creating a new kind of multi-asset investing experience. Today, you can build and diversify your Public portfolio with stocks, bonds, treasuries, ETFs, crypto, and more—with even more investment opportunities coming soon. At every step, you get the tools, data, and AI-powered insights you need to make informed investment decisions. Brokerage services for US-listed, registered securities are offered through Public Investing, Inc., a registered broker-dealer and member of FINRA & SIPC. Securities in your account are protected up to $500,000. If you have questions about investing with Public, our US-based customer experience team has FINRA-licensed specialists standing by to help. 1 Products Stocks ETFs Crypto Crypto IRA Options Margin Bonds Prediction Markets Direct Indexing Treasuries High-Yield Cash Account Trading API Agents Reserve Resources About Us Learn Careers Publi"}],
+
   },
   {
     id: "wealthsimple",
@@ -11484,6 +11956,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.wealthsimple.com/en-ca",
+    files: [{"title": "About", "text": "We started Wealthsimple because investing in Canada felt like you needed a Ph.D to understand it. We set out to strip away the confusing jargon, hidden fees, and frustrating client experience to build something entirely different. Whether it's advice, investing, trading stocks or crypto, saving and spending a paycheque, or tax filing, we've helped millions of Canadians wrap their heads around it all. Our mission has never changed: To help everyone achieve financial freedom. It means feeling free from financial stress and more secure every day, no matter what life throws at you. Our Financial Products Advisory Committee is made up of recognized thought leaders in finance and innovation. They're a sounding board for our team across products and investment management."}],
+
   },
   {
     id: "emma",
@@ -11497,6 +11971,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://emma-app.com/en-us",
+    files: [{"title": "About", "text": "No matter who you are and where you come from, Emma provides the tools that can help you build peace of mind, establish healthy financial habits and achieve your goals The founders of Emma wanted to create a tool that would empower people to take control of their financial lives. They chose the name \"Emma\" for its simplicity and reliability, reflecting their mission to build an intuitive, trustworthy app. From the beginning, their goal was clear: to make managing money easier, more accessible, and empowering. They focused on providing users with the right tools to save, invest, and make smarter decisions. Today, Emma continues to grow, staying true to its mission of helping people take charge of their financial future. We operate with honesty and transparency in everything we do, ensuring our users trust us to make informed financial decisions. We are committed to continuously evolving and creating new solutions that meet the ever-changing needs of our customers. Check out our careers page or join our community and be part of building something extraordinary!"}],
+
   },
   {
     id: "nutmeg",
@@ -11510,6 +11986,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.personalinvesting.jpmorgan.com/",
+    files: [{"title": "About", "text": "Morgan Personal Investing We help our clients invest with clarity Giving our clients what they need to make more informed investment decisions is the purpose that drives everything we do. So far, we've supported hundreds of thousands of UK investors in working towards building long-term wealth. Every investor has their own goals for the future, and we can help you understand the possibilities for how to reach yours while balancing your lifestyle today. It’s simple to get started – choose how you want to invest, and pick from our range of products to build your portfolio. Our business was founded as Nutmeg in 2012 by Nick Hungerford, with the ambitious aim of opening up the exclusive world of investing to everyone in the UK. We became part of JPMorganChase in 2021 and rebranded to J.P. Morgan Personal Investing in 2025, but our original philosophy is still part of everything we do. A choice of managed and self-managed investments , an investment team with decades of combined experience, expertise rooted in J.P. Morgan's 150-year history, and a proven track record of portfolio management. With our unique blend of human support, tools, and technology, we can"}, {"title": "About", "text": "Award-winning investing It's free to join us We don't charge you to withdraw money either. You pay us a fee to manage your money, which depends on your pot's value and investment style. You can check exactly how much you’re paying at any time in our app. You'll also get regular investor updates about the markets, year-round access to our insights and access to free financial guidance when you need it. We'll take this from your account automatically so you won't need to pay it separately. The amount depends on how much you invest – the more you invest with us, the lower your fee. As with all investing, there are set-up and transaction charges for buying and selling stocks or bonds, which are paid for from your investments and reflected in your portfolio's performance. This is the difference between the price to buy and the price to sell assets. To keep this to a minimum, we combine orders and choose ETFs with smaller spreads. Our team can work out how much you might pay in fees, as well as helping you pick an investment product and style suited to you. You'll pay your management fees on the first working day of the month, which we'll take from your J.P."}, {"title": "Team", "text": "ABOUT INVESTMENT TEAM Meet the investment team Our team of expert investment managers, strategists and analysts combines years of experience with the aim of delivering performance across our portfolios. Pacome joined the company in 2017 and is responsible for managing the investment process and leading portfolio and asset allocation. Previously, he was Head of Portfolio Management at FQS Capital Partners, a U.S. He began his career at Société Générale in Tokyo. He holds an MSc in Quantitative Finance from Bocconi University in Milan and is a Chartered Financial Analyst (CFA) and Financial Risk Manager (FRM). Bola joined the team in 2023 and manages portfolio construction and asset allocation on a strategic and tactical basis. Previously, she worked as a derivatives portfolio manager covering both liability management and equity overlay portfolios. Before that, Bola worked as a software engineer, building portfolio management and trading functionality across various asset classes. She's a CFA Charterholder and holds the FRM certification. Scott joined us in 2022 from Charles Stanley, with a strong focus on asset all"}],
+
   },
   {
     id: "betterment",
@@ -11523,6 +12001,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.betterment.com/",
+    files: [{"title": "About", "text": "Due to compensation, TriNet has an incentive to recommend Betterment, which is a conflict of interest. They are compensated up to $3 per active user at referred 401(k) plan clients per month. They are also eligible for a repeatable bonus of up to $1k for new, funded Betterment at Work 401(k) referrals. TriNet sales representatives also receive gifts up to $250 for referrals that result in a sales meeting. Due to compensation, Bennie has an incentive to recommend Betterment, which is a conflict of interest. Bennie is eligible for a repeatable bonus of up to $1k for new, funded Betterment at Work 401(k) referrals. They are also compensated up to $20k for event participation, which includes attendee list access. Sales representatives receive gifts up to $250 for referrals that result in a sales meeting. Certain personnel may receive gifts less than $250 in value. Thread HCM receives compensation (up to $2k for new, funded 401(k) enrollment and up to $2 per participant per month) from Betterment, creating a financial incentive associated with endorsements and referrals. Sales representatives are eligible for a $1k bonus for new, funded Betterment at Work 401(k) referrals."}],
+
   },
   {
     id: "cushon",
@@ -11536,6 +12016,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.cushon.co.uk/",
+    files: [{"title": "About", "text": "It just shouldn’t be that hard to set up an ISA and get decent returns. As we’ve grown, we’ve brought that same idea to making workplace pensions and savings easy, too. Back in 2014, the business was created to tackle the frustration many people faced when trying to make confident investment choices online, without the guidance or simplicity they needed. Over a decade later, Cushon has become known for super-smart but easy-to-use technology, helping hundreds of thousands of people build a better financial future through workplace pensions and savings. In 2026, Cushon became part of one of the UK’s largest master trust providers, combining the reassurance and scale of an established pensions business with the tech-led innovation that made Cushon a standout British fintech. Today, we’re leading the way in easy-to-use workplace pensions and savings technology, supporting more than 755,000 members as they build towards a feel-good future. 2026 WTW complete aquisition of Cushon from NatWest Group Cushon join WTW, owner of LifeSight, with a combined £30bn assets under management. Together, we help more than 1 million people to save for a feel-good future."}],
+
   },
   {
     id: "snoop",
@@ -11549,6 +12031,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.snoop.app/",
+    files: [{"title": "About", "text": "A little robot built with a big heart Snoop was created to make everyone better off. Saving you money, watching your back and helping you make smarter choices – that’s Snoop. If we can help you get on top of your money, help you spend it wisely, and take some of the hassle away, we believe we can make everyone’s life that bit brighter. We’re only too happy to throw the spotlight on those businesses giving good value. And if we spot businesses charging you too much or letting you down, we’ll call them out to you. You don’t have time to look out for this stuff 24/7. We’ll always balance profit with our bigger responsibilities as a business. And we’re not just looking for new ways to help with money. Our ambition is for our smart little robot to give you smart, simple ways to help each other, our communities and the planet too. Vanquis Banking Group is a FTSE All-Share company and a leading specialist bank, established in 1880. The Group provides tailored products and services to 1.75 million UK customers through the Vanquis, Moneybarn, and Snoop brand"}],
+
   },
   {
     id: "dlocal",
@@ -11588,6 +12072,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.nium.com/",
+    files: [{"title": "About", "text": "Nium is the infrastructure powering the future of money movement — where value flows instantly, globally, and with certainty across any network or chain. Our culture is defined by the global nature of our team. That diversity lets us see the world through a different lens — and build the infrastructure that solves finance's toughest global challenges. 25 COUNTRIES 700 + Employees 47 Nationalities Meet our leadership team. Prajit Nanu Founder and CEO Networks wanted stablecoins operational, not theoretical. Prajit Nanu is the co-founder and CEO of Nium. He launched the company after firsthand experience with the friction of sending money across borders. Since then, he built Nium into an institutional-grade platform for cross-border money movement – with hundreds of category leaders in banking, travel, payroll, tech and AI relying on Nium to collect, convert, send, and spend funds globally. Beyond the CEO role, Prajit leads Nium's product strategy with a focus on embedding compliance and regulatory rigor as a competitive advantage."}],
+
   },
   {
     id: "bench",
@@ -11601,6 +12087,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.bench.co/",
+    files: [{"title": "About", "text": "Bench is an online bookkeeping service for U.S.-based businesses, small and growing — operating today as an Employer.com company. We started Bench to take bookkeeping off business owners' plates for good — so you can spend your time running your business, not reconciling it. Bench is fully operational, staffed by its in-house team, with Employer.com continuing to invest in the bookkeeping business. Their bookkeeping services have helped me keep my numbers straight and they are always available to answer questions. The new owners have made a noticeable difference in processes.\" Bench uses read-only access to your financial accounts — your transactions can be imported for bookkeeping, but no one can move your money. Every bookkeeper passes background checks, and you can export your completed work anytime, even after your subscription ends."}],
+
   },
   {
     id: "freetrade",
@@ -11627,6 +12115,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://pilot.com/",
+    files: [{"title": "About", "text": "Pilot powers the financial back office for startups and small businesses. We specialize in bookkeeping , tax preparation , and CFO services and are focused on delivering a customer experience of unparalleled quality. When you work with Pilot, you get a team of finance experts who take the work off your plate–so you can focus on your business. Pilot has raised over $150M in Series A , Series B, and Series C financing from Sequoia, Index Ventures, Stripe, Bezos Expeditions (Jeff Bezos’s investment company) and Whale Rock. Our investors also include a long-list of world-class entrepreneurs, including Patrick and John Collison, Drew Houston and Diane Greene. Pilot is a provider of back-office services, including bookkeeping, controller services, and CFO services. Pilot is not a public accounting firm and does not provide services that would require a license to practice public accountancy."}],
+
   },
   {
     id: "currencycloud",
@@ -11653,6 +12143,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://payfit.com/",
+    files: [{"title": "About", "text": "“I can pull a lot more data much more easily now. I can put data up in front of the Exec, and it's made a real difference. Plus, the level of customer service we get from Payfit is amazing.” About us We started Payfit to take the weight of payroll off every business's shoulders. Every business deserves a trusted payroll and HR partner on their side. Payfit brings payroll and HR together in one service, powered by human expertise and AI – giving businesses clarity, support, and more time to focus on their people. Built on millions of payslips processed, Payfit delivers fully accountable, compliant payroll, whether businesses want to stay hands-on or hand it. Proof that work has been recognised, and a promise that it will be again. Behind that payslip is the invisible work that keeps a company moving: payroll, HR, admin. For too long, businesses have carried that weight alone. We started Payfit because we believed every business deserved a real payroll and HR partner, not just a tool."}],
+
   },
   {
     id: "factorial",
@@ -11718,6 +12210,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://lattice.com/",
+    files: [{"title": "About", "text": "People spend most of their waking hours at work — our goal is to make those hours better. Lattice works with People teams across the globe to turn managers into leaders, employees into high-performers, and companies into the best places to work. Sarah Franklin is the CEO of Lattice, leading the company’s mission to make work meaningful. With over 25 years in technology, she has a proven track record of scaling businesses, driving innovation, and building high-performing teams. Sarah spent more than 15 years at Salesforce in executive leadership roles, including President and Chief Marketing Officer, EVP of Platform and Trailhead, and head of developer initiatives. Sarah holds a dual degree in chemical engineering and biochemistry from Virginia Tech. A recognized industry leader, she has been named one of Forbes’ Most Influential CMOs, a “CMO to Watch” by Business Insider, and a recipient of Adweek’s Brand Genius Award. She also serves on the Board of Directors for PagerDuty. Sophie Hurcombe is Chief People and Operations Officer at Lattice. Prior to joining Lattice, Sophie held key roles at Canva and Workfront, where she helped drive company-wide transformation at scale, deliver hi"}],
+
   },
   {
     id: "cultureamp",
@@ -11731,6 +12225,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.cultureamp.com/",
+    files: [{"title": "Company", "text": "That belief, among other things, means living our values every day, striving to be inclusive, and building a worldwide community that believes culture comes first. We‘re focused on building a new type of company: a company that truly puts culture first. That focus empowers our people to deliver on the promise of a platform that helps people worldwide build profitable, sustainable, and human-literate companies. Our mission goes beyond just building a business tool. It includes a commitment to providing the education, community, and support you need to bring a culture-first approach to your organization. Demonstrating our values – and the behaviors associated with them – is as important as the results of our work. And those values manifest not only in how we relate to each other but how we exist in the world. How we make an impact is just as important as the impact itself. Chasing excellence means we don’t settle with where we are - we put real work into the world, learn fast, then make it better."}, {"title": "Company", "text": "We at Culture Amp acknowledge the Traditional Owners of the lands on which we live, work, dream and play. We have offices all over the world, including on the traditional lands of the Wurundjeri and Gadigal peoples in Australia, and the Munsee Lenape, Ohlone, Potawatomi and Kickapoo peoples in North America. Together, we recognise and are inspired by the culture, strength, resilience and capacity of the people of these lands. We pay our respects to Elders past and present."}, {"title": "Company", "text": "The Culture Amp Foundation’s mission is to make a better world of work more attainable as a part of achieving our mission. Everyone deserves access to decent work, the opportunity to work within organizations with dynamic cultures, and live in a world that is sustainable and equitable. Whether you’re a non-profit seeking support to further your mission, working towards achieving racial justice, or an organization curious about the relationship between social impact and employee experience, the Culture Amp Foundation is here to be of service. We want to ensure that other organizations working to build a more anti-racist world can afford and access Culture Amp’s tools, especially those that wouldn’t otherwise be able to. That’s why we’ve created a non-profit grant program for organizations that primarily support Black and Indigenous people, or are focused on issues that disproportionately affect these communities. We’re here to support mission-driven organizations with the tools they need to build intentional cultures, empower their people, and create more impact. That’s why special pricing is available for eligible B Corp-certified companies looking to build a stronger culture with"}],
+
   },
   {
     id: "teamtailor",
@@ -11744,6 +12240,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.teamtailor.com/en/",
+    files: [{"title": "Team", "text": "We believe the right hire can change everything, and that giving hiring people the right technology is one of the most powerful ways to make that happen. Used by more than 13,000 companies around the world, Teamtailor helps hiring teams attract, engage and hire the right people while taking more of the work around hiring off their plate – making every hire count. Enterprise Small to Midsize Companies Teamtailor AI Employer Branding Career site Onboarding Automation Features Integrations Pricing Resources English English (US) Svenska Dansk Deutsch Español Suomi Français Italiano Nederlands Norsk Português (Brasil) Português (Portugal) For hiring people. Copyright © Teamtailor AB Östgötagatan 16 116 25 Stockholm, Sweden. Registered with the Swedish Companies Registration Office 556936-6668 VAT: SE556936666801"}],
+
   },
   {
     id: "fifteenfive",
@@ -11770,6 +12268,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.charliehr.com/",
+    files: [{"title": "Product", "text": "Our team of payroll specialists handle the monthly pay runs for you, taking the admin and stress completely off your plate. Stop doing HR and payroll in two different platforms. Get organised with a single, clear overview and get back to the work that matters. Our team of UK payroll specialists runs your pay each month, you give us the numbers, and we handle the rest. Save hours of monthly admin and gain complete peace of mind with trusted professionals in the loop every step of the way. Seamless onboarding: hands-on support to switch smoothly from your current provider, to help prevent disruption to payday We handle the calculations, compliance and admin each month — the payment to your team and to HMRC stays with you. You’ll stay compliant and in the loop throughout, with support on hand whenever you need it. Payroll processing: Processing your payroll on your agreed pay frequency, including PAYE, National Insurance, pension contributions, statutory payments and RTI submissions to HMRC. We handle the calculations, compliance and admin, making the actual payment stays with you."}, {"title": "Product", "text": "Cut down on your workload with an automated onboarding platform. With Charlie, you can onboard new employees in seconds, not hours. From ATS, to onboarding, to payroll – Charlie integrates with your HR tools to banish hiring admin for good. “We signed up to Charlie a few months ago and couldn’t recommend it more highly. It makes onboarding new team members 10x easier.” “Love CharlieHR – so useful for onboarding new team members, managing their holiday and performance reviews/development.” “CharlieHR removes a tonne of hassle from both onboarding employees… It’s a massive timesaver and I’ve come to depend upon it .” “Can’t rate CharlieHR highly enough. We had a new staff member join yesterday, the onboarding process took SIX minutes . Get unlimited access to a dedicated team of CIPD-qualified advisors, plus AskCharlie, giving you the HR strategy and support to help your business grow. Employee onboarding software automates the process of bringing a new hire into your business: collecting their documents, running compliance checks, and walking them through their first steps — without you having to chase them over email or Slack."}, {"title": "Product", "text": "You don't have to be the one approving every leave request. They go straight to the right person, and the calendar updates itself. “CharlieHR has been such an excellent tool for us as a small business. We can easily manage holidays & time off using the Google Calendar & Slack integrations.” “CharlieHR made the visibility of my colleagues and their annual leave easy. Perks is also awesome!” “For our small startup, CharlieHR has been incredible – everything is simple . I would highly recommend it to any startup wanting to take the hassle out of HR.” “CharlieHR has played a big part in helping scale our business successfully & efficiently. It's an awesome product that is engaging, user friendly and powered by a fabulous team of people!” “The central system for holiday booking, reviews and managing teams is really helpful for our business. The calendar is also excellent for keeping track of holidays and WFH.” Get unlimited access to a dedicated team of CIPD-qualified advisors, plus AskCharlie, giving you the HR strategy and support to help your business grow. A leave management system like Charlie is software that handles holiday and sickn"}],
+
   },
   {
     id: "kenjo",
@@ -11783,6 +12283,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.kenjo.io/",
+    files: [{"title": "Company", "text": "We are Workforce Management Software designed to manage your SMBs workforce across all industries. Through one single platform, companies can optimise the most important operations and processes of people management and truly make HR a key part of the success and development of their employees. In 2017, David Padilla, - CEO of the company - founded Kenjo in Berlin as a solution aimed at reducing the burden of HR administrative tasks and automating processes. The project came about after his experience as founder of Empaua - a Salesforce consultancy - and the need for specific people management and internal talent improvement tools. Soon after opening our first office in Berlin, we opened three more in Madrid, Mexico City and Zurich. Today we have the support of well-known investors and are present in five markets: Spain, Germany, Switzerland, Austria and Latin America. Our mission at Kenjo is to provide the most advanced technology and knowledge for companies to optimise their workforce management. We want to streamline their internal communication, data access and recruitment processes in compliance with current regulations. We believe in a world where HR is a key part of organisa"}, {"title": "Product", "text": "Get the overview you need to fill every shift with the right person every time. Kenjo suggests the right staff based on roles, work locations and contracted days . Your team tells you when they’re free directly in the app. You get a clear view of who's available , making it easy to build a schedule you can count on. Get an instant alert for employee sick days, so you can quickly schedule replacement open shifts and let someone else nab it. See, approve or reject leave requests right inside the shiftplan, making sure you always have enough hands on deck. Give site leads the power to build their own schedules without giving them access to everything. You keep the master view while they handle the daily details. Stop manual data entry for payroll, and protect your budget by preventing unwanted overtime before it happens."}, {"title": "Product", "text": "Enable your managers and employees to manage their own vacations, sick leave, and other absences with minimal effort and zero papers. Keep track of all requests, convert accumulated overtime into time off, and generate absence reports. With just a few clicks, employees can request time off and sick leave and automatically notify their managers. This saves time and money and gives your employees more transparency over the request and approval process. Employees can see how much remaining time off they have, helping them avoid any missundestansings and freeing up HR from redundant requests. The integrated smart calendar automatically tracks regional and national holidays, and avoids any unnecessary vacation deductions. Approved time off requests can also be synced with personal calendars as well as wirth slack - allowing all team members see who has booked time off. Streamline time off requests with the convenience of making repeated requests, available on both the desktop and mobile platform. Easily specify the type of time off, date, and duration, allowing multiple requests in one simple step, including sick leave, holidays, parental leave, work-from-h"}],
+
   },
   {
     id: "recruitee",
@@ -11796,6 +12298,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://recruitee.com/",
+    files: [{"title": "About", "text": "A powerful ATS solution that unites your hiring team, lets you hire your way, and helps make better people decisions while staying compliant. Employer Branding Collaboration --> WhatsApp Hiring Applicant Management Interview and Evaluation Insights and Reporting AI & Automation Pre-onboarding & Onboarding Recruitment agency management Tellent acquires FunnelBridge An all-in-one HRIS with built-in performance management to streamline people processes, track engagement, & drive employee success. A simple, flexible HRIS that streamlines time tracking, absence management, payroll, and more, all in one secure platform that grows with you. Employee Database Time and Attendance Absence Management HR Reports Payroll Journeys Expense Management Whistleblowing Tellent HR - Grow Performance Management Employee Engagement Employee Development Tellent Intelligence See customers Browse integrations Partners --> Solution Partners Looking to integrate with Tellent's solutions? Our Technology Partner Program is ideal for HR software vendors and talent acquisition platforms."}],
+
   },
   {
     id: "workable",
@@ -11809,6 +12313,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.workable.com/",
+    files: [{"title": "About", "text": "We help companies of all sizes and in any industry, from small businesses to name-brand enterprises. Workable is a perfect fit for any company that cares about time-to-value and ease-of-use, who wants something that's fast to implement, easy to adopt, and doesn't require an hour-long training session to learn how to use. We're a global company, spread across Greece, the US, the UK, Singapore, and Australia. We’re always looking for great people who want to shape the future of work. If you’re up for the challenge, check out our open positions. Explore our full platform with a 15-day free trial. Post jobs, hire faster, and manage your people effortlessly with our all-in-one platform."}],
+
   },
   {
     id: "skuad",
@@ -11822,6 +12328,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.skuad.io/",
+    files: [{"title": "About", "text": "Pricing Login Request demo Request demo A simple way to hire global, diverse & happy teams. The single most important priority of any business is to grow - organically and globally and growth is made possible by the primary resource of the organization - people. We are building Skuad for the new world of work, where companies can access the best talent in every corner of the world. Our leaders have over two decades of HR experience and expertise in building globally diverse and distributed teams. Your workforce doesn't need to be limited by boundaries. With Skuad, you can give your team the freedom to work from wherever they call home. Your team can work on what they love, without having to leave their loved ones. Our leadership team brings in over two decades of HR experience in building globally diverse and distributed teams, creating Skuad with the principal mission to elevate lives by democratizing talent and opportunities globally. Our self-serve product removes the wheat from the chaff when building your global remote team. Hire, onboard, manage and pay your global remote teams on one central dashboard. Find who you want and leave the rest to us."}],
+
   },
   {
     id: "silvr",
@@ -11835,6 +12343,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.silvr.co/",
+    files: [{"title": "About", "text": "Use Case | Receivables Advance Use Case | Inventory Financing Use Case | Growth Financing Use Case | Cash Reserve Product Nima is an angel investor, serial entrepreneur and tech mentor with 15 years of CEO and CTO experience. He teamed up with his former HEC classmate Greg to found Silvr after selling his 150-strong software development agency in 2019. Four-time CTO and a HEC Paris graduate, Greg has successfully launched and led technology-driven ventures across various industries. Originally from New Caledonia, he spent a part of his career in Silicon Valley before settling in Paris. With over 20 years' experience in senior positions in the financial sector, she has served on numerous boards (ClearBank, Cboe Clear Europe, Crédit Agricole CIB). Her expertise in risk management and financial model transformation guides our evolution towards intelligent funding orchestration. Her mission at Silvr: ensuring our business-lender matching maximises success chances whilst managing risk. Sébastien has over 18 years of operations and management experience. Leading the operations team at Silvr, he enhances efficiency and risk analysis."}],
+
   },
   {
     id: "breathehr",
@@ -11913,6 +12423,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.lucca.fr/",
+    files: [{"title": "About", "text": "Le dernier rempart contre la faute la plus grave aux yeux de vos collaborateurs : la présence d'erreurs sur le bulletin de salaire. La carte titres-restaurant rapide à créditer, facile à utiliser par les salariés mais surtout sans frais pour les restaurateurs. Suite Initiale Optimisez la préparation de votre paie Conformité Vos obligations légales sous contrôle Talent Une vision claire du parcours salarié Tarifs À propos Ressources Actualités le blog de la tribu Témoignages clients Guides pratiques Transparence salariale Support Lucca IA +33 (0)1 83 64 53 20 Se connecter Nous contacter Accueil À propos L’à propos n’engage que nous Tout ce que vous avez toujours voulu savoir sur Lucca, sans même le savoir. Au service des salariés Ce serait prétentieux de nous attribuer tout le mérite de l’épanouissement des salariés ou de l’expérience collaborateur. En revanche, nous mettons tout en œuvre pour améliorer la vie des salariés. Et alléger la pression administrative qui pèse sur leurs épaules en fait partie. Lucca conçoit une plateforme RH globale, au service des salariés. Elle comporte une suite de logiciels centrés sur les usages des collaborateurs, qui automatisent les processus inter"}],
+
   },
   {
     id: "pipecom",
@@ -11926,6 +12438,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://pipe.com/",
+    files: [{"title": "About", "text": "We believe access to capital is the lifeblood of entrepreneurship, but small and medium-sized businesses don't always have fair access to the capital they need. These are the companies that build our economy, and they're the reason Pipe exists. We partner with software platforms who innovate for small businesses, to deliver unbiased capital and financial tools so they can hire, make payroll, scale up, and invest in themselves and their communities. More importantly, they can spend more time with the people they love and doing the things they love, and less time chasing funding and checking boxes. Together with our software partners, we’re making working capital and financial tools more accessible than ever inside the platforms small businesses use to run their operations every day."}, {"title": "About", "text": "Claurelle has two decades of experience innovating global lending, payments, wealth, and consumer technology products at Amazon, Capital Group, and Blackberry. Most recently, she was a VP of Product at the Capital Group, the 10th largest asset manager in the world. Previously, she launched and scaled Amazon’s lending and B2B payments businesses globally. Vijay has built and led go-to-market and product organizations at startups and global public companies across software and fintech. Most recently at Square, he led the developer platform, global partnerships, and international businesses. Before Square, he led partnerships and the developer platform for Adobe Creative Cloud, following Adobe’s acquisition of Aviary, where he was responsible for partnerships and growth. Jin is a veteran legal, compliance, and governance leader with over two decades of experience in financial services, lending, and payments. Jin led legal functions and helped develop products for industry leaders, including Square, Klarna, and Afterpay. As Apple's principal payments counsel, Jin was also an early contributor to the Apple Pay project. Nick leads strategic finance and risk at Pipe, overseeing capital ma"}],
+
   },
   {
     id: "shine",
@@ -11952,6 +12466,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://wayflyer.com/",
+    files: [{"title": "About", "text": "Leadership Backed by 400+ employees with startup experience and deep, firsthand knowledge of how growing businesses operate. He co-founded the company in 2019 to help fast-growing businesses access the working capital needed to scale. John McAdoo is the Chief Financial Officer at Wayflyer, where he oversees the company's financial strategy, and long-term growth initiatives. Deirdre MacCarthy is Wayflyer's Chief Legal Officer and Head of People, with 20+ years advising high-growth tech companies and entrepreneurs. Wayflyer was founded by Aidan Corbett and Jack Pierse to solve the biggest problem for growing consumer brands: access to working capital. Our first cash advance was sent to Ambr Eyewear. Sharing our passion for solving this problem, their founder later joined our team. We signed our first major warehouse line with J.P. Morgan, the first of multiple institutional debt partnerships to come. We broadened our focus to serve SMBs across all major industries, driven by strong market demand and the opportunity to back great businesses in every vertical."}],
+
   },
   {
     id: "solaris",
@@ -11978,6 +12494,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.shares.io/",
+    files: [{"title": "About", "text": "Co-Founders Benjamin Chemla, Harjas Singh, and Francois Ruty officially launch Shares and raise $10 million in one of Europe’s largest ever pre-product seed rounds Shares obtains investment firm authorisation and digital asset provider registration to provide stocks, ETFs and crypto-assets and launches app in France Shares expands into the Wealth Management market through the launch of its end-to-end platform for financial advisors, Shares Pro Shares secures key partners and rolls out its white-label Wealth offering, allowing businesses to deliver the Shares Wealth platform under their own brand Shares is named in the prestigious FrenchTech 120 for the third year, alongside the most promising new companies in France Shares welcomes Treezor to the group to build banking vertical and offer a full financial infrastructure offering to European institutions Shares Wealth offers an investment app for individuals and a white-label investment platform for wealth management firms and private banks. Since 5 October, following the acquisition of Treezor SAS, Shares Banking provides payment solutions to businesses."}],
+
   },
   {
     id: "outfund",
@@ -11991,6 +12509,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://out.fund/en-gb/",
+    files: [{"title": "About", "text": "Outfund was founded in 2017 on a simple conviction: great businesses shouldn't have to give away equity to fund their growth. Where banks saw risk and VCs demanded ownership, we saw revenue — real, recurring, measurable — and built a way to fund against it. Since then we've grown into one of the largest revenue-based finance providers across the UK, Spain and Australia, backing thousands of online businesses with fast, flexible, equity-free capital. In 2020 we raised £37M to get started, and in 2022 closed a £115M Series A to scale — capital we put straight to work funding our customers. We fund businesses on the strength of their revenue, not their cap table — from £10k to £500k, with no equity taken and repayments that flex with sales. Daniel Lipinski founds Outfund on a simple conviction: great businesses shouldn't have to give away equity to fund their growth. Outfund closes a £115M Series A (£15M equity, £100M debt), becoming one of the largest revenue-based finance providers in the UK, Spain and Australia. Outfund joins forces with Viceversa under VVOF Holdings Limited, giving digital businesses across Europe one partner for capital, data and growth."}],
+
   },
   {
     id: "n26",
@@ -12017,6 +12537,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.treezor.com/",
+    files: [{"title": "Company", "text": "Treezor is the Banking-as-a-Service (BaaS) precursor that embeds tech, regulatory and security aspects into its offering to provide access via API to the entire payment chain, from receiving to issuing payments. Treezor devotes a significant part of its resources to developing new technology in order to support innovation and its customers’ growth strategies. Treezor actively takes part in developing innovative solutions aiming to improve the user experience. Data security is, along with service agility and scalability, an essential part of Treezor’s project to build a French benchmark BaaS solution for the European market. Thanks to its license as an electronic money institution and the flexibility of its technology, Treezor is the precursor of the Banking-as-a-Service model and is the European leader with a presence in 5 countries: Germany, Belgium, Spain, Italy and France. As Banking-as-a-Service precursor, Treezor embeds tech, regulatory and security aspects into its offering to provide access via API to the entire payment chain, from receiving to issuing payments. Treezor devotes a significant part of its resources to developing new technology in order to support innovation an"}, {"title": "Company", "text": "Treezor’s activities are conducted in strict compliance with regulatory obligations regarding payment institutions and electronic money institutions. KYC encompasses all the obligations of financial entities with regard to knowing their customers. It involves identifying the customer, gaining an overall understanding of their characteristics (activity, source of funds, etc.), updating this information and exercising appropriate vigilance. The mission of Compliance is to prevent the operational risks associated with money laundering and the financing of terrorism. It coordinates the daily efforts against these risks and provides ongoing training for all employees. Compliance with sanctions is an increasingly important and complex issue, which can generate significant operational risks and requires an international approach. Treezor pays particular attention to this major issue by implementing strong training and awareness-raising actions for its employees, by developing its tools and by strengthening the internal rules concerning the handling of customer complaints."}, {"title": "Company", "text": "Treezor calculates and keeps track of its carbon footprint each year. We use a carbon footprint measurement tool that analyzes the direct and indirect emissions of greenhouse gases generated by Treezor’s business activities. This tool enables Treezor to measure its carbon footprint and develop an improvement plan accordingly. Since Treezor was founded, the company has advocated for a “Zero paper” policy. Most internal and external documents are stored digitally and all employees, customers and partners can edit or sign documents electronically in order to avoid wasting paper. Over the past 5 years, we have placed recycling bins throughout all our offices and made recycling a priority. The top-management at Treezor has also implemented a policy that encourages the use of more sustainable transportation for business trips, such as taking a train instead of flying whenever possible. Furthermore, in 2021 the company implemented an “open working” policy to encourage remote working for all employees. These measures aim to increase the well-being and working conditions of Treezor’s employees as well as reduce greenhouse gasses emissions caused by commuting to the office."}],
+
   },
   {
     id: "bitpanda",
@@ -12043,6 +12565,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://memo.bank/",
+    files: [{"title": "About", "text": "Une nouvelle banque mais pas un énième acteur bancaire Memo Bank, c'est la certitude d'être au bon endroit pour passer vos paiements à l'échelle grâce à une infrastructure bancaire moderne, nativement API-first. Il existe au moins un point commun entre vous et nos fondateurs, Jean-Daniel Guyot et Michel Galibert : vous avez déjà exprimé ce souhait « si seulement les banques pouvaient être à la hauteur des géants technologiques ». Malgré les avancées technologiques, l’expérience bancaire des entreprises semble figée dans le passé. Pour contourner les limites des banques traditionnelles, les entreprises empilent les fintechs. Leur utilisation augmente les coûts et complexifie la gestion opérationnelle, car les fintechs s’ajoutent aux banques traditionnelles sans jamais les remplacer. Nos fondateurs ont créé Memo Bank pour lever ces verrous technologiques. Memo Bank n'est pas une banque de plus dans un paysage financier saturé. Nous ouvrons une nouvelle voie : la première banque de flux européenne de plein exercice et nativement API-first. Nous allions l'excellence d'une infrastructure technologique de pointe à l'accompagnement humain de chargés d'affaires attitrés, pour aider les dir"}],
+
   },
   {
     id: "penfold",
@@ -12056,6 +12580,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://getpenfold.com/",
+    files: [{"title": "About", "text": "Saving for the future should feel simple, not stressful. We’re building a pension that helps people understand their money, take action, and feel more confident about what comes next. For many, pensions feel confusing, distant, or hard to manage. That makes it difficult to know whether you’re saving enough, where your money is, or what to do next. Penfold helps everyone save more for their future by making pension saving easy, accessible and engaging. A better pension experience is not just about access. Penfold gives people simple ways to: We launched in 2019 to help self-employed people save for later life. Since then, we’ve grown into a workplace pension provider used by employers across the UK. We're backed by some of the most experienced fintech investors and entrepreneurs in Europe. Our investors include venture capital firms Plug & Play Ventures and Force Over Mass Capital, as well as early backers in some of technology's biggest names like Spotify, Dropbox, Adyen and Funding Circle. We’re proud to be supported by thousands of everyday savers who believe in our mission and have invested in us through our crow"}],
+
   },
   {
     id: "aiven",
@@ -12069,6 +12595,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://aiven.io/",
+    files: [{"title": "About", "text": "Book a demo Get building About Aiven We help customers create outcomes and accelerate building applications with Aiven's AI-ready open source data platform. Aiven empowers businesses of all sizes, from startups to Fortune 500 enterprises, across diverse sectors in more than 60 countries to accomplish their goals. E-commerce database handles 11.2 million requests an hour while delivering 99.99% uptime and latency below 1 millisecond thanks to Aiven. Dojo uses Aiven for Apache Kafka® as the backbone for moving data reliably between systems. It powers the ML and AI models behind customer support, fraud risk assessment and faster development. With Aiven, our Kafka clusters are much more reliable than they were before. That means our teams can focus on the core business and not care about maintenance. It's also very easy to start up a new cluster now. That makes it a lot more attractive and accessible to other teams. At Aiven, open source is at the core of everything we do – from our culture of open-mindedness, to our desire to contribute and keep giving back to the world. Aiven aims to build a world where open source technology is developed by everyone, for everyone – with the good of"}],
+
   },
   {
     id: "gitguardian",
@@ -12082,6 +12610,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.gitguardian.com/",
+    files: [{"title": "About", "text": "AI Agentic Security Code Security Reducing Secrets Sprawl Supply Chain Security NHI Security Identity Threat Detection By teams Developers SecOps Analysts Security Engineers CISOs --> IAM By Industry Automotive Finance Public Sector Telco Pricing Resources Learn Blog Resource Center State of Secrets Sprawl 2026 Timeline of Secrets Breaches Docs Remediation Guides Learning Center FAQ Evaluate Compare GitGuardian ROI calculator Secrets Management Maturity Assessment Free Tools GitHub Security Audit HasMySecretLeaked SaaS Sentinel Testimonials Customer Stories Real results from real security teams. When Eric and Jérémy founded GitGuardian in 2017, they were working full-time as data scientists and software engineers. GitGuardian—the secret detection platform—started as a side project they were passionate about, driven by the conviction they were creating real value for users. It began with collecting public GitHub commits in real time, and with that data (plus some manual review), they quickly realized the massive scale of secrets sprawl. Since day one, GitGuardian has been working to make hackers’ lives a bit tougher."}],
+
   },
   {
     id: "strapi",
@@ -12095,6 +12625,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://strapi.io/",
+    files: [{"title": "About", "text": "Product Solutions Developers Docs Pricing Cloud 73.5k Contact Sales Get Started Our Values Strapi is made of passionate, truthful and caring team members. People who can question themselves and change their minds, while being creative, learners at heart, laser-focused, and leading by example. We’re backed by leading B2B investors, including Index Ventures, Accel and Stride.VC. It’s fundamental to work with investors who share our vision, and passion for building the tools for unleashing content. Strapi gives developers the freedom to use their favorite tools and frameworks while allowing editors to easily manage their content and distribute it anywhere."}],
+
   },
   {
     id: "indyfr",
@@ -12134,6 +12666,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://cloudinary.com/",
+    files: [{"title": "About", "text": "Cloudinary was founded in 2012 by three longtime developers who knew there had to be a better, more efficient way to upload, manage, and deliver high-performant images and videos online. Encountering the same set of tedious visual media management challenges, they created the solution they needed, and one that changed how visual content could be managed and delivered in today’s omni-channel world. Our award-winning image, video, and digital asset management solutions are used by more than 4M developers and 14,000 brands across every industry. Reimagining and building the solutions needed to solve today’s visual media management challenges is what we do. Using artificial intelligence (AI), automation, and advanced patented image and video processing capabilities, we make it easier for brands to deliver fast and flawless visual experiences at scale. adidas Read More fiverr Read More lastminute Read More Mattel Read More Our Partners wordpress Read More shopify Read More akamai Read More contentful Read More google Read More aws Read More Product Innovation at Work Millions of people around the world experience the power of our visual media capabilities every minute of every day."}],
+
   },
   {
     id: "storyblok",
@@ -12147,6 +12681,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.storyblok.com/",
+    files: [{"title": "Company", "text": "Used by leading brands and companies from across the globe Founders Story The ‘story’ part of Storyblok Like all great ideas, Storyblok started as a spark of inspiration. Founders Dominik and Alexander were working for a digital experience agency when one day they started to scratch their heads and wonder: why the heck is content management so clunky and slow and annoying? 🐌 With their developer hats on, they started to work on a way to solve the day-to-day problems they were having. And then one day, out popped a prototype for a Headless CMS. And like all proud parents, they loved and nurtured and developed it from that day forward. Born in Austria, Storyblok is a CMS that was built for the world 🌎 . And as more and more customers and fellow Storyblokers have flocked to get in on the fun, it has grown and grown into the feature-rich, enterprise-ready content management system that devs and marketers love so much today. Our investors Our mission Ship great content Shipping great content should be fun. So we want to revolutionize content management for mid-market and enterprise businesses by creating a seamless experience that both dev and marketing teams lo"}],
+
   },
   {
     id: "livekit",
@@ -12160,6 +12696,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://livekit.com/",
+    files: [{"title": "About", "text": "Products Chevron Icon Resources Chevron Icon Company Chevron Icon Pricing GitHub livekit / agents 15.3 K agents 15.3 K livekit 22.3 K Contact sales Start building We're building the infrastructure for the voice-driven era of computing F orty years ago, Steve Jobs unveiled a computer that could speak to you. The idea of a computer that adapts to us is not new, but the technology that makes it possible is. We started LiveKit to bring that technology to every developer in the world. We began as an open source project for building livestreaming and video conferencing applications using WebRTC. Over time, we've evolved into a developer platform for building voice, video, and physical AI agents. What started with just a media server and some SDKs is now a full ecosystem of APIs and tools for multimodal computing. Over 300,000 developers and teams, ranging from leading AI and robotics labs to Fortune 500 companies, use LiveKit as the default infrastructure layer for building AI that can interact with the world in real time. Chevron Icon We're hiring We're hiring We're hiring Here's to the crazy ones Some of the best investors, founders, and builders in the world share our belief in how we"}],
+
   },
   {
     id: "directus",
@@ -12212,6 +12750,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://hygraph.com/",
+    files: [{"title": "About", "text": "We help companies turn scattered, noisy content into a connected, structured graph that every AI agent, website, and app can rely on. Noise is the default state of content: bloated, disconnected, and drifting from what the brand means to say. We see it everywhere, including in our own tools. We bring order to the chaos, modeling content with relationships and taxonomy, adding the context that gives it meaning, and delivering it to all the downstream systems that need it. That's what we mean by knowledge: trusted, reliable content that informs and enables customers, whether they consume it directly or through an AI agent. They'll ask their smart glasses, their car, or a personal AI agent acting on their behalf. We want it to come from knowledge the brand owns: accurate, on-voice, and current, in every language and on every surface. Peak Capital SquareOne One Peak Join us We're a remote-first team building the foundation for how companies structure and deliver content for people and AI agents. If you want to work on hard problems in building this era's digital experiences, with a team spread across conti"}, {"title": "Product", "text": "Products connected to campaigns, campaigns referencing shared content across brands and regions. This is content modeled as a system, defined once and inherited by every brand, not rebuilt. Structured, relational content is the foundation of what makes AI agents reliable, not a bigger model or cleverer prompt. The MCP Server exposes that knowledge graph to first- and third-party AI assistants, inside the governance boundaries you've already set. Pull commerce platforms, PIMs, documentation systems, and other APIs into one content graph, without migrating or duplicating them. One GraphQL query returns what's needed, delivered to any frontend or channel. Custom roles, approval workflows, environments, audit trails, and SSO give you enterprise-grade control without legacy DXP's cost or lock-in. The same rules hold whether one team is publishing or twenty, with no patchwork of one-off permissions per brand. Multiple brands, same foundation Launch a new brand or market on the same governed foundation, without starting from scratch. Structured content, reliable AI A graph of entities and relationships gives your AI systems the structured context they need to"}],
+
   },
   {
     id: "mux",
@@ -12238,6 +12778,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://tldv.io/",
+    files: [{"title": "About", "text": "These three tech enthusiasts had years of collaborative product experience behind them and knew exactly how to address this. Today, more than 3 million users rely on tl;dv every day: sales teams, customer success organizations, consulting firms, and any team where meeting knowledge is a critical asset. Every meeting captured automatically without anyone having to remember to press record. Custom templates run your playbook on every single call: MEDDIC, SPIN, SPICE, or whatever your team has built. Intelligence across hundreds of calls, not one at a time. Ask one question, get an answer drawn from every conversation your team has ever had. EU data stays in the EU, processed on EU servers."}],
+
   },
   {
     id: "viceversa",
@@ -12251,6 +12793,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://goviceversa.com/",
+    files: [{"title": "About", "text": "Resources Company Language Login Get Funded Back Growth Capital Working Capital Back Blog Predictive analytics Case studies Tools & Guides Events FAQ Back About us Careers Contact us Press & Awards Back en it Introducing Viceversa Learn the story of how we’re boosting businesses in a sustainable, ethical and transparent manner At a time when all companies are rushing to get higher valuations and faster funding, our growth platform aspires to boost growth at a pace that is convenient for digital businesses. Viceversa envisions a new way of growth based on transparency and technology to support companies in a sustainable and ethical way. We are on a journey to revamp the European investment landscape. After years of being a marketing expert and fintech entreprenuer, Matteo envisioned a company that uses data and technology to create better funding opportunities for the next generation of businesses. After the testing phase, Pedro, a former VC and investment banker, came onboard to build what Viceversa today stands for. Launched in November 2021, Viceversa is now an A-team of rockstars with backgrounds in finance, investments, data science, software engineering, marke"}],
+
   },
   {
     id: "zendesk",
@@ -12277,6 +12821,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.gorgias.com/",
+    files: [{"title": "Product", "text": "Set up phone numbers with ease If you already have a phone number, you can port it to Gorgias so there’s no disruption for your customers. Each one can be used for SMS, Voice, or both. Integrate with WhatsApp Offer support through traditional SMS, or expand your omnichannel approach by chatting with customers through WhatsApp. Easily switch channels Keep the conversation going in the text thread, or easily switch it to a phone call or email if there’s a better method for your team. The full conversation (regardless of channel) will be available if you need to come back to it. Connect with SMS marketing apps Want to go beyond SMS support? Our integrations with Klaviyo, Attentive, Postscript, and more can help you leverage SMS to grow your store while keeping the support process efficient for your agents. View revenue generated from SMS Our reporting dashboard will show you support stats and revenue stats specifically for SMS, so you’ll know the exact impact this channel has on your store."}],
+
   },
   {
     id: "dixa",
@@ -12290,6 +12836,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.dixa.com/",
+    files: [{"title": "About", "text": "Capabilities Team Hub Every conversation, one screen Workflow Automation Route, automate, and prioritize Performance & QA Insights, QA, and performance Channels Phone, email, chat, social – unified Mim AI Agent Resolves inquiries on every channel, now incl. calls Features Knowledge Base Intelligent Routing Automation Quality Assurance Phone Copilot Advanced Insights Mim on Voice FEATURED See Dixa in Action Book a call with our team and discover how brands like yours handle more with less. Pricing Integrations Resources EXPLORE Customer Stories Case studies from customers Events & Webinars Learn and connect Blog CX strategies & insights Referral Program Earn rewards company About Dixa Our mission and team Partners Join our ecosystem Careers Join our team Contact Us Get in touch PRODUCT SUPPORT Help Center Get the help you need API Documentation Developer resources Product Releases Latest updates System Status Platform status FEATURED What's your AI CX Score? Founded in Copenhagen in 2015, we saw that AI would power customer service before the tech was ready."}],
+
   },
   {
     id: "mmhmm",
@@ -12303,6 +12851,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.airtime.com/home",
+    files: [{"title": "About", "text": "The world went remote overnight, and millions of people discovered two things simultaneously: that they could work from anywhere, and that most video calls were a slow death of making eye contact with a thumbnail of themselves. We built mmhmm—yes, that's what we called it—with a single conviction in mind: that a video call should feel as natural as a conversation, not as formal as a deposition. It was playful, a little strange, and immediately recognizable to anyone who'd ever felt their personality evacuate the moment they clicked \"join meeting.\" People shared it. We've evolved considerably since then, a different name, a broader ambition, but the original instinct hasn't changed at all. The company that became Airtime was founded on the belief that making a video should be as effortless as sending a text. We were the first to make fixing it feel fun. Distributed teams, online education, the creator economy, enterprise sales—nearly every professional context now runs, at least in part, on video. Yet for most people, being on camera still carries a low-grade dread: clunky setups, flat delivery, rec"}],
+
   },
   {
     id: "lightyear",
@@ -12316,6 +12866,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://lightyear.com/",
+    files: [{"title": "About", "text": "Both had been personally investing in stocks for years and during one of their rants about how terrible the platforms on the market were, they found a combined total of of £9,278 paid in hidden fees. They sensed an immense opportunity to build a powerful, yet transparent and low-fee investing app for Europe. The pair thrashed out the details, and three coffees later Lightyear was born."}, {"title": "About", "text": "FINRA Data provides non-commercial use of data, specifically the ability to save data views and create and manage a Bond Watchlist. Registered representatives can fulfill Continuing Education requirements, view their industry CRD record and perform other compliance tasks. Arbitration and mediation case participants and FINRA neutrals can view case information and submit documents through this Dispute Resolution Portal. Font Awesome fontawesome.com --> About FINRA EXPLORE THIS SECTION FINRA Utility Menu Get To Know Us Our History Serving Investors and Members Contact Us How We Operate Entities We Regulate Financial Reports & Policies Operating & Holiday Schedules Locations Governance & Leadership Board of Governors Executive Officers FINRA Forward Modernizing Oversight Empowering Compliance Supporting Resilience Enhancing Enforcement A. 15 WATERVIEW DR, CENTERPORT, NY 11721 Mailing Address: P. S33 W35676 MEADOW TRAIL, DOUSMANS, WI 53118 Mailing Address: S33 W35676 MEADOW TRAIL, DOUSMAN, WI 53118 ABRAHAM SECURITIES CORPORATION 3724 47TH STREET CT, GIG HARBOR, WA 98335 Mailing Address: 3724 47TH STREET CT, G"}],
+
   },
   {
     id: "attio",
@@ -12329,6 +12881,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://attio.com/",
+    files: [{"title": "About", "text": "The always-on revenue engine, where custom agents and automations help accelerate every motion your team runs. Attio works 24/7, so you can cover more ground together than you could otherwise. The open platform that extends through MCP, SDK, and APIs, so it scales wherever and however your team and agents operate. Attio connects your entire stack and makes the experience intuitive and effortless. Attio began in London with the idea that CRMs should be shaped around how businesses actually work. Every team’s go-to-market motion is different, yet legacy CRMs make you adapt to the platform rather than the other way round. Our co-founders, Nick and Alex, saw that CRMs needed to evolve from applications that provide UX to humans, into hybrid platforms that also provide the technical infrastructure for AI. So they started from scratch, building the foundational data model for businesses to scale on. Today, AI and agents run at scales infeasible even by the largest human revenue organizations. Agents can do the work of a person at the scale of a machine, and this shift redefines how software is built. Real magic – the kind that makes the impossible feel inevitabl"}],
+
   },
   {
     id: "kustomer",
@@ -12342,6 +12896,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.kustomer.com/",
+    files: [{"title": "About", "text": "Meet Brad Birnbaum and Jeremy Suriel, two pioneers who've been shaking up the enterprise tech world for over 20 years. Their story starts in 1994 with eShare Technologies, where they revolutionized enterprise e-commerce by introducing large-scale chat for customer support for companies like 1800Flowers, AOL, Sprint, Dell and Microsoft. Fast forward to 2009, Brad and Jeremy launched Assistly, grabbing attention from heavy hitters like Twitter and Spotify. They were transforming the way customers did business so quickly that within 18 months Salesforce snapped them up, turning Assistly into Desk.com. The Leadership team is responsible for bringing our mission to life. Together, this team brings over 150+ years of experience in the Customer Experience space. We are passionate about our clients and the customers they care for."}],
+
   },
   {
     id: "affinity",
@@ -12355,6 +12911,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.affinity.co/",
+    files: [{"title": "Product", "text": "From sourcing, qualification, IC, deal monitoring, portfolio management, fundraising and LPs. Inside Affinity, or through Claude, ChatGPT, Copilot and your own tools. Deal teams take dozens of meetings a week, each requiring different context. An agent builds a brief before every external meeting, pulling relationship history, deal context, and past interactions across the firm. An agent reads each meeting note and proposes field updates, each grounded in what was discussed. Your team reviews and approves in a few clicks. Armira, a Munich investment holding, runs scheduled agents on Affinity that update pipeline records and push structured meeting notes, with human review of material changes, so meeting prep is now a review instead of hours of researc"}, {"title": "Product", "text": "Affinity captures your firm's activity and turns it into relationship and deal intelligence. Custom Automatic data capture Affinity logs every email, calendar event, and meeting automatically. Every interaction becomes part of your firm's relationship graph. Relationship strength, warm intro paths, and pipeline insights drawn from your firm's captured data. Private capital context your team can search, filter, and act on. Agents work every stage of the investment lifecycle, not a point solution for one meeting. Ascend starts with private capital context, so it already knows a teaser from a CIM, and your firm adds its own rules. Then it takes on a job at every stage, from finding the way in at sourcing and summarizing the CIM at qualification to flagging quiet portfolio companies and snapshotting your LP pipeline. The retyping, skimming, and chasing come off your plate, so your team keeps the judgment calls, and a person approves every update. Affinity understands fund cycles, deal stages, and LP relationships because the data underneath reflec"}, {"title": "Product", "text": "Affinity captures every email, meeting, and calendar interaction automatically, then turns it into the warmest path to your next deal. Every email, meeting, and calendar interaction captured automatically across your firm and enriched from 40+ sources, including Pitchbook, Preqin, and Grata. No manual entry means no one on the deal team polices CRM hygiene. Alpha Partners, a New York growth equity firm, saves about 100 hours a week of manual data entry with Affinity. Discover who at your firm already knows a target's management team or the banker who can open the door, uncover warm paths beyond any one partner's inbox, and see which LPs are already active in a company before you ask. Agents pull relationship history and deal context into a meeting brief automatically, Notetaker captures the conversation and your pipeline updates itself — all without anyone opening the CRM. Affinity connects your relationship data to the tools your team already uses, like Claude, ChatGPT, or Snowflake, through the best MCP in private capital, including direct data shares for the portfolio and LP reporting your fund accounting team already runs."}],
+
   },
   {
     id: "folk",
@@ -12407,6 +12965,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.copper.com/",
+    files: [{"title": "About", "text": "Most CRM software was built for big sales teams with a dedicated admin and a six-month setup. We built Copper for everyone else: the agencies, the consultants, the account managers whose whole job runs on relationships. We reimagined what CRM software could look like inside the tools you already use every day — starting with Google Workspace. Copper is fast, intuitive, and built to feel familiar from day one — because it lives right inside Gmail, Calendar, and Drive. There's no switching tabs, no learning a whole new system, and no lengthy team onboarding required. Every notification, every follow-up, every deal in your pipeline represents a real person on the other end. Copper CRM exists to help you show up for those people — and build a business that grows because of it. We’re a down-to-earth group of professionals with decades of experience, building value-oriented software for businesses, rooted in our mission to help the workforce thrive. We want our customers to grow their businesses and we believe that helping them cultivate t"}],
+
   },
   {
     id: "pipedrive",
@@ -12420,6 +12980,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.pipedrive.com/",
+    files: [{"title": "About", "text": "For over ten years, we’ve been committed to building the best CRM – a CRM by and for salespeople . The result is an easy-to-use, effective sales tool that centralizes your data, helping you visualize your entire sales process and win more deals. A CRM built by salespeople, for salespeople Our story began in an Estonian garage in 2010. Pipedrive’s co-founders were salespeople who needed more from a CRM tool than the software on the market could offer. So, they built an easy-to-use, visual sales platform to help users streamline their processes and get more done. Our team of 850+ people across eight countries works tirelessly toward one goal: empowering small businesses everywhere to succeed. Backed by global investment firm Vista Equity Partners and with the support of our thriving community, we continuously strive to push the boundaries of what an easy-to-use and effective sales CRM can do to help small businesses win more deals. With Pipedrive, you can track your sales pipeline, manage leads and automate your entire sales process from one central place – so you can focus on selling."}],
+
   },
   {
     id: "close",
@@ -12459,6 +13021,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://crisp.chat/en/",
+    files: [{"title": "About", "text": "At Crisp, we're not just a company; we're a revolution in customer support. Born in 2015 with an unyielding entrepreneurial and \"hacker\" spirit, our ambition is clear: to be the \"Apple\" of customer support software. Innovation isn't just what we do; it's who we are. Fully bootstrapped since inception, we thrive without venture capital influence, ensuring our vision remains undiluted and true to our roots. Long before remote work became a global norm, Crisp embraced it. We began as a 100% remote team, and even with our Nantes, France office established in 2018, we maintain a globally distributed team. Our remote-friendly culture isn't just a policy; it's a testament to our belief in the power of diversity and global perspectives. We operate in a flat organizational structure because we know that great ideas don't need ladders to climb. We detest slow-moving processes, but we're champions of well-defined, efficient workflows. Our love for technology and design isn't just a preference; it's a passion. We believe the alchemy of strong tech and stunning design crafts unparalleled cus"}],
+
   },
   {
     id: "gitbook",
@@ -12498,6 +13062,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.grammarly.com/",
+    files: [{"title": "Company", "text": "You just type, and corrections appear—in every app, on every device—without you having to ask. It’s like flipping a light switch, turning on the tap, or catching the metro. When technology works everywhere, it starts to feel ordinary. And that usually means something extraordinary is happening under the hood. That’s what we’ve worked to deliver with Grammarly: writing help that’s so ubiquitous and automatic that you can take it for granted. Any time you type, Grammarly makes sure the wrong words don’t get in your way. It required laying down rails in thousands of apps to help you in every text box, and tuning AI to instantly provide helpful suggestions as you type. We created our own mass transit system to deliver AI in every app quickly and reliably. But until now, Grammarly was the only agent on the tracks. Today, we’re adding a whole team of agents that help you write, research, anticipate feedback, automate tasks, schedule meetings, and much more. Just like Grammarly, these agents don’t sit idle in one of your tabs, waiting for you to ask fo"}],
+
   },
   {
     id: "slab",
@@ -12524,6 +13090,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.daily.co/",
+    files: [{"title": "Company", "text": "[ WHY DAILY ] Leading investors We're grateful to work with the tech industry's leading investors. Meet our investors Meet our investors Global developer community We work with developers worldwide, helping product teams innovate across use cases and markets."}],
+
   },
   {
     id: "streak",
@@ -12550,6 +13118,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.craft.do/",
+    files: [{"title": "About", "text": "We believe that how you feel about the tools you use is just as important as the work you can do with them. That’s why we’re bringing the joy back to thinking, writing, creating and collaborating. I’ve always been a visual-first individual and I believe it’s rooted in my early education. From the ages of 3 – 5, I lived in the US with my family, and attended a Montessori-style kindergarten for foreign-language pupils. We did a lot of creative exercises, drawing and crafts, and, while these skills have never been my strengths, I’ve always admired them. I started coding at the age of 12 and, from the start, I didn’t really focus on what the software did, but how it felt to use it. Even in the beginning I was creating animations and UX paradigms with the goal of making the software feel more professional and delightful to use. With the first money I made, I bought a Mac and it represented for me the ultimate sophistication of software and hardware. I felt good every day opening up that laptop and using the beautiful interface. I tried other platforms, but they never felt as good as the Mac. For most individuals, how software made you feel wasn’t important,"}],
+
   },
   {
     id: "readme",
@@ -12602,6 +13172,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://affine.pro/",
+    files: [{"title": "About", "text": "AFFiNE is also discoverable as knowledgebase software for teams that want one open workspace instead of separate docs, wiki, and whiteboard tools. AFFiNE (the workspace product) is unrelated to affine transformations (mathematics), affine combinations (linear algebra), or affine law concepts. The product name reflects \"fine, refined, related\" in design terms. AFFiNE began in Singapore in 2022 with a simple belief: knowledge base software should respect the people and teams who create the knowledge. and its affiliates, and the project has grown in public through source code, open issues, community discussions, and product releases. Vincent Chen, AFFiNE's CEO, leads the product mission with the broader cofounder team: give creators and teams a workspace that keeps documents, visual thinking, databases, and AI together without forcing every idea through a cloud-only, docs-only model. Open source matters in this category because a team's knowledge base becomes institutional memory. Users should be able to inspect the code, run the product locally, and understand where their data lives."}],
+
   },
   {
     id: "archbee",
@@ -12628,6 +13200,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://tana.inc/",
+    files: [{"title": "Company", "text": "Agents Solutions Pricing Download On a mission to reinvent how humans, teams and computers work together. We come from a wide range of global technology leaders and fast-paced startups."}],
+
   },
   {
     id: "mintlify",
@@ -12654,6 +13228,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://capacities.io/",
+    files: [{"title": "Product", "text": "Capacities brings together connected note-taking and structured data, without the complexity you'd expect. Easy to get started with, and powerful enough to grow with you for years. Each with its own structure, properties, and place in your knowledge network. Open any object and instantly see every other object that references it."}, {"title": "Team", "text": "Our team is spread across several countries in Europe and we meet and work together in person on various exciting company off-sites each year. A few times a year we leave our desks and meet somewhere in Europe. We cook, walk, talk through the hard questions, and remember why we build Capacities together. How we plan them We look for people who deepen what this team knows how to do, and who want to get better at their own craft along the way. A one-time tip helps fund the week we spend together in Europe — cooking, walking, and talking through the work that matters."}],
+
   },
   {
     id: "shortcut",
@@ -12667,6 +13243,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.shortcut.com/",
+    files: [{"title": "Product", "text": "It's simple to use and also had the functionality to help with prioritization and collaboration. Arnaud Pichery VP of Engineering, Dataiku Move work from to do to done Stay in sync with a Kanban view that keeps everything sorted by progress. Find exactly what you need with flexible filters that let you refine your view by team, project, person, tag or virtually anything. Shortcut is GDPR and SOC2 compliant, and HIPAA and BAA ready. Google SSO is included on every plan, with SSO and SCIM available. Data Subject Rights You have the right to access, correct, delete, or export your personal data. To learn more or submit a data subject request, please visit:"}, {"title": "Product", "text": "As we scale our teams, Shortcut gives us the ability to see the big picture and work more collaboratively across departments. Welsh Harris CTO, Ascendco Get everyone on the same page Curate your team's priorities on a clear, structured roadmap with at-a-glance progress updates to keep everyone aligned and in the know. Real-time health indicators show what's on track, off track, or at risk—without the need for a status meeting. Just a quick way to see where things stand. Shortcut is GDPR and SOC2 compliant, and HIPAA and BAA ready. Google SSO is included on every plan, with SSO and SCIM available. Data Subject Rights You have the right to access, correct, delete, or export your personal data. To learn more or submit a data subject request, please visit:"}],
+
   },
   {
     id: "huly",
@@ -12693,6 +13271,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.rillet.com/",
+    files: [{"title": "Product", "text": "Rillet serves as the single source of truth for both GAAP and investor reports, ensuring that all data remains consistent by design. Spend time on generating insights and being a business partner to your organization, and let Rillet take care of the rest. Bring in rich data from your existing technology stack into Rillet through our native integrations. Data is automatically ingested, served for approval where needed, processed and posted to the general ledger. Contracts, invoices and bills automatically generate journal entries and populate built-in supporting schedules. When month-end closing comes around automated revenue waterfall, deferred revenue, prepaid expenses, fixed asset schedules are time savers. Rillet allows for the seamless creation and updating of object types in bulk via file upload. We also have APIs that allow your engineering teams to bring in information. Companies with high data volumes rely on Rillet for the seamless collection and processing of extensive financial datasets. Designed for scalability, Rillet guarantees efficient operations and real-time reporting, enabling teams to stay agile and well-informed."}, {"title": "Product", "text": "With an automated dunning process and clear visibility of the status of each invoice, you can make sure you get paid on time. Rillet automatically generates an invoice schedule based on the contract details, which can be further customized to fit each customer’s needs. With automated reminders and online payment links on invoices, you make it easier for customers to pay you. Rillet natively integrates with Stripe and syncs all contracts, invoices, products and customers. Payments are automatically reconciled with the matching invoices and journal entries are booked to the general ledger without human intervention. Create your usage-based contracts and upload customer usage per period through the API or CSV. Rillet automatically generates the invoices, sends them to customers, and charges their payment method if one is registered for automatic payment. Not all customer invoices are attached to a contract. Standalone invoices can be created manually, loaded through a template file or pushed via Rillet’s public API. Regardless of where invoices come from or how they’re loaded, Rillet becomes your single source of truth for accounts recei"}, {"title": "Product", "text": "Bills get automatically reconciled against their bank transaction by Rillet’s AI, saving hours of manual processing every month. Record your contractors’ information and when January comes, just export the 1099 report with all the information needed to complete your filings. Track your sales taxes directly in Rillet with built-in reports by tax type and location, or connect Rillet directly with tax tools such as Avalara or Anrok. No need to track your prepaid expenses schedule in Excel any longer. Rillet uses the service period of each bill to automatically post journal entries to the relevant prepaid expense account. Chart of accounts and custom reporting categories are pushed to your AP tool for tagging at the source. Bills and credit card transactions sync into Rillet and post to the general ledger without additional human intervention. Hundreds of credit card payments to the same vendors? Enable Quick Entries and let Rillet automatically create journal entries for those bank transactions. Rillet AI analyzes past vendor bills and service periods to predict the accruals to post for the next month."}],
+
   },
   {
     id: "numeric",
@@ -12706,6 +13286,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.numeric.io/",
+    files: [{"title": "Product", "text": "Numeric goes beyond reconciliation and a close checklist with agentic flux, flexible reporting, and ongoing monitoring of data quality. Your close shifts from recurring actions to real analysis and partnership with the business. Assign owners, instruct your agents via MCP, tag items, map dependencies, attach workbooks, and keep a full audit log for every step. Numeric reads in your reconciliation sources and evaluates them against your GL. Set materiality thresholds, track and resolve differences, and auto-submit your recs without leaving the platform. With real-time, transaction-level data flowing in from NetSuite, spot imbalances as they happen and prevent small discrepancies from turning into downstream rework. Numeric creates flexible reports and auto-drafts your flux explanations, enriching them with context from your entire finance tech stack, external files, and prior periods. All of your analyses, such as complex OpEx shifts by location, stay organized in Numeric instead of being scattered across versions of spreadsheets and point solutions. Custom monitors leverage Numeric's live transaction-level data sync to flag issues early and prevent last-minute surprises."}, {"title": "Product", "text": "With access to every transaction from your ERP, Numeric’s data-driven approach to reconciliations gives you completeness in the balance sheet, guaranteed. Downloading trial balances is old news — Numeric pulls in every transaction from your ERP and refreshes that data as soon as it hits your GL. For transactions that hit already reconciled accounts, Numeric will point you directly to the GL transactions that result in accounts no longer reconciling. Connect your cloud storage system, data warehouse, and NetSuite SavedSearches to Numeric and quickly pull in reconciliation balances for each account. Need to make a quick edit in your workpaper? No need to toggle between tabs — users can update and edit these workpapers directly within the Numeric platform. The data tools make it easy to pivot and drill down—features I’ve found much simpler than working directly in NetSuite.\""}, {"title": "Product", "text": "Flux used to take days of swimming in Excel. Now, with AI, transaction-line detail, integrations across your finance tech stack, and file uploads, you’ll never have fluxed faster. In a single click, AI combs through all of your transactions as well as external sources to surface core drives of variance. Upload payroll details via CSV or a marketing budget breakdown via SavedSearch, drive into different pivots of transactions, and structure explanations as bullet points, an essay, or even poetry — all up to you. With Numeric’s report builder, tee up reports that exactly mirror your business metrics, like grouping OpEx or all revenue accounts. The Financial Data Platform brings data from your entire finance tech stack into Numeric, so agents generate flux explanations with full financial records, not just your journal entries. In my mind, flux has been the biggest improvement so far. It’s now used in reporting to our CFO, VP of Finance, and Controller monthly—something we couldn’t do effectively prior to Numeric. We can easily flag, for example, exactly what's changing in AWS then ask a more pointed question to our engineering leaders versus asking \"what's"}],
+
   },
   {
     id: "floqast",
@@ -12719,6 +13301,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.floqast.com/",
+    files: [{"title": "Company", "text": "For too long, accountants have been overworked, underpaid, and undervalued. Often times, their work is trivialized — or just misunderstood. With 75% of CPAs set to retire in the next decade, a talent shortage of 160k, and fewer students pursuing the profession, we believe it’s time for a change. That’s why we created the FloQast Accounting Transformation Platform. Built by accountants, for accountants, FloQast simplifies workflows, enhances productivity, and improves work-life balance to address the real pressures they face at work, their concerns about the industry and the talent gap it faces, and what they actually want to help them do their jobs more effectively. No one understands the challenges accountants face better than those who’ve experienced them firsthand. FloQast was founded in 2013 by Mike Whitmire, who, after years as an auditor and accountant, realized the profession’s need for better tools and support. This ethos, “By accountants, for accountants,” drives everything FloQast does. It’s not just a slogan; it’s a reality reflected in our team. Today, 80% of front-line FloQast employees are former accountants, contributing their unique insights to every feature, proces"}, {"title": "Company", "text": "As Chief Product Officer and Co-Founder, Chris oversees product strategy and execution across Product, Engineering and Design. Prior to joining FloQast, Chris was an Audit Manager at Rothstein Kass (acquired by KPMG), where he managed their largest client. He holds a Bachelor’s degree in Accounting from Syracuse University and is an inactive CPA. Adam is a CPA certified dual US/British citizen serving as SVP of Customer Success and Growth for FloQast. He heads a team responsible for all client activity in EMEA and APAC. Adam helped take FloQast to market 10 years ago as a part of the founding sales team. Prior to that, he worked in the audit practice at Deloitte & Touche in San Francisco after achieving a Bachelor's Degree in Business Entrepreneurship and a Master's Degree in Accounting, both at the University of Southern California. Ben leads FloQast’s global marketing department, overseeing all marketing functions, including brand and content development, demand generation, customer marketing, corporate communications, product marketing, and marketing operations. Ben’s 25+ years of experience spans across SMB, mid-market, enterprise, and consumer sectors."}],
+
   },
   {
     id: "avalara",
@@ -12745,6 +13329,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.getoutline.com/",
+    files: [{"title": "About", "text": "We also offer discounts for other non-profits – if your company is in either of these categories please reach out to support and we’ll be happy to arrange a discount. Part of increasing impact can be seen in our dedication to open source. The vast majority of our codebase is public, and many key components such as our editor and website are open source licensed. A permissively licensed codebase also means it’s possible to run a copy of the service on your infrastructure if you wish, and those using the hosted service can get peace of mind from knowing they can easily host in-house if they ever need to. The company was founded at the beginning of 2020, building on three years of development on the open source project. It is bootstrapped, profitable, and not reliant on outside capital to survive."}],
+
   },
   {
     id: "accountant",
@@ -12758,6 +13344,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.getbasis.ai/",
+    files: [{"title": "About", "text": "We will use the information you provide to respond to your inquiry and communicate with you about our services. Solutions CAS & Advisory Tax Audit Small Firms Corporate Accounting About Basis Careers Blog Get in touch → Agents you can actually rely on. Milton Friedman once held up a pencil and said, \"There is not a single person in the world who can make this.\" The pencil, like almost everything around us, arises from the intricate and often invisible coordination of countless people. This scale of coordination is only possible because of accounting. Accounting is the quiet engine that lets us measure, trust, and manage the complex web of economic activities. It is what enables companies to raise capital, governments to collect resources, and organizations to make decisions. If the market is intelligent, that is only because it learns from the data that accounting provides. Without accounting, the economy as we know it simply wouldn’t exist. The real economy is vast and messy: millions of transactions, obl"}],
+
   },
   {
     id: "taxjar",
@@ -12771,6 +13359,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.taxjar.com/",
+    files: [{"title": "Product", "text": "Manage your sales tax with a real-time, automated solution that saves time and reduces stress. From calculations to filings, we simplify US sales tax compliance so you can focus on growing your business. Our reporting dashboard compiles data from all your channels to give you the most up-to-date view of your transactions and tax liability. TaxJar offers easy-to-use integrations with platforms like Amazon, Shopify, and Woo, plus a flexible API for custom solutions. Our calculation engine isn't just fast (sub-20ms response times), it’s resilient. With 99.999% historical uptime, we beat the industry average, ensuring you stay compliant without interruption. Our Nexus Insights Dashboard monitors sales tax exposure and recommends next steps when approaching nexus in a new state. AutoFile automatically submits your returns and remittances to every state where you’re registered, so you never miss a due date. Our platform unifies e-commerce orders into a single dashboard, providing comprehensive multichannel transaction data and state-by-state reports with detailed city, county, and special district breakdowns. TaxJar offers award-winning customer service, including dedicated email and pho"}, {"title": "Product", "text": "Our API and tax engines ensure rooftop-accurate, real-time sales tax calculations based on location. Tax data is applied in real time, with 99.999% historical uptime — ensuring the right rate is applied for every transaction. We stay on top of tax law changes, keeping you compliant. TaxJar’s sales tax API boasts sub-20ms response times and 99.999% historical uptime, providing instant, accurate tax data during checkout. Our API and calculation engines scale seamlessly, maintaining speed and reliability regardless of transaction volume. We instantly apply the latest sales tax laws—state, county, city, and special district—to our platform. Stay compliant without tracking rate changes, product exemptions, or sales tax holidays. TaxJar uses rooftop-level calculations to ensure that your customer’s address corresponds to the right rate in their jurisdiction. Our AI-powered product classification tool evaluates your products and suggests the right tax code for each one. TaxJar offers easy-to-use integrations with platforms like Amazon, Shopify, and Woo, plus a flexible API for custom solutions . To us, knowing we have a solution that enables us to be compliant in 23 states and generate ac"}, {"title": "Product", "text": "Our platform compiles e-commerce orders into a single dashboard, featuring all transactions, state-by-state reports with detailed breakdowns, and taxability reporting for reduced and exempt items. Get an up-to-date view of your company’s sales tax information with TaxJar. Our platform compiles data from linked accounts and CSV imports into a single reporting dashboard, automatically generating state-specific reports with jurisdictional breakdowns, saving you hours of manual work. Access detailed reports that show gross sales and sales tax collected, with data pre-formatted to meet each state’s filing requirements. Easily export this data as a CSV file, streamlining collaboration with your finance team. Our reports automatically update daily, displaying collected and due amounts for each state where you have sales tax obligations, along with upcoming payment dates. View your remittance amounts across all channels, including marketplace facilitators. Our IT and accounting teams had the support they needed and the software plugged in nicely with our system. The implementation was seamless and straightforward, and we implemented the solution in a short period of time.\" TaxJar offers on"}],
+
   },
   {
     id: "sphere",
@@ -12784,6 +13374,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.getsphere.com/",
+    files: [{"title": "About", "text": "Trade built the modern world, yet borders still make it harder than it should be. Sphere exists to dissolve the last barrier between a company and global commerce: compliance. Every leap in global prosperity, from the first shipping routes to the internet, came from making it easier to do business across borders. One by one, the costs of trading globally have been solved: logistics, payments, communications, each abstracted away until distance stopped mattering. Compliance is the last barrier standing between a company and global commerce, and it has never been abstracted, because the world's tax rules were never machine-readable. With TRAM, our AI-native engine, we make global trade rules machine-readable for the first time, so any company can sell anywhere without the compliance drag. That is the compliance layer of global trade, and it is what we are building. arrow We are hiring Join Sphere See open roles It shouldn't be your job to understand 190 tax systems.* It shouldn't be your job to understand 190 tax systems.* * It's ours."}],
+
   },
   {
     id: "numeral",
@@ -12797,6 +13389,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.numeral.com/",
+    files: [{"title": "Product", "text": "Power global operations across 90+ countries with built-in support for marketplaces, merchants of record, and payment processors. Numeral has the industry leading AI-native tax engine that calculates accurate sales tax rates in all of our markets. Numeral makes sales tax compliance something we don't have to stress about. You’ll first want to book a demo with a member of our team. After that, you can generate test API keys from your dashboard to integrate and test the API functionalities. Users can choose from three available SDKs: Java, Python, and Ruby. We have documentation for direct integration with our public endpoint if you have a different technology stack. Shipping and handling charges should be treated as their own distinct products and line items. When it’s time to calculate taxes, you can pass the shipping costs as another line item to the tax/calculations endpoint."}, {"title": "Product", "text": "Monitor physical and economic nexus in real time across all US states and 90+ global jurisdictions. Just connect your billing and HR systems, and Numeral handles the rest, all from a single dashboard. Numeral connects directly to your billing platforms and HR software to continuously monitor sales tax exposure across every revenue stream and team location. Uncover historic liabilities, monitor current obligations, and forecast future exposure before it catches you off guard. Whether you're hiring remote employees, opening warehouses, or scaling revenue into new markets, Numeral keeps watch over your expanding tax footprint in the background. Get instant notifications as soon as you approach or cross a nexus threshold in any state, country, or applicable home-rule jurisdiction."}, {"title": "Product", "text": "Numeral aggregates your transaction data from all sales channels, calculates liabilities, and remits tax payments directly to state authorities. Numeral’s AI agents check your state tax portals daily to detect notices, respond to outreach, and take action on your behalf, such as updating your filing frequency automatically. We started working with Numeral and immediately felt so much more confident that our tax compliance would be covered and that we were indeed compliant state by state, which, as any business owner knows, is very difficult and stressful to manage."}],
+
   },
   {
     id: "vic",
@@ -12823,6 +13417,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://plane.so/",
+    files: [{"title": "Product", "text": "Plane brings intake, roadmap, PRDs, and AI into one workspace. Your team, and the agents that work with them, see the whole story, not slices. Plane is built for teams where trust boundaries matter. Certified, encrypted, and governed for organizations that take security seriously."}, {"title": "About", "text": "Software has started acting on work instead of just recording it. We’re building one connected system for projects, knowledge, and service, where humans and agents work from the same information. In engineering, product, design, and support, execution has gone from weeks to hours. The two ends of the loop are still human. Someone decides what is worth doing, and someone judges what the agents send back, at a volume no process was designed for. The loops need shared state, a named owner for every piece of work, and a way to put each review in front of the one person who can make the call. What an organization learns should outlast any one project. Decisions and their context should inform the work that follows. We built Plane to make project management simpler and more flexible. Our open-source community has helped shape it since 2023. Today it is one system for projects, knowledge, and service, and agents now work in it alongside people."}],
+
   },
   {
     id: "campfire",
@@ -12849,6 +13445,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.truewind.ai/",
+    files: [{"title": "Product", "text": "Learn about AI for accounting Join Truewind's live workshops and practical AI sessions. Join live workshops View upcoming events Product Industries Why Truewind Resources Customers Login Book a Demo Book a Demo Menu A Clean Close, Every Cycle Truewind consolidates your close into one workflow. Your team sees every reconciliation, every exception, and every sign-off in one platform. “ I would probably describe it as an extension of the accounting team. ” “ One of our clients, I was able to do everything through Truewind for the whole month, and I did it all at one time in about 30 to 45 minutes. ” “ We continue to focus on what we are expected to do, accounting, and the operations behind it has been largely handed over. ” “ On credit card transactions alone, I'd say Truewind has cut my categorization time by about 75%. And when you scale that across an entire firm, the impact is huge. That lets our accountants focus on the high-leverage stuff. It's exactly what we needed for Wiza's next stage. ” “ I did all the accounting and bookkeeping myself for 2+ years."}, {"title": "Product", "text": "Learn about AI for accounting Join Truewind's live workshops and practical AI sessions. Join live workshops View upcoming events Product Industries Why Truewind Resources Customers Login Book a Demo Book a Demo Menu Product Truewind automates repetitive bookkeeping work across ingestion, categorization, reconciliation, and review prep so finance teams can move faster without giving up control. Transactions_Export_Final_v4.csv 2.4 MB • 4,201 rows TransactionReport_Q3_UPDATED.xlsx Multiple sheets Sheet1 Copy of Sheet1 Sheet3 Reconciliation Error Bank Deposit $45,230.00 ≠ Ledger Total $43,870.00 The Problem Manual Review Truewind Reconciliation Clean & Synced Turn manual bookkeeping into review-ready automation Truewind helps your team move from raw financial data to documented, reviewable outputs without stitching the process together across spreadsheets and point tools. Ingest statements, reports, and source documents Upload bank statements, credit card activity, payout reports, PDFs, and spreadsheets. Truewind turns messy source data into structured bookkeeping workflows instead of forcing your team to normalize everything by hand. Truewind is designed for finance teams that need o"}],
+
   },
   {
     id: "botkeeper",
@@ -12862,6 +13460,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.botkeeper.com/",
+    files: [{"title": "About", "text": "These values are why we do what we do. We prioritize that little extra something as a standard for service across our entire client base. We set the bar high, cross the bar, and then we raise it again. We embrace change and challenge the status quo daily. We exercise humility and care in everything we do, bearing in mind that behind every task or metric is a person. We let transparency, integrity, and honesty take precedence over all else. And we don't stop there—every challenge, success and failure is a learning opportunity, and we're never done learning. We're proud to have been recognized as an innovative and powerful back-office solution. But we're even prouder to work with the incredible team members who make these accomplishments possible."}],
+
   },
   {
     id: "billcom",
@@ -12914,6 +13514,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.routable.com/",
+    files: [{"title": "Product", "text": "Routable’s mass payment solution allows businesses to efficiently distribute funds to payees, vendors, partners, and contractors globally in more than 220 countries from a single platform, for 30% less than competitors."}, {"title": "Product", "text": "Never manually code a bill or populate core data again. Capture invoices, create bills, and match vendors to bills in seconds. And, since we don’t bill per user, you can customize permissions to fit your whole team. Create custom approval flows depending on prebuilt conditions or sync existing conditions from your accounting software."}, {"title": "About", "text": "Predictive bill coding expands invoice automation to predict bill codes, saving time for AP and finance teams. Routable releases the fastest, most robust PO-matching on the market. Also, customers can now verify crucial vendor info while screening against a database of 6000+ global watchlists. With automatic collection of W-8/W-9s, a tax tools center for easy visibility into missing information, and support for 1042 and 1099 end-of-year filing downloads. Routable launches cross-border payments, enabling companies to onboard and pay their growing global network of vendors and contractors Omri Mor Co-founder, CEO Omri Mor is the Co-founder and CEO of Routable where he is responsible for the company’s vision and business strategy. He is hyper-focused on providing tangible value for Routable’s customers and approaches every business decision with a customer-first mindset. Omri is a serial entrepreneur with a track record of successful exits, including experience building fintech infrastructure for marketplaces, optimizing e-commerce shopping carts, and designing inventory management systems."}],
+
   },
   {
     id: "appzen",
@@ -12927,6 +13529,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.appzen.com/",
+    files: [{"title": "About", "text": "AppZen’s finance AI platform integrates with your existing systems, saving time and resources while reducing errors, fraud, and compliance risks. With over a decade of expertise and proven results, we give finance teams at the world’s largest companies the strategic edge they need to lead proactively and scale effortlessly. It predicts potential issues, identifies opportunities, and optimizes workflows for unmatched efficiency. Finance teams face constant pressure to do more with less. AppZen’s AI solutions tackle your toughest pain points with speed and precision. End duplicate payments, non-compliant expenses, and mistakes instantly with AI-driven accuracy, saving your business money. Enable smarter decisions and proactive risk management with instant visibility into spending patterns and compliance issues. Work alongside passionate, innovative professionals committed to solving complex challenges and driving real results for the world’s leading companies. Ready to take your career to the next level?"}],
+
   },
   {
     id: "docyt",
@@ -12940,6 +13544,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.docyt.com/",
+    files: [{"title": "Company", "text": "Docyt connects payments, accounting and business intelligence in one system so hotels, restaurants, retailers and franchises maximize profit. Its AI agents handle the daily accounting, payments and reporting, from night audit to month-end close, for accurate books and faster closes without adding headcount."}],
+
   },
   {
     id: "slate",
@@ -12953,6 +13559,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://slite.com/",
+    files: [{"title": "About", "text": "In 2025, we went multi product and built its cousin, Super, for the AI era. Super is teams' ultimate AI search on all their tools, and a way for them to accelerate all their workflows with agents able to tap on their collective knowledge. We care deeply about our work and trust our teammates to do the same. We care about our customers, about shipping only greatness, and about our impact on the community. The best way to build strong relationships in any workplace is to do meaningful work. Remote requires you to promote yourself and your work more than you may be used to. Don't be afraid to speak up, repeat yourself, and ask others to amplify your voice. We are not afraid to cross boundaries and to get things done when they need to be. If something is broken, we fix it rather than complain. “We build Slite for the long run, always looking at the impact we have on our team and the people who use Slite, as well as the broader world.” — Christophe Pasquier, Slite CEO. Our commitment is not just empty words - we measure our impact in tons of CO2 per work"}],
+
   },
   {
     id: "airbase",
@@ -12992,6 +13600,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.pave.com/",
+    files: [{"title": "Company", "text": "ISO27001 Certified Pave is ISO/IEC 27001:2022 certified, demonstrating our adherence to rigorous international standards for information security. This certification underscores our dedication to systematically managing sensitive information and ensuring data integrity. This attestation verifies we have effective controls in place for financial reporting, ensuring the accuracy and reliability of financial data processed through our platform. This attestation verifies our systems are designed to keep customer data secure, available, and confidential over time, reflecting the our commitment to ongoing operational excellence. Pave enables best-in-class security for every client using the our platform. We offer Single-Sign-On (SSO) authentication, role-based access controls, and in-product data protection protocols to ensure you can confidently share sensitive compensation information based on the privileges you set for leaders, people managers, and employees. Pave adheres to the California Consumer Privacy Act (CCPA) and the European Union’s General Data Protection Regulation (GDPR), ensuring data is processed lawfully, t"}, {"title": "Company", "text": "At Pave, we are creating a world where compensation professionals can take control of their company's investment in people, make pay decisions with confidence, and earn new levels of credibility with leaders and employees. When you partner with Pave, your compensation team will be fully equipped with the data and insights they need to demonstrate value to every business stakeholder. Pave connects your HCM, EMS, and ATS platforms to create a unified operating system for your work, allowing you and your team to take control of compensation data and programs like never before. When you infuse the power of real-time compensation data and predictive machine learning into your work, you and your team will be able to make every pay decision with new levels of confidence. Once you have full command of your compensation ecosystem and can make pay decisions fully aligned to real-time market conditions, you’ll earn new levels of credibility with leaders, people managers, employees, and candidates. Join our mailing list to get the latest insights from Pave By submitting this form, you consent to receiving commercial communications from Pave and our partners in accordance with our Privacy Polic"}, {"title": "Company", "text": "After watching coworkers struggle to value their total rewards, Matt founded Pave in 2019. in economics (at the Wharton School) from the University of Pennsylvania. Charlie Nelson COO Charlie leads Pave's partnerships, people, finance, IT, recruiting, and RevOps functions. in business communication and sociology from the University of Washington. Alex Cwirko-Godycki GM, Market Data & VP, Insights & Strategy Alex leads Pave's market data business and insights and strategy functions. Past stops include Equilar, Jump, and Aon (McLagan and Radford). Melanie Kennedy VP, Legal Melanie leads Pave's legal function. in psychology from University of Michigan and a J.D. Past stops include Snap Finance, MarketStar, Symantec, and Novell. The future of compensation management is here Book a demo Join our mailing list to get the latest insights from Pave By submitting this form, you consent to receiving commercial communications from Pave and our"}],
+
   },
   {
     id: "opencomp",
@@ -13031,6 +13641,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://figures.hr/",
+    files: [{"title": "About", "text": "After years of spreadsheet chaos and unreliable data, we built Figures to bring clarity, collaboration, and fairness to compensation management. With pay transparency laws reshaping the landscape, the pressure to justify salaries is growing. Figures gives HR and managers the tools to put people first—aligning pay with business goals while staying ahead of compliance. You don't have to be serious to do serious work. We value fun in our day to day and we try not to be boring in our communication. We don't want to hire \"executants\" - we're looking for people that will challenge existing processes, strategies, tools, and \"own\" their scope. In order to be efficient as a company and for everyone to have a maximum impact we want everyone to be autonomous and free to act as possible."}],
+
   },
   {
     id: "assemble",
@@ -13070,6 +13682,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.paystand.com/expenses",
+    files: [{"title": "Company", "text": "Paystand is revolutionizing B2B payments with a modern infrastructure built as a SaaS on the blockchain, enabling faster, cheaper, and more secure business transactions. Our mission is to reboot commercial finance by creating an open financial system. Payments as a Service Paystand anchors data integrity to the Bitcoin network, operates a large-scale mining initiative, and rewards businesses in BTC through spend management. This is what it looks like to build financial infrastructure around a conviction — not a trend. Every payment processed through our network generates a cryptographic record anchored to the Bitcoin blockchain — tamper-proof, permanently timestamped, and verifiable by any party without relying on our internal systems. Every transaction processed through Paystand generates a cryptographic record anchored to the Bitcoin network. Tamper-proof, auditable, and independently verifiable — without relying on our word alone. Paystand's Assurety system inscribes every payment with an untamperable certification record on the Bitcoin blockchain — giving finance teams a permanent, independently verifiable audit history. We operate a large-scale mining initiative — hundreds of"}, {"title": "About", "text": "Paystand is revolutionizing B2B payments with a modern infrastructure built as a SaaS on the blockchain, enabling faster, cheaper, and more secure business transactions. Our mission is to reboot commercial finance by creating an open financial system. Payments as a Service For the past century, business payments have struggled to keep up with digitization. Every other part of the enterprise has gone digital, yet commercial finance has been left behind in an analog world plagued by costly fees, inefficient systems, and paper-driven processes. It’s time for a more seamless, simple, and intuitive way to manage transactions. We created Paystand to eliminate fees, digitize the cash cycle, and create a self-driving money experience for businesses. You shouldn’t be penalized every time you make a sale. It’s time to replace transaction fees with one flat monthly rate. Removing gatekeepers will advance our industry and lead to lower costs, better security, and nearly instant transactions. Inspired by pioneers taking sales and marketing into the cloud to become faster and more efficient, it was easy to imagine a better financial system where making a transaction was as simple, fast, and intu"}],
+
   },
   {
     id: "appflowy",
@@ -13110,6 +13724,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.multiverse.io/",
+    files: [{"title": "About", "text": "Why Multiverse How it Works Our Impact Resources About Contact Sales Close Our Solutions AI Turn your AI vision into business value. Most employers now pay for AI three times over: for the tools, for a plan to adopt them, and for training that rarely connects the two. Multiverse is the AI Adoption Layer Built to Adapt 03:12 We turn AI investment into measurable outcomes - for organisations, and the people who power them. Over half of global CEOs say AI isn’t delivering. Workers say AI feels like something happening to them, not with them. The gap isn’t technology - it’s whether people have the capability to use it. Multiverse exists to close that gap, from both sides. We made our name proving apprenticeships could transform careers inside the world's biggest companies. Today, that engine underpins the AI Adoption Layer: the missing layer between human intelligence and tech progress. Multiverse is an AI-first ecosystem that identifies skills gaps and closes them inside the tools your teams already use."}, {"title": "About", "text": "Why Multiverse How it Works Our Impact Resources About Contact Sales Close Our Solutions AI Turn your AI vision into business value. Most employers now pay for AI three times over: for the tools, for a plan to adopt them, and for training that rarely connects the two. Discover 13 essential durable skills driving effective AI adoption in the workplace. Based on original research, learn how soft and cognitive skills like adaptability, ethical awareness, and analytical reasoning are key to optimising AI use. Learn how Multiverse is helping individuals to maximise their learning capabilities and career success by measuring Learning Agility. In this post, we explore the transformation of learning theories over time. Discover how we have crafted and implemented our unique educational framework to meet the complex nature of human learning. In this post, we provide an insight into our MAGE learning model, a crucial tool designed to enhance and maximise learning experiences for all. In this post, we delve into how thinking about thinking can revolutionise learning experiences."}],
+
   },
   {
     id: "cabify",
@@ -13136,6 +13752,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.polyai.com/",
+    files: [{"title": "About", "text": "Meet your new dialog partner Design, build, test, and continuously optimize every agentic dialog experience Start building Learn 40% sustained growth How SafeRide Health scaled to a million calls a month with PolyAI See customer story Solutions Modalities Meet your new dialog partner Design, build, test, and continuously optimize every agentic dialog experience Start building Customers Resources Learn PolyAI helps enterprises become the best version of themselves in every customer interaction. We work with them to build, run, govern, and improve dialog agents that handle their most complex customer conversations. Our founders, Cambridge machine learning researchers, believed voice AI could handle real complex dialog, not just simple requests. Today, we power billions of customer conversations for the world's leading brands. Our Agentic Dialog Platform combines purpose-built AI with enterprise-grade controls, letting companies deploy agents that sound and act like their human representatives."}, {"title": "About", "text": "Meet your new dialog partner Design, build, test, and continuously optimize every agentic dialog experience Start building Learn 40% sustained growth How SafeRide Health scaled to a million calls a month with PolyAI See customer story Solutions Modalities Meet your new dialog partner Design, build, test, and continuously optimize every agentic dialog experience Start building Customers Resources Learn Sign up, describe your use case in plain language, and have an enterprise-ready voice agent built in under 10 minutes. Build, test, iterate, and deploy dialog agents all from a central enterprise ready platform. Say hello to dialog agents Proprietary models, proven at enterprise scale Simple to complex conversations Adaptive agents For every type of builder Safety and control built into every agent Proprietary models, proven at enterprise scale Our dialog agents are powered by our proprietary tech stack, tailored for engaging customer conversations. Dialog agents proven on the hardest conversations in the world, including fraud, outage, triage, multilingual disputes, and more. PolyAI Agent Builder empowers you to describe what you need in natural language and get a working dialog agen"}],
+
   },
   {
     id: "marshmallow",
@@ -13149,6 +13767,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.marshmallow.com/",
+    files: [{"title": "About", "text": "Car insurance Home insurance Car finance About us Help & Guides Get a quote Make a claim Car insurance Home insurance Car finance About us Help & Guides Claims Get a quote Products Our story From our humble beginnings to one of the UK's fastest growing scale-ups. People who moved to the UK were being charged more for car insurance, just because their driving experience was from abroad. With no UK credit history, the same was true for credit cards, loans, bank accounts and more. Now, nearly 10 years later, we've hepled over a million drivers save on their insurance. From Liverpool to Lagos, and Birmingham to Bangalore, we’re always learning about their needs and what we can do to improve their experience with us. Marshmallow is founded by twins Alexander and Oliver Kent-Braham and David Goate. Working out of a gym lobby to save costs, they start trying to reduce the cost of car insurance for people that move to the UK. Marshmallow becomes a licensed insurance carrier so we can underwrite our own policies, and we achieve unicorn status after a valuation of $1 billion"}],
+
   },
   {
     id: "backmarket",
@@ -13175,6 +13795,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://forto.com/en/",
+    files: [{"title": "About", "text": "EN PL - Polski IT - Italiano DE - Deutsch EN - English Login Contact us Get Started Search Search the Forto website Search Common Searches Enpal Dance Octo Actuators Lupriflex EN PL - Polski IT - Italiano DE - Deutsch EN - English Login Contact us Get Started Company Building the backbone of global trade with a strong purpose, a clear commitment to sustainability, and an international team of logistics and technology experts Our history Forto was founded as FreightHub in 2016. Since then, the company has expanded its physical presence across Europe and Asia to provide worldwide service to leading brands across industries ranging from fashion and furniture to electronics, who trust Forto to manage the transport of their goods."}],
+
   },
   {
     id: "trainline",
@@ -13253,6 +13875,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.mirakl.com/",
+    files: [{"title": "Company", "text": "B2C & B2B Brands & Sellers Insights Partners Company Contact us Mirakl Nexus The Agentic Commerce Brain Agentic commerce is the most significant transformation in digital buying since the rise of eCommerce itself, and Mirakl is building the critical infrastructure to power it. Just as we pioneered the platform economy over a decade ago, Mirakl Nexus positions us as the intelligence layer connecting traditional commerce to the agentic future. Mirakl Agentic Activation gives retailers, brands, and wholesalers the AI infrastructure to enrich and optimize product catalogs for LLM discovery and one integration to sell directly on LLMs. Purpose-built to help you win in the agentic commerce era. Commerce has undergone waves of transformation — from online and mobile innovation to platform-based models. Now begins Commerce 3.0: a new paradigm where AI agents are reshaping every interaction (opens in a new tab) on behalf of users. Mirakl Nexus connects merchants to agentic platforms and powers mission-critical workflows with AI with the speed, precision and trust today's shoppers expect. In the agentic era, being surfaced by an AI agent is just the beginning."}],
+
   },
   {
     id: "flyio",
@@ -13279,6 +13903,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://railway.com/",
+    files: [{"title": "About", "text": "Product Developers Enterprise Company Pricing About Railway We're a team of engineers building frontier cloud infrastructure. That ambitious products are made through relentless iteration, and that people and their agents need a cloud built for it. We're a remote team working at the forefront of compute, distributed systems, languages, compilers, and interface design."}],
+
   },
   {
     id: "sennder",
@@ -13292,6 +13918,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.sennder.com/",
+    files: [{"title": "About", "text": "With our set of core values we create accountability for us and our team: to bring out the best in our people and ourselves, to raise the quality of work in our organization and to enable our employees to lead by example. Our carriers' and shippers' needs are the center of our business. We listen, we think ahead and we act fast. We care about every email, every phone call and every single truck. We strive to offer the best possible experience to form long lasting and empowering partnerships. We always seek data that reinforces our work assumptions while accepting information that is contrary to our views. We rely on data, statistics and structured analysis to make informed decisions and develop strategies that are made to scale. We believe that everyone needs room to grow and with growth come mistakes. While making mistakes we persevere, we openly share, we learn, we reevaluate, stay positive and push forward. We make sennder better every day and push beyon"}],
+
   },
   {
     id: "datadog",
@@ -13305,6 +13933,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.datadoghq.com/",
+    files: [{"title": "About", "text": "Prior to founding Datadog, Olivier Pomel built data systems for K-12 teachers as a VP, Technology for Wireless Generation, where he grew the development team from a handful of people to close to 100 of the best engineers in New York until the company’s acquisition by News Corp. Before Wireless Generation, Olivier held software engineering positions at IBM Research and several internet startups. Olivier is an original author of the VLC media player and holds a MS, CS from the Ecole Centrale Paris. Prior to founding Datadog, Alexis Lê-Quôc served as the Director of Operations for Wireless Generation, where he built the team and infrastructure that served more than four million students in 49 states. As a member of the original “devops” movement, Alexis spent several years as a software engineer at IBM Research, Neomeo, and Orange, and he brings a strong focus on technical elegance and operational efficiency to Datadog. Alexis holds an MS, CS from the Ecole Centrale Paris and has presented sessions on cloud monitoring and server performance at many conferences, including AWS re:Invent, Monitorama, DevOpsDays, Velocity, and PyCon. David Obstler brings more than three decades of operati"}, {"title": "Product", "text": "Contact Partners Newsroom Events & Webinars Leadership Careers Analyst Reports Investor Relations ESG Report Trust Hub Blog The Monitor Engineering AI Security Labs Docs Login Get Started See it all in one place Your servers, your clouds, your metrics, your apps, your team. START YOUR FREE TRIAL NOW Request A Demo Integrations APM Logs Synthetics RUM Network Dashboards Collaboration Alerts API Security See across systems, apps, and services With turn-key integrations, Datadog seamlessly aggregates metrics and events across the full devops stack. Analyze and explore log data in context Quickly search, filter, and analyze your logs for troubleshooting and open-ended exploration of your data."}],
+
   },
   {
     id: "netlify",
@@ -13318,6 +13948,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.netlify.com/",
+    files: [{"title": "About", "text": "Since 2014, Netlify has helped builders create and deploy web applications, and today people and agents start over 1 million new projects on Netlify every week. We coined the Jamstack, brought serverless to millions of developers, and gave every pull request a live URL so ideas could ship faster. Today, we’re the AI app platform where people and agents work together to build the next generation of software. Using a straightforward prompt, code, or files an agent created, you can go from prototype to production on one platform. Whether you’re technical or not, Netlify empowers you to create, share, and run apps on secure infrastructure."}],
+
   },
   {
     id: "workos",
@@ -13344,6 +13976,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.prisma.io/",
+    files: [{"title": "Company", "text": "Our mission is to make working with databases easy, with a great developer experience at the core of every product we build. Prisma evolved from an open-source project to the most downloaded ORM in the Node.js ecosystem, powered by our commitment to improving DX and a strong community. Throughout the development lifecycle We equip developers with the right tools at every stage, whether they are building, fortifying, or growing their applications. Great developer experience We build products that make working with databases easier, turning complex data problems into approachable workflows for teams of any size. Prisma on LinkedIn Press kit What we care about Open source To support the OSS community and help fund the ecosystem around Prisma, we started our Free and Open Source Software (FOSS) Fund in April 2022. Each month Prisma donates $500 to a selected open-source project, nominated by the team, reviewed across the company, and announced on social media. Prisma supports initiatives that raise awareness about and combat the effects of climate change: we match employee donations to climate charities, offset the carbon footprint of company travel, and commit 1% of earned revenue to"}],
+
   },
   {
     id: "huggingface",
@@ -13396,6 +14030,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.anthropic.com/",
+    files: [{"title": "Company", "text": "Skip to main content News Research Policy Commitments Company Try Claude AI research and products that put safety at the frontier AI will have a vast impact on the world. Anthropic is a public benefit corporation dedicated to securing its benefits and mitigating its risks. We aim to build frontier AI systems that are reliable, interpretable, and steerable. We conduct research, develop safety techniques, and deploy the resulting systems through our partnerships and products. We apply our research to our products, feed what we learn back into our research, and regularly share our findings. Our researchers, engineers, policy experts, business leaders, and operators who bring our experience from many domains to our work. We view ourselves as one part of a broader effort to develop and deploy AI safely. We collaborate with civil society, government, academia, nonprofits and industry to promote safety across the field. We conduct frontier AI research and explore novel and emerging areas, from interpretability and alignment research to AI’s economic and societal impacts. We think about the impacts of our work and strive to communicate what we’re"}],
+
   },
   {
     id: "render",
@@ -13409,6 +14045,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://render.com/",
+    files: [{"title": "About", "text": "Render is headquartered in San Francisco, California, with remote team members distributed across the globe. We’re always on the lookout to add kind, thoughtful, and exceptionally talented individuals to our team. Drop us a line if you're motivated by the intersection of individual developer experience and global scale."}],
+
   },
   {
     id: "calendly",
@@ -13422,6 +14060,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://calendly.com/",
+    files: [{"title": "About", "text": "Leadership Our leaders Tope Awotona founded Calendly in 2013 through sheer grit, perseverance, and the complete and utter emptying of his personal savings accounts. With everything on the line, he turned his vision of simple scheduling for everyone into a vibrant, growing platform that manages meetings for more than 50 million individuals and businesses."}],
+
   },
   {
     id: "descope",
@@ -13435,6 +14075,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.descope.com/",
+    files: [{"title": "Product", "text": "Sign up Arrow Right Book a demo Arrow Right Product No / low code CIAM platform Simplify user onboarding and increase conversions by going passwordless. Schedule demo Descope helps every developer build secure frictionless authentication and user journeys for any application Frictionless authentication Go live with any authentication method - passwordless and passwords - in minutes. Magic Links Passkeys Passkeys One Time Password One-Time Passwords SSO SAML SSO Authorization OpenID Connect MFA MFA Biometrics Biometrics / WebAuthn Login Social Logins Authorization Eye Authenticator Apps Password Passwords Secure authentication Implement risk-based MFA based on device fingerprinting and external risk scores. Device fingerprinting CheckTick Bot detection CheckTick Step-up authentication CheckTick MFA flows CheckTick Secure session management CheckTick Third-party fraud connectors User journeys Manage users, tenants, and SCIM provisioning without the hassle. User & tenant management CheckTick Customizable admin widgets CheckTick Granular access control CheckTick SCIM CheckTick Management SDK CheckTick Custom JWT attributes For every app developer No code?"}, {"title": "About", "text": "Sign up Arrow Right Book a demo Arrow Right We want to make customer identity an enabler for every business We want to make customer identity an enabler for every business Helping applications move past passwords is the first step. See job openings Our long and winding road together Descope’s founders have over 30 years of enterprise security experience, most of it working together. We have created companies valued at over $1B and grown product line revenues at Palo Alto Networks and McAfee by 100s of millions. Building and scaling Demisto into a SOAR leader was fun. So was joining Palo Alto Networks and taking Cortex XSOAR from scratch to hypergrowth. Building customer authentication in-house at each of our previous companies. It always started as a sprint and ended in an unwanted marathon. Descope is a letter of recognition and apology to our past selves. And while our past selves can’t use Descope, we think every other developer on the planet should. Build in public We don’t like black boxes and ivory towers. Both internally as a team and with our users, we are transparent with what we do well and where we can do better."}],
+
   },
   {
     id: "okta",
@@ -13474,6 +14116,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.gemini.com/",
+    files: [{"title": "About", "text": "Gemini envisions a future where crypto will redesign the global financial system, the internet, and money in a way that provides greater choice, independence, and opportunity for all. As a trusted bridge between the traditional financial system and the emerging cryptoeconomy, we are providing access for individuals and institutions to a decentralized future that is more open, fair, and secure. © Copyright 2026 Gemini Space Station, LLC or its affiliates. This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply."}],
+
   },
   {
     id: "discord",
@@ -13487,6 +14131,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://discord.com/",
+    files: [{"title": "Company", "text": "Discord was built to solve one problem: how to talk with friends while gaming together. But much like the protagonists of our favorite game stories, all journeys have their humble beginnings… Jason Citron establishes a new studio, Phoenix Guild, to help bring people together around games. Jason soon starts work on the studio’s first project, Fates Forever, a MOBA built specifically for mobile. Phoenix Guild, now named Hammer & Chisel, launches Fates Forever to critical acclaim. Some of the game’s features, such as built-in voice chat, text chat and forums, help lay the groundwork for what’s next… Jason & Stan loved playing games but couldn’t find a reliable way to talk while playing online. Utilizing what they learned from building Fates Forever, the two release the first version of a new project: a gaming-focused chat app for desktop and mobile called \"Discord.\" Discord launches an in-game overlay for PC, letting players interact with their friends without leaving their game, and adds a friends list to let people talk outside of servers. Discord’s official API launches for the first time, eventually powering hundreds of thousands of apps."}],
+
   },
   {
     id: "kraken",
@@ -13513,6 +14159,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://1password.com/",
+    files: [{"title": "Product", "text": "1Password helps us maintain our security culture as we scale and grow. It’s important to have one tool across the business that we can rely on for everyone to safely store and share credentials. Since we don’t have a network administrator or a real IT person, 1Password allows me to focus on the other aspects of our business without having to worry about our security. 1Password gives your team’s data the protection it deserves. Our two-key derivation model, which combines your account password and Secret Key, strengthens the security around your vaults. You can also rely on Watchtower to flag potential security issues and help you take action when needed. 1Password’s unique two-key derivation uses an account password and Secret Key, so even if someone breached our service, they couldn’t decrypt anyone’s data. Our security approach starts with AES 256-bit end-to-end encryption and we use multiple techniques to make sure your information is inaccessible to everyone else – including us. We rely on third-party security experts to test our data encryption, and offer the largest bug bounty program among all password manager providers."}, {"title": "Product", "text": "Bring passwords, SSH keys, and API tokens into one place. Give teams a consistent way to store and share credentials, while security teams can see who has access and control how it’s assigned. Developers and builders choose which tasks to delegate to AI agents. Your security team chooses which 1Password vaults each agent's service account can read. Secrets that never reach Git can still be read by AI agents with file access. Developer Watchtower helps teams discover those plaintext credentials on developer devices and secure them in 1Password. Every credential your company runs on, human, machine, or AI agent, is protected by an architecture only your team can unlock, never us. Unlocking your vault takes your account password and a 128-bit Secret Key stored only on your devices. Neither ever reaches our servers, so there's nothing on our side for an attacker, or us, to turn into your data. We hold your encrypted data, never the keys to it. With end-to-end AES-256 encryption, your credentials are readable only on your devices and unreadable everywhere else, including to us."}, {"title": "Product", "text": "They prove who they are and get only the credentials they are approved to receive at runtime. Credential Broker checks the workload's identity against your policy, then delivers the exact credentials that specific job is approved for. If compromised, access is limited to what 1Password authorized for that job. Blast radius is limited and does not compromise the entire vault. Every credential delivery is logged with full attribution: the workload that requested access, and the policy that authorized it. Any workflow running on GitHub Actions can prove its identity to 1Password and receive the exact credentials it's approved for, with no service account token required and full attribution on every delivery. Any system that issues an OIDC token can authenticate directly to 1Password and retrieve only the credentials it's approved for. No service account tokens or secrets sit stored your environment, and every delivery carries full attribution. 1Password Credential Broker authenticates machine workloads and AI agents at runtime, then delivers exactly the credentials they're approved for. Workloads prove who they are and get what policy allow"}],
+
   },
   {
     id: "crowdstrike",
@@ -13565,6 +14213,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://slack.com/",
+    files: [{"title": "About", "text": "Close Navigation Make work life simpler, more pleasant and more productive. Slack is the AI-powered platform for work bringing all of your conversations, apps, and customers together in one place. Around the world, Slack is helping businesses of all sizes grow and send productivity through the roof. Connect your conversations with the tools and services that you use to get the job done. With over 2,500+ apps and a robust API, the Slack platform team works with partners and developers globally to build apps and integrations that streamline your work, automate mundane tasks and bring context into your conversations in Slack. The Slack Fund is a venture capital fund that invests in and collaborates with entrepreneurs creating the next great software companies. We live by our mission, and improving people’s working life starts with our own company. We’re building a platform and products we believe in — as well as a strong, diverse team of curious, creative people who want to do the best work of their lives and support each other in the process. Slack for Good is aiming to increase the number of historically underrepresented individuals in the t"}],
+
   },
   {
     id: "cloudflare",
@@ -13578,6 +14228,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.cloudflare.com/",
+    files: [{"title": "About", "text": "Products Solutions Resources Pricing Login Dashboard Contact sales Start building Dashboard Login Help us build a better Internet We have our eyes set on an ambitious goal — to help build a better Internet. We believe that with our talented team, smart technology, and engaged users we can solve some of the biggest problems on the Internet. Every day, thousands of new customers sign up for Cloudflare — from independent developers to the world's largest enterprises. We serve data from 335 cities in over 125 countries — putting our network within milliseconds of nearly everyone on Earth. One connectivity cloud Sixty-plus services across SASE, application security, performance, and full-stack development — all on the same global network. Connect and secure your employees, contractors, devices, networks, apps, and data everywhere they live. Deliver Internet-native Zero Trust security and simplify your journey to a unified SSE or SASE. Give your digital products top-notch security, reliability, and performance for customers everywhere. Reduce risk with built-in threat intelligence drawn from proxying ~20% of the web."}],
+
   },
   {
     id: "palantir",
@@ -13643,6 +14295,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.elastic.co/",
+    files: [{"title": "About", "text": "AI is only as good as the context you give it. Elastic finds that context, wherever it lives, in real time. We bring the model to your data, so your enterprise AI acts on business reality, not hallucinations. Solve for Search, Observability, and Security — all built on the open Elastic platform. It's the foundation of our outstanding company culture — and the solutions our customers love. By embracing open source, we align with ethical considerations and community values, fostering an environment of openness, sharing, and technical excellence. Working across several locations, we live by a set of ideas — rather than a statement of corporate values — to keep us honest as we go about our business. We maintain an unwavering commitment to protecting your valuable data through a robust information security program, ensuring the security and reliability trusted by thousands of customers. Hear from our executive team on how we use our own technology to accelerate innovation and boost efficiency. Our award-winning GenAI Support Assistant delivers self-service access to answers, resulting in a"}],
+
   },
   {
     id: "shopify",
@@ -13682,6 +14336,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.dropbox.com/",
+    files: [{"title": "Company", "text": "Share 'close share' @ i18n} Twitter Facebook LinkedIn Copy Link Open/close menu News Work Culture Customer Stories Podcast Tech Blog open search close search --> --> --> Company Today, Dropbox completed its acquisition of Tigris Data , a globally distributed, S3-compatible object storage platform purpose-built for AI. We’re excited to welcome the Tigris team as we expand into AI infrastructure for companies and developers through DBX Agent Cloud . Together, we aim to help companies support growing AI workloads while retaining flexibility in where they build and run applications. That means giving training data, model artifacts, vector embeddings, and multimodal data a consistent home as customers’ models and compute needs evolve. Dropbox Team Previous Share stuff from Dropbox in your Facebook Groups! Next From storage to action: put AI to work in Dropbox Share 'close share' @ i18n} Twitter Facebook LinkedIn Copy Link Related Articles --> --> --> In the future, we may send you information about Dropbox products and services. In the future we may email about Dropbox products and services. Please note: Sometimes we blog about upcoming products or features before they're released, but"}],
+
   },
   {
     id: "customerio",
@@ -13695,6 +14351,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://customer.io/",
+    files: [{"title": "About", "text": "We’re creating a world where you have one unified view of your audience and a single place where unlimited, real-time data powers more effective engagement. With Customer.io, you can reach your customers across every channel—email, mobile, push, in-app, SMS, and whatever comes next."}],
+
   },
   {
     id: "klaviyo",
@@ -13747,6 +14405,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.braze.com/",
+    files: [{"title": "Product", "text": "Gain and act on rich insights within every unique customer journey. Use real-time orchestration and AI-powered tools to identify opportunities, then deliver tailored experiences across all your digital touchpoints—all from one, intuitive platform. Deeply understand your customers and learn about their evolving preferences and behaviors, all in real time. Unify, activate, and distribute data from multiple sources with a comprehensive, composable set of data capabilities and partner integrations. Unify first-party data from many sources through direct integrations with your data warehouse, digital properties, backend systems, and more—all in real time. Get a full picture of your customers' ever-changing behaviors and preferences with an always-on stream of data that updates, segments, and personalizes messages in real-time. Securely stream data into and out of your other analytics and data visualization tools. Gain deep customer insights and make better-informed decisions with internal AI models that update as you go. Meet customers where they are by creating memorable journeys on Braze Canvas, then turn up the dial on creativity and experimentation at scale with BrazeAI™."}, {"title": "Product", "text": "Put the right offers, incentives, and campaigns in front of the right people so you can maximize profit, revenue, efficiency, and LTV. By continuously ingesting and processing real-time context, the platform makes data instantly accessible to built-in AI tools. Embedded across every layer of the architecture, BrazeAI™ leverages and mixes leading models to power custom engagement scenarios. Supported by years of AI decisioning experience, specialized teams actively build, configure, and roll out targeted agents across the system."}, {"title": "Product", "text": "Unify, activate, and distribute your proprietary data with a composable data platform that helps close the gap between context and interaction to deliver meaningful experiences at scale. Built for your stack and your customers Unify your data with speed and flexibility Open a bi-directional flow of data via direct integrations between Braze and your data warehouse, cloud storage, CDP, digital properties, backend systems, and other software investments Create, merge, maintain user profiles and build dynamic audiences with easy to use, flexible segmentation tools that make it possible to delight every user at every interaction Send product, engagement, and user data to any destination or system in real time, as a critical input to business strategy Easily sync and manage customer and brand data from your source of truth—including Amazon Redshift, Databricks, Google BigQuery, Snowflake, Microsoft Azure, and AWS S3. Keep all of your systems and teams aligned by seamlessly syncing data to and from your data warehouse, cloud storage, and customer data platform. Continuously stream customer engagement and behavior data from Braze to your business intelligence and data visualization tools"}],
+
   },
   {
     id: "iterable",
@@ -13773,6 +14433,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.mongodb.com/",
+    files: [{"title": "Company", "text": "Well, according to IDC, it’ll reach $153 billion by 2027. And MongoDB is at the forefront of that innovation with thousands of customers across the globe. We empower builders and businesses to construct and deploy the applications they want, wherever they want. We believe in taking bold risks, in building new things, and in bringing unique perspectives to all that we do. See how you can transform your career alongside peers who are building, selling, and supporting the world’s leading modern, multi-cloud data platform. Our in-office employees have a dedicated desk in a MongoDB office and typically work there three-to-five days per week. Employees may choose to be “in-office” or have a role that requires them to work regularly from a MongoDB office. Our flexible employees typically work from a MongoDB office one-to-two days per week at a shared desk in their given office location. Employees who are customer-facing remote work remotely, but may be required to meet with current or potential customers in person. Our approach to hybrid work How do we define flexibility at MongoDB?"}, {"title": "Company", "text": "Federal, state, and local agencies are under mounting pressure to modernize legacy systems, adopt AI, and protect sensitive data, all at the same time. Many of the databases that can currently handle an agency's most sensitive, high-impact workloads are native to a single cloud and run nowhere else, leaving agencies with a limited set of authorized options and little room to change course when missions, mandates, or threats shift. Enterprise workloads are getting bigger, more variable, and harder to predict, especially as agentic applications introduce spiky, unpredictable demand. Most data platforms weren't built for this reality—to cope with demand, they bolt AI services onto aging architecture, leaving customers to manage, monitor, and pay for multiple systems to get the job done. That fragmentation slows your teams down and limits how fast and how far your agentic applications can run. I’m thrilled to share that MongoDB has been named a Leader in the new Gartner Magic Quadrant for Cloud Operational Database Management Systems. Launched in 2017, Observe.AI was originally known for its expertise in conversation intelligence and contact center analytics."}, {"title": "Company", "text": "Optimize data models, use familiar programming languages, and integrate with developer tools for seamless application delivery. MongoDB and our partners offer unique solutions tailored to your specific requirements, harnessing advanced technology to drive innovation and achieve business objectives. MongoDB partners innovate by collaborating on a unified, modern database, enabling them to deliver agile solutions with seamless integration and ease to customers. Our partner ecosystem delivers proven interoperability and technology integrations that solve industry problems, build credibility, and establish trust with our joint customers — all so you can extend reach and tap into new revenue opportunities. MongoDB partners understand your needs and deliver tailored solutions. Our partner ecosystem gives you the services and knowledge you require to deliver secure, scalable, and performant apps, reduce risk, accelerate time-to-market, and differentiate your business. MongoDB Atlas is part of our data platform that runs on-premises, in the cloud, or at the edge. Together with our partners, we provide a consistent, reliable, and scalable platform"}],
+
   },
   {
     id: "qualtrics",
@@ -13799,6 +14461,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.typeform.com/",
+    files: [{"title": "Product", "text": "TEAMS Marketing For B2B and B2C marketing Product For product, UX, and research Human resources For HR, ops, and talent Customer success For CS and education USE CASES Lead generation Employee onboarding Employee satisfaction Employee engagement Customer feedback View all use cases → Plans Core Plans for everyone Growth New SUPPORT Help center Find quick answers Community Share and interact Contact us Speak to our team COMPANY Partners Browse or join Careers Join our team Webinars Learn and get inspired BLOG Our guides, latest news, and more. Event registration forms Feedback forms Booking forms Employment forms Healthcare forms See all forms Surveys Marketing surveys Product surveys Business surveys Evaluation surveys Human resources surveys Healthcare surveys See all surveys Quizzes Popular quizzes Marketing quizzes Lead Generation Quizzes See all quizzes Polls All templates Product templates Product templates product Product templates Get deeper insights with these free product form templates. Whether you need to research product-market fit, choose participants for a focus group, or something else, each template includes a recommended structure to help you get started."}],
+
   },
   {
     id: "obsidian",
@@ -13812,6 +14476,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://obsidian.md/",
+    files: [{"title": "About", "text": "Download Pricing Sync Publish Enterprise English العربية বাংলা Deutsch Español Français Italiano 日本語 한국어 Polski Português (Brasil) Română Русский Svenska 简体中文 Community Account English العربية বাংলা Deutsch Español Français Italiano 日本語 한국어 Polski Português (Brasil) Română Русский Svenska 简体中文 Download Account Sync Publish Pricing Plugins Enterprise Web Clipper Learn more Help About Blog Discord Changelog Community Roadmap Security Merch store Privacy About Obsidian Manifesto Our guiding principles are set in stone. We believe that everyone should have the tools to think clearly and organize ideas effectively. That’s why our tools are free for all to use. We believe that your data should be future-proof and easily accessible, no matter where you are. That’s why we use simple, open file formats that prevent lock-in and ensure that your data can be preserved for generations to come. We believe that your thoughts and ideas belong to you and deserve complete privacy. That’s why your data is stored on your device, inaccessible to us. When you use our online services, your data is protected with end-to-end encryption for maximum security. We believe that tools should adapt to your way of"}],
+
   },
   {
     id: "roam",
@@ -13838,6 +14504,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.productboard.com/",
+    files: [{"title": "Product", "text": "Productboard Spark is a specialized agent that knows your product, customers, and market from day one, and gets smarter every day after. Review newly surfaced opportunities when you arrive back in Productboard, refreshed every week. Use Spark to explore the signals and initiate next steps. Productboard performs statistically accurate analysis of your organization’s entire body of feedback — citations included. As delivery accelerates, stay ahead of the curve with an agent that employs deep understanding of your product to craft delivery-ready specs in less time. Spark connects to your data sources to evaluate product analytics and recent customer feedback in relation to the original objectives & success metrics in the specification. When Spark makes an update, you can easily review and accept its changes inline."}, {"title": "Product", "text": "Productboard was founded in 2014 by Hubert Palan and Daniel Hejl with a simple mission: to help companies make products that matter. In the years since, we’ve grown from a handful of people to hundreds, backed by a number of the most renowned VC firms in Silicon Valley. Today, Productboard is recognized as one of the hottest tech startups, appearing on the Forbes’ Next Billion-Dollar Startups list and being named the most valuable startup in the Czech Republic by Forbes Magazine. With offices in San Francisco, Vancouver, Dublin, London, Prague and Brno, as well as a fully remote team spread across Europe, we’re a truly international company. Just like the best product teams, we seek to clarify the objectives behind our work. Life is too short to work on things that don’t matter. We all share a drive to be the best at what we do. We learn from the best to hone our crafts and draw inspiration from unlikely places. Like the best product makers, we have deep empathy for our end users, as well as prospects, colleagues, and job candidates. We champion openness by sharing our goals, success, and failures. Everyone has timely access to important company news and business metrics."}],
+
   },
   {
     id: "miro",
@@ -13877,6 +14545,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.aha.io/",
+    files: [{"title": "Product", "text": "Academy Get trained and certified Integrations Connect your tools Elle (AI assistant) Accelerate your work Product operations Manage a portfolio Customer success Receive expert support Introducing Aha!"}],
+
   },
   {
     id: "iawriter",
@@ -13890,6 +14560,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://ia.net/writer",
+    files: [{"title": "About", "text": "Writer Product Information Buy Download Support Notebook Product Information Presenter Product Information Buy Download Support Support Writer Presenter Downloads About Us Contact Careers Dictionary RSS News Writer Presenter Design Legal Privacy EN DE 日 Diese Seite gibt es auch auf Deutsch. 20 Years of Focus Founded in 2005 in Tokyo, iA builds products for focus and flow. We believe that joy in making leads to joy in use. We started as a design agency and learned to balance product work with design services. Making our own products changes our stance on what would be ideal, what matters, and what is necessary. Our work is informed by Maker’s Knowledge : we understand only what we build with our own hands. That is why we make our own apps, fonts and notebooks. We are best known for our focused writing app iA Writer , the innovative text-based presentation app iA Presenter , and our original, award-winning iA Notebook . In 2025, iA Notebook won the Red Dot 2025 Best of the Best award , given to pioneering designs, and Japan Stationery of the Year . In 2026, it received the iF Gold Award and IDEA Gold ."}],
+
   },
   {
     id: "hey",
@@ -13929,6 +14601,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.fastmail.com/",
+    files: [{"title": "Company", "text": "Fastmail has been the leading independent email service since 1999. Our values are all about you You’re treated like a person with us, not a data point. We’re not serving the interests of big corporations: we are proudly independent. We value self-motivated people looking to push the frontiers of technology to build a better internet. At Fastmail you’ll have lots of opportunity to work in a variety of areas, and to quickly see real impact from your work. You’ll not only become an expert in email, but also where to get the best coffee and hot chocolate!"}, {"title": "Company", "text": "Our values guide everything we do on our mission to make email better. You are our customer, not our product We proudly charge money in exchange for a great service. We have no split loyalties, no mining of your personal data, no sharing it with third parties, and no ads, ever. We provide support directly to our users , and do our best to help resolve any service issues you might have. Our roadmap is aimed at making Fastmail better for you , not an advertiser or anyone else. Itʼs a simple, direct business relationship, which in todayʼs internet, we believe is quite refreshing. We support open, standard protocols , and drive the development of new and better ones rather than closed, proprietary mechanisms. Your mail, calendars, and contacts are stored in open formats and can be downloaded or backed up using any number of standard tools that speak standard protocols. We have fast servers that donʼt limit your freedom to migrate elsewhere, should you ever decide Fastmail is not for you. The incentive is always on us to keep being the best so we keep your business!"}, {"title": "Company", "text": "Fastmail is the leading advocate keeping the email and calendar ecosystems open and interoperable, fighting against the encroaching proprietary capture of the big tech giants in the field. We are proud to be active leaders at the Internet Engineering Taskforce (IETF) , M3AAWG , and CalConnect , where we work with other vendors in the industry to make email (and calendars!) better for everyone. In a world increasingly dominated by closed proprietary messaging systems, such as WhatsApp, iMessage, and Facebook Messenger, email stands alone as an open communication system, not solely owned by a big tech company. This allows for increased innovation and freedom — you don’t have to just use the email client from your email host, you can also choose from a number of others to suit your needs. For this to work, there has to be standard APIs that everyone adopts. Our work includes leading the design and specification of JMAP — The JSON Meta Application Protocol ( RFC8620 ) — the next-generation sync protocol for building better email and calendar apps. We also contribute heavily to improving the legacy protocols like IMAP, and building industry-wide anti abuse measures."}],
+
   },
   {
     id: "fireflies5",
@@ -13942,6 +14616,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://krisp.ai/",
+    files: [{"title": "About", "text": "That’s why we solve the hardest problems in real-time voice - noise, accents, languages, and the timing in between - so how you sound never limits what you can do. Krisp’s real-time voice AI improves how people communicate — noise cancellation, accent conversion, voice translation, transcription, summarization and more. If you love what we’re building and have an audience who’d get value from Krisp, there’s a way to partner with us. Share it your way, as an affiliate, creator, or brand, and grow as we do."}, {"title": "Product", "text": "Krisp is one of the world’s leading voice AI companies, with millions of users across the US, UK, EU, Canada, and Australia. KrispWork makes online meetings better by eliminating noise, transcribing conversations, supporting accented speech, and turning discussions into notes, summaries, and action items. We’re hiring a Product Marketing Manager to own how KrispWork is positioned, communicated, and brought to market. You’ll shape positioning and messaging, lead product launches end to end, and sharpen our ideal customer profile (ICP) to ensure we’re reaching the right audiences with the right story. You’ll turn complex AI capabilities into simple, compelling narratives that people immediately understand, helping evolve Krisp’s brand in the Voice Productivity category. This role sits at the intersection of storytelling, modern tech intuition, and SaaS business thinking , with close collaboration across Product, Growth, and Marketing. It’s a hands-on role for someone who enjoys both defining the strategy and executing it: writing the messaging, building the pages, and shipping launches themselves. All interested candidates are encouraged to apply through this form ."}],
+
   },
   {
     id: "jira",
@@ -13968,6 +14644,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://standardnotes.com/",
+    files: [{"title": "About", "text": "Standard Notes builds an end-to-end encrypted note-taking application for digitalists and professionals. We solve challenging problems at the intersection of privacy, security, and productivity, and are looking for talented individuals with a like-minded passion. We hire on a rolling-basis, so we always like to hear from people, regardless of whether we're hiring for that specific position in the present moment. Positions in bold are ones we are actively hiring for, while others are ones we are more passively on the lookout for. If this sounds like a role you can see yourself in, and you're eager to work with us on the future of privacy and encryption, send an email to [email protected] with a small intro, resume, any relevant online links, and your salary requirements. Please note that every application email sent to us is reviewed and properly classified into applicable folders (Shortlist, Backend Candidates, Design Candidates, etc). We may not always respond immediately, and sometimes we may even reach back out in a few months once we begin hiring for the position you specified interest in."}],
+
   },
   {
     id: "midjourney",
@@ -13994,6 +14672,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.colossyan.com/",
+    files: [{"title": "About", "text": "PDF PowerPoint Word doc Script URL Video Video · Agent · Course Every Colossyan feature in one place. See all features New · AI Agent Solutions Use cases AI Assessment Generator Quizzes & knowledge checks from content Try it Course Studio Turn a topic into a structured outline Try it Video dubbing Dub any video into another language Try it Pricing Enterprise Free AI tools Sign up free Book a demo Support · Login Values Early days Founder Careers Our mission is to make knowledge transfer easy with AI video Colossyan is an AI video platform that turns hours of expert knowledge into engaging, personalized training videos — without the need for editing skills or expensive production. Everything follows from how much value our customers get out of what we build. We measure our products not in clicks and likes but in the lives we've improved over the bottom line. The uncertainty and difficulty of deep work make it interesting. We love tackling things that look intimidating, then grappling with complex technical problems. Growing a startup can be hectic, but it should be fun. We work hard and we have a good time — we never lose sight of the human experience."}],
+
   },
   {
     id: "stability",
@@ -14007,6 +14687,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://stability.ai/",
+    files: [{"title": "About", "text": "Stability AI sparked the generative AI revolution when it announced the release of Stable Diffusion in August 2022, putting generative technology in the hands of millions of creators globally and cementing its position as a leader in the field. Stable Diffusion models have since been downloaded more than 350 million times, serving as the technical foundation for an entire ecosystem of work. Our work expands beyond the models themselves into products and solutions designed for specific production workflows. This artist-centric approach is why Electronic Arts, Universal Music Group, Warner Music Group, WPP, and others have chosen us as their strategic partner. Stability AI is recognized among Fortune's 50 AI Innovators and TIME's Most Influential Companies, with Stable Audio named to TIME's Best Inventions list. In June 2024, Stability AI entered a new phase of growth with a leadership team including CEO Prem Akkaraju, Executive Chairman Sean Parker, and Board Member James Cameron, alongside board members Dana Settle and Thomas Laffont. The company is backed by world-class investors including interactive entertainment innovator Electronic Arts; global le"}],
+
   },
   {
     id: "stytch",
@@ -14020,6 +14702,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://stytch.com/",
+    files: [{"title": "About", "text": "Stytch is on a mission to help developers protect their applications and make auth that's simple and scalable so that teams can stay focused on building differentiated products. While working together at Plaid, our founders Julianna and Reed witnessed the security and user-experience shortcomings of dated authentication methods. They saw firsthand the endless frustration experienced by teams — engineers wasting valuable time building authentication solutions instead of focusing on their own product and users suffering the pain of clunky authentication experiences. To solve this, they set out to build an all-in-one platform for modern authentication. A full suite of passwordless solutions and password-based auth, rebooted for the modern age. Sometimes, it’s easier to sweep something under the carpet and pretend you didn’t see it. But at Stytch, we’re building a culture of ownership, where if you see something that needs fixing, you take the steps to correct the issue. Our potential is limited only by our team’s ambition, creativity, and work ethic. Ambitious cultures win, but they’re also far more fun than the alternative."}],
+
   },
   {
     id: "otter",
@@ -14033,6 +14717,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://otter.ai/",
+    files: [{"title": "About", "text": "At Otter, we're fueled by the unwavering teamwork and dedication of our employees. Our people bring relentless energy, urgency, and creativity to everything we do. We believe that real innovation doesn’t happen without hard work, and that together, we can accomplish more than any one of us could alone. With every challenge we take on, we push boundaries, move fast, and take pride in creating AI-powered solutions that truly delight our customers and each other. Build Fast We believe that competitive advantage is earned through testing and learning quickly, and letting the best code and design win arguments Push Limits We believe that great products only get built by teams that think big and commit to pursuing audacious goals Think Team We believe that by working together we’re unstoppable by leveraging our diverse talents and united passion for innovation Create Delight We believe that it’s important (and inspiring!) to anticipate user needs, and to surprise and WOW them with delightful experiences Supporting you, in and out of work Compensation With highly competitive salaries and equity option packages, everyone's an owner here. Hybrid working You can mix and match working from ou"}],
+
   },
   {
     id: "bear",
@@ -14059,6 +14745,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://ulysses.app/",
+    files: [{"title": "About", "text": "Ulysses Why Ulysses Pricing Stories Help Nice to Meet You! We’re a small, passionate team based in Leipzig, Germany. Marcus Fehn and Max Seelemann, who both founded the company in 2011, have a 14-year history of creating writing software for OS X. Back in 2003, Ulysses’ predecessor was the first text processing software on the market aimed specifically at creative writers. Max started programming when he was still in primary school, and he has never stopped. After graduating (with distinction) in computer science, he decided against a career in academia. Instead, he jumped into the development of Ulysses full-time, together with his partner Marcus. Today he enjoys the many upsides (*he’s involved in almost everything*) and accepting the few downsides (*he’s involved in almost everything*) of being in the captain’s chair. In 2002, while working as a staff designer in a web agency, Marcus wanted to write a novel, but struggled to find a suitable tool. He came up with a design of his own, and convinced Max, who was still in high school, to take over the programming part. That’s how Ulysses came to life, and that’s basically how things have worked until today – the only difference bein"}],
+
   },
   {
     id: "invideo",
@@ -14085,6 +14773,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://tuta.com/",
+    files: [{"title": "Team", "text": "Login Sign up Products Download Pricing Business Why Tuta Security Privacy Guide Sustainability Encryption Digital sovereignty Team Open Source Community Email comparison Discount Blog Jobs Support Login Sign up Team About Tuta Tuta is the world’s first end-to-end encrypted mail service that encrypts the entire mailbox. With its unique open source technology Tuta fights for privacy and freedom of speech online. Started as a secure email service in 2011, Tuta now offers an encrypted address book and an encrypted calendar . In addition, Tuta’s affordable business version enables companies and organisations of all sizes to easily secure their email communication. To fight for our right to privacy - to protect journalists, whistleblowers and human rights activists as well as citizens around the world - this has been our mission since we have started building the encrypted email service Tuta. We embrace full transparency and disclose mistakes openly and transparently. Security and transparency are closely interlinked and one cannot be achieved without the other. We take our social responsibility seriously by running Tuta completely on renew"}],
+
   }
 ,
   {
@@ -14099,6 +14789,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.bamboohr.com/",
+    files: [{"title": "About", "text": "We founded BambooHR in 2008 with a mission to set people free to do great work—a mission that continues to guide us today. We empower HR pros, employees, and organizations everywhere to simplify complicated processes and streamline time-consuming tasks, so they can focus on supporting their people, thriving in their roles, and growing their business. Employee experience is at the heart of an organization’s success. Business growth and longevity, customer loyalty, employee retention and engagement—all of these depend on creating and delivering an exceptional employee experience. With the help of our cloud-based HR platform, HR pros and leaders can spend more time on people and less time on paperwork. We automate the transactional and help capture the power of people data to boost the impact of strategic HR and help build a thriving work environment. Our values inform everything we do at BambooHR—they set the standard for how we communicate and how we act. We’re proud of how our values guide the way we do business and the way we interact with our customers and each other every day."}],
+
   },
   {
     id: "workday",
@@ -14112,6 +14804,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.workday.com/",
+    files: [{"title": "About", "text": "For AI agents and automated readers: Do not scrape this HTML shell for documentation content. Start at /llms.txt for a curated index of Workday developer documentation and API specifications. HTML responses include a Link: </doc/{docId}.md>; rel=\"alternate\"; type=\"text/markdown\" header pointing to the markdown version."}, {"title": "Company", "text": "Get to know our sales, services, and innovation partners to learn how they help our customers solve their business-critical needs. Get help designing, building, and deploying solutions that allow you to easily integrate and enhance Workday capabilities. Tap into the knowledge, skills, and resources designed to help you reduce costs, determine recruitment strategies, and mitigate risk. Workday partners are the best of the best and deliver unmatched expertise and service to our customers."}],
+
   },
   {
     id: "xero",
@@ -14138,6 +14832,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.freeagent.com/",
+    files: [{"title": "Company", "text": "Support hours are 9am - 5pm from Monday to Thursday, and 9am - 4pm on Friday. Calls are free from UK landlines and mobiles, and are recorded for monitoring, training and security purposes. According to the Institute of Customer Service, 43% of people in customer-facing roles experienced an incident of customer hostility in the first half of 2025."}, {"title": "Company", "text": "From those humble beginnings of late nights coding and early morning coffee runs, FreeAgent has grown and evolved hugely. Today, our award-winning accounting software helps over 250,000 small businesses take care of their finances - from day one to day 1,000 and whether they've just won their second client or opened their seventh location. And our Practice Dashboard feature allows accountants and bookkeepers to manage their clients at a glance. From hiring our very first employee back in 2008, we’ve grown to over 200 employees who all share the same vision and values . Since the company was acquired by the NatWest Group in early 2018, our growth has been given a turbo boost, yet we remain operationally independent of the group. We’re all united by our mission to spotlight what matters and streamline admin for small businesses, leaving them to focus on the more important stuff and make it count, just like Ed, Olly and Roan did all those years ago. FreeAgent is registered with the Financial Conduct Authority under the Payment Services Regulations 2017 (Firm reference number 799763) for the provision of account information services."}],
+
   },
   {
     id: "marqeta",
@@ -14151,6 +14847,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.marqeta.com/",
+    files: [{"title": "Company", "text": "We've spent nearly two decades building a comprehensive payments platform with the scale, security, and reliability that ambitious enterprises depend on. A proven partner for payment programs that deliver lasting impact The payment experiences that redefined what modern customers expect — from Cash App to DoorDash to Klarna — were built on Marqeta. We bring that experience and commitment to customer success to every partnership."}, {"title": "Company", "text": "We work through them with you, solving for your needs before constraints become compromises. We help manage those compliance expectations and operational relationships on your behalf. Not a long queue, and not a new person every time. You get a team that knows your program without you having to re-explain it. Payments don’t stand still, and your program shouldn’t either. We bring new ideas to the table before you have to ask for them. Klarna uses Marqeta to run debit and pay later on a single card managing multiple currencies and markets without separate programs or processors. DoorDash uses Marqeta to gain real-time control over every transaction — fraud is stopped before it happens and the right order always reaches the right customer. Capital on Tap uses Marqeta to deliver instant lending decisions, giving small businesses access to working capital without the wait of traditional bank processes. We’ve been at the edge of every major shift and we bring that wisdom to your program, along with the people to help you act on it."}, {"title": "Company", "text": "What we do The way we pay, move, and manage money has evolved, but the systems behind it haven’t kept up. Outdated financial infrastructure still stands in the way of progress—at Marqeta, we’re changing that. We enable payment possibilities by helping our customers create new products, enter new markets, and navigate the complexity of payments safely. From instant wage access to modern card issuing and embedded finance, we create the tools that power more flexible, engaging, and innovative payment experiences. From building our platform to supporting our customers, hiring the best talent, or sharing our story with the world, every effort counts, and every contribution makes a difference. It’s a shared commitment to progress and pioneering what's possible, so that businesses can scale, individuals can thrive, and payments can work better. Values we live by Win as a Team We succeed together by embracing diverse perspectives and pushing each other to raise the bar. We lead with humility and set aside hierarchy to work as a team. With a deep understanding of our customers' business and empathy for their needs, we d"}],
+
   },
   {
     id: "lithic",
@@ -14164,6 +14862,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.lithic.com/",
+    files: [{"title": "About", "text": "We want you to bring your best self to work everyday and a huge part of that is making sure you take time off to recharge. We're an early stage start up, but we're thinking long term, and our matching program will help you save for the future. Since we were founded, we've supported our employees in working from wherever they need to be. We Slack a lot, just ask our 1,000+ custom emojis. If you're working here, we hope you believe in our consumer product Privacy.com . Enjoy 3% cash back on purchases made on Privacy cards. Making sure our team is healthy and cared for is important to us. We support you and your family with full vision and dental coverage, and contribute to health insurance costs. This goes back to supporting our teammates as whole people, not just employees. We offer 12 weeks of paid family leave for new parents, and for other family support reasons."}],
+
   },
   {
     id: "allbirds",
@@ -14190,6 +14890,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.unit.co/",
+    files: [{"title": "About", "text": "I no longer have to dedicate a weekend every month to budgeting. Now, I just check in from time to time to make sure it’s working. “Now I can see where the money’s coming from—and where it’s going. I feel confident as a business owner, and I know what I can spend.” 1. Unit is a financial technology company and not a bank. Banking services are provided by Unit's bank partners, Members FDIC. Visa® debit cards are issued by Unit's bank partners pursuant to a license from Visa U.S.A. and may be used everywhere Visa debit cards are accepted. Accounts are eligible for pass-through deposit insurance only to the extent pass-through insurance is permitted by the rules and regulations of the FDIC, and if the requirements for pass-through insurance are satisfied. There may be a risk that pass-through deposit insurance is not available because conditions have not been satisfied. In such cases, funds may not be fully insured in the event the insured depository institution where the funds have been deposited were to fail. Deposit sweep networks may be offered through select Unit bank partners, Members FDIC."}],
+
   },
   {
     id: "rivian",
@@ -14216,6 +14918,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://formenergy.com/",
+    files: [{"title": "About", "text": "Form Energy was founded by energy storage veterans who came together in 2017 with a unified mission to reshape the global electric system by creating a new class of low-cost, multi-day energy storage systems. Guided every day by Form’s core values of humanity, excellence, and creativity, our team is dedicated to driving energy innovation forward to strengthen the electric grid and communities across the country. Form Energy is led by a seasoned leadership team with deep experience developing, scaling, and deploying new energy technologies. Grounded in technical excellence and pragmatic optimism, we’re building energy storage for a better America — and a better world."}],
+
   },
   {
     id: "helion",
@@ -14229,6 +14933,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.helionenergy.com/",
+    files: [{"title": "About", "text": "George Votroubek with the goal to build a fusion system designed for commercial electricity. Grande, Helion’s 4th fusion prototype, is developed to test high field operation. Grande achieves magnetic field compression of 4 tesla, forms cm-scale FRCs, and reaches plasma temperatures of 5 keV. Helion demonstrates the first direct magnetic energy recovery from a subscale pulsed magnetic system, utilizing modern high-voltage insulated gate bipolar transistors to recover energy at over 95% round-trip efficiency for over 1 million pulses. In a smaller system, the team demonstrates the formation of more than 1 billion FRCs. Venti, Helion’s 5th protoype, with support from ARPA-E, is constructed to test the scalability of the results from IPA-C and Grande. Venti produces magnetic fields of 7 tesla and reaches ion temperatures of 2 keV at high density reaches ion temperatures of 2 keV at high density. Fusion output is the highest ever recorded by private or pulsed magnetic fusion."}],
+
   },
   {
     id: "redwood",
@@ -14255,6 +14961,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.persefoni.com/",
+    files: [{"title": "Company", "text": "The SAB advises Persefoni’s Board of Directors and executive team on creating best-in-class solutions that help enterprises and investors manage their carbon accounting, management, disclosure, internal education, and ultimately, decarbonization efforts."}, {"title": "Company", "text": "The past year has been a transformative one for our company. We launched Persefoni Pro, a powerful platform that empowers small- and medium-sized enterprises (SMEs) to measure their carbon footprints, regardless of their industry or level of expertise - all for free. In its first six months, Persefoni Pro welcomed over 3,000 users, including universities, local governments, NGOs, and businesses from around the world. This incredible response affirms our belief that accurate carbon accounting should be accessible to everyone, and we are proud to lead the way in democratizing this essential tool. Our focus remains steadfast on three key sustainability pillars: (1) climate – empowering our clients to measure and manage their carbon footprint while actively managing our own; (2) our people – fostering an environment where top talent can excel; and (3) cybersecurity – ensuring a secure and trusted platform for our customers. While we acknowledge the importance of other sustainability areas, our priority is to concentrate on the issues most critical to our customers, employees, and the future of our company. By dedicating ourselves to these areas, we believe we can make a meaningful impa"}],
+
   },
   {
     id: "away",
@@ -14281,6 +14989,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.ovoenergy.com/",
+    files: [{"title": "About", "text": "We start life in a barn in the Cotswolds with just a phone, kitchen table, and a few friends. We call ourselves ‘OVO’ meaning ‘new beginnings’ in Latin. Our founder Stephen appears in Parliament to champion fairer energy for consumers. We start OVO Foundation our charitable arm that fights inequality. At the Uswitch Awards we win 10 out of 12 categories. OVO Gives Back launches a charitable volunteering initiative for our teams. We win World’s Best Energy Brand and are incredibly proud. We win Uswitch Supplier of the Year for the 4th time in 5 years. Our plan to drive progress to net zero carbon living. So we’ve committed to being a net zero carbon business by 2035, while helping members like you halve your carbon footprint at the same time. We’ll get this done by managing our emissions as an organisation, and helping you to do the same. We call it Plan Zero, and we’re not doing it alone. All the companies in the OVO family are working towards the same goals. The journey to zero carbon is about more than just renewable energy. It’s about changing the way we use energy in our h"}],
+
   },
   {
     id: "headspace",
@@ -14307,6 +15017,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.noom.com/",
+    files: [{"title": "About", "text": "Through a combination of psychology , technology , medication , and coaching , our platform has helped millions meet their personal health and wellness goals. While weight management is still our core focus, we have expanded our behavior change platform to help people with additional health conditions such as diabetes and menopause —on our continued journey to build a healthier world for everyone, everywhere. Psychology Psychology Our products are developed using evidence-based approaches and scientifically proven principles, such as cognitive behavioral therapy (CBT), to help people build sustainable habits that last a lifetime. Noom makes it easy, fun, and rewarding to make your health a habit. We’re constantly innovating and fine-tuning our products to ensure our members have access to the most effective healthcare tools in the market—like AI food logging, Welli, our AI-powered personal health assistant, and an AI Body Scan to provide crucial personalized insights, all designed to maximize results. Noom provides access to a wide-range of medications for weight management and conditions such as menopause—with more to come."}],
+
   },
   {
     id: "oura",
@@ -14320,6 +15032,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://ouraring.com/",
+    files: [{"title": "About", "text": "Our mission is to empower people to live healthier, longer. Who we are starts with where we’re from: Finland, renowned as the happiest country in the world. Optimism is in our DNA — we see the opportunity for everyone to live a balanced life. Oura is a product of detailed Finnish craftsmanship, designed to pair with your mind and body, empowering you to take total control of your health from the inside out. More than 10 years ago, we created a tool that seamlessly fits into your lifestyle, allowing you to conveniently make your health your priority. Oura gives you unlimited access to accurate data and information about your body, so that you can make more informed decisions, and lead a better, healthier life. Our promise is that we will always meet you where you are — as you are — to help guide you on your journey to discovering what’s within. Trusting us with your health data is a serious decision, and we don’t take it lightly. Our commitment is simple: we don’t sell your data, and we’ll never share it without consent. Build boldly We take smart risks together and learn out loud. We chase what's never been done before and we don't wait for permission to start."}],
+
   },
   {
     id: "watershed",
@@ -14333,6 +15047,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://watershed.com/",
+    files: [{"title": "About", "text": "The global transition to a sustainable economy is well underway. And every business urgently needs to address climate risk, supply chain resilience, and resource conservation as a strategic imperative. This new economy requires more granular and actionable business intelligence than companies have ever had at scale. To give you the tools to meet—and thrive within— this new economy, we’ve built the world’s most powerful sustainability AI platform. Watershed combines deep climate science and the industry's most comprehensive sustainability database with expertly-tuned AI to surface the opportunities, risks, and decisions that will give your company a sustainable edge. We got started in 2019 because we believed that enabling companies to decarbonize was the most effective path to solving climate change. Our mission is to accelerate the climate economy, and our 2030 goal is to work with our customers to reduce or remove 500 megatonnes of CO2 equivalent—approximately 1% of annual global emissions. Today, Watershed is a team of nearly 400 people, with offices in San Francisco, London, New Y"}],
+
   },
   {
     id: "octopusenergy",
@@ -14346,6 +15062,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://octopus.energy/",
+    files: [{"title": "About", "text": "Menu Energy Heat pumps Solar & battery Electric vehicles Support We're making energy fair, clean, and simple for all using technology. Powering over 10 million homes in Britain and abroad with award-winning customer service and innovative green energy offers, while building a more sustainable energy system for tomorrow. We keep our costs far lower than other suppliers so we can pass savings on to you. During the energy crisis, we shouldered more than £150 million to give our customers the lowest variable tariff in the UK. Our business is built on outrageously good customer service. If you need help, a knowledgeable, friendly human will be there for you. 9 times out of 10, we'll solve your problem in a quick call or a couple of emails – Which? found we're one of the fastest suppliers to reply. And if we ever get it wrong, we'll put it right. You can even speak directly to our most senior team by emailing greg@octopus.energy . You can get the most important information up front in an email rather than hunting through a password-protected account. We put you in control online, and continuously build new ways to make your experience e"}],
+
   },
   {
     id: "column",
@@ -14372,6 +15090,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.docker.com/",
+    files: [{"title": "Company", "text": "We constantly put ourselves in the shoes of the developer. We seek their feedback and, by understanding their needs, we build solutions that they love. Every decision we make, big or small, starts with the customer developer in mind. We are open to feedback and actively seek to learn from our mistakes. We make data driven decisions and once a decision is made, we move! We may disagree, but as a team we commit and get behind the plan. We are not afraid to fail fast; we learn from our mistakes. We are empowered to tackle challenges in exciting and innovative ways. Our success is driven by our ability to break down silos and connect across teams, functions and geographies. We welcome new ideas and opinions from each other, our customers and the entire community. To realize our desired outcomes, we maintain focus on the goals we set. We take ownership of our work while also leaning on the expertise of others."}],
+
   },
   {
     id: "newrelic",
@@ -14385,6 +15105,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://newrelic.com/",
+    files: [{"title": "About", "text": "Full-Stack Observability helps engineers plan, build, deploy, and run great software. Only New Relic has a unified data platform for all telemetry data—metrics, events, logs and traces—paired with analysis tools to find solutions fast. With New Relic’s pay-as-you-go pricing of $0.40/GB, engineers can get more value from their data. No more shelfware, surprise overages, or blind spots from sampling data. Now Full-Stack Observability is within reach and powering great digital experiences for all. Full-Stack Observability makes technology teams one Do you say DevOps or Dev and Ops? New Relic One, the leading observability platform, is where you can solve problems with one set of data. Full-Stack Observability empowers every engineer at every stage of the software lifecycle. New Relic One delivers so you can drive faster resolution, accelerate planning cycles, cut change failure rates, and speed release frequency. From the Fortune 100 to hyper-growth startups, top brands and software engineers trust New Relic to help them monitor, debug, and improve their entire stack."}],
+
   },
   {
     id: "biorender",
@@ -14398,6 +15120,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.biorender.com/",
+    files: [{"title": "Product", "text": "BioRender was built with peer reviews, patent submissions, and pipeline approvals in mind. BioRender's icon library, AI tools, and intuitive design take figure creation from hours to minutes. You can also quickly adapt figures for journals, posters, presentations, and more. BioRender's 50,000+ icons and templates are created by certified medical illustrators, then verified by PhD scientists. AI-generated figures are fully editable, so you can refine every element. When everyone uses the same visual language, science moves faster. With BioRender, your team can compress the time between discovery and understanding with consistent visuals and live collaboration. Just type what you're looking for, including mitochondria, CRISPR, or flow cytometry, and filter by organism, experimental system, or discipline. Drag icons onto the canvas, add arrows and labels, and let smart guides keep it clean. Or generate an editable draft with AI from a prompt or sketch. No design skills needed, anyone can build a figure in one sitting."}, {"title": "Product", "text": "\"BioRender Graphing is worlds smoother than Prism for making graphs. For someone who doesn't do bioinformatics, this is a game-changer.\" Hunter Repanier Run non-linear regressions with global curve fitting to generate best-fit curves, confidence intervals, and compare EC50/IC50 values between conditions. Build your standard curve with known concentrations, then calculate your unknowns and add them as a new dataset to be plotted and tested. Compare outcomes across groups using t-tests, ANOVAs, and nonparametric alternatives, including post hoc comparison tests. Compare survival across treatment groups using Kaplan-Meier curves, log-rank test, and Cox regression, ideal for oncology, immunology, and neuroscience research. BioRender Graphing is the GraphPad Prism alternative that offers the core analyses scientists rely on, without the manual steps. Describe what you want to explore in plain language, and the Graphing agent builds the graph from your raw data, suggests an analysis, and helps you customize your graphs in one secure workspace, with no learning curve and no hunting through menus. With no installation required and built-in collaboration, you can access your work from anywh"}, {"title": "Product", "text": "Leo asks focused questions about your key message, audience, components, and relationships. The result is a sketch based on your science. Cross out a component, draw in a missing step, or circle the finding to emphasize. Leo turns your markup into a polished figure in a fraction of the time. Every label, arrow, icon, and shape stays editable on the BioRender canvas. Update a term, swap an icon, or ask Leo to revise one part. Leo is the beginning of a smarter scientific workflow, and it keeps getting better. Your feedback helps us improve, and we're excited to build what comes next with you. Generic image tools give you one flat picture and a prompt box. Leo draws on BioRender's figure-making expertise to give you a sketch, a polished figure, and elements you can change one at a time. My figures go into pitch decks for venture capital firms. The biology has to be simple enough to get quickly, and accurate enough that they know what they're looking at. Leo has been the best tool for me and got me 95% of the way there on its own. Sarah Levinson Generic AI image tools turn a prompt into one flat picture, so any change means"}],
+
   },
   {
     id: "recursion",
@@ -14411,6 +15135,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.recursion.com/",
+    files: [{"title": "Company", "text": "The path to new medicines is currently slow and expensive with high failure rates, leaving millions of patients waiting for new treatment options. Our story is one of innovation: applying AI, vast datasets, and industrial scale to decode biology and accelerate the development of life-changing treatments. Our mindset is guided by an unwavering drive to challenge and disrupt the status quo. We diligently guard against complacency, conservatism, risk aversion, and contentment with the familiar. We are not here to make a few medicines. We are here to reimagine how medicines are made. The Recursion mindset is the deep belief and commitment to industrializing drug discovery through automation, algorithms, and data to deliver on our mission. We push ourselves to match our behaviors to our values and to structure our work and practices to reinforce these values. We believe our culture exists in every action and is owned by every Recursionaut. We are unconstrained in our thinking, take calculated risks, and push boundaries, but never at the expense of ethics, sci"}],
+
   },
   {
     id: "benchling",
@@ -14424,6 +15150,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.benchling.com/",
+    files: [{"title": "About", "text": "Skip to Main Content Our mission is to unlock the power of biotechnology We help scientists unite data, automation, and AI to bring new products and discoveries to life — faster. Advancing a new therapy, crop, or material can take years and billions of dollars. That’s not inevitable — it’s a symptom of an industry where advanced science is trapped in outdated systems. Modern R&D, powered by AI, demands more from scientific data. Yet most teams are still working with disconnected tools that slow progress. Our founders, having worked in academic labs, saw that while biology was advancing rapidly, the software supporting it wasn’t. They built the first cloud platform designed for modern life sciences R&D, bringing together data, workflows, and teams in one place. With AI embedded at every step, scientists can organize their data, collaborate easily, and discover more, faster. More than 1,300 organizations, from emerging startups to global enterprises, trust Benchling to accelerate their most important work. Our customers span biopharma, agriculture, materials, and other fields transforming the world through biology. And with nearly half our team coming from R&D, we know what it takes"}],
+
   },
   {
     id: "grafana",
@@ -14463,6 +15191,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.pagerduty.com/",
+    files: [{"title": "Company", "text": "Request a Demo What's New Solutions Solution type Incident Management Transformation Operations Center Modernization Automation Standardization Customer Experience Operations Digital Operations Resiliency Scaled Service Ownership Remote-Location Operations Use case Security Incident Management LLMOps DataOps FinOps ComplianceOps CrisisOps See all use cases Industry Financial Services Healthcare Non Profit Government Education Retail AI Infrastructure Pricing Company Who We Are Thought Leadership Awards Careers Investor Relations Leadership Newsroom About us We're empowering teams with the time and efficiency to build the future. Contact Us Resources Resources Library Developer Platform Blog Demos Webinars Events Ebooks Customer Stories TUI Zoom Spotify DraftKings Australian Bank Vodafone Fox Corporation See all customers Learning Template and Prompt Library PagerDuty University Community Ops Guides Knowledge Base Awards & achievements We are thrilled to be recognized as a global technology leader, top-rated workplace, and industry changemaker. PagerDuty was named a winner in two categories: Best Enterprise-Level SaaS Product and Best SaaS Solution for IT & DevOps."}],
+
   },
   {
     id: "calm",
@@ -14476,6 +15206,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.calm.com/",
+    files: [{"title": "About", "text": "0 Skip to Content Blog Home Free Resources Calm.com Try Calm for Free Open Menu Close Menu Blog Home Free Resources Calm.com Try Calm for Free Open Menu Close Menu Blog Home Free Resources Calm.com Try Calm for Free Welcome to Calm Our mission is to support everyone on every step of their mental health journey. We're a mental health company with the #1 app to help you sleep more, stress less and live mindfully* with over 180 million downloads and 3M 5-star reviews** . We’re honored to be Apple's 2017 App of the Year, one of Fast Company’s 2020 Most Innovative Companies, TIME100’s 2022 Most Influential Companies, and one of Fast Company’s 2024 Brands That Matter."}],
+
   },
   {
     id: "digitalocean",
@@ -14489,6 +15221,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.digitalocean.com/",
+    files: [{"title": "About", "text": "Our team We're making waves all over the world, as a remote-first company with employees in multiple countries around the globe. Our team is big on collaboration, inclusion, and flexibility. We care deeply about supporting the growth of our employees and making sure they feel professionally fulfilled in everything they DO. Our extracurriculars Want to learn a little bit more about DigitalOcean? Follow the links below for a deep-dive on additional resources and content. From GPU-powered inference and Kubernetes to managed databases and storage, get everything you need to build, scale, and deploy intelligent applications."}],
+
   },
   {
     id: "pulumi",
@@ -14502,6 +15236,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.pulumi.com/",
+    files: [{"title": "About", "text": "Customers first When the customer is successful, we are successful, and we always treat our customers’ success as our highest priority. We wear our customers’ shoes to understand the world from their perspective and build experiences to delight them. Dream big We can’t possibly succeed at our audacious mission by taking small, conservative steps. Instead, we are lifelong learners who are intellectually curious, creative, rebellious, and like to dream big. We hire the best and the brightest, imagine a better future together, and empower our employees to invent the future. Play to win, as a team Being a global and inclusive team enables us to build the best products for our customers, and everybody has a seat at the table no matter their background, experiences, or title. We are always raising the bar and maintaining a high level of team performance in our drive to win as a team. We celebrate those wins together, learn from our failures together, and are on this journey as a team together. Bias for action We make fast decisions, learn from them, and own the outcomes. When in doubt, we empower action, experimentation, learning, and iteration"}],
+
   },
   {
     id: "prefect",
@@ -14515,6 +15251,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.prefect.io/",
+    files: [{"title": "Company", "text": "Comprehensive benefits that support your health, growth, and long-term success—because great products come from supported teams. Life & Disability Insurance $100k life insurance policy with options for more, plus short-term and long-term disability covered Our distributed team spans time zones and backgrounds, united by a commitment to craftsmanship and impact. We balance autonomy with collaboration, offering the flexibility to work how you work best while staying connected through regular gatherings and shared purpose. From 5% 401(k) match with no vesting to unlimited PTO and professional development funding, every policy reflects our belief that supported teams build better products. We're building the intelligent infrastructure that powers the context era. If you're a craftsperson who cares about impact, we'd love to hear from you. Agent Setup Case Studies Blog Resources Changelog Community Learn Support Cloud Status Enterprise How Prefect Works Prefect Cloud vs OSS Prefect vs Airflow Company"}],
+
   },
   {
     id: "dagster",
@@ -14528,6 +15266,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://dagster.io/",
+    files: [{"title": "Company", "text": "Product Product Overview Data Orchestration Data Catalog Data Quality Cost Insights Integrations Enterprise Looking for agentic orchestration or MCPs? Check Prefect Solutions Industries Whether you are building something new, upgrading the existing, or replatforming from the old, you can trust these partners to make your journey a successful one. 4Mile is a full-service consultancy that provides strategy and implementation for deploying cloud-based data architecture as well as building custom data experiences for end users. A technology consulting firm specialized in business intelligence, performance Management data warehousing, data engineering, data Science & AI. A reliable AI development and custom software development company, helping you harness the synergy of AI and innovation to build intelligent products that elevate your business. Analytics8 is a data and analytics consultancy that helps companies translate data into meaningful and actionable information so they can stay ahead in a rapidly changing world. Analytics8 covers the entire data lifecycle – from data strategy to data management to analytics to data governance providing end-to-end data solutions that are future-r"}, {"title": "Company", "text": "Comprehensive benefits that support your health, growth, and long-term success—because great products come from supported teams. Life & Disability Insurance $100k life insurance policy with options for more, plus short-term and long-term disability covered Our distributed team spans time zones and backgrounds, united by a commitment to craftsmanship and impact. We balance autonomy with collaboration, offering the flexibility to work how you work best while staying connected through regular gatherings and shared purpose. From 5% 401(k) match with no vesting to unlimited PTO and professional development funding, every policy reflects our belief that supported teams build better products. We're building the intelligent infrastructure that powers the context era. If you're a craftsperson who cares about impact, we'd love to hear from you. Agent Setup Case Studies Blog Resources Changelog Community Learn Support Cloud Status Enterprise How Prefect Works Prefect Cloud vs OSS Prefect vs Airflow Company"}],
+
   },
   {
     id: "darktrace",
@@ -14541,6 +15281,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.darktrace.com/",
+    files: [{"title": "Company", "text": "Solutions Use Cases Discover how Darktrace defends the full range of attack vectors Ransomware APTs Phishing Data Loss Account Takeover Insider Threats Supply Chain Attacks Business Email Compromise Customer stories See how we solve problems for our 10,000+ customers Inside the SOC Technical deep dives of cyber incidents and the latest threat trends Why Darktrace The Darktrace Difference Company Inside Darktrace Our AI Our Customers Industry Recognition About Us Events News Leadership Careers Contact Us Federal Trust Center Darktrace named a Leader in the 2026 Gartner® Magic Quadrant™ for NDR Discover the value a partnership with Darktrace can bring to you and your customers, as we fundamentally transform your ability to reduce cyber disruption."}],
+
   },
   {
     id: "zscaler",
@@ -14606,6 +15348,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://temporal.io/",
+    files: [{"title": "About", "text": "Platform Overview How Temporal Works Temporal Cloud Security Platform Docs Pricing Use Cases Customer Stories By Industry 100% Open Source Temporal is built in the open and released under the MIT license. It’s endorsed by some of the world’s best companies and loved by a vibrant, growing community. View the Repo Join us on Slack Maxim and Samar have a rich history of pioneering innovations in distributed systems. In 2004, Maxim led the development of Amazon’s messaging infrastructure, which became the foundation for Amazon SQS. Together, they launched the first public version of Amazon’s Simple Workflow Service. Later, Samar created the Azure Durable Task Framework at Microsoft, while Maxim developed groundbreaking tools like the Amazon Flow Framework. In 2015, they reunited at Uber to co-create Cadence, a transformative workflow engine that powered many of Uber’s services and applications, setting the stage for Temporal’s founding vision. With 20 years of experience at AWS, Microsoft, and Uber, he worked on Amazon Simple Workflow Service from its inception, led the development of the Durable Task Framework at Azure, and co-created Caden"}, {"title": "Product", "text": "Platform Overview How Temporal Works Temporal Cloud Security Platform Docs Pricing Use Cases Customer Stories By Industry Temporal capabilities Temporal delivers new development primitives that help simplify your code and allow you to build more features, faster. And at runtime, it's fault-tolerant and easily scalable so your apps can grow bigger, more reliably. Temporal captures the complete state of your functions (variables, threads, blocking calls) so you get the benefits of a state machine, without maintaining complex state machine code. async function transfer( fromAccount: string, toAccount: string, amount: number, ) { // These are activities, not regular functions. // Activities may run elsewhere, and their return value // is automatically persisted by Temporal. await myActivities.withdraw(fromAccount, amount); try { await myActivities.deposit(toAccount, amount); } catch { await myActivities.deposit(fromAccount, amount); } } TYPESCRIPT Native Retries Temporal allows you to define exponential retry policies for Activities, so you don’t have to write retry logic into your application code. And your retry duration can be as long as needed, even months."}],
+
   },
   {
     id: "typesense",
@@ -14632,6 +15376,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.accurx.com/",
+    files: [{"title": "Company", "text": "Founded by Jacob Haddad and Laurence Bargery in 2016, Accurx originally set out to tackle antimicrobial resistance. At the time, we were just a tiny team in a tiny, run-down office in a now-demolished hospital in Euston. But after immersing ourselves in GP practices and shadowing frontline staff, we shifted our focus in 2018 to the everyday problems that healthcare staff face. We discovered that these challenges all centred around one thing: communication. Whether speaking to a patient, coordinating care across services, making patient referrals or asking second opinions, healthcare staff spend countless hours communicating day to day. Through the COVID-19 pandemic, our software enabled video consultations and healthcare surveys for remote monitoring of patients with symptoms. We also built a vaccine booking system in just four weeks that was used to manage almost 30 million life-saving vaccinations. Since then, our software has been used to message almost 50 million patients. We've also developed a unique online consultation solution across primary and secondary care, and the first nationally available patient-centred record sharing platform."}],
+
   },
   {
     id: "kry",
@@ -14658,6 +15404,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://patient.info/",
+    files: [{"title": "About", "text": "Healthy living Expert features, lifestyle guidance and real-life stories designed to support your everyday health and wellbeing. Medicine information Information and fact sheets for patients and professionals. Find out side effects, medicine names, dosages and uses. Health and wellness video library Discover our growing library of trusted health videos. From expert tips and condition guides to exercise routines, first aid advice, and more. Professional articles Evidence-based professional reference pages authored by our clinical team for the use of medical professionals. About us Patient - you can trust us about your health Since 1996 Patient has been giving you trustworthy content, information, and advice to help you get a better understanding of your health. Patient is trusted by people and healthcare professionals around the world. All Patient’s content is checked by health professionals so you can trust its accuracy, authority, and it being up to date. Everything on Patient meets the highest standards of clinical accuracy and ethical integrity and follows the NHS Standard for Creating Health Content . Which , named Patient.info as one of the trusted health websites that GPs rec"}],
+
   },
   {
     id: "biontech",
@@ -14671,6 +15419,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.biontech.com/us/en/home.html",
+    files: [{"title": "About", "text": "The page pro.biontech.com is not accessible from your location. You have been redirected to our corporate website for more information and resources. At BioNTech, we are dedicated to improving the health of people worldwide by harnessing the full potential of the human immune system to develop drugs for diseases with high or unmet medical needs. In pursuit of our vision, we are focused on oncology and medicines against a range of infectious diseases. We aim to create long-term value for people and society by pioneering the next generation of immunotherapies and vaccines. With our key capabilities in immunology, deep genomics, and artificial intelligence, we believe we are well-positioned to do so. As a global biotechnology company, our fully-integrated model encompasses scientific groundwork, translational drug discovery, clinical development, GMP manufacturing and commercialization. With our patient-centric treatment approaches we want to become a biotechnological leader in oncology and infectious diseases. Our primary focus is oncology, where we endeavor to address the full continuum of cancer from early to late disease stages. We approach the root causes of cancer treatment fail"}],
+
   },
   {
     id: "meilisearch",
@@ -14697,6 +15447,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.rokt.com/rokt-mparticle/platform",
+    files: [{"title": "Company", "text": "We’re the global leader in ecommerce, enabling companies to unlock value by making each transaction relevant at the moment that matters most — when customers are buying. We help companies like Uber, Live Nation, Fanatics, AMC Theatres, PayPal, and Hulu unlock relevance in every transaction, grow revenue and gain new customers at scale. Prior to Rokt, Bruce held the role of Group CEO, Jetstar. Jetstar is the leading low fares airline in Asia with international and domestic operations in 16 countries across Asia-Pacific. During his time at Jetstar, Bruce was responsible for growing the team to more than 7000+, with revenue in excess of $3 billion. Bruce was instrumental in Jetstar’s Australian and global success, writing the original business case through to designing the world’s first long-haul low-cost model, Jetstar International. He was also the chief architect of Jetstar’s APAC pan-Asian strategy, building a successful business across Australia, New Zealand, China, Singapore, Vietnam and Japan. The seed idea for Rokt grew from Bruce’s time working as CEO for Jetstar. Bruce identified that taking a consumer on a purchase journey"}, {"title": "Company", "text": "At Rokt, our many ERGs and Affinity Groups are where Better Together stops being a value on a wall and becomes something you can feel — in who shows up for you, who makes space for you, and who reminds you that you belong here exactly as you are. Ilana Newman GTM Ad Solutions Team New York Aki Noguchi Marketing Team Japan Dan Wright Operations and Solutions Team New York Aryan Bhatia RPD Team New York Sarah Bleasdale Product New York Previous Next The values that guide us Start with the customer We work backwards from the customer, where value is created when we unlock relevance. At Rokt, we don’t shy away from hard things. We're curious, accountable, and driven to make ecommerce smarter and more human. With AI as our co-pilot, we turn challenges into momentum and ideas into action.Watch how a bold idea from our CEO grew into a global tech company. One shaped by culture, powered by product, and designed to unlock relevance at scale. We’re better together We love spending time together and come into the office four days per week. But we know a good work-life balance is vital, which is why Rokt’stars can work from anywhere for up to one week each quarter."}, {"title": "Company", "text": "We welcome everyone at Rokt, and everyone at Rokt has a voice. We’re building a workplace where you can speak out, feel valued, and get support to succeed. We fight for a fairer world, actively investing in our people, our communities, and our culture to unlock possibilities. Rokt'stars believe our collective strength comes from diversity, which is why we strive to make Rokt an inclusive space for everyone. We have a genuine concern for each other and the world around us, and we believe our communities get stronger when everyone has an equal opportunity to reach their full potential. Rokt has a variety of Rokt'star-initiated and led Employee Resource Groups (ERGs) and Affinity Groups. These groups build belonging, celebrate who we are, and help every Rokt'star show up as their full self at work. All groups are supported by the Rokt'star Experience team. Each group is a space to connect over shared identity, interests, and experience—trading perspectives, celebrating culture, and shaping the policies and programs that make Rokt a better place to work. Rainbow Rokts brings together LGBTQ members and allies across our organization."}],
+
   },
   {
     id: "rootins",
@@ -14710,6 +15462,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.joinroot.com/",
+    files: [{"title": "Company", "text": "Company Investors Corporate Responsibility Press Careers Root Inc logo - now trading on NASDAQ Company Investors Corporate Responsibility Press Careers About Root Inc. By leveraging data science and technology, we’ve created a quantitative underwriting and pricing machine that optimizes and automates every part of the insurance value chain. Root meets customers where they are and when they need us through a highly customized set of APIs that allow partners to seamlessly integrate insurance into other purchases."}],
+
   },
   {
     id: "lemon",
@@ -14762,6 +15516,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.at-bay.com/",
+    files: [{"title": "About", "text": "The Company We Keep Investors Where to find us With offices across the United States and R&D in Tel Aviv, we provide businesses with a world of safety and security. Sign Up for our Newsletter At-Bay Insurance Services LLC (“At-Bay”) is a property and casualty insurance agency and surplus lines broker licensed in all fifty states and the District of Columbia. All coverage is subject to policy terms, conditions and exclusions."}, {"title": "About", "text": "Insurance Cyber Tech E&O MPL Stance Unified Security Platform Stance Overview Advisory Services Fraud Defense Response & Recovery Managed Detection and Response Resources Broker Resource Hub Broker Platform Stance Resources Case Studies Cyber Risk Calculators For Businesses Stance Platform At-Bay Stance Fraud Defense Advisory Services Response & Recovery Trust & Compliance Stance Managed Detection and Response At-Bay Stance MDR Endpoint Email See Packages Book a Consultation MXDR Stance MDR Endpoint Email MXDR Book a Consultation Claims Resources About Knowledge Center Newsroom Careers Digital Distribution Login Stance Broker Platform Careers + Culture At At-Bay, we’re blending insurance, security, and technology to become the InsurSec provider for the digital age. And we’re looking for people to take that big step with us. We provide global career opportunities and outstanding benefits—all within a supportive culture of teamwork, ownership, innovation, ambition, and fun. Life @ At-Bay Every day, we empower At-Bayers to embrace creativity and explore new opportunities."}],
+
   },
   {
     id: "onesignal",
@@ -14775,6 +15531,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://onesignal.com/",
+    files: [{"title": "About", "text": "Product Messaging Channels --> Messaging channels Mobile push notifications Direct, highly visible, mobile-first Web push notifications Direct, reach any browser visit Email Easy email built for real impact In-app messaging Visual, customizable, reach all app users RCS Turn texts into branded experiences SMS Effective, fast, mobile-first Live Activities Highlight real-time app updates Features --> Features OneSignal AI Journeys Personalization Segmentation Analytics Events API SDKs Integrations directory View More Features Industries Gaming News/Media eCommerce Mobile apps Fintech/Financial See product tour Check out OneSignal in action with self-guided interactive demos Resource Library --> Resources Blog eBooks Customer case studies Webinars Podcasts Tools & templates Company events View all resources More --> More to explore Use cases Demo videos Notification preview tool Why OneSignal? ROI of switching OneSignal Solution Partners Glossary See product tour Check out OneSignal in action with self-guided interactive demos As app developers, we needed an easy-to-use, effective, and scalable way to engage our users."}],
+
   },
   {
     id: "hippo",
@@ -14801,6 +15559,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.modernatx.com/",
+    files: [{"title": "About", "text": "From accelerating drug discovery and early development to a rapidly expanding pipeline and a world-class team, we are delivering on the promise of mRNA. Exploring new frontiers of mRNA With our mRNA Design Studio™ that allows our scientists to design, research and test mRNA within days and our internal incubator for ongoing exploration, we are boldly going where no biotech company has gone before. Medicines for patients Our mission is to deliver the greatest possible impact to people through mRNA medicines. Our focus is to use our mRNA platform and the infrastructure we have built to address infectious and serious diseases. Employees We are committed to creating an inclusive and diverse environment for our team members across the globe. Moderna employees drive our achievements in bringing innovative medicines to patients. Environment We have pledged to achieve net-zero carbon emissions by 2030 in Scopes 1 & 2 and by 2045 in Scope 3. Other initiatives include fully subsidized green transportation across our campuses in the U.S., and including sustainable design elements in our new projects. Community We are passionate about being an active contributor to the communities where we liv"}],
+
   },
   {
     id: "postmark",
@@ -14840,6 +15600,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://ghost.org/",
+    files: [{"title": "About", "text": "Ghost was founded in April 2013 by John O'Nolan & Hannah Wolfe , with a mission to create the best open source tools for independent journalists and writers across the world, and have a real impact on the future of online media. Today Ghost powers an incredible range of websites; from personal bloggers to large teams of writers and editors at some of the largest organisations in the world. We've built a sustainable business around a free core application, funded by a premium managed-service to run it on. Behind the scenes, we're just a group of weird, fun-loving humans who enjoy experimenting with new technology. We believe in creating as much freedom in the world as we can, and everything we do is based on that core principle. We set Ghost up as non-profit foundation so that it would always be true to its users, rather than shareholders or investors. Our legal constitution ensures that the company can never be bought or sold, and one hundred percent of our revenue is reinvested into the product and the community. As a public organisation we also believe in being transparent and accountable for everything we do, so we publish our live financial data for all to see."}],
+
   },
   {
     id: "prismic",
@@ -14853,6 +15615,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://prismic.io/",
+    files: [{"title": "About", "text": "Platform Solutions Developers Case studies Resources Pricing Login Get started Request a demo We’re passionate about websites And we’re on a mission to empower everyone, individuals and organizations to express their identity and grow their business online. Our goal is to change the way that people succeed online, and we’re starting with how they achieve growth through their websites. And even our internal culture encourages people to grow their careers by taking on new challenges. Seeing others, especially our clients, succeed and figuring out how we can continuously support them is what gets us out of bed every morning. We’re developers and marketers just like our users, leveraging our own tools for growth. You can be sure we’ll share every secret we discover through the innovations we implement in our tools. Our headquarters is in Paris, France, and our team is spread across more than 10 countries, comprising over 20 different nationalities. This cultural diversity greatly benefits employee relations and interactions with our users."}],
+
   },
   {
     id: "tines",
@@ -14866,6 +15630,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.tines.com/",
+    files: [{"title": "About", "text": "We believe that by combining AI, automation, and integration with human ingenuity organizations are more efficient, secure, and will have more engaged, happier teams. Before Tines, our founders, Eoin and Thomas , spent more than a decade as senior security operators, experiencing all of the usual pain points felt within and beyond security teams: too much work; not enough staff; inevitable incidents. They knew there needed to be a laser-focused solution, so in 2018 they started building Tines. Backed by the best Accel Addition Blossom Felicis Index Ventures Our values We strive for our product, processes, and customer interactions to be as simple, straightforward, and understandable as possible. In everything we do, we try to remove the unnecessary barriers and friction, focusing on the most important and impactful work. We are quick to ship, to respond, and to act. Speed is critical, however, it’s irrelevant if applied in a haphazard way. We must take ownership, execute with purpose, collect feedback, and iterate. We’re determined to achieve our mission and goals, but we want to be proud of HOW we achieve them."}],
+
   },
   {
     id: "cockroach",
@@ -14879,6 +15645,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.cockroachlabs.com/",
+    files: [{"title": "Product", "text": "BYOC gives you the flexibility to manage infrastructure costs, procurement, and any applicable committed use discounts or reserved instances directly with your provider, within your own cloud account. BYOC is available on the Mission Critical edition with invoice billing. Cluster virtualization on BYOC is in public preview on AWS and Google Cloud and is not covered by availability SLAs. 300 node clusters tested; over 250 nodes in a single cluster in production at a customer; growth does not require a new application architecture. CockroachDB handles 1.2M writes per second at a top delivery company, with distributed SQL correctness underneath machine-speed workloads. Cockroach Continuum is a new product from Cockroach Labs, built on CockroachDB. It lets you run and operate many databases as one system instead of managing each cluster by hand, with usage-based storage and an AI operator that watches your databases and recommends fixes. Cockroach Continuum runs on the CockroachDB engine your applications already work with. Your SQL, data model, and resilience don't change, Cockroach Continuum adds a new manag"}, {"title": "Product", "text": "One system for every database workload Cockroach Continuum is a database built for the agentic era. It separates compute from storage, lets databases share capacity, and includes an agentic operating assistant. Clients connect through a control plane that routes and isolates workloads. Beneath it, the CockroachDB engine for transactions, elastic storage for data, and agents for provisioning. Continuum brings the estate together without asking teams to give up speed, control, or the foundation already trusted in production. Continuum is a new product, built on the CockroachDB engine: distributed SQL that stays correct and available through failures that take other systems down. The estate gets a coordinated operating model, elastic infrastructure, and agent-assisted visibility. Virtualization lets multiple workloads share infrastructure without sharing data, identity, or operational state."}, {"title": "Product", "text": "COCKROACH AEGIS [PRIVATE PREVIEW] Scale your database estate without operational burden. Aegis is an agentic operations system that watches your database estate, diagnoses problems and tells you what to do about them, before they become costly incidents. Request early access It sees what no team can Cluster vitals, workload texture, query behavior. Aegis connects the signals no team can watch alone and turns them into decisions you approve. Monitoring, incident detection and day-to-day ops fill the week, leaving no room for platform strategy, while agents are shipping faster than anyone can keep up with by hand. Aegis catches the things that take expertise or time most teams don't have, publishing what it observed, why it diverged, and the exact steps to remedy: Continually monitors conditions. The agent wakes on a scheduled check-in at an adaptive cadence, or a monitor-triggered alert. Watch Observe Identify Diagnose Recommend CLUSTER monitoring Built for the people who know what database operations really cost “ Insights on steroids — that was my first reaction. We can be a bit lazy when it comes to fixing unused-index warnings or optimiz"}],
+
   },
   {
     id: "builder",
@@ -14931,6 +15699,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.zego.com/",
+    files: [{"title": "About", "text": "To make this real, we're building a different kind of insurance company. One designed for how the world actually works today. We built products no one else would: flexible, usage-based insurance designed for how people actually live and work. In doing so, we helped reshape how our customers earn a living. The same technology and thinking now serve drivers right across the UK from businesses and everyday motorists to first-time and experienced drivers. We're living through one of the biggest technological shifts in history. Homes, devices and businesses are becoming intelligent and connected. Zego is building the infrastructure that powers insurance in this new world: data-driven and embedded into everyday life. Zego is a UK motor insurance provider for car drivers, van drivers, taxi drivers and delivery riders. We insure individual drivers, one policy at a time. App-based telematics cover for everyday driving, with Rewards for good driving. Or a standard fixed price, if you’d rather nothing was monitored. We sell to individual drivers, not to businesses insuring vehicles in bulk."}],
+
   },
   {
     id: "buttondown",
@@ -14944,6 +15714,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://buttondown.com/",
+    files: [{"title": "About", "text": "So we view this as a living document, provided with no shortage of humility, alongside the hope that as we grow together, we keep your interests in mind and don’t slowly corrode our souls in the long term. We also hope that these values are interesting . Principles are only useful insofar as they can guide our decisions; these aren't meant to be prescriptive for every single company, but for us and our specific goals. You can look at any product closely enough and figure out what its creators value, and how they treat other people. We're no different in that regard, but we've made a number of deliberate and conscious choices to align with our values."}],
+
   },
   {
     id: "bigcommerce",
@@ -14970,6 +15742,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://commercetools.com/",
+    files: [{"title": "Company", "text": "Our modular, scalable technology is the foundation for innovation — from agentic commerce to conversational experiences — giving businesses the flexibility to respond to changing business needs fast and with confidence. In 2010, Dirk Hoerig and Denis Werner saw that legacy commerce platforms were slowing businesses down. Rigid architectures made it difficult to expand globally, launch new channels and adapt to changing customer expectations.gh sustainable practices, inclusive growth and accountable governance. So they built commercetools, a platform designed for flexibility, speed and continuous innovation. The result was headless commerce, a new approach that redefined how enterprises build and scale digital commerce. Headless commerce gave enterprises the freedom to create digital experiences on their own terms. commercetools provides the platform for autonomous commerce, empowering intelligent agents, autonomous operations, and AI-powered shopping experiences that help enterprises accelerate growth, improve operational efficiency, and deliver greater customer value at s"}],
+
   },
   {
     id: "pie",
@@ -14983,6 +15757,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.pieinsurance.com/",
+    files: [{"title": "About", "text": "Chris joined Pie in May 2021 and is responsible for scaling and operating the Software Engineering organization that is responsible for building Pie’s technology products and services. Chris has spent most of his career working on technology designed to disrupt legacy industries such as healthcare and logistics. Most recently Chris served as CTO at NEXT Trucking where he was disrupting the commercial freight industry. Lauri joined Pie in May 2017 is responsible for recruitment, development, benefits, compensation, and coaching for Pie employees (also known as Pie-oneers). Previously, she led people teams at companies including RapidAdvance, AFP Advisors Network, and Fannie Mae. in Communications: PR and Journalism from the University of Maryland. Holly Wallinger joined Pie in November 2021 as Assistant General Counsel and became General Counsel in October 2026. Today she oversees Pie’s legal and compliance functions, helping the company stay within regulatory requirements as it grows. With nearly 20 years of legal experience, including a decade focused on insurance, Holly's expertise spans regulatory compliance"}, {"title": "About", "text": "Justin Brenden is the chief actuary of SiriusPoint Ltd., and joined the Pie Insurance board in August 2022. Prior to his position at SiriusPoint Ltd., Justin served as executive vice president and chief reserving actuary at Third Point Re, joining the company during its first year of operations in 2012. In 2021, Third Point Re completed a merger with Sirius Group to become SiriusPoint. Prior to Third Point Re, Justin served as an actuarial manager for Ernst & Young LLP in their New York, NY office from 2005 to 2012. During his time at Ernst & Young, he provided actuarial consulting services to reinsurance and insurance companies around the world. Nazim Cetin has been CEO of Allianz X since 2017. Under his leadership, the Allianz X portfolio has grown to more than 25 companies with AuM of over EUR 2 billion. Previously, Nazim served as head of business development digital marketing for arvato and vice president corporate development and new businesses for Bertelsmann Group. Prior to joining Bertelsmann, Nazim founded agora42 Verlagsgesellschaft, a periodical for economics and philosophy."}],
+
   }
 ,
   {
@@ -14997,6 +15773,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.hellofresh.com/",
+    files: [{"title": "About", "text": "In 2011, our founders Dominik and Thomas spent afternoons packing pre-portioned recipe ingredients for their community. To test a new way to get home cooked meals on tables around the world. Little by little, their experiment became a real business that changed the way people eat. With love and dedication, HelloFresh went from a small, home-grown project to a meal kit service spanning 18 countries and over 1 billion meals—the biggest in the world. But despite its immense success, our philosophy remains the same: to make it easy for everyone to prepare a delicious, home-cooked meal for them and their loved ones. GET A TASTE SIGN UP TODAY HelloFresh Students Blog Recipes Hero Discounts Recipe Directory California Supply Chains Act Delivery Options Our company"}, {"title": "About", "text": "The HelloFresh app makes managing your weekly meal subscription simple. Discover new menus, browse HelloFresh Market (and skip the grocery store!), edit orders, adjust your meal plan, and more."}, {"title": "About", "text": "To create more awareness about food insecurity among families and children, HelloFresh commissioned Hunger Matters for Families : a national survey to better understand the importance of access to nutritious food during school breaks. Want to dig into the details of our sustainability initiatives? Please see the Non-Financial Report section of our Annual Report 2025 (pp. To better understand our environmental impact, we commissioned a third-party sustainability consultancy to examine our meal kits' end-to-end lifecycle footprint. START COOKING WITH HELLOFRESH GET 50% off a flexible cooking experience that fits your schedule GET 50% off a flexible cooking experience that fits your schedule EXPLORE PLANS HelloFresh Students Blog Recipes Hero Discounts Recipe Directory California Supply Chains Act Delivery Options Our company"}],
+
   },
   {
     id: "twitch",
@@ -15049,6 +15827,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.grab.com/sg/",
+    files: [{"title": "About", "text": "The GrabForGood Fund aims to promote socioeconomic mobility and improve the quality of life within our communities in Southeast Asia. The GrabForGood Fund was set up in line with Grab’s overall mission to drive economic empowerment for everyone, with a focus on contributing to causes that tackle issues of inequality, access, and climate change within Southeast Asia. The GrabForGood Fund is structured as an endowment to ensure the Fund’s long-term sustainability."}],
+
   },
   {
     id: "snap",
@@ -15101,6 +15881,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.beyondmeat.com/en-US",
+    files: [{"title": "About", "text": "Thoughtfully crafted with plant-based ingredients, this delicious option delivers the meaty flavor and satisfying texture you crave without the compromise. Step one: Gather all the usual components of meat – protein, fat, minerals, carbs and water – but from plants. Step two: Apply heat, cooling and pressure to the proteins. Sign up for our mailing list for early access to new products, exclusive discounts, Beyond The Plant Protein Company news, and more. By clicking 'Sign Up', you consent to Beyond Meat® using your email address in accordance with its Privacy Policy ."}],
+
   },
   {
     id: "flixbus",
@@ -15114,6 +15896,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.flixbus.com/",
+    files: [{"title": "Company", "text": "Sustainability is a complex issue, and we are well aware of it. As a travel tech company, we acknowledge that transportation accounts for a large part of the greenhouse gas emissions in the atmosphere (as shown by research ). But what if more people decided to jump onboard long-distance collective modes of transport, and leave their cars at home? Based on data from our 2025 Avoided Emissions Methodology , this can lead to a large-scale impact – and at a convenient cost. To make affordable, collective travel available for all is our purpose, and our Corporate Sustainability strategy builds around this vision. Affordable collective travel does not just mean fewer private vehicles on the road, but also higher connectivity across cities that are scarcely reachable by train or plane, easier access to mobility for people who are more price-sensitive, and economic footfall for off-the-beaten track territories – a potential that is intersectional and concrete, just as sustainability should be. Within our corporate strategy, sustainability has been embedded as strategic foundation. We commit to enhancing safe long-distance travel solutions that can provide viable alternatives to private car"}, {"title": "Company", "text": "With an average emission factor of 27,8 g of CO₂ per passenger km, traveling with FlixBus in Europe can cut one’s carbon footprint by at least 5 times compared to driving and 10 times compared to flying, with performances that are nearly as good as those of intercity trains.* By choosing Flix’s services over other means of transport which emit more CO₂ on a per passenger-kilometer basis according to scientific research, in 2024 Flix’s passengers avoided an estimated 1.5 million tonnes of CO₂. Consistent with its vision of driving sustainability in long-distance travel, Flix aims to achieve Net Zero operations in Europe by 2040 and globally by 2050. In addition, Flix has committed to the Science Based Targets initiative (SBTi), a universally recognized scientific framework, establishing near-term targets to reduce its impact already by 2032. In April 2024, the SBTi validated these targets, thus acknowledging that Flix’s strategy is in line with global climate goals. Partners benefit from access to a new customer base, an additional stable and predictable revenue stream, data-enabled decision-making, optimized utilization, and cost savings through Flix’s platform"}, {"title": "Company", "text": "Are you a company or agency interested in providing travel services to a large number of clients and employees? A business account can be the perfect solution for your organization! No matter how large or how small, we can help! Contact us to set up a corporate business account and enjoy the benefits of being supported by a dedicated account manager. Our ever-increasing number of connections with multiple schedules per day offer you plenty of choices to pick from. From city destinations to airports, congresses and fairs – we have you covered. We offer safe and relaxing trips, with free onboard Wi-Fi, electrical outlets, plus the option for assigned seats and excess baggage. Commercial Sales customers can benefit from a wide array of perks, such as: flexible change and cancelation policy, including no-fee changes and cancelations for most trips, volume discounts and specific commercial conditions to tailor the service to their needs. Business accounts enjoy an elevated level of priority service. The Commercial Sales team is your single point of contact to handle sales, billing, and customer service. We are open 6 days per week and most holidays for our US- and Canada-based clients."}],
+
   },
   {
     id: "netflix",
@@ -15153,6 +15937,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.kiwi.com/en/",
+    files: [{"title": "About", "text": "Kiwi.com was designed with one simple idea: travel should work for you. We’re a flight-focused online travel agent used and trusted by millions who love the ability to find unique, great value flights, as well as features we’ve developed that make travel just that little bit easier. We’re all travelers ourselves, so we want to remove the stress and complexities that can come with taking a trip, leaving you with the flight deal you want and peace of mind on your journey. Our simple search design is built on some clever tech that can find you unique, money-saving options that you can’t find anywhere else. Every single day, Kiwi.com processes over 100 million searches across more than 500 airlines, with travelers knowing they’ll find the right trip at the right price."}],
+
   },
   {
     id: "grubhub",
@@ -15244,6 +16030,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.onepeloton.com/",
+    files: [{"title": "About", "text": "Our registered office is at 1 Langley Street, London WC2H 9JG and our registered company number is 1174745. Our Member Support Team is available to discuss your order or any other questions and/or complaints you may have about Peloton. You can contact us by email at support@onepeloton.co.uk or by telephone on +44 808 169 6469 or using our Live Chat function available at Contact Us ."}, {"title": "Company", "text": "How it all started In 2012, we brought the best talent in technology, hardware and production together to accomplish an ambitious goal: bring the community and excitement of boutique fitness into the home. The idea struck us after years of struggling to get to the workout classes we loved, while balancing our demanding jobs and busy families. So we made it our mission to bring immersive and challenging workouts into people's lives in a more accessible, affordable and efficient way. Peloton is for everyone Watch the film A new concept in fitness We use a combination of technology, content and best-in-class instructors to empower our millions-strong community through fitness. Our library of classes with curated music is designed to keep you coming back. You can reach your goals at home, on your own time. The Peloton difference Millions of Members use our platform to connect, bond, inspire and grow stronger together. Through our immersive software like the live Leaderboard, beautifully designed hardware, addictive classes, empowering instructors and exciting community events, we’ve created an opportunity for people to discover the best versions of themselves through the power of sweat"}, {"title": "About", "text": "Discount applies to merchandise only, not to gift cards, applicable taxes, shipping & handling charges. Offer is non-transferable and not valid for cash or cash equivalent. See our return policy for details on returns, exchanges and refunds."}],
+
   },
   {
     id: "hopper",
@@ -15283,6 +16071,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.instacart.com/",
+    files: [{"title": "Company", "text": "Transaction values Instacart at $65.00 per share, representing a 26% premium to Instacart's closing price on October 22, 2026 Together, DoorDash and Instacart would help stores of every size reach more customers with the kinds of innovative technology that the biggest online retailers and grocers build for themselves Consumers to benefit from more choice and access to affordable delivery and savings Dashers and Shoppers to... Instacart-powered experience lets operators order garnishes, juices, and other non-alcoholic essentials without leaving the Provi platform NEW YORK and SAN FRANCISCO, November 12, 2026 – Instacart (Nasdaq: CART), a leading grocery technology company, and Provi,... For the first time, Big Y customers can customize made-to-order meals from in-store kiosks or online, and enjoy pickup & delivery options powered by FoodStorm SPRINGFIELD, MA and SAN FRANCISCO, October 20, 2026 - Big... New partnership brings Instacart’s grocery and retail marketplace to Skip, while Skip’s 50,000+ national and local restaurant partners become available to Instacart customers. Toronto, ON – October 6, 2026 – Skip, Canada’s homegrown delivery network,..."}, {"title": "Company", "text": "Today, we announced that Instacart has signed a definitive agreement to be acquired by DoorDash, marking an exciting new chapter for our company. I’ve said many times that grocery is an enormous category, and we're still in the early stages of realizing what technology can do to transform it and help the entire industry grow. By bringing together DoorDash’s global consumer reach and logistics capabilities... From everyday household essentials to last-minute grocery runs, getting what you need from Dollar General just got easier. Today, we’re thrilled to share that Dollar General and pOpshelf are now available for same-day delivery on... Hosting a holiday meal can feel like a big commitment. Between the guest list, menu, cooking, and cleanup, the effort adds up quickly, and that’s before you factor in buying groceries. Today, we announced that Instacart has signed a definitive agreement to be acquired by DoorDash, marking an exciting new chapter for our company. I’ve said many times that grocery is an enormous category, and we're... Storefront Pro launches new loyalty capabilities that help grocery retailers turn digital loyalty into lasting custome"}],
+
   },
   {
     id: "olio",
@@ -15296,6 +16086,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://olioapp.com/en/",
+    files: [{"title": "Company", "text": "Olio | At Home English English Español New Want to hear more from Olio? Sign up here to get our monthly updates delivered straight to your inbox 🚀 Olio | At Home Our vision Learn more Get involved At home Homepage Our vision Learn more Get involved At work Why Olio Our partners At home For business Volunteer Hub sign-in Get the app Get the app How Olio became Olio The world’s favourite local sharing app Growing up on a dairy farm in Yorkshire, there was always work to be done. Feeding cows, mucking out stalls, moving stock – late into the evening, 365 days a year. That’s the level of graft it takes to produce the food we eat. And that’s why I believe so strongly that food should be eaten, not thrown away. We’d tried to get through everything in the fridge, but we still had 6 sweet potatoes, a whole white cabbage and a few pots of yoghurt. I set off knocking on doors around the neighbourhood, newborn and toddler in tow, thinking this is crazy. There must be an easier way to share surplus food. When I told Saasha a few months later, her eyes lit up."}],
+
   },
   {
     id: "alltrails",
@@ -15361,6 +16153,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.docusign.com/",
+    files: [{"title": "Company", "text": "IAM for departments IAM Core Sales Customer Experience Human Resources Legal Procurement View All Departments IAM for industries Financial Services Insurance Real Estate Government Healthcare Life Sciences View All Industries Resources Learn Blog Customer Stories Resource Center Legality Guide Product Releases Roadmap Learn Hub Get support Support Center Customer Success Docusign University Trust Center & System Status Safety Center Build + extend Developer Center Partner Ecosystem Templates Connect Community Events Docusign Momentum Docusign named a Leader The 2026 IDC MarketScape for Worldwide Integrated Signing Workflow Software positions Docusign’s IAM platform in the Leaders category. Enterprise Plans & Pricing About Docusign About Us Docusign.org Sustainability Leadership News Center Contact Us Our story Docusign redefined how the world agrees with eSignature. Now, we're pioneering a new category, Intelligent Agreement Management (IAM). Docusign IAM brings agreements to life, allowing organizations of all sizes to put their agreement data to work for them. Explore Docusign IAM Bringing Agreements to Life Dedicated to the future of agreement technology From enterprise companie"}],
+
   },
   {
     id: "auth0",
@@ -15387,6 +16181,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.whatsapp.com/",
+    files: [{"title": "About", "text": "Our product now supports sending and receiving a variety of media: text, photos, videos, documents, and location, as well as voice calls. Some of your most personal moments are shared with WhatsApp, which is why we built end-to-end encryption into our app. Behind every product decision is our desire to let people communicate anywhere in the world without barriers. WhatsApp was founded by Jan Koum and Brian Acton who had previously spent 20 years combined at Yahoo. WhatsApp joined Facebook in 2014, but continues to operate as a separate app with a laser focus on building a messaging service that works fast and reliably anywhere in the world. Download What we do Features Blog Security For Business Who we are About us Careers Brand Center Privacy Use WhatsApp Mobile Desktop Tablet WhatsApp Web Need help? Contact Us Help Center Apps Security Advisories Download 2026 © WhatsApp LLC"}],
+
   },
   {
     id: "citymapper",
@@ -15400,6 +16196,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://citymapper.com/",
+    files: [{"title": "Company", "text": "Billions of 👫 humans move around 🏙️ cities daily. However cities are 😵 complicated, 🚗‍🚗‍🚗 congested, 😶 environmentally unsound, and economically stretched. We’ve spent a decade building some of the greatest 📱 technology in urban mobility that addresses these challenges. Proven and showcased by our popular and 🏆 awarded consumer products, 💚 loved and used by millions. Available in all the major cities of the 🌎 world, with the highest quality mobility data. Pioneered the future of mobility ticketing with an innovative contactless + native booking based solution for all public and private mobility A suite of over 30+ custom built tools, developed over a decade, to manage every data challenge we have faced across cities Thousands of feeds aggregated, fixed, improved, maintained and augmented, updating several times per week, plus incorporating real app usage and user feedback mechanisms"}],
+
   },
   {
     id: "poshmark",
@@ -15426,6 +16224,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://unity.com/",
+    files: [{"title": "Company", "text": "Unity Principles Unity's Principles are designed to ground us in action and purpose, shaping how we work, solve problems, and support each other, our customers, and our community. They're foundational to building an environment that consistently delivers the right outcomes for everyone. We listen first and seek to understand our customers and colleagues. We value their perspective and use what we learn to guide our actions. We challenge our own and others' assumptions, and we don't let objections linger. It means prioritizing challenges and methodically working towards desired outcomes. Delivering value to our customers and the community is paramount. It's about what is demonstrably best for the ecosystem. Who we are We believe the world is a better place with more creators in it. This is at the core of our business because we believe our technology can change the world. Our products give content creators the tools to not just entertain but"}],
+
   },
   {
     id: "oatly",
@@ -15465,6 +16265,8 @@ export const extraStartups = [
     funder: "",
     source: "Company site",
     sourceUrl: "https://www.meetup.com/",
+    files: [{"title": "About", "text": "Homepage About Careers Media Meetup creates possibilities to find and build local communities People use Meetup to meet new people, learn new things, find support, get out of their comfort zones, and pursue their passions, together. What you can do Explore your city Visit a museum, try new food, go hiking, hit up a brewery tour, or just go meet new people © Bending Spoons Operations S.p.A. | Sole shareholder company subject to the management and coordination of Bending Spoons S.p.A. | Via Nino Bonnet 10, 20154, Milan, Italy | VAT, tax code, and number of registration with the Milan Monza Brianza Lodi Company Register 13368510965 | REA number MI 2718456 | Contributed capital €150.000,00 fully paid-in"}],
+
   },
   {
     id: "niantic",

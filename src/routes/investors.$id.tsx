@@ -74,7 +74,7 @@ function InvestorRoomPage() {
                   {section.lines.map((line) => (
                     <div key={line.label}>
                       <dt className="text-xs text-muted">{line.label}</dt>
-                      <dd className="mt-1 text-base leading-relaxed md:text-lg">{line.value}</dd>
+                      <dd className="mt-1 text-base leading-relaxed break-words md:text-lg">{line.value}</dd>
                     </div>
                   ))}
                 </dl>
