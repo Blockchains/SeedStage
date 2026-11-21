@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { FileText } from "lucide-react";
 import { useState } from "react";
 import { AskBox } from "@/components/seedstage/ask-box";
+import { canView, documentObject, type Tuple } from "@/lib/seedstage/authz";
 import { Frame } from "@/components/seedstage/shell";
 import { FirmLogo, GhostButton, Notice } from "@/components/seedstage/bits";
 import { can } from "@/lib/seedstage/permissions";
@@ -30,12 +31,16 @@ function RoomPage() {
   const selected = visibleDocs.find((document) => document.id === documentId) ?? visibleDocs[0] ?? null;
   const selectedFile = selected ? roomFile(workspace.roomFiles, selected.id) : null;
   const granted = selected ? workspace.roomGrants.some((grant) => grant.investorId === investorId && grant.documentIds.includes(selected.id)) : false;
-  const grantedIds = new Set(room.documents.map((document) => document.id));
+  const tuples: Tuple[] = workspace.roomGrants.flatMap((grant) =>
+    grant.documentIds
+      .filter((documentId) => roomFile(workspace.roomFiles, documentId).share === "approved")
+      .map((documentId) => ({ user: `user:${grant.investorId}`, relation: "viewer" as const, object: documentObject(documentId) })),
+  );
   const passages = workspace.documents.map((document) => ({
     id: document.id,
     title: document.name,
     text: document.text,
-    entitled: asInvestor ? grantedIds.has(document.id) : true,
+    entitled: asInvestor ? canView(tuples, investorId, documentObject(document.id)) : true,
   }));
   const company = workspace.company.tradingName.value ?? "Company";
 

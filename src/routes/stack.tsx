@@ -5,7 +5,7 @@ import { UPSTREAM, type UpstreamMode } from "@/lib/seedstage/upstream";
 
 export const Route = createFileRoute("/stack")({ component: StackPage });
 
-const FILTERS = ["All", "wired", "pinned", "not-adopted"] as const;
+const FILTERS = ["All", "wired", "forked", "not-adopted"] as const;
 
 function StackPage() {
   const [mode, setMode] = useState<(typeof FILTERS)[number]>("All");
@@ -27,6 +27,7 @@ function StackPage() {
               <span className="text-xs text-muted">{label(item.mode)}</span>
             </div>
             <p className="mt-1 text-sm leading-relaxed text-muted">{item.role}</p>
+            {item.fork ? <a className="mt-1 inline-flex min-h-11 items-center text-sm font-medium text-primary" href={item.fork} target="_blank" rel="noreferrer">Fork</a> : null}
             <p className="num mt-1 text-xs text-muted">{item.commit.slice(0, 12)}</p>
           </li>
         ))}
@@ -36,7 +37,7 @@ function StackPage() {
 }
 
 function label(mode: UpstreamMode): string {
-  if (mode === "wired") return "In this app";
-  if (mode === "pinned") return "Pinned";
+  if (mode === "wired") return "Running";
+  if (mode === "forked") return "Forked";
   return "Not adopted";
 }

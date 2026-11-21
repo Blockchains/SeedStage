@@ -1,0 +1,42 @@
+[submodule "forks/pgvector"]
+	path = forks/pgvector
+	url = https://github.com/Blockchains/pgvector.git
+[submodule "forks/followthemoney"]
+	path = forks/followthemoney
+	url = https://github.com/Blockchains/followthemoney.git
+[submodule "forks/openfga"]
+	path = forks/openfga
+	url = https://github.com/Blockchains/openfga.git
+[submodule "forks/gotenberg"]
+	path = forks/gotenberg
+	url = https://github.com/Blockchains/gotenberg.git
+[submodule "forks/verified-sources"]
+	path = forks/verified-sources
+	url = https://github.com/Blockchains/verified-sources.git
+[submodule "forks/dlt"]
+	path = forks/dlt
+	url = https://github.com/Blockchains/dlt.git
+[submodule "forks/docling"]
+	path = forks/docling
+	url = https://github.com/Blockchains/docling.git
+[submodule "forks/OpenContracts"]
+	path = forks/OpenContracts
+	url = https://github.com/Blockchains/OpenContracts.git
+[submodule "forks/xyflow"]
+	path = forks/xyflow
+	url = https://github.com/Blockchains/xyflow.git
+[submodule "forks/promptfoo"]
+	path = forks/promptfoo
+	url = https://github.com/Blockchains/promptfoo.git
+[submodule "forks/keycloak"]
+	path = forks/keycloak
+	url = https://github.com/Blockchains/keycloak.git
+[submodule "forks/temporal"]
+	path = forks/temporal
+	url = https://github.com/Blockchains/temporal.git
+[submodule "forks/langfuse"]
+	path = forks/langfuse
+	url = https://github.com/Blockchains/langfuse.git
+[submodule "forks/openbao"]
+	path = forks/openbao
+	url = https://github.com/Blockchains/openbao.git

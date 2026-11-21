@@ -1,6 +1,7 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { AskBox } from "@/components/seedstage/ask-box";
 import { EntityTable } from "@/components/seedstage/entity-table";
+import { RelationshipGraph } from "@/components/seedstage/relationship-graph";
 import { FirmLogo } from "@/components/seedstage/bits";
 import { Mark } from "@/components/seedstage/mark";
 import { companyEntities } from "@/lib/seedstage/entities";
@@ -96,6 +97,7 @@ function StartupRoomPage() {
             <div className="mb-4 flex flex-col gap-3">
               <AskBox passages={passages} />
               <EntityTable rows={companyEntities(company, investors)} />
+              <RelationshipGraph rows={companyEntities(company, investors)} />
             </div>
             <div className="overflow-hidden rounded-xl border border-border bg-surface shadow-lift">
               {room.sections.map((section) => (

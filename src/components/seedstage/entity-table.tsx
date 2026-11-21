@@ -2,7 +2,7 @@ import { flexRender, getCoreRowModel, useReactTable, type ColumnDef } from "@tan
 import type { EntityRow } from "@/lib/seedstage/entities";
 
 const columns: ColumnDef<EntityRow>[] = [
-  { accessorKey: "kind", header: "Kind" },
+  { accessorKey: "schema", header: "Schema" },
   { accessorKey: "name", header: "Name" },
   { accessorKey: "relation", header: "Relation" },
 ];
