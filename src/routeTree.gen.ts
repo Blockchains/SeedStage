@@ -22,6 +22,7 @@ import { Route as PlanRouteImport } from './routes/plan'
 import { Route as RoomRouteImport } from './routes/room'
 import { Route as RoundRouteImport } from './routes/round'
 import { Route as SettingsRouteImport } from './routes/settings'
+import { Route as StackRouteImport } from './routes/stack'
 import { Route as StartupsRouteImport } from './routes/startups'
 import { Route as InvestorsIndexRouteImport } from './routes/investors.index'
 import { Route as InvestorsIdRouteImport } from './routes/investors.$id'
@@ -93,6 +94,11 @@ const SettingsRoute = SettingsRouteImport.update({
   path: '/settings',
   getParentRoute: () => rootRouteImport,
 } as any)
+const StackRoute = StackRouteImport.update({
+  id: '/stack',
+  path: '/stack',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const StartupsRoute = StartupsRouteImport.update({
   id: '/startups',
   path: '/startups',
@@ -133,6 +139,7 @@ export interface FileRoutesByFullPath {
   '/room': typeof RoomRoute
   '/round': typeof RoundRoute
   '/settings': typeof SettingsRoute
+  '/stack': typeof StackRoute
   '/startups': typeof StartupsRouteWithChildren
   '/investors/$id': typeof InvestorsIdRoute
   '/startups/$id': typeof StartupsIdRoute
@@ -152,6 +159,7 @@ export interface FileRoutesByTo {
   '/room': typeof RoomRoute
   '/round': typeof RoundRoute
   '/settings': typeof SettingsRoute
+  '/stack': typeof StackRoute
   '/investors/$id': typeof InvestorsIdRoute
   '/startups/$id': typeof StartupsIdRoute
   '/investors': typeof InvestorsIndexRoute
@@ -172,6 +180,7 @@ export interface FileRoutesById {
   '/room': typeof RoomRoute
   '/round': typeof RoundRoute
   '/settings': typeof SettingsRoute
+  '/stack': typeof StackRoute
   '/startups': typeof StartupsRouteWithChildren
   '/investors/$id': typeof InvestorsIdRoute
   '/startups/$id': typeof StartupsIdRoute
@@ -194,6 +203,7 @@ export interface FileRouteTypes {
     | '/room'
     | '/round'
     | '/settings'
+    | '/stack'
     | '/startups'
     | '/investors/$id'
     | '/startups/$id'
@@ -213,6 +223,7 @@ export interface FileRouteTypes {
     | '/room'
     | '/round'
     | '/settings'
+    | '/stack'
     | '/investors/$id'
     | '/startups/$id'
     | '/investors'
@@ -232,6 +243,7 @@ export interface FileRouteTypes {
     | '/room'
     | '/round'
     | '/settings'
+    | '/stack'
     | '/startups'
     | '/investors/$id'
     | '/startups/$id'
@@ -253,6 +265,7 @@ export interface RootRouteChildren {
   RoomRoute: typeof RoomRoute
   RoundRoute: typeof RoundRoute
   SettingsRoute: typeof SettingsRoute
+  StackRoute: typeof StackRoute
   StartupsRoute: typeof StartupsRouteWithChildren
 }
 
@@ -349,6 +362,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SettingsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/stack': {
+      id: '/stack'
+      path: '/stack'
+      fullPath: '/stack'
+      preLoaderRoute: typeof StackRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/startups': {
       id: '/startups'
       path: '/startups'
@@ -429,6 +449,7 @@ const rootRouteChildren: RootRouteChildren = {
   RoomRoute: RoomRoute,
   RoundRoute: RoundRoute,
   SettingsRoute: SettingsRoute,
+  StackRoute: StackRoute,
   StartupsRoute: StartupsRouteWithChildren,
 }
 export const routeTree = rootRouteImport

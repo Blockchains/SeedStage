@@ -11,6 +11,7 @@ import {
   Settings,
   ShieldCheck,
   FolderLock,
+  Layers,
   House,
   Rocket,
   ChartColumn,
@@ -36,6 +37,7 @@ const NAV = [
   { to: "/materials", label: "Materials", icon: FileText },
   { to: "/diligence", label: "Diligence", icon: ListChecks },
   { to: "/room", label: "Data room", icon: FolderLock },
+  { to: "/stack", label: "Stack", icon: Layers },
   { to: "/approvals", label: "Approvals", icon: ShieldCheck },
   { to: "/settings", label: "Settings", icon: Settings },
 ] as const;

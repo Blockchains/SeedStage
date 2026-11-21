@@ -1,4 +1,5 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
+import { AskBox } from "@/components/seedstage/ask-box";
 import { FirmLogo } from "@/components/seedstage/bits";
 import { Mark } from "@/components/seedstage/mark";
 import { buildInvestorRoom, linkedPortfolio } from "@/lib/seedstage/investor-room";
@@ -21,6 +22,10 @@ function InvestorRoomPage() {
   }
   const room = buildInvestorRoom(investor);
   const companies = linkedPortfolio(investor, publicStartups);
+  const passages = [
+    { id: "profile", title: "Firm", text: investor.excerpt, entitled: true },
+    ...(investor.files ?? []).map((file, index) => ({ id: `file-${index}`, title: file.title, text: file.text, entitled: true })),
+  ];
   const folders = [
     ...room.sections.map((section) => ({ id: section.id, label: section.label, onFile: true })),
     ...room.missing.map((label) => ({ id: label, label, onFile: false })),
@@ -66,6 +71,9 @@ function InvestorRoomPage() {
           </ul>
         </nav>
         <div className="-mt-8 min-w-0">
+          <div className="mb-4">
+            <AskBox passages={passages} />
+          </div>
           <div className="overflow-hidden rounded-xl border border-border bg-surface shadow-lift">
             {room.sections.map((section) => (
               <section key={section.id} id={section.id} className="border-t border-border px-5 py-5 first:border-t-0 md:px-8">

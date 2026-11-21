@@ -1,6 +1,9 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
+import { AskBox } from "@/components/seedstage/ask-box";
+import { EntityTable } from "@/components/seedstage/entity-table";
 import { FirmLogo } from "@/components/seedstage/bits";
 import { Mark } from "@/components/seedstage/mark";
+import { companyEntities } from "@/lib/seedstage/entities";
 import { buildStartupRoom } from "@/lib/seedstage/startup-room";
 import { publicStartups } from "@/lib/seedstage/startups";
 import { useSeedstage } from "@/lib/seedstage/store";
@@ -36,6 +39,10 @@ function StartupRoomPage() {
   }
   const room = buildStartupRoom(company);
   const backer = findBacker(company.funder, investors);
+  const passages = [
+    { id: "summary", title: "Company", text: company.summary, entitled: true },
+    ...(company.files ?? []).map((file, index) => ({ id: `file-${index}`, title: file.title, text: file.text, entitled: true })),
+  ];
   const folders = [
     ...room.sections.map((section) => ({ ...section, onFile: true })),
     ...room.missing.map((label) => ({ id: label, label, lines: [], onFile: false })),
@@ -86,6 +93,10 @@ function StartupRoomPage() {
           </nav>
 
           <div className="min-w-0">
+            <div className="mb-4 flex flex-col gap-3">
+              <AskBox passages={passages} />
+              <EntityTable rows={companyEntities(company, investors)} />
+            </div>
             <div className="overflow-hidden rounded-xl border border-border bg-surface shadow-lift">
               {room.sections.map((section) => (
                 <section key={section.id} id={section.id} className="border-t border-border px-5 py-5 first:border-t-0 md:px-8 md:py-6">

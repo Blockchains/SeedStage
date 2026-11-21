@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { FileText } from "lucide-react";
 import { useState } from "react";
+import { AskBox } from "@/components/seedstage/ask-box";
 import { Frame } from "@/components/seedstage/shell";
 import { FirmLogo, GhostButton, Notice } from "@/components/seedstage/bits";
 import { can } from "@/lib/seedstage/permissions";
@@ -29,6 +30,13 @@ function RoomPage() {
   const selected = visibleDocs.find((document) => document.id === documentId) ?? visibleDocs[0] ?? null;
   const selectedFile = selected ? roomFile(workspace.roomFiles, selected.id) : null;
   const granted = selected ? workspace.roomGrants.some((grant) => grant.investorId === investorId && grant.documentIds.includes(selected.id)) : false;
+  const grantedIds = new Set(room.documents.map((document) => document.id));
+  const passages = workspace.documents.map((document) => ({
+    id: document.id,
+    title: document.name,
+    text: document.text,
+    entitled: asInvestor ? grantedIds.has(document.id) : true,
+  }));
   const company = workspace.company.tradingName.value ?? "Company";
 
   return (
@@ -90,6 +98,9 @@ function RoomPage() {
                 {visibleDocs.length === 0 ? <li className="px-3 py-6 text-sm text-muted">No file in this section.</li> : null}
               </ul>
               <article className="min-w-0 px-4 py-5 md:px-6">
+                <div className="mb-4">
+                  <AskBox passages={passages} />
+                </div>
                 {selected && selectedFile ? (
                   <>
                     <h2 className="text-lg font-semibold tracking-display">{selected.name}</h2>
