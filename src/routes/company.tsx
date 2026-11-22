@@ -5,7 +5,12 @@ import { can } from "@/lib/seedstage/permissions";
 import { useSeedstage } from "@/lib/seedstage/store";
 import type { Company } from "@/lib/seedstage/types";
 
-export const Route = createFileRoute("/company")({ component: CompanyPage });
+import { pageHead } from "@/lib/seedstage/seo";
+
+export const Route = createFileRoute("/company")({
+  component: CompanyPage,
+  head: () => pageHead("/company", "Company — SeedStage", "The company record this workspace is raising for."),
+});
 
 const FIELDS: { key: keyof Omit<Company, "team">; label: string }[] = [
   { key: "legalName", label: "Legal name" },

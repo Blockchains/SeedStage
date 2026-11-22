@@ -8,7 +8,12 @@ import { modelPricedRound, unsupportedInstrument } from "@/lib/seedstage/round";
 import { useSeedstage } from "@/lib/seedstage/store";
 import { cn } from "@/lib/utils";
 
-export const Route = createFileRoute("/round")({ component: RoundPage });
+import { pageHead } from "@/lib/seedstage/seo";
+
+export const Route = createFileRoute("/round")({
+  component: RoundPage,
+  head: () => pageHead("/round", "Round — SeedStage", "Price a seed round and see the ownership that follows."),
+});
 
 function RoundPage() {
   const draft = useSeedstage((state) => state.workspace.roundDraft);

@@ -339,27 +339,74 @@ function applyCustomCardFromFs(site, cwd) {
   return { ...site, card: "custom", image: disk };
 }
 
+export function descriptionFromDocument(html) {
+  const tags = String(html ?? "").match(/<meta\b[^>]*>/gi) ?? [];
+  for (const tag of tags) {
+    const name = tag.match(/\bname\s*=\s*["']([^"']+)["']/i);
+    if (!name || name[1].toLowerCase() !== "description") continue;
+    const content = tag.match(/\bcontent\s*=\s*["']([^"']*)["']/i);
+    if (content) return unescapeHtml(content[1]).trim();
+  }
+  return "";
+}
+
+export function canonicalFromDocument(html) {
+  const tags = String(html ?? "").match(/<link\b[^>]*>/gi) ?? [];
+  for (const tag of tags) {
+    const rel = tag.match(/\brel\s*=\s*["']([^"']+)["']/i);
+    if (!rel || !rel[1].toLowerCase().split(/\s+/).includes("canonical")) continue;
+    const href = tag.match(/\bhref\s*=\s*["']([^"']+)["']/i);
+    if (href) return unescapeHtml(href[1]).trim();
+  }
+  return "";
+}
+
+/** site.json hostname is the public apex. It wins over a deployer grok.me host. */
+export function resolveOgHost(site = {}, hostHeader = "") {
+  return publicAppHost(site.hostname) || resolvePublicHost(hostHeader);
+}
+
+function pageUrl(publicHost, path, documentCanonical) {
+  const apex = `https://${publicHost}`;
+  if (documentCanonical === apex || documentCanonical.startsWith(`${apex}/`)) {
+    return documentCanonical === apex ? `${apex}/` : documentCanonical;
+  }
+  const raw = String(path || "/").split("?")[0] || "/";
+  if (raw === "/") return `${apex}/`;
+  return `${apex}${raw.startsWith("/") ? raw : `/${raw}`}`;
+}
+
 export function grokOgHeadTags({
   host = "",
   appName = DEFAULT_APP_NAME,
   site = {},
   documentTitle = "",
+  documentDescription = "",
+  documentCanonical = "",
+  path = "/",
   cwd = process.cwd(),
 } = {}) {
   const title = resolveOgTitle(site, appName, host, documentTitle);
-  const publicHost = resolvePublicHost(host);
+  const publicHost = resolveOgHost(site, host);
+  const description = String(documentDescription || site.description || "").trim();
   const tags = [
     `<meta name="twitter:card" content="summary_large_image">`,
+    `<meta name="twitter:title" content="${escapeHtml(title)}">`,
     `<meta property="og:title" content="${escapeHtml(title)}">`,
   ];
-  const description = String(site.description ?? "").trim();
   if (description) {
     tags.push(`<meta property="og:description" content="${escapeHtml(description)}">`);
+    tags.push(`<meta name="twitter:description" content="${escapeHtml(description)}">`);
   }
   if (String(site.type ?? "").toLowerCase() === "x:game") {
     tags.push(`<meta property="og:type" content="x:game">`);
+  } else if (publicHost) {
+    tags.push(`<meta property="og:type" content="website">`);
   }
   if (publicHost) {
+    const url = pageUrl(publicHost, path, documentCanonical);
+    tags.push(`<meta property="og:url" content="${escapeHtml(url)}">`);
+    tags.push(`<meta property="og:site_name" content="${escapeHtml(String(site.title || title).trim() || title)}">`);
     const asset = resolveOgCardAsset(site, cwd);
     const custom = Boolean(asset);
     let image = custom
@@ -370,6 +417,7 @@ export function grokOgHeadTags({
     tags.push(`<meta property="og:image" content="${escapeHtml(image)}">`);
     tags.push(`<meta property="og:image:width" content="1200">`);
     tags.push(`<meta property="og:image:height" content="630">`);
+    tags.push(`<meta name="twitter:image" content="${escapeHtml(image)}">`);
     const banner = String(site.banner ?? "").trim();
     if (banner) {
       const bannerUrl = `https://${publicHost}${banner.startsWith("/") ? banner : `/${banner}`}`;
@@ -450,15 +498,24 @@ export function injectGrokPwaHead(html, ctx = {}) {
 
   const missing = grokPwaHeadTags(appName)
     .filter(([key]) => {
-      if (key === "manifest") return !next.includes('href="/__grok/manifest.webmanifest"');
-      if (key === "apple-touch-icon") return !next.includes('href="/__grok/icon-180.png"');
+      if (key === "manifest") return !/rel=["']manifest["']/i.test(next);
+      if (key === "apple-touch-icon") return !/rel=["']apple-touch-icon["']/i.test(next);
       return !next.includes(`name="${key}"`);
     })
     .map(([, tag]) => tag);
 
   next = insertAfterHeadOpen(
     next,
-    grokOgHeadTags({ host, appName, site, documentTitle, cwd }).join(""),
+    grokOgHeadTags({
+      host,
+      appName,
+      site,
+      documentTitle,
+      documentDescription: descriptionFromDocument(html),
+      documentCanonical: canonicalFromDocument(html),
+      path: ctx.path ?? "/",
+      cwd,
+    }).join(""),
   );
 
   if (readGrokExtensionsEnabled() && !next.includes("/grok-app-builder/extensions.js")) {
@@ -482,6 +539,11 @@ export function injectGrokPwaHead(html, ctx = {}) {
     if (!next.includes('property="x:creator:id"')) missing.push(creatorTags[1]);
   }
 
+  if (resolveOgHost(site, host) && !/rel=["']canonical["']/i.test(next)) {
+    const href = pageUrl(resolveOgHost(site, host), ctx.path ?? "/", "");
+    missing.push(`<link rel="canonical" href="${escapeHtml(href)}">`);
+  }
+
   if (missing.length === 0) return next;
   return insertBeforeHeadClose(next, missing.join(""));
 }
@@ -495,6 +557,8 @@ function findHeadClose(buf) {
  * Streaming head injector: buffers only until `</head>` (ASCII marker; never
  * appears inside a UTF-8 continuation byte), overwrites share-card metas,
  * then passes later chunks through so streaming SSR keeps streaming.
+ *
+ * @param {{ host?: string, appName?: string, projectId?: string, creator?: string, creatorId?: string, cwd?: string, site?: Record<string, unknown>, path?: string }} [ctx]
  */
 export function createHeadInjector(ctx = {}) {
   const normalized = normalizeHeadContext(ctx);
@@ -512,6 +576,7 @@ export function createHeadInjector(ctx = {}) {
       host: normalized.host,
       cwd: normalized.cwd,
       site: normalized.site,
+      path: ctx.path ?? "/",
     });
 
   return {

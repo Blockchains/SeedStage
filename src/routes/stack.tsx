@@ -4,7 +4,12 @@ import { Frame } from "@/components/seedstage/shell";
 import { readLocalServices, type ServiceLive } from "@/lib/seedstage/services";
 import { UPSTREAM, type UpstreamMode } from "@/lib/seedstage/upstream";
 
-export const Route = createFileRoute("/stack")({ component: StackPage });
+import { pageHead } from "@/lib/seedstage/seo";
+
+export const Route = createFileRoute("/stack")({
+  component: StackPage,
+  head: () => pageHead("/stack", "Stack — SeedStage", "Services this workspace can reach, and the ones it cannot."),
+});
 
 const FILTERS = ["All", "wired", "forked", "not-adopted"] as const;
 

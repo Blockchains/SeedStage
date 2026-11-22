@@ -5,7 +5,12 @@ import { GhostButton, Notice, Panel, Pill, PrimaryButton, TextField } from "@/co
 import { can } from "@/lib/seedstage/permissions";
 import { useSeedstage } from "@/lib/seedstage/store";
 
-export const Route = createFileRoute("/approvals")({ component: ApprovalsPage });
+import { pageHead } from "@/lib/seedstage/seo";
+
+export const Route = createFileRoute("/approvals")({
+  component: ApprovalsPage,
+  head: () => pageHead("/approvals", "Approvals — SeedStage", "Actions waiting for a person to approve."),
+});
 
 function ApprovalsPage() {
   const workspace = useSeedstage((state) => state.workspace);

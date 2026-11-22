@@ -7,7 +7,15 @@ import { track } from "@/lib/seedstage/analytics";
 import { publicStartups } from "@/lib/seedstage/startups";
 import { useSeedstage } from "@/lib/seedstage/store";
 
-export const Route = createFileRoute("/")({ component: HomePage });
+import { organizationJsonLd, pageHead } from "@/lib/seedstage/seo";
+
+export const Route = createFileRoute("/")({
+  component: HomePage,
+  head: () => ({
+    ...pageHead("/", "SeedStage", "Evidence, round modelling and investor fit for a seed raise."),
+    scripts: [{ type: "application/ld+json", children: organizationJsonLd() }],
+  }),
+});
 
 const NAV = [
   { to: "/startups", label: "Startups" },

@@ -545,3 +545,28 @@ test("vite plugin bakes og identity as a virtual module", () => {
   assert.match(plugin, /snapshotOgIdentity/);
 });
 
+
+test("site hostname wins over a grok.me public host and branded icons are kept", () => {
+  const prev = process.env.VITE_PUBLIC_HOSTNAME;
+  process.env.VITE_PUBLIC_HOSTNAME = "seedstage.grok.me";
+  try {
+    const html = `<html><head><title>Startups — SeedStage</title><meta name="description" content="Seed-stage companies, each with its own site, description and source."><link rel="canonical" href="https://seedstage.si/startups"><link rel="icon" href="/favicon.svg"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"></head></html>`;
+    const out = injectGrokPwaHead(html, {
+      host: "seedstage.grok.me",
+      cwd: blankCwd,
+      path: "/startups",
+      site: { title: "SeedStage", hostname: "seedstage.si", card: "custom", image: "/og.jpg" },
+    });
+    assert.match(out, /property="og:url" content="https:\/\/seedstage\.si\/startups"/);
+    assert.match(out, /property="og:site_name" content="SeedStage"/);
+    assert.match(out, /property="og:image" content="https:\/\/seedstage\.si\/og\.jpg"/);
+    assert.match(out, /name="twitter:image" content="https:\/\/seedstage\.si\/og\.jpg"/);
+    assert.match(out, /property="og:type" content="website"/);
+    assert.doesNotMatch(out, /grok\.me/);
+    assert.doesNotMatch(out, /__grok\/manifest/);
+    assert.doesNotMatch(out, /__grok\/icon-180/);
+  } finally {
+    if (prev === undefined) delete process.env.VITE_PUBLIC_HOSTNAME;
+    else process.env.VITE_PUBLIC_HOSTNAME = prev;
+  }
+});

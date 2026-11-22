@@ -8,7 +8,12 @@ import { can } from "@/lib/seedstage/permissions";
 import { useSeedstage } from "@/lib/seedstage/store";
 import type { MatchAssessment } from "@/lib/seedstage/match";
 
-export const Route = createFileRoute("/investors/")({ component: InvestorsPage });
+import { pageHead } from "@/lib/seedstage/seo";
+
+export const Route = createFileRoute("/investors/")({
+  component: InvestorsPage,
+  head: () => pageHead("/investors", "Investors — SeedStage", "Seed investors, each with its own site, description and source."),
+});
 
 function InvestorsPage() {
   const workspace = useSeedstage((state) => state.workspace);

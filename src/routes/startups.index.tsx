@@ -5,7 +5,12 @@ import { Frame } from "@/components/seedstage/shell";
 import { publicStartups } from "@/lib/seedstage/startups";
 import { startupDocuments } from "@/lib/seedstage/public-docs";
 
-export const Route = createFileRoute("/startups/")({ component: StartupsPage });
+import { pageHead } from "@/lib/seedstage/seo";
+
+export const Route = createFileRoute("/startups/")({
+  component: StartupsPage,
+  head: () => pageHead("/startups", "Startups — SeedStage", "Seed-stage companies, each with its own site, description and source."),
+});
 
 function StartupsPage() {
   const [query, setQuery] = useState("");

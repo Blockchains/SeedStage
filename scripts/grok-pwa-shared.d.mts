@@ -26,6 +26,7 @@ export declare function grokExtensionsHeadTags(projectId?: string): string[];
 export type OgSite = {
   title?: string;
   description?: string;
+  hostname?: string;
   type?: string;
   card?: string;
   image?: string;
@@ -41,6 +42,7 @@ export type GrokHeadContext = {
   host?: string | null;
   cwd?: string;
   site?: OgSite;
+  path?: string;
 };
 
 export declare function readOgSite(cwd?: string): OgSite;

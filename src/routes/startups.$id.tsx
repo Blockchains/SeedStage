@@ -10,7 +10,17 @@ import { publicStartups } from "@/lib/seedstage/startups";
 import { useSeedstage } from "@/lib/seedstage/store";
 import type { Investor } from "@/lib/seedstage/types";
 
-export const Route = createFileRoute("/startups/$id")({ component: StartupRoomPage });
+import { pageHead } from "@/lib/seedstage/seo";
+
+export const Route = createFileRoute("/startups/$id")({
+  component: StartupRoomPage,
+  head: ({ params }) => {
+    const company = publicStartups.find((item) => item.id === params.id);
+    const name = company?.name ?? "Startup";
+    const description = (company?.summary ?? `Public record for ${name}.`).replace(/\s+/g, " ").trim();
+    return pageHead(`/startups/${params.id}`, `${name} — SeedStage`, description.slice(0, 180));
+  },
+});
 
 function findBacker(funder: string, investors: Investor[]): Investor | null {
   const needle = funder.trim().toLowerCase();

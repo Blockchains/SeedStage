@@ -8,7 +8,12 @@ import { formatMoney } from "@/lib/seedstage/money";
 import { can } from "@/lib/seedstage/permissions";
 import { useSeedstage } from "@/lib/seedstage/store";
 
-export const Route = createFileRoute("/plan")({ component: PlanPage });
+import { pageHead } from "@/lib/seedstage/seo";
+
+export const Route = createFileRoute("/plan")({
+  component: PlanPage,
+  head: () => pageHead("/plan", "Funding plan — SeedStage", "The capital a company needs before the next milestone."),
+});
 
 type Lens = "base" | "downside" | "hiring-delay";
 

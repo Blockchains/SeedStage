@@ -5,7 +5,12 @@ import { can } from "@/lib/seedstage/permissions";
 import { useSeedstage } from "@/lib/seedstage/store";
 import type { PipelineStage } from "@/lib/seedstage/types";
 
-export const Route = createFileRoute("/pipeline")({ component: PipelinePage });
+import { pageHead } from "@/lib/seedstage/seo";
+
+export const Route = createFileRoute("/pipeline")({
+  component: PipelinePage,
+  head: () => pageHead("/pipeline", "Pipeline — SeedStage", "Investors under review for this raise, and why each one is there."),
+});
 
 const STAGES: { id: PipelineStage; label: string }[] = [
   { id: "researching", label: "Researching" },

@@ -5,7 +5,12 @@ import { exploreMetrics } from "@/lib/seedstage/metrics";
 import { publicStartups } from "@/lib/seedstage/startups";
 import { useSeedstage } from "@/lib/seedstage/store";
 
-export const Route = createFileRoute("/metrics")({ component: MetricsPage });
+import { pageHead } from "@/lib/seedstage/seo";
+
+export const Route = createFileRoute("/metrics")({
+  component: MetricsPage,
+  head: () => pageHead("/metrics", "Metrics — SeedStage", "The numbers on file for this company, and the ones that are not."),
+});
 
 const GROUPS = ["All", "Round", "Cash", "Directory", "Not on file"] as const;
 

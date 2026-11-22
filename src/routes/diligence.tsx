@@ -4,7 +4,12 @@ import { Notice, Panel, Pill } from "@/components/seedstage/bits";
 import { can } from "@/lib/seedstage/permissions";
 import { useSeedstage } from "@/lib/seedstage/store";
 
-export const Route = createFileRoute("/diligence")({ component: DiligencePage });
+import { pageHead } from "@/lib/seedstage/seo";
+
+export const Route = createFileRoute("/diligence")({
+  component: DiligencePage,
+  head: () => pageHead("/diligence", "Diligence — SeedStage", "Questions still open before a conversation with an investor."),
+});
 
 function DiligencePage() {
   const workspace = useSeedstage((state) => state.workspace);

@@ -12,7 +12,12 @@ import { can } from "@/lib/seedstage/permissions";
 import { ROOM_CATEGORIES, categoryReadiness, investorRoom, roomFile, type RoomCategory } from "@/lib/seedstage/room";
 import { useSeedstage } from "@/lib/seedstage/store";
 
-export const Route = createFileRoute("/room")({ component: RoomPage });
+import { pageHead } from "@/lib/seedstage/seo";
+
+export const Route = createFileRoute("/room")({
+  component: RoomPage,
+  head: () => pageHead("/room", "Data room — SeedStage", "Documents held for a company or a firm, with the source on each file."),
+});
 
 function RoomPage() {
   const workspace = useSeedstage((state) => state.workspace);

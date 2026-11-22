@@ -7,7 +7,18 @@ import { linkedPortfolio } from "@/lib/seedstage/investor-room";
 import { publicStartups } from "@/lib/seedstage/startups";
 import { useSeedstage } from "@/lib/seedstage/store";
 
-export const Route = createFileRoute("/investors/$id")({ component: InvestorRoomPage });
+import { publicInvestors } from "@/lib/seedstage/public-investors";
+import { pageHead } from "@/lib/seedstage/seo";
+
+export const Route = createFileRoute("/investors/$id")({
+  component: InvestorRoomPage,
+  head: ({ params }) => {
+    const investor = publicInvestors.find((item) => item.id === params.id);
+    const name = investor?.firm ?? "Investor";
+    const description = (investor?.excerpt ?? `Public record for ${name}.`).replace(/\s+/g, " ").trim();
+    return pageHead(`/investors/${params.id}`, `${name} — SeedStage`, description.slice(0, 180));
+  },
+});
 
 function InvestorRoomPage() {
   const { id } = Route.useParams();

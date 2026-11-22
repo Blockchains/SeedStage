@@ -5,7 +5,12 @@ import { can, ROLE_LABEL } from "@/lib/seedstage/permissions";
 import { useSeedstage } from "@/lib/seedstage/store";
 import type { Role } from "@/lib/seedstage/types";
 
-export const Route = createFileRoute("/settings")({ component: SettingsPage });
+import { pageHead } from "@/lib/seedstage/seo";
+
+export const Route = createFileRoute("/settings")({
+  component: SettingsPage,
+  head: () => pageHead("/settings", "Settings — SeedStage", "Settings for this company workspace."),
+});
 
 const ROLES: Role[] = ["founder", "finance", "adviser", "board", "admin"];
 

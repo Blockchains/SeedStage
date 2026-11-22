@@ -6,7 +6,12 @@ import { companyEntities } from "@/lib/seedstage/entities";
 import { publicStartups } from "@/lib/seedstage/startups";
 import { useSeedstage } from "@/lib/seedstage/store";
 
-export const Route = createFileRoute("/graph")({ component: GraphPage });
+import { pageHead } from "@/lib/seedstage/seo";
+
+export const Route = createFileRoute("/graph")({
+  component: GraphPage,
+  head: () => pageHead("/graph", "Relationships — SeedStage", "People and firms named on a company record."),
+});
 
 function GraphPage() {
   const investors = useSeedstage((state) => state.workspace.investors);

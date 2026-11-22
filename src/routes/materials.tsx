@@ -7,7 +7,12 @@ import { fundingBrief, meetingBrief, outreachDraft } from "@/lib/seedstage/mater
 import { can } from "@/lib/seedstage/permissions";
 import { useSeedstage } from "@/lib/seedstage/store";
 
-export const Route = createFileRoute("/materials")({ component: MaterialsPage });
+import { pageHead } from "@/lib/seedstage/seo";
+
+export const Route = createFileRoute("/materials")({
+  component: MaterialsPage,
+  head: () => pageHead("/materials", "Materials — SeedStage", "Documents prepared for this raise."),
+});
 
 function MaterialsPage() {
   const workspace = useSeedstage((state) => state.workspace);

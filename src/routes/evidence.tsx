@@ -9,7 +9,12 @@ import { can } from "@/lib/seedstage/permissions";
 import { useSeedstage } from "@/lib/seedstage/store";
 import type { Claim } from "@/lib/seedstage/types";
 
-export const Route = createFileRoute("/evidence")({ component: EvidencePage });
+import { pageHead } from "@/lib/seedstage/seo";
+
+export const Route = createFileRoute("/evidence")({
+  component: EvidencePage,
+  head: () => pageHead("/evidence", "Evidence — SeedStage", "Claims on this raise, each one tied to a source."),
+});
 
 function valueLabel(claim: Claim): string {
   if (claim.value === null) return "No structured value";
