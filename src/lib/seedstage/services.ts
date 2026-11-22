@@ -33,7 +33,7 @@ export const readLocalServices = createServerFn({ method: "GET" }).handler(async
     getJson("http://127.0.0.1:8233/api/v1/namespaces"),
     getJson("http://127.0.0.1:5001/health"),
     getJson("http://127.0.0.1:3010/health"),
-    githubRelease("docling-project/docling-serve"),
+    githubRelease("docling-project/docling"),
     githubRelease("gotenberg/gotenberg"),
     githubRelease("langfuse/langfuse"),
     githubRelease("Open-Source-Legal/OpenContracts"),

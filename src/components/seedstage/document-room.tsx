@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AskBox } from "@/components/seedstage/ask-box";
+import { linkParts } from "@/lib/seedstage/links";
 import type { HeldDocument } from "@/lib/seedstage/public-docs";
 
 export function DocumentRoom({ documents, folders }: { documents: HeldDocument[]; folders: readonly string[] }) {
@@ -49,13 +50,23 @@ export function DocumentRoom({ documents, folders }: { documents: HeldDocument[]
               <section key={document.id} id={document.id}>
                 <h2 className="text-lg font-semibold tracking-display break-words">{document.title}</h2>
                 <p className="mt-1 text-xs text-muted">{document.category.replace(/^\d+\s/, "")}</p>
-                <p className="mt-3 text-sm leading-relaxed break-words whitespace-pre-wrap">{document.text}</p>
+                <p className="mt-3 text-sm leading-relaxed break-words whitespace-pre-wrap"><LinkedText text={document.text} /></p>
               </section>
             ))}
           </div>
         </div>
       </div>
     </div>
+  );
+}
+
+function LinkedText({ text }: { text: string }) {
+  return linkParts(text).map((part, index) =>
+    part.kind === "link" ? (
+      <a key={index} href={part.href} target="_blank" rel="noreferrer">{part.text}</a>
+    ) : (
+      <span key={index}>{part.text}</span>
+    ),
   );
 }
 
