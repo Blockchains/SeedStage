@@ -16,6 +16,7 @@ import { Route as DiligenceRouteImport } from './routes/diligence'
 import { Route as EvidenceRouteImport } from './routes/evidence'
 import { Route as GraphRouteImport } from './routes/graph'
 import { Route as InvestorsRouteImport } from './routes/investors'
+import { Route as MatchRouteImport } from './routes/match'
 import { Route as MaterialsRouteImport } from './routes/materials'
 import { Route as MetricsRouteImport } from './routes/metrics'
 import { Route as PipelineRouteImport } from './routes/pipeline'
@@ -63,6 +64,11 @@ const GraphRoute = GraphRouteImport.update({
 const InvestorsRoute = InvestorsRouteImport.update({
   id: '/investors',
   path: '/investors',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MatchRoute = MatchRouteImport.update({
+  id: '/match',
+  path: '/match',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MaterialsRoute = MaterialsRouteImport.update({
@@ -139,6 +145,7 @@ export interface FileRoutesByFullPath {
   '/evidence': typeof EvidenceRoute
   '/graph': typeof GraphRoute
   '/investors': typeof InvestorsRouteWithChildren
+  '/match': typeof MatchRoute
   '/materials': typeof MaterialsRoute
   '/metrics': typeof MetricsRoute
   '/pipeline': typeof PipelineRoute
@@ -160,6 +167,7 @@ export interface FileRoutesByTo {
   '/diligence': typeof DiligenceRoute
   '/evidence': typeof EvidenceRoute
   '/graph': typeof GraphRoute
+  '/match': typeof MatchRoute
   '/materials': typeof MaterialsRoute
   '/metrics': typeof MetricsRoute
   '/pipeline': typeof PipelineRoute
@@ -182,6 +190,7 @@ export interface FileRoutesById {
   '/evidence': typeof EvidenceRoute
   '/graph': typeof GraphRoute
   '/investors': typeof InvestorsRouteWithChildren
+  '/match': typeof MatchRoute
   '/materials': typeof MaterialsRoute
   '/metrics': typeof MetricsRoute
   '/pipeline': typeof PipelineRoute
@@ -206,6 +215,7 @@ export interface FileRouteTypes {
     | '/evidence'
     | '/graph'
     | '/investors'
+    | '/match'
     | '/materials'
     | '/metrics'
     | '/pipeline'
@@ -227,6 +237,7 @@ export interface FileRouteTypes {
     | '/diligence'
     | '/evidence'
     | '/graph'
+    | '/match'
     | '/materials'
     | '/metrics'
     | '/pipeline'
@@ -248,6 +259,7 @@ export interface FileRouteTypes {
     | '/evidence'
     | '/graph'
     | '/investors'
+    | '/match'
     | '/materials'
     | '/metrics'
     | '/pipeline'
@@ -271,6 +283,7 @@ export interface RootRouteChildren {
   EvidenceRoute: typeof EvidenceRoute
   GraphRoute: typeof GraphRoute
   InvestorsRoute: typeof InvestorsRouteWithChildren
+  MatchRoute: typeof MatchRoute
   MaterialsRoute: typeof MaterialsRoute
   MetricsRoute: typeof MetricsRoute
   PipelineRoute: typeof PipelineRoute
@@ -331,6 +344,13 @@ declare module '@tanstack/react-router' {
       path: '/investors'
       fullPath: '/investors'
       preLoaderRoute: typeof InvestorsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/match': {
+      id: '/match'
+      path: '/match'
+      fullPath: '/match'
+      preLoaderRoute: typeof MatchRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/materials': {
@@ -463,6 +483,7 @@ const rootRouteChildren: RootRouteChildren = {
   EvidenceRoute: EvidenceRoute,
   GraphRoute: GraphRoute,
   InvestorsRoute: InvestorsRouteWithChildren,
+  MatchRoute: MatchRoute,
   MaterialsRoute: MaterialsRoute,
   MetricsRoute: MetricsRoute,
   PipelineRoute: PipelineRoute,

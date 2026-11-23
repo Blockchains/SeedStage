@@ -18,6 +18,7 @@ export const Route = createFileRoute("/")({
 });
 
 const NAV = [
+  { to: "/match", label: "Match" },
   { to: "/startups", label: "Startups" },
   { to: "/investors", label: "Investors" },
   { to: "/round", label: "Round" },
@@ -76,7 +77,12 @@ function HomePage() {
         <h1 className="mt-3 max-w-xl text-4xl font-semibold tracking-display text-balance md:text-5xl">See your next funding move.</h1>
         <p className="mt-4 max-w-lg text-base leading-relaxed text-muted">Price the round in the workspace. Open the lists when you want the companies or the firms.</p>
 
-        <div className="mt-6 grid gap-3 sm:grid-cols-2">
+        <Link to="/match" className="hit mt-6 flex min-h-24 flex-col justify-between rounded-md border border-border bg-surface px-4 py-4">
+          <span className="text-lg font-semibold tracking-display">Match your startup</span>
+          <span className="text-sm text-muted">Upload a description. Ranked by fit, not by a chance of funding.</span>
+        </Link>
+
+        <div className="mt-3 grid gap-3 sm:grid-cols-2">
           <Link to="/startups" className="hit flex min-h-24 flex-col justify-between rounded-md bg-primary px-4 py-4 text-primary-fg">
             <span className="text-lg font-semibold tracking-display">Startups</span>
             <span className="text-sm text-primary-fg/80">{publicStartups.length} companies</span>
