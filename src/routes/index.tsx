@@ -79,7 +79,7 @@ function HomePage() {
 
         <Link to="/match" className="hit mt-6 flex min-h-24 flex-col justify-between rounded-md border border-border bg-surface px-4 py-4">
           <span className="text-lg font-semibold tracking-display">Match your startup</span>
-          <span className="text-sm text-muted">Upload a description. Ranked by fit, not by a chance of funding.</span>
+          <span className="text-sm text-muted">Drop a deck. Ranked by fit, not by a chance of funding.</span>
         </Link>
 
         <div className="mt-3 grid gap-3 sm:grid-cols-2">
