@@ -1,6 +1,7 @@
 import type { RoomCategory } from "./room.ts";
 import type { PublicStartup } from "./startups.ts";
 import type { Investor } from "./types.ts";
+import { companyEntities } from "./entities.ts";
 import { formatMoney } from "./money.ts";
 
 export type HeldDocument = {
@@ -35,6 +36,10 @@ export function startupDocuments(company: PublicStartup): HeldDocument[] {
     .filter(Boolean)
     .join("\n");
   if (financing) documents.push({ id: "financing", title: "Named financing", category: "03 Ownership and financing", text: financing });
+  const entities = companyEntities(company, []).map((row) => `${row.schema}: ${row.name}. ${row.relation}.`);
+  if (entities.length > 0) {
+    documents.push({ id: "entities", title: "Entities", category: "02 Corporate records", text: entities.join("\n") });
+  }
   for (const [index, file] of (company.files ?? []).entries()) {
     if (!file.text.trim()) continue;
     documents.push({ id: `file-${index}`, title: file.title, category: fileCategory(file.title), text: file.text.trim() });

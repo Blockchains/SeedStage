@@ -1,6 +1,7 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import { DocumentRoom } from "@/components/seedstage/document-room";
-import { investorDocuments, investorFolders } from "@/lib/seedstage/public-docs";
+import { investorDocuments, investorFolders, type HeldDocument } from "@/lib/seedstage/public-docs";
 import { FirmLogo } from "@/components/seedstage/bits";
 import { Mark } from "@/components/seedstage/mark";
 import { linkedPortfolio } from "@/lib/seedstage/investor-room";
@@ -8,6 +9,7 @@ import { publicStartups } from "@/lib/seedstage/startups";
 import { useSeedstage } from "@/lib/seedstage/store";
 
 import { publicInvestors } from "@/lib/seedstage/public-investors";
+import { readRoomExtra } from "@/lib/seedstage/room-extra";
 import { pageHead } from "@/lib/seedstage/seo";
 
 export const Route = createFileRoute("/investors/$id")({
@@ -33,7 +35,29 @@ function InvestorRoomPage() {
     );
   }
   const documents = investorDocuments(investor);
+  const [extraDocs, setExtraDocs] = useState<HeldDocument[]>([]);
   const companies = linkedPortfolio(investor, publicStartups);
+  useEffect(() => {
+    let current = true;
+    readRoomExtra({ data: { id: investor.id, kind: "investor" } })
+      .then((files) => {
+        if (!current) return;
+        setExtraDocs(
+          files.map((file, index) => ({
+            id: `extra-${index}`,
+            title: file.title,
+            category: "Firm",
+            text: file.text,
+          })),
+        );
+      })
+      .catch(() => {
+        if (current) setExtraDocs([]);
+      });
+    return () => {
+      current = false;
+    };
+  }, [investor.id]);
 
   return (
     <div className="min-h-screen overflow-x-clip bg-bg text-fg">
@@ -63,7 +87,7 @@ function InvestorRoomPage() {
 
       <main className="mx-auto w-full min-w-0 max-w-5xl px-5 pb-16">
         <div className="-mt-8">
-          <DocumentRoom documents={documents} folders={investorFolders(investor)} />
+          <DocumentRoom documents={[...documents, ...extraDocs]} folders={investorFolders(investor)} />
           {companies.length > 0 ? (
             <ul className="mt-4 grid gap-2 sm:grid-cols-2">
               {companies.map((company) => (

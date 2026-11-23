@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 import { extraInvestors } from "./directory.generated.ts";
 import { companyEntities } from "./entities.ts";
@@ -69,4 +70,14 @@ test("data companies and data firms are on the directory routes", () => {
   assert.match(circuit.logo, /^https:\/\/bookface-images\.s3\.amazonaws\.com\//);
   assert.match(startupDocuments(circuit).map((document) => document.text).join("\n"), /electronics manufacturing/i);
   assert.ok(publicStartups.length >= 6000);
+  const extra = JSON.parse(readFileSync(new URL("./room-extra.json", import.meta.url), "utf8")) as {
+    startups: Record<string, { text: string }[]>;
+    investors: Record<string, { text: string }[]>;
+  };
+  const extraCompany = Object.values(extra.startups).reduce((sum, files) => sum + files.reduce((inner, file) => inner + file.text.length, 0), 0);
+  const extraFirm = Object.values(extra.investors).reduce((sum, files) => sum + files.reduce((inner, file) => inner + file.text.length, 0), 0);
+  assert.ok(extraCompany > 12_000_000, `company pages ${extraCompany}`);
+  assert.ok(extraFirm > 600_000, `firm pages ${extraFirm}`);
+  assert.ok(extra.startups["hegel-ai"]?.some((file) => file.text.includes("Docling")));
+  assert.ok(extra.investors["sequoia"]?.some((file) => /Chromium|Docling/.test(file.text)));
 });

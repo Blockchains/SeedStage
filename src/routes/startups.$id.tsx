@@ -5,7 +5,9 @@ import { FirmLogo } from "@/components/seedstage/bits";
 import { Mark } from "@/components/seedstage/mark";
 import { companyEntities } from "@/lib/seedstage/entities";
 import { DocumentRoom } from "@/components/seedstage/document-room";
-import { STARTUP_FOLDERS, startupDocuments } from "@/lib/seedstage/public-docs";
+import { useEffect, useState } from "react";
+import { STARTUP_FOLDERS, startupDocuments, type HeldDocument } from "@/lib/seedstage/public-docs";
+import { readRoomExtra } from "@/lib/seedstage/room-extra";
 import { publicStartups } from "@/lib/seedstage/startups";
 import { useSeedstage } from "@/lib/seedstage/store";
 import type { Investor } from "@/lib/seedstage/types";
@@ -49,7 +51,29 @@ function StartupRoomPage() {
     );
   }
   const roomDocs = startupDocuments(company);
+  const [extraDocs, setExtraDocs] = useState<HeldDocument[]>([]);
   const backer = findBacker(company.funder, investors);
+  useEffect(() => {
+    let current = true;
+    readRoomExtra({ data: { id: company.id, kind: "startup" } })
+      .then((files) => {
+        if (!current) return;
+        setExtraDocs(
+          files.map((file, index) => ({
+            id: `extra-${index}`,
+            title: file.title,
+            category: file.title === "Index facts" ? "03 Ownership and financing" : "01 Company overview",
+            text: file.text,
+          })),
+        );
+      })
+      .catch(() => {
+        if (current) setExtraDocs([]);
+      });
+    return () => {
+      current = false;
+    };
+  }, [company.id]);
 
   return (
     <div className="min-h-screen overflow-x-clip bg-bg text-fg">
@@ -82,7 +106,7 @@ function StartupRoomPage() {
 
       <main className="mx-auto w-full min-w-0 max-w-5xl px-5 pb-16">
         <div className="-mt-8">
-          <DocumentRoom documents={roomDocs} folders={STARTUP_FOLDERS} />
+          <DocumentRoom documents={[...roomDocs, ...extraDocs]} folders={STARTUP_FOLDERS} />
           <div className="mt-4 flex flex-col gap-3">
             <EntityTable rows={companyEntities(company, investors)} />
             <RelationshipGraph rows={companyEntities(company, investors)} />
