@@ -73,7 +73,7 @@ function InvestorsPage() {
         {tab === "filing" ? (
           <>
             <input value={secQuery} onChange={(event) => setSecQuery(event.target.value)} placeholder="Search Form D funds" aria-label="Search Form D funds" className="min-h-11 w-full rounded-md border border-border bg-surface px-3 text-sm md:max-w-xs" />
-            <p className="text-sm text-muted">These are the fund’s own Form D filings. A filing is not a cheque into a startup, and it is not scored as seed fit.</p>
+            <p className="text-sm text-muted">These are the fund’s own Form D filings. The offering target is not capital available to invest, and the filing is not scored as seed fit.</p>
             {secRows.map((investor) => (
               <Panel
                 key={investor.id}

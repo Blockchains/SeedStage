@@ -1,3 +1,4 @@
+import { classifyStartup, matchesView, presentInvestor, presentStartup, type SecView } from "./sec-class.ts";
 import type { PublicStartup } from "./startups.ts";
 import type { Investor } from "./types.ts";
 
@@ -8,11 +9,15 @@ export type SecStartupCard = {
   name: string;
   stage: string;
   summary: string;
+  industry: string | null;
+  offering: string | null;
+  sold: string | null;
   person: string | null;
-  round: string | null;
   phone: string | null;
   sourceUrl: string;
 };
+
+export type SecCounts = Record<SecView, number>;
 
 export type SecInvestorCard = {
   id: string;
@@ -29,14 +34,28 @@ export type SecInvestorCard = {
 let wave: Wave | null = null;
 let startupById: Map<string, PublicStartup> | null = null;
 let investorById: Map<string, Investor> | null = null;
+let screens: ReturnType<typeof classifyStartup>[] | null = null;
+let counts: SecCounts | null = null;
 
 async function load(): Promise<Wave> {
-  if (wave && startupById && investorById) return wave;
+  if (wave && startupById && investorById && screens && counts) return wave;
   const raw = (await import("./sec-wave.json?raw")).default;
-  wave = JSON.parse(raw) as Wave;
-  startupById = new Map(wave.startups.map((company) => [company.id, company]));
-  investorById = new Map(wave.investors.map((firm) => [firm.id, firm]));
-  return wave;
+  const data = JSON.parse(raw) as Wave;
+  const nextCounts: SecCounts = { candidates: 0, issuers: data.startups.length, other: 0, funds: 0, thin: 0 };
+  const nextScreens = data.startups.map((company) => {
+    const screen = classifyStartup(company, false);
+    if (screen.label === "likely_early_stage_candidate" || screen.label === "possible_early_stage_candidate") nextCounts.candidates += 1;
+    else if (screen.label === "likely_other") nextCounts.other += 1;
+    else if (screen.label === "fund_issuer") nextCounts.funds += 1;
+    else nextCounts.thin += 1;
+    return screen;
+  });
+  wave = data;
+  screens = nextScreens;
+  counts = nextCounts;
+  startupById = new Map(data.startups.map((company) => [company.id, company]));
+  investorById = new Map(data.investors.map((firm) => [firm.id, firm]));
+  return data;
 }
 
 function phoneOf(files: { text: string }[] | undefined): string | null {
@@ -47,32 +66,49 @@ function phoneOf(files: { text: string }[] | undefined): string | null {
 
 export async function secStartup(id: string): Promise<PublicStartup | null> {
   const data = await load();
-  return startupById?.get(id) ?? data.startups.find((company) => company.id === id) ?? null;
+  const company = startupById?.get(id) ?? data.startups.find((item) => item.id === id);
+  return company ? presentStartup(company) : null;
 }
 
 export async function secInvestor(id: string): Promise<Investor | null> {
   const data = await load();
-  return investorById?.get(id) ?? data.investors.find((firm) => firm.id === id) ?? null;
+  const firm = investorById?.get(id) ?? data.investors.find((item) => item.id === id);
+  return firm ? presentInvestor(firm) : null;
 }
 
-export async function searchStartups(query: string, offset: number, limit: number): Promise<{ total: number; rows: SecStartupCard[] }> {
+export async function searchStartups(query: string, offset: number, limit: number, view: SecView): Promise<{ total: number; counts: SecCounts; rows: SecStartupCard[] }> {
   const data = await load();
   const needle = query.trim().toLowerCase();
-  const rows = needle
-    ? data.startups.filter((company) => `${company.name} ${company.summary} ${company.person ?? ""}`.toLowerCase().includes(needle))
-    : data.startups;
+  const matched: number[] = [];
+  for (let index = 0; index < data.startups.length; index += 1) {
+    const screen = screens![index];
+    if (!matchesView(screen.label, view)) continue;
+    if (needle) {
+      const company = data.startups[index];
+      const hay = `${company.name} ${company.summary} ${company.person ?? ""} ${screen.industry ?? ""}`.toLowerCase();
+      if (!hay.includes(needle)) continue;
+    }
+    matched.push(index);
+  }
   return {
-    total: rows.length,
-    rows: rows.slice(offset, offset + limit).map((company) => ({
-      id: company.id,
-      name: company.name,
-      stage: company.stage,
-      summary: company.summary,
-      person: company.person,
-      round: company.round,
-      phone: phoneOf(company.files),
-      sourceUrl: company.sourceUrl,
-    })),
+    total: matched.length,
+    counts: counts!,
+    rows: matched.slice(offset, offset + limit).map((index) => {
+      const company = data.startups[index];
+      const screen = screens![index];
+      return {
+        id: company.id,
+        name: company.name,
+        stage: screen.display,
+        summary: screen.summary,
+        industry: screen.industry,
+        offering: screen.offering.text,
+        sold: screen.sold.text,
+        person: company.person,
+        phone: phoneOf(company.files),
+        sourceUrl: company.sourceUrl,
+      };
+    }),
   };
 }
 
@@ -80,7 +116,7 @@ export async function searchInvestors(query: string, offset: number, limit: numb
   const data = await load();
   const needle = query.trim().toLowerCase();
   const rows = needle
-    ? data.investors.filter((firm) => `${firm.firm} ${firm.excerpt} ${firm.partner ?? ""} ${firm.geos.join(" ")}`.toLowerCase().includes(needle))
+    ? data.investors.filter((firm) => `${firm.firm} ${firm.excerpt} ${firm.partner ?? ""} ${firm.geos.join(" ")} ${firm.themes.join(" ")}`.toLowerCase().includes(needle))
     : data.investors;
   return {
     total: rows.length,

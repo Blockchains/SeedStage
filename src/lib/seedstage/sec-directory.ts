@@ -1,12 +1,17 @@
 import { createServerFn } from "@tanstack/react-start";
-import type { SecInvestorCard, SecStartupCard } from "./sec-store.server.ts";
+import type { SecCounts, SecInvestorCard, SecStartupCard } from "./sec-store.server.ts";
+import type { SecView } from "./sec-class.ts";
 import type { PublicStartup } from "./startups.ts";
 import type { Investor } from "./types.ts";
 
-function page(input: { q?: string; offset?: number } | undefined): { q: string; offset: number; limit: number } {
+const VIEWS: readonly SecView[] = ["candidates", "issuers", "other", "funds", "thin"];
+
+function page(input: { q?: string; offset?: number; view?: string } | undefined): { q: string; offset: number; limit: number; view: SecView } {
   const q = String(input?.q ?? "").replace(/\s+/g, " ").trim().slice(0, 80);
   const offset = Math.max(0, Math.min(80_000, Math.floor(Number(input?.offset) || 0)));
-  return { q, offset, limit: 40 };
+  const requested = String(input?.view ?? "candidates");
+  const view = VIEWS.includes(requested as SecView) ? (requested as SecView) : "candidates";
+  return { q, offset, limit: 40, view };
 }
 
 function filingId(input: { id?: string } | undefined): string {
@@ -16,9 +21,9 @@ function filingId(input: { id?: string } | undefined): string {
 
 export const searchSecStartups = createServerFn({ method: "POST" })
   .validator(page)
-  .handler(async ({ data }): Promise<{ total: number; rows: SecStartupCard[] }> => {
+  .handler(async ({ data }): Promise<{ total: number; counts: SecCounts; rows: SecStartupCard[] }> => {
     const store = await import("./sec-store.server.ts");
-    return store.searchStartups(data.q, data.offset, data.limit);
+    return store.searchStartups(data.q, data.offset, data.limit, data.view);
   });
 
 export const searchSecInvestors = createServerFn({ method: "POST" })

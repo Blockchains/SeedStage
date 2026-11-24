@@ -1,7 +1,7 @@
 import { projectPlan, type PlanAssumptions } from "./cash.ts";
 import { formatBps, formatMoney } from "./money.ts";
 import { modelPricedRound, type RoundInput } from "./round.ts";
-import { SEC_INVESTOR_COUNT, SEC_STARTUP_COUNT } from "./sec-counts.ts";
+import { SEC_CANDIDATE_COUNT, SEC_INVESTOR_COUNT, SEC_STARTUP_COUNT } from "./sec-counts.ts";
 import type { PublicStartup } from "./startups.ts";
 import type { Claim, Investor } from "./types.ts";
 
@@ -63,8 +63,9 @@ export function exploreMetrics(input: {
   }
   rows.push({ id: "firms", group: "Directory", name: "Firms on file", value: String(input.investors.length) });
   rows.push({ id: "companies", group: "Directory", name: "Companies on file", value: String(input.startups.length) });
-  rows.push({ id: "sec-firms", group: "Directory", name: "Form D funds", value: String(SEC_INVESTOR_COUNT) });
+  rows.push({ id: "sec-firms", group: "Directory", name: "Form D fund filings", value: String(SEC_INVESTOR_COUNT) });
   rows.push({ id: "sec-companies", group: "Directory", name: "Form D issuers", value: String(SEC_STARTUP_COUNT) });
+  rows.push({ id: "sec-candidates", group: "Directory", name: "Form D early-stage candidates, inferred", value: String(SEC_CANDIDATE_COUNT) });
   rows.push({ id: "cheques", group: "Directory", name: "Firms with a stated cheque", value: String(stated.length) });
   for (const [currency, firms] of byCurrency) {
     const low = Math.min(...firms.map((firm) => firm.chequeMinMinor));

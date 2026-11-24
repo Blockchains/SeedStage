@@ -4,7 +4,7 @@ import { HomePreview, type PreviewTab } from "@/components/seedstage/home-previe
 import { FirmLogo } from "@/components/seedstage/bits";
 import { Mark } from "@/components/seedstage/mark";
 import { track } from "@/lib/seedstage/analytics";
-import { SEC_INVESTOR_COUNT, SEC_STARTUP_COUNT } from "@/lib/seedstage/sec-counts";
+import { SEC_CANDIDATE_COUNT, SEC_INVESTOR_COUNT } from "@/lib/seedstage/sec-counts";
 import { publicStartups } from "@/lib/seedstage/startups";
 import { useSeedstage } from "@/lib/seedstage/store";
 
@@ -86,11 +86,11 @@ function HomePage() {
         <div className="mt-3 grid gap-3 sm:grid-cols-2">
           <Link to="/startups" className="hit flex min-h-24 flex-col justify-between rounded-md bg-primary px-4 py-4 text-primary-fg">
             <span className="text-lg font-semibold tracking-display">Startups</span>
-            <span className="text-sm text-primary-fg/80">{(publicStartups.length + SEC_STARTUP_COUNT).toLocaleString("en-GB")} companies</span>
+            <span className="text-sm text-primary-fg/80">{publicStartups.length.toLocaleString("en-GB")} companies · {SEC_CANDIDATE_COUNT.toLocaleString("en-GB")} Form D candidates</span>
           </Link>
           <Link to="/investors" className="hit flex min-h-24 flex-col justify-between rounded-md border border-border bg-surface px-4 py-4" onClick={() => track("sample_opened")}>
             <span className="text-lg font-semibold tracking-display">Investors</span>
-            <span className="text-sm text-muted">{(investors.length + SEC_INVESTOR_COUNT).toLocaleString("en-GB")} firms</span>
+            <span className="text-sm text-muted">{investors.length.toLocaleString("en-GB")} firms · {SEC_INVESTOR_COUNT.toLocaleString("en-GB")} fund filings</span>
           </Link>
         </div>
 
@@ -109,8 +109,8 @@ function HomePage() {
           </div>
 
           <div className="flex flex-col gap-8">
-            <LogoBlock title="Companies" href="/startups" count={publicStartups.length + SEC_STARTUP_COUNT} rows={publicStartups.slice(0, 24).map((company) => ({ id: company.id, name: company.name, logo: company.logo, href: `/startups/${company.id}`, meta: company.stage, room: "startup" as const }))} />
-            <LogoBlock title="Firms" href="/investors" count={investors.length + SEC_INVESTOR_COUNT} rows={investors.slice(0, 24).map((investor) => ({ id: investor.id, name: investor.firm, logo: investor.logo, href: `/investors/${investor.id}`, meta: investor.stages[0] ?? investor.geos[0] ?? "", room: "investor" as const }))} />
+            <LogoBlock title="Companies" href="/startups" count={publicStartups.length} rows={publicStartups.slice(0, 24).map((company) => ({ id: company.id, name: company.name, logo: company.logo, href: `/startups/${company.id}`, meta: company.stage, room: "startup" as const }))} />
+            <LogoBlock title="Firms" href="/investors" count={investors.length} rows={investors.slice(0, 24).map((investor) => ({ id: investor.id, name: investor.firm, logo: investor.logo, href: `/investors/${investor.id}`, meta: investor.stages[0] ?? investor.geos[0] ?? "", room: "investor" as const }))} />
           </div>
         </section>
       </main>
