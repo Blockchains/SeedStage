@@ -1,5 +1,6 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { EntityTable } from "@/components/seedstage/entity-table";
+import { FactGrid, MorePanel } from "@/components/seedstage/fact-sheet";
 import { RelationshipGraph } from "@/components/seedstage/relationship-graph";
 import { FirmLogo } from "@/components/seedstage/bits";
 import { Mark } from "@/components/seedstage/mark";
@@ -10,8 +11,8 @@ import { STARTUP_FOLDERS, startupDocuments, type HeldDocument } from "@/lib/seed
 import { readRoomExtra } from "@/lib/seedstage/room-extra";
 import { publicStartups } from "@/lib/seedstage/startups";
 import { readSecStartup } from "@/lib/seedstage/sec-directory";
+import { startupFacts } from "@/lib/seedstage/record-facts";
 import { useSeedstage } from "@/lib/seedstage/store";
-import type { Investor } from "@/lib/seedstage/types";
 
 import { pageHead } from "@/lib/seedstage/seo";
 
@@ -25,20 +26,6 @@ export const Route = createFileRoute("/startups/$id")({
     return pageHead(`/startups/${params.id}`, `${name} — SeedStage`, description.slice(0, 180));
   },
 });
-
-function findBacker(funder: string, investors: Investor[]): Investor | null {
-  const needle = funder.trim().toLowerCase();
-  if (!needle) return null;
-  const exact = investors.find((investor) => investor.firm.toLowerCase() === needle);
-  if (exact) return exact;
-  return (
-    investors.find((investor) => {
-      const firm = investor.firm.toLowerCase();
-      if (firm.length < 4 || needle.length < 4) return false;
-      return needle.includes(firm) || firm.includes(needle);
-    }) ?? null
-  );
-}
 
 function StartupRoomPage() {
   const { id } = Route.useParams();
@@ -77,7 +64,6 @@ function StartupRoomPage() {
     );
   }
   const roomDocs = startupDocuments(company);
-  const backer = findBacker(company.funder, investors);
 
   return (
     <div className="min-h-screen overflow-x-clip bg-bg text-fg">
@@ -96,11 +82,6 @@ function StartupRoomPage() {
           <FirmLogo src={company.logo} name={company.name} className="size-20 rounded-2xl bg-white" />
           <h1 className="mt-6 text-4xl font-semibold tracking-display text-balance break-words md:text-6xl">{company.name}</h1>
           {company.summary ? <p className="mt-4 max-w-xl text-base leading-relaxed text-canvas-muted md:text-lg">{company.summary.split(/(?<=[.!?])\s+/)[0]}</p> : null}
-          <div className="mt-6 flex flex-wrap gap-2">
-            {[company.stage, company.round, company.funder].filter(Boolean).map((item) => (
-              <span key={item} className="rounded-full border border-canvas-line px-3 py-1 text-sm">{item}</span>
-            ))}
-          </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <a className="hit inline-flex min-h-11 items-center rounded-full bg-primary px-4 text-sm font-medium text-primary-fg" href={company.website} target="_blank" rel="noreferrer">{company.website.includes("sec.gov") ? "Filing" : "Website"}</a>
             <a className="hit inline-flex min-h-11 items-center rounded-full border border-canvas-line px-4 text-sm" href={company.sourceUrl} target="_blank" rel="noreferrer">Source</a>
@@ -110,35 +91,14 @@ function StartupRoomPage() {
 
       <main className="mx-auto w-full min-w-0 max-w-5xl px-5 pb-16">
         <div className="-mt-8">
-          <DocumentRoom documents={[...roomDocs, ...extraDocs]} folders={STARTUP_FOLDERS} />
-          <div className="mt-4 flex flex-col gap-3">
-            <EntityTable rows={companyEntities(company, investors)} />
-            <RelationshipGraph rows={companyEntities(company, investors)} />
-          </div>
-          {company.person || company.funder ? (
-            <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                {company.person ? (
-                  <article className="rounded-xl border border-border bg-surface p-5">
-                    <p className="text-xs font-medium tracking-kicker text-muted uppercase">Person</p>
-                    <p className="mt-3 text-xl font-semibold tracking-display">{company.person}</p>
-                  </article>
-                ) : null}
-                {company.funder ? (
-                  <article className="rounded-xl border border-border bg-surface p-5">
-                    <p className="text-xs font-medium tracking-kicker text-muted uppercase">Backer</p>
-                    <div className="mt-3 flex items-center gap-3">
-                      {backer ? <FirmLogo src={backer.logo} name={backer.firm} className="size-11" /> : null}
-                      <div>
-                        <p className="text-xl font-semibold tracking-display">{backer?.firm ?? company.funder}</p>
-                        {backer?.geos[0] ? <p className="text-xs text-muted">{backer.geos.slice(0, 2).join(" · ")}</p> : null}
-                      </div>
-                    </div>
-                    {backer?.excerpt ? <p className="mt-3 text-sm leading-relaxed text-muted">{backer.excerpt}</p> : null}
-                    {backer ? <a className="hit mt-2 inline-flex min-h-11 items-center text-sm font-medium text-primary" href={backer.sourceUrl} target="_blank" rel="noreferrer">Firm site</a> : null}
-                  </article>
-                ) : null}
-              </div>
-            ) : null}
+          <FactGrid facts={startupFacts(company)} />
+          <MorePanel count={roomDocs.length + extraDocs.length}>
+            <DocumentRoom documents={[...roomDocs, ...extraDocs]} folders={STARTUP_FOLDERS} />
+            <div className="mt-4 flex flex-col gap-3">
+              <EntityTable rows={companyEntities(company, investors)} />
+              <RelationshipGraph rows={companyEntities(company, investors)} />
+            </div>
+          </MorePanel>
         </div>
       </main>
     </div>

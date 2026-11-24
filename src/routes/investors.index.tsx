@@ -2,9 +2,10 @@ import { Link, createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 import { Frame } from "@/components/seedstage/shell";
 import { FirmLogo, GhostButton, Notice, Panel, Pill } from "@/components/seedstage/bits";
+import { FactList, MoreDisclosure } from "@/components/seedstage/fact-sheet";
 import { assessInvestor } from "@/lib/seedstage/match";
-import { formatMoney } from "@/lib/seedstage/money";
 import { can } from "@/lib/seedstage/permissions";
+import { investorFacts } from "@/lib/seedstage/record-facts";
 import { SEC_INVESTOR_COUNT } from "@/lib/seedstage/sec-counts";
 import { searchSecInvestors } from "@/lib/seedstage/sec-directory";
 import { useSeedstage } from "@/lib/seedstage/store";
@@ -84,9 +85,20 @@ function InvestorsPage() {
                   </Link>
                 }
               >
-                <p className="text-sm leading-relaxed">{investor.excerpt}</p>
-                <p className="mt-2 text-sm">{[investor.partner, investor.phone, investor.geos.slice(0, 2).join(", "), investor.themes[0]].filter(Boolean).join(" · ")}</p>
-                <a className="hit mt-2 inline-flex min-h-11 items-center text-sm font-medium text-primary" href={investor.sourceUrl} target="_blank" rel="noreferrer">Filing</a>
+                <FactList facts={[
+                  investor.partner ? { label: "Partner", value: investor.partner } : null,
+                  investor.geos.length ? { label: "Geography", value: investor.geos.slice(0, 3).join(", ") } : null,
+                  investor.themes[0] ? { label: "Fund type", value: investor.themes[0] } : null,
+                  investor.phone ? { label: "Phone", value: investor.phone } : null,
+                ].filter((fact): fact is { label: string; value: string } => fact !== null)} />
+                {investor.excerpt.trim() ? (
+                  <MoreDisclosure>
+                    <p className="text-sm leading-relaxed text-muted">{investor.excerpt}</p>
+                    <a className="hit mt-2 inline-flex min-h-11 items-center text-sm font-medium text-primary" href={investor.sourceUrl} target="_blank" rel="noreferrer">Filing</a>
+                  </MoreDisclosure>
+                ) : (
+                  <a className="hit mt-2 inline-flex min-h-11 items-center text-sm font-medium text-primary" href={investor.sourceUrl} target="_blank" rel="noreferrer">Filing</a>
+                )}
               </Panel>
             ))}
             {secState === "loading" ? <p className="text-sm text-muted">Loading filings.</p> : null}
@@ -125,29 +137,23 @@ function InvestorsPage() {
             }
             aside={<Pill tone={match.category === "disqualified" ? "bad" : match.category === "priority" ? "ok" : "warn"}>{match.category}</Pill>}
           >
-            {meta(investor) ? <p className="text-sm text-muted">{meta(investor)}</p> : null}
-            <p className="mt-2 text-sm leading-relaxed">{investor.excerpt.split(/(?<=[.!?])\s+/).slice(0, 2).join(" ")}</p>
-            {investor.chequeMaxMinor > 0 ? (
-              <p className="num mt-2 text-sm">
-                {formatMoney(investor.chequeMinMinor, investor.currency)}–{formatMoney(investor.chequeMaxMinor, investor.currency)}
-              </p>
-            ) : null}
-            {investor.stages.length > 0 || investor.geos.length > 0 || investor.themes.length > 0 ? (
-              <p className="mt-2 text-xs text-muted">{[investor.stages.join(", "), investor.geos.slice(0, 3).join(", "), investor.themes.join(" · ")].filter(Boolean).join(" · ")}</p>
-            ) : null}
-            {investor.portfolio.length > 0 ? <p className="mt-2 text-sm">{investor.portfolio.join(", ")}</p> : null}
+            <FactList facts={investorFacts(investor, "card")} />
+            {investor.portfolio.length > 0 ? <p className="mt-3 text-sm leading-relaxed">{investor.portfolio.join(", ")}</p> : null}
             <a className="hit mt-2 inline-flex min-h-11 items-center text-sm font-medium text-primary" href={investor.sourceUrl} target="_blank" rel="noreferrer">{investor.sourceUrl.includes("sec.gov") ? "Filing" : "Website"}</a>
-            <div className="mt-3 grid gap-3 md:grid-cols-2">
-              <Reasons title="For" items={shown(match.reasonsFor)} />
-              <Reasons title="Against" items={shown(match.reasonsAgainst)} />
-              <Reasons title="Disqualified" items={shown(match.disqualifiers)} />
-            </div>
-            <div className="mt-4 flex flex-wrap gap-2">
+            <div className="mt-3 flex flex-wrap gap-2">
               <GhostButton disabled={locked} onClick={() => toggleShortlist(investor.id)}>
                 {workspace.shortlist.includes(investor.id) ? "Remove from shortlist" : "Shortlist"}
               </GhostButton>
               <GhostButton disabled={!can(workspace.role, "edit_pipeline")} onClick={() => addOpportunity(investor.id)}>Add to pipeline</GhostButton>
             </div>
+            <MoreDisclosure>
+              {investor.excerpt ? <p className="text-sm leading-relaxed">{investor.excerpt}</p> : null}
+              <div className="mt-3 grid gap-3 md:grid-cols-2">
+                <Reasons title="For" items={shown(match.reasonsFor)} />
+                <Reasons title="Against" items={shown(match.reasonsAgainst)} />
+                <Reasons title="Disqualified" items={shown(match.disqualifiers)} />
+              </div>
+            </MoreDisclosure>
           </Panel>
         ))}
         {limit < visible.length ? <GhostButton onClick={() => setLimit((value) => value + 40)}>Show more</GhostButton> : null}
@@ -156,14 +162,6 @@ function InvestorsPage() {
       </div>
     </Frame>
   );
-}
-
-function meta(investor: { firm: string; fund: string; partner: string | null; participation: string }): string {
-  return [
-    investor.fund && investor.fund !== investor.firm && !investor.fund.startsWith("Not named") ? investor.fund : null,
-    investor.partner,
-    investor.participation === "unstated" ? null : investor.participation,
-  ].filter(Boolean).join(" · ");
 }
 
 function shown(items: string[]): string[] {

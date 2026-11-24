@@ -1,6 +1,7 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { DocumentRoom } from "@/components/seedstage/document-room";
+import { FactGrid, MorePanel } from "@/components/seedstage/fact-sheet";
 import { investorDocuments, investorFolders, type HeldDocument } from "@/lib/seedstage/public-docs";
 import { FirmLogo } from "@/components/seedstage/bits";
 import { Mark } from "@/components/seedstage/mark";
@@ -11,6 +12,7 @@ import { useSeedstage } from "@/lib/seedstage/store";
 import { publicInvestors } from "@/lib/seedstage/public-investors";
 import { readSecInvestor } from "@/lib/seedstage/sec-directory";
 import { readRoomExtra } from "@/lib/seedstage/room-extra";
+import { investorFacts } from "@/lib/seedstage/record-facts";
 import { pageHead } from "@/lib/seedstage/seo";
 
 export const Route = createFileRoute("/investors/$id")({
@@ -80,20 +82,15 @@ function InvestorRoomPage() {
           <FirmLogo src={investor.logo} name={investor.firm} className="size-20 rounded-2xl bg-white" />
           <h1 className="mt-6 text-4xl font-semibold tracking-display text-balance break-words md:text-6xl">{investor.firm}</h1>
           {investor.excerpt ? <p className="mt-4 max-w-xl text-base leading-relaxed text-canvas-muted md:text-lg">{investor.excerpt.split(/(?<=[.!?])\s+/)[0]}</p> : null}
-          <div className="mt-6 flex flex-wrap gap-2">
-            {[...investor.geos.slice(0, 3), ...investor.stages].filter(Boolean).map((item) => (
-              <span key={item} className="rounded-full border border-canvas-line px-3 py-1 text-sm">{item}</span>
-            ))}
-          </div>
           <a className="hit mt-8 inline-flex min-h-11 items-center rounded-full bg-primary px-4 text-sm font-medium text-primary-fg" href={investor.sourceUrl} target="_blank" rel="noreferrer">{investor.sourceUrl.includes("sec.gov") ? "Filing" : "Firm site"}</a>
         </div>
       </section>
 
       <main className="mx-auto w-full min-w-0 max-w-5xl px-5 pb-16">
-        <div className="-mt-8">
-          <DocumentRoom documents={[...documents, ...extraDocs]} folders={investorFolders(investor)} />
+        <div className="-mt-8 flex flex-col gap-4">
+          <FactGrid facts={investorFacts(investor)} />
           {companies.length > 0 ? (
-            <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+            <ul className="grid gap-2 sm:grid-cols-2">
               {companies.map((company) => (
                 <li key={company.id}>
                   <Link to="/startups/$id" params={{ id: company.id }} className="hit flex min-h-14 items-center gap-2 rounded-xl border border-border bg-surface px-3">
@@ -104,6 +101,9 @@ function InvestorRoomPage() {
               ))}
             </ul>
           ) : null}
+          <MorePanel count={documents.length + extraDocs.length}>
+            <DocumentRoom documents={[...documents, ...extraDocs]} folders={investorFolders(investor)} />
+          </MorePanel>
         </div>
       </main>
     </div>

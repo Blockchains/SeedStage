@@ -1,11 +1,12 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { FirmLogo } from "@/components/seedstage/bits";
+import { FactList, MoreDisclosure } from "@/components/seedstage/fact-sheet";
 import { Frame } from "@/components/seedstage/shell";
 import { searchSecStartups } from "@/lib/seedstage/sec-directory";
 import { SEC_CANDIDATE_COUNT, SEC_FUND_ISSUER_COUNT, SEC_OTHER_COUNT, SEC_STARTUP_COUNT, SEC_THIN_COUNT } from "@/lib/seedstage/sec-counts";
 import { publicStartups } from "@/lib/seedstage/startups";
-import { startupDocuments } from "@/lib/seedstage/public-docs";
+import { startupFacts } from "@/lib/seedstage/record-facts";
 
 import { pageHead } from "@/lib/seedstage/seo";
 
@@ -127,17 +128,17 @@ function StartupsPage() {
         <>
           <ul className="flex flex-col gap-3">
             {visible.map((company) => (
-              <li key={company.id}>
-                <Link to="/startups/$id" params={{ id: company.id }} className="hit flex items-start gap-3 rounded-md border border-border bg-surface p-4">
+              <li key={company.id} className="rounded-md border border-border bg-surface p-4">
+                <Link to="/startups/$id" params={{ id: company.id }} className="hit flex items-center gap-3">
                   <FirmLogo src={company.logo} name={company.name} />
-                  <span className="min-w-0 flex-1">
-                    <span className="flex items-baseline justify-between gap-3">
-                      <span className="text-base font-medium">{company.name}</span>
-                      <span className="shrink-0 text-xs text-muted">{startupDocuments(company).length} files</span>
-                    </span>
-                    <span className="mt-2 block text-sm leading-relaxed text-muted">{company.summary.split(/(?<=[.!?])\s+/).slice(0, 2).join(" ")}</span>
-                  </span>
+                  <span className="min-w-0 text-base font-medium">{company.name}</span>
                 </Link>
+                <FactList facts={startupFacts(company, "card")} />
+                {company.summary.trim() ? (
+                  <MoreDisclosure>
+                    <p className="text-sm leading-relaxed text-muted">{company.summary}</p>
+                  </MoreDisclosure>
+                ) : null}
               </li>
             ))}
           </ul>
@@ -150,18 +151,27 @@ function StartupsPage() {
       ) : (
         <>
           <ul className="flex flex-col gap-3">
-            {secRows.map((company) => (
-              <li key={company.id}>
-                <Link to="/startups/$id" params={{ id: company.id }} className="hit flex flex-col gap-1 rounded-md border border-border bg-surface p-4">
-                  <span className="flex items-baseline justify-between gap-3">
-                    <span className="text-base font-medium">{company.name}</span>
-                    <span className="shrink-0 text-xs text-muted">{company.stage}</span>
-                  </span>
-                  <span className="text-sm leading-relaxed text-muted">{[company.industry, company.offering ? `Offering ${company.offering}` : "Offering not read", company.sold ? `Sold ${company.sold}` : "Sold not read"].filter(Boolean).join(" · ")}</span>
-                  <span className="text-sm">{[company.person ? `Named on the filing: ${company.person}` : null, company.phone].filter(Boolean).join(" · ")}</span>
-                </Link>
-              </li>
-            ))}
+            {secRows.map((company) => {
+              const facts = [
+                company.stage ? { label: "Stage", value: company.stage } : null,
+                company.industry ? { label: "Industry", value: company.industry } : null,
+                company.offering ? { label: "Offering amount", value: company.offering } : null,
+                company.sold ? { label: "Amount sold", value: company.sold } : null,
+                company.person ? { label: "Person", value: company.person } : null,
+                company.phone ? { label: "Phone", value: company.phone } : null,
+              ].filter((fact): fact is { label: string; value: string } => fact !== null);
+              return (
+                <li key={company.id} className="rounded-md border border-border bg-surface p-4">
+                  <Link to="/startups/$id" params={{ id: company.id }} className="hit text-base font-medium">{company.name}</Link>
+                  <FactList facts={facts} />
+                  {company.summary.trim() ? (
+                    <MoreDisclosure>
+                      <p className="text-sm leading-relaxed text-muted">{company.summary}</p>
+                    </MoreDisclosure>
+                  ) : null}
+                </li>
+              );
+            })}
           </ul>
           {secState === "loading" ? <p className="mt-4 text-sm text-muted">Loading filings.</p> : null}
           {secState === "error" ? <p className="mt-4 text-sm text-muted">The filing list did not load.</p> : null}
