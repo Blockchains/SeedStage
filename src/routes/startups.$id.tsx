@@ -9,15 +9,17 @@ import { useEffect, useState } from "react";
 import { STARTUP_FOLDERS, startupDocuments, type HeldDocument } from "@/lib/seedstage/public-docs";
 import { readRoomExtra } from "@/lib/seedstage/room-extra";
 import { publicStartups } from "@/lib/seedstage/startups";
+import { readSecStartup } from "@/lib/seedstage/sec-directory";
 import { useSeedstage } from "@/lib/seedstage/store";
 import type { Investor } from "@/lib/seedstage/types";
 
 import { pageHead } from "@/lib/seedstage/seo";
 
 export const Route = createFileRoute("/startups/$id")({
+  loader: async ({ params }) => (params.id.startsWith("sec-") ? readSecStartup({ data: { id: params.id } }) : null),
   component: StartupRoomPage,
-  head: ({ params }) => {
-    const company = publicStartups.find((item) => item.id === params.id);
+  head: ({ params, loaderData }) => {
+    const company = publicStartups.find((item) => item.id === params.id) ?? loaderData;
     const name = company?.name ?? "Startup";
     const description = (company?.summary ?? `Public record for ${name}.`).replace(/\s+/g, " ").trim();
     return pageHead(`/startups/${params.id}`, `${name} — SeedStage`, description.slice(0, 180));
@@ -40,20 +42,12 @@ function findBacker(funder: string, investors: Investor[]): Investor | null {
 
 function StartupRoomPage() {
   const { id } = Route.useParams();
+  const filed = Route.useLoaderData();
   const investors = useSeedstage((state) => state.workspace.investors);
-  const company = publicStartups.find((item) => item.id === id);
-  if (!company) {
-    return (
-      <div className="min-h-screen bg-bg px-5 py-10 text-fg">
-        <Link to="/startups" className="hit inline-flex min-h-11 items-center text-sm font-medium text-primary">Startups</Link>
-        <p className="mt-6 text-sm text-muted">No company with that id.</p>
-      </div>
-    );
-  }
-  const roomDocs = startupDocuments(company);
+  const company = publicStartups.find((item) => item.id === id) ?? filed;
   const [extraDocs, setExtraDocs] = useState<HeldDocument[]>([]);
-  const backer = findBacker(company.funder, investors);
   useEffect(() => {
+    if (!company) return;
     let current = true;
     readRoomExtra({ data: { id: company.id, kind: "startup" } })
       .then((files) => {
@@ -73,7 +67,17 @@ function StartupRoomPage() {
     return () => {
       current = false;
     };
-  }, [company.id]);
+  }, [company?.id]);
+  if (!company) {
+    return (
+      <div className="min-h-screen bg-bg px-5 py-10 text-fg">
+        <Link to="/startups" className="hit inline-flex min-h-11 items-center text-sm font-medium text-primary">Startups</Link>
+        <p className="mt-6 text-sm text-muted">No company with that id.</p>
+      </div>
+    );
+  }
+  const roomDocs = startupDocuments(company);
+  const backer = findBacker(company.funder, investors);
 
   return (
     <div className="min-h-screen overflow-x-clip bg-bg text-fg">
@@ -98,7 +102,7 @@ function StartupRoomPage() {
             ))}
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a className="hit inline-flex min-h-11 items-center rounded-full bg-primary px-4 text-sm font-medium text-primary-fg" href={company.website} target="_blank" rel="noreferrer">Website</a>
+            <a className="hit inline-flex min-h-11 items-center rounded-full bg-primary px-4 text-sm font-medium text-primary-fg" href={company.website} target="_blank" rel="noreferrer">{company.website.includes("sec.gov") ? "Filing" : "Website"}</a>
             <a className="hit inline-flex min-h-11 items-center rounded-full border border-canvas-line px-4 text-sm" href={company.sourceUrl} target="_blank" rel="noreferrer">Source</a>
           </div>
         </div>

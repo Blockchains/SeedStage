@@ -5,6 +5,7 @@ import { AskBox } from "@/components/seedstage/ask-box";
 import { DocumentRoom } from "@/components/seedstage/document-room";
 import { STARTUP_FOLDERS, investorDocuments, investorFolders, startupDocuments } from "@/lib/seedstage/public-docs";
 import { publicStartups } from "@/lib/seedstage/startups";
+import { SEC_INVESTOR_COUNT, SEC_STARTUP_COUNT } from "@/lib/seedstage/sec-counts";
 import { canView, documentObject, type Tuple } from "@/lib/seedstage/authz";
 import { FirmLogo, GhostButton, Notice } from "@/components/seedstage/bits";
 import { Frame } from "@/components/seedstage/shell";
@@ -67,7 +68,7 @@ function RoomPage() {
       <div className="mb-4 flex min-w-0 flex-col gap-2 text-sm md:max-w-sm">
         <label className="flex flex-col gap-1">
           <span className="flex items-center justify-between gap-3 text-muted">
-            <span>{publicStartups.length} companies · {workspace.investors.length} firms</span>
+            <span>{(publicStartups.length + SEC_STARTUP_COUNT).toLocaleString("en-GB")} companies · {(workspace.investors.length + SEC_INVESTOR_COUNT).toLocaleString("en-GB")} firms</span>
             {libraryId ? <button type="button" className="hit min-h-11 text-sm font-medium text-primary" onClick={() => setLibraryId("")}>Workspace</button> : null}
           </span>
           <input className="min-h-11 rounded-md border border-border bg-surface px-3" value={finder} onChange={(event) => setFinder(event.target.value)} placeholder="Search a company or firm" aria-label="Search a company or firm" />

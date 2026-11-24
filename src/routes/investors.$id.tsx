@@ -9,13 +9,15 @@ import { publicStartups } from "@/lib/seedstage/startups";
 import { useSeedstage } from "@/lib/seedstage/store";
 
 import { publicInvestors } from "@/lib/seedstage/public-investors";
+import { readSecInvestor } from "@/lib/seedstage/sec-directory";
 import { readRoomExtra } from "@/lib/seedstage/room-extra";
 import { pageHead } from "@/lib/seedstage/seo";
 
 export const Route = createFileRoute("/investors/$id")({
+  loader: async ({ params }) => (params.id.startsWith("sec-") ? readSecInvestor({ data: { id: params.id } }) : null),
   component: InvestorRoomPage,
-  head: ({ params }) => {
-    const investor = publicInvestors.find((item) => item.id === params.id);
+  head: ({ params, loaderData }) => {
+    const investor = publicInvestors.find((item) => item.id === params.id) ?? loaderData;
     const name = investor?.firm ?? "Investor";
     const description = (investor?.excerpt ?? `Public record for ${name}.`).replace(/\s+/g, " ").trim();
     return pageHead(`/investors/${params.id}`, `${name} — SeedStage`, description.slice(0, 180));
@@ -24,20 +26,12 @@ export const Route = createFileRoute("/investors/$id")({
 
 function InvestorRoomPage() {
   const { id } = Route.useParams();
+  const filed = Route.useLoaderData();
   const investors = useSeedstage((state) => state.workspace.investors);
-  const investor = investors.find((item) => item.id === id);
-  if (!investor) {
-    return (
-      <div className="min-h-screen bg-bg px-5 py-10 text-fg">
-        <Link to="/investors" className="hit inline-flex min-h-11 items-center text-sm font-medium text-primary">Investors</Link>
-        <p className="mt-6 text-sm text-muted">No firm with that id.</p>
-      </div>
-    );
-  }
-  const documents = investorDocuments(investor);
+  const investor = investors.find((item) => item.id === id) ?? publicInvestors.find((item) => item.id === id) ?? filed;
   const [extraDocs, setExtraDocs] = useState<HeldDocument[]>([]);
-  const companies = linkedPortfolio(investor, publicStartups);
   useEffect(() => {
+    if (!investor) return;
     let current = true;
     readRoomExtra({ data: { id: investor.id, kind: "investor" } })
       .then((files) => {
@@ -57,7 +51,17 @@ function InvestorRoomPage() {
     return () => {
       current = false;
     };
-  }, [investor.id]);
+  }, [investor?.id]);
+  if (!investor) {
+    return (
+      <div className="min-h-screen bg-bg px-5 py-10 text-fg">
+        <Link to="/investors" className="hit inline-flex min-h-11 items-center text-sm font-medium text-primary">Investors</Link>
+        <p className="mt-6 text-sm text-muted">No firm with that id.</p>
+      </div>
+    );
+  }
+  const documents = investorDocuments(investor);
+  const companies = linkedPortfolio(investor, publicStartups);
 
   return (
     <div className="min-h-screen overflow-x-clip bg-bg text-fg">
@@ -81,7 +85,7 @@ function InvestorRoomPage() {
               <span key={item} className="rounded-full border border-canvas-line px-3 py-1 text-sm">{item}</span>
             ))}
           </div>
-          <a className="hit mt-8 inline-flex min-h-11 items-center rounded-full bg-primary px-4 text-sm font-medium text-primary-fg" href={investor.sourceUrl} target="_blank" rel="noreferrer">Firm site</a>
+          <a className="hit mt-8 inline-flex min-h-11 items-center rounded-full bg-primary px-4 text-sm font-medium text-primary-fg" href={investor.sourceUrl} target="_blank" rel="noreferrer">{investor.sourceUrl.includes("sec.gov") ? "Filing" : "Firm site"}</a>
         </div>
       </section>
 

@@ -1,4 +1,5 @@
 import { extraStartups } from "./directory.generated.ts";
+import repos from "./github-repos.json" with { type: "json" };
 
 export type PublicStartup = {
   id: string;
@@ -109,4 +110,11 @@ const listedStartups: PublicStartup[] = [
   },
 ];
 
-export const publicStartups: PublicStartup[] = [...listedStartups, ...extraStartups];
+export const publicStartups: PublicStartup[] = [...listedStartups, ...extraStartups].map((company) => {
+  const repo = (repos as Record<string, { url: string; stars: number }>)[company.id];
+  if (!repo) return company;
+  return {
+    ...company,
+    files: [...(company.files ?? []), { title: "GitHub", text: `Repository: ${repo.url}\nStars: ${repo.stars}\nSource: https://github.com/yc-oss/open-source-companies` }],
+  };
+});

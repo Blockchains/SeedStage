@@ -4,6 +4,10 @@
     {
       "source": "/sitemap.xml",
       "headers": [{ "key": "Content-Type", "value": "application/xml; charset=utf-8" }]
+    },
+    {
+      "source": "/sitemaps/(.*)",
+      "headers": [{ "key": "Content-Type", "value": "application/xml; charset=utf-8" }]
     }
   ]
 }
